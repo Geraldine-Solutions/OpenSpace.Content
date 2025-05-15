@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Lint YAML
-        run: yamllint ./
+        run: yamllint -c .yamllint ./
       - name: Validate GLTF files
         run: find . -name "*.gltf" -exec gltf-validator {} \;

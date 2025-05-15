@@ -7,7 +7,7 @@ LocalizableText:
     es: "Andromedae"
     de: "Andromedae"
     ru: "Андромеды" #(Andromedy)
-    zh-Hans: "仙女座" #(Xiānnǚzuò)  
+    zh-Hans: "仙女座" #(Xiānnǚzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Antliae"
@@ -17,7 +17,7 @@ LocalizableText:
     es: "Antliae"
     de: "Antliae"
     ru: "Насоса" #(Nasosa)
-    zh-Hans: "唧筒座" #(Jītǒngzuò)  
+    zh-Hans: "唧筒座" #(Jītǒngzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Apodis"
@@ -27,7 +27,7 @@ LocalizableText:
     es: "Apodis"
     de: "Apodis"
     ru: "Райской Птицы" #(Rayskoy Ptitsy)
-    zh-Hans: "天堂鸟座" #(Tiāntángniǎozuò)  
+    zh-Hans: "天堂鸟座" #(Tiāntángniǎozuò)
 ---
 LocalizableText:
   UniqueId: "Text_Aquarii"
@@ -37,7 +37,7 @@ LocalizableText:
     es: "Aquarii"
     de: "Aquarii"
     ru: "Водолея" #(Vodoleya)
-    zh-Hans: "宝瓶座" #(Bǎopíngzuò)  
+    zh-Hans: "宝瓶座" #(Bǎopíngzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Aquilae"
@@ -47,7 +47,7 @@ LocalizableText:
     es: "Aquilae"
     de: "Aquilae"
     ru: "Орла" #(Orla)
-    zh-Hans: "天鹰座" #(Tiānyīngzuò)  
+    zh-Hans: "天鹰座" #(Tiānyīngzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Arae"
@@ -57,7 +57,7 @@ LocalizableText:
     es: "Arae"
     de: "Arae"
     ru: "Жертвенника" #(Zhertvennika)
-    zh-Hans: "天坛座" #(Tiāntánzuò)  
+    zh-Hans: "天坛座" #(Tiāntánzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Arietis"
@@ -67,7 +67,7 @@ LocalizableText:
     es: "Arietis"
     de: "Arietis"
     ru: "Овна" #(Ovna)
-    zh-Hans: "白羊座" #(Báiyángzuò)  
+    zh-Hans: "白羊座" #(Báiyángzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Aurigae"
@@ -77,7 +77,7 @@ LocalizableText:
     es: "Aurigae"
     de: "Aurigae"
     ru: "Возничего" #(Voznichego)
-    zh-Hans: "御夫座" #(Yùfūzuò)  
+    zh-Hans: "御夫座" #(Yùfūzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Bootis"
@@ -87,7 +87,7 @@ LocalizableText:
     es: "Bootis"
     de: "Bootis"
     ru: "Волопаса" #(Volopasa)
-    zh-Hans: "牧夫座" #(Mùfūzuò)  
+    zh-Hans: "牧夫座" #(Mùfūzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Caeli"
@@ -97,7 +97,7 @@ LocalizableText:
     es: "Caeli"
     de: "Caeli"
     ru: "Резца" #(Reztsa)
-    zh-Hans: "雕具座" #(Diāojùzuò)  
+    zh-Hans: "雕具座" #(Diāojùzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Camelopardalis"
@@ -107,7 +107,7 @@ LocalizableText:
     es: "Camelopardalis"
     de: "Camelopardalis"
     ru: "Жирафа" #(Zhirafa)
-    zh-Hans: "鹿豹座" #(Lùbàozuò)  
+    zh-Hans: "鹿豹座" #(Lùbàozuò)
 ---
 LocalizableText:
   UniqueId: "Text_Capricorni"
@@ -117,7 +117,7 @@ LocalizableText:
     es: "Capricorni"
     de: "Capricorni"
     ru: "Козерога" #(Kozheroga)
-    zh-Hans: "摩羯座" #(Mójiézuò)  
+    zh-Hans: "摩羯座" #(Mójiézuò)
 ---
 LocalizableText:
   UniqueId: "Text_Carinae"
@@ -127,7 +127,7 @@ LocalizableText:
     es: "Carinae"
     de: "Carinae"
     ru: "Киля" #(Kilya)
-    zh-Hans: "船底座" #(Chuándǐzuò)  
+    zh-Hans: "船底座" #(Chuándǐzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Cassiopeiae"
@@ -137,7 +137,7 @@ LocalizableText:
     es: "Cassiopeiae"
     de: "Cassiopeiae"
     ru: "Кассиопеи" #(Kassiopeyi)
-    zh-Hans: "仙后座" #(Xiānhòuzuò)  
+    zh-Hans: "仙后座" #(Xiānhòuzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Centauri"
@@ -147,7 +147,7 @@ LocalizableText:
     es: "Centauri"
     de: "Centauri"
     ru: "Центавра" #(Tsentavra)
-    zh-Hans: "半人马座" #(Bànrénmǎzuò)  
+    zh-Hans: "半人马座" #(Bànrénmǎzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Cephei"
@@ -157,7 +157,7 @@ LocalizableText:
     es: "Cephei"
     de: "Cephei"
     ru: "Цефея" #(Tsefeya)
-    zh-Hans: "仙王座" #(Xiānwángzuò)  
+    zh-Hans: "仙王座" #(Xiānwángzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Ceti"
@@ -167,7 +167,7 @@ LocalizableText:
     es: "Ceti"
     de: "Ceti"
     ru: "Кита" #(Kita)
-    zh-Hans: "鲸鱼座" #(Jīngyúzuò)  
+    zh-Hans: "鲸鱼座" #(Jīngyúzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Chamaeleontis"
@@ -177,7 +177,7 @@ LocalizableText:
     es: "Chamaeleontis"
     de: "Chamaeleontis"
     ru: "Хамелеона" #(Khameleona)
-    zh-Hans: "变色龙座" #(Biànsèlóngzuò)  
+    zh-Hans: "变色龙座" #(Biànsèlóngzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Circini"
@@ -187,7 +187,7 @@ LocalizableText:
     es: "Circini"
     de: "Circini"
     ru: "Циркуля" #(Tsirkulya)
-    zh-Hans: "圆规座" #(Yuánguīzuò)  
+    zh-Hans: "圆规座" #(Yuánguīzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Canis"
@@ -197,7 +197,7 @@ LocalizableText:
     es: "Canis"
     de: "Canis"
     ru: "Пса" #(Psa)
-    zh-Hans: "猎犬座" #(Lièquǎnzuò)  
+    zh-Hans: "猎犬座" #(Lièquǎnzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Cancri"
@@ -207,7 +207,7 @@ LocalizableText:
     es: "Cancri"
     de: "Cancri"
     ru: "Рака" #(Raka)
-    zh-Hans: "巨蟹座" #(Jùxièzuò)  
+    zh-Hans: "巨蟹座" #(Jùxièzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Columbae"
@@ -217,7 +217,7 @@ LocalizableText:
     es: "Columbae"
     de: "Columbae"
     ru: "Голубя" #(Golubya)
-    zh-Hans: "天鸽座" #(Tiāngēzuò)  
+    zh-Hans: "天鸽座" #(Tiāngēzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Comae"
@@ -227,7 +227,7 @@ LocalizableText:
     es: "Comae"
     de: "Comae"
     ru: "Волос Вероники" #(Volos Veroniki)
-    zh-Hans: "后发座" #(Hòufāzuò)  
+    zh-Hans: "后发座" #(Hòufāzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Coronae"
@@ -237,7 +237,7 @@ LocalizableText:
     es: "Coronae"
     de: "Coronae"
     ru: "Короны" #(Korony)
-    zh-Hans: "北冕座" #(Běimiǎnzuò)  
+    zh-Hans: "北冕座" #(Běimiǎnzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Crateris"
@@ -247,7 +247,7 @@ LocalizableText:
     es: "Crateris"
     de: "Crateris"
     ru: "Чаши" #(Chashi)
-    zh-Hans: "巨爵座" #(Jùjuézuò)  
+    zh-Hans: "巨爵座" #(Jùjuézuò)
 ---
 LocalizableText:
   UniqueId: "Text_Crucis"
@@ -257,7 +257,7 @@ LocalizableText:
     es: "Crucis"
     de: "Crucis"
     ru: "Креста" #(Kresta)
-    zh-Hans: "南十字座" #(Nánshízìzuò)  
+    zh-Hans: "南十字座" #(Nánshízìzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Corvi"
@@ -267,7 +267,7 @@ LocalizableText:
     es: "Corvi"
     de: "Corvi"
     ru: "Ворона" #(Vorona)
-    zh-Hans: "乌鸦座" #(Wūyāzuò)  
+    zh-Hans: "乌鸦座" #(Wūyāzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Canum"
@@ -277,7 +277,7 @@ LocalizableText:
     es: "Canum"
     de: "Canum"
     ru: "Гончих Псов" #(Gonchikh Psov)
-    zh-Hans: "猎犬座" #(Lièquǎnzuò)  
+    zh-Hans: "猎犬座" #(Lièquǎnzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Cygni"
@@ -287,7 +287,7 @@ LocalizableText:
     es: "Cygni"
     de: "Cygni"
     ru: "Лебедя" #(Lebedya)
-    zh-Hans: "天鹅座" #(Tiān’ézuò)  
+    zh-Hans: "天鹅座" #(Tiān’ézuò)
 ---
 LocalizableText:
   UniqueId: "Text_Delphini"
@@ -297,7 +297,7 @@ LocalizableText:
     es: "Delphini"
     de: "Delphini"
     ru: "Дельфина" #(Delfina)
-    zh-Hans: "海豚座" #(Hǎitúnzuò)  
+    zh-Hans: "海豚座" #(Hǎitúnzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Doradus"
@@ -307,7 +307,7 @@ LocalizableText:
     es: "Doradus"
     de: "Doradus"
     ru: "Золотой Рыбы" #(Zolotoy Ryby)
-    zh-Hans: "剑鱼座" #(Jiànyúzuò)  
+    zh-Hans: "剑鱼座" #(Jiànyúzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Draconis"
@@ -317,7 +317,7 @@ LocalizableText:
     es: "Draconis"
     de: "Draconis"
     ru: "Дракона" #(Drakona)
-    zh-Hans: "天龙座" #(Tiānlóngzuò)  
+    zh-Hans: "天龙座" #(Tiānlóngzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Equulei"
@@ -327,7 +327,7 @@ LocalizableText:
     es: "Equulei"
     de: "Equulei"
     ru: "Жеребёнка" #(Zherebyonka)
-    zh-Hans: "小马座" #(Xiǎomǎzuò)  
+    zh-Hans: "小马座" #(Xiǎomǎzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Eridani"
@@ -337,7 +337,7 @@ LocalizableText:
     es: "Eridani"
     de: "Eridani"
     ru: "Эридана" #(Eridana)
-    zh-Hans: "波江座" #(Bōjiāngzuò)  
+    zh-Hans: "波江座" #(Bōjiāngzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Fornacis"
@@ -347,7 +347,7 @@ LocalizableText:
     es: "Fornacis"
     de: "Fornacis"
     ru: "Печи" #(Pechi)
-    zh-Hans: "天炉座" #(Tiānlúzuò)  
+    zh-Hans: "天炉座" #(Tiānlúzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Geminorum"
@@ -357,7 +357,7 @@ LocalizableText:
     es: "Geminorum"
     de: "Geminorum"
     ru: "Близнецов" #(Bliznetsov)
-    zh-Hans: "双子座" #(Shuāngzǐzuò)  
+    zh-Hans: "双子座" #(Shuāngzǐzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Gruis"
@@ -367,7 +367,7 @@ LocalizableText:
     es: "Gruis"
     de: "Gruis"
     ru: "Журавля" #(Zhuravlya)
-    zh-Hans: "天鹤座" #(Tiānhèzuò)  
+    zh-Hans: "天鹤座" #(Tiānhèzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Herculis"
@@ -377,7 +377,7 @@ LocalizableText:
     es: "Herculis"
     de: "Herculis"
     ru: "Геркулеса" #(Gerkulesa)
-    zh-Hans: "武仙座" #(Wǔxiānzuò)  
+    zh-Hans: "武仙座" #(Wǔxiānzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Horologii"
@@ -387,7 +387,7 @@ LocalizableText:
     es: "Horologii"
     de: "Horologii"
     ru: "Часов" #(Chasov)
-    zh-Hans: "时钟座" #(Shízhōngzuò)  
+    zh-Hans: "时钟座" #(Shízhōngzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Hydrae"
@@ -397,7 +397,7 @@ LocalizableText:
     es: "Hydrae"
     de: "Hydrae"
     ru: "Гидры" #(Gidry)
-    zh-Hans: "长蛇座" #(Chángshézuò)  
+    zh-Hans: "长蛇座" #(Chángshézuò)
 ---
 LocalizableText:
   UniqueId: "Text_Hydri"
@@ -407,7 +407,7 @@ LocalizableText:
     es: "Hydri"
     de: "Hydri"
     ru: "Малой Гидры" #(Maloy Gidry)
-    zh-Hans: "水蛇座" #(Shuǐshézuò)  
+    zh-Hans: "水蛇座" #(Shuǐshézuò)
 ---
 LocalizableText:
   UniqueId: "Text_Indi"
@@ -417,7 +417,7 @@ LocalizableText:
     es: "Indi"
     de: "Indi"
     ru: "Индейца" #(Indeytsa)
-    zh-Hans: "印第安座" #(Yìndì’ānzuò)  
+    zh-Hans: "印第安座" #(Yìndì’ānzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Lacertae"
@@ -427,7 +427,7 @@ LocalizableText:
     es: "Lacertae"
     de: "Lacertae"
     ru: "Ящерицы" #(Yashcheritsy)
-    zh-Hans: "蜥蜴座" #(Xīyìzuò)  
+    zh-Hans: "蜥蜴座" #(Xīyìzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Leonis"
@@ -437,7 +437,7 @@ LocalizableText:
     es: "Leonis"
     de: "Leonis"
     ru: "Льва" #(L’va)
-    zh-Hans: "狮子座" #(Shīzǐzuò)  
+    zh-Hans: "狮子座" #(Shīzǐzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Leporis"
@@ -447,7 +447,7 @@ LocalizableText:
     es: "Leporis"
     de: "Leporis"
     ru: "Зайца" #(Zaytsa)
-    zh-Hans: "天兔座" #(Tiāntùzuò)  
+    zh-Hans: "天兔座" #(Tiāntùzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Librae"
@@ -457,7 +457,7 @@ LocalizableText:
     es: "Librae"
     de: "Librae"
     ru: "Весов" #(Vesov)
-    zh-Hans: "天秤座" #(Tiānchèngzuò)  
+    zh-Hans: "天秤座" #(Tiānchèngzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Lupi"
@@ -467,7 +467,7 @@ LocalizableText:
     es: "Lupi"
     de: "Lupi"
     ru: "Волка" #(Volka)
-    zh-Hans: "豺狼座" #(Cháilángzuò)  
+    zh-Hans: "豺狼座" #(Cháilángzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Lyncis"
@@ -477,7 +477,7 @@ LocalizableText:
     es: "Lyncis"
     de: "Lyncis"
     ru: "Рыси" #(Rysi)
-    zh-Hans: "天猫座" #(Tiānmāozuò)  
+    zh-Hans: "天猫座" #(Tiānmāozuò)
 ---
 LocalizableText:
   UniqueId: "Text_Lyrae"
@@ -487,7 +487,7 @@ LocalizableText:
     es: "Lyrae"
     de: "Lyrae"
     ru: "Лиры" #(Liry)
-    zh-Hans: "天琴座" #(Tiānqínzuò)  
+    zh-Hans: "天琴座" #(Tiānqínzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Mensae"
@@ -497,7 +497,7 @@ LocalizableText:
     es: "Mensae"
     de: "Mensae"
     ru: "Столовой Горы" #(Stolovoy Gory)
-    zh-Hans: "山案座" #(Shān’ànzuò)  
+    zh-Hans: "山案座" #(Shān’ànzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Muscae"
@@ -507,7 +507,7 @@ LocalizableText:
     es: "Muscae"
     de: "Muscae"
     ru: "Мухи" #(Mukhi)
-    zh-Hans: "苍蝇座" #(Cāngyíngzuò)  
+    zh-Hans: "苍蝇座" #(Cāngyíngzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Microscopium"
@@ -517,7 +517,7 @@ LocalizableText:
     es: "Microscopio"
     de: "Mikroskop"
     ru: "Микроскоп" #(Microscopium)
-    zh-Hans: "显微镜座" #(Microscopium)  
+    zh-Hans: "显微镜座" #(Microscopium)
 ---
 LocalizableText:
   UniqueId: "Text_Monoceros"
@@ -527,7 +527,7 @@ LocalizableText:
     es: "Monoceros"
     de: "Einhorn"
     ru: "Единорог" #(Monoceros)
-    zh-Hans: "独角兽座" #(Monoceros)    
+    zh-Hans: "独角兽座" #(Monoceros)  
 ---
 LocalizableText:
   UniqueId: "Text_Normae"
@@ -537,7 +537,7 @@ LocalizableText:
     es: "Normae"
     de: "Normae"
     ru: "Наугольника" #(Naugol’nika)
-    zh-Hans: "矩尺座" #(Jǔchǐzuò)  
+    zh-Hans: "矩尺座" #(Jǔchǐzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Octantis"
@@ -547,7 +547,7 @@ LocalizableText:
     es: "Octantis"
     de: "Octantis"
     ru: "Октанта" #(Oktanta)
-    zh-Hans: "八分仪座" #(Bāfènyízuò)  
+    zh-Hans: "八分仪座" #(Bāfènyízuò)
 ---
 LocalizableText:
   UniqueId: "Text_Ophiuchi"
@@ -557,7 +557,7 @@ LocalizableText:
     es: "Ophiuchi"
     de: "Ophiuchi"
     ru: "Змееносца" #(Zmeenosetsa)
-    zh-Hans: "蛇夫座" #(Shéfūzuò)  
+    zh-Hans: "蛇夫座" #(Shéfūzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Orionis"
@@ -567,7 +567,7 @@ LocalizableText:
     es: "Orionis"
     de: "Orionis"
     ru: "Ориона" #(Oriona)
-    zh-Hans: "猎户座" #(Lièhùzuò)  
+    zh-Hans: "猎户座" #(Lièhùzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Pavonis"
@@ -577,7 +577,7 @@ LocalizableText:
     es: "Pavonis"
     de: "Pavonis"
     ru: "Павлина" #(Pavlina)
-    zh-Hans: "孔雀座" #(Kǒngquèzuò)  
+    zh-Hans: "孔雀座" #(Kǒngquèzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Pegasi"
@@ -587,7 +587,7 @@ LocalizableText:
     es: "Pegasi"
     de: "Pegasi"
     ru: "Пегаса" #(Pegasа)
-    zh-Hans: "飞马座" #(Fēimǎzuò)  
+    zh-Hans: "飞马座" #(Fēimǎzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Persei"
@@ -597,7 +597,7 @@ LocalizableText:
     es: "Persei"
     de: "Persei"
     ru: "Персея" #(Perseya)
-    zh-Hans: "英仙座" #(Yīngxiānzuò)  
+    zh-Hans: "英仙座" #(Yīngxiānzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Phoenicis"
@@ -607,7 +607,7 @@ LocalizableText:
     es: "Phoenicis"
     de: "Phoenicis"
     ru: "Феникса" #(Feniksa)
-    zh-Hans: "凤凰座" #(Fènghuángzuò)  
+    zh-Hans: "凤凰座" #(Fènghuángzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Pictoris"
@@ -617,7 +617,7 @@ LocalizableText:
     es: "Pictoris"
     de: "Pictoris"
     ru: "Живописца" #(Zhivopistsa)
-    zh-Hans: "绘架座" #(Huìjiàzuò)  
+    zh-Hans: "绘架座" #(Huìjiàzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Piscium"
@@ -627,7 +627,7 @@ LocalizableText:
     es: "Piscium"
     de: "Piscium"
     ru: "Рыб" #(Ryb)
-    zh-Hans: "双鱼座" #(Shuāngyúzuò)  
+    zh-Hans: "双鱼座" #(Shuāngyúzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Puppis"
@@ -637,7 +637,7 @@ LocalizableText:
     es: "Puppis"
     de: "Puppis"
     ru: "Кормы" #(Kormy)
-    zh-Hans: "船尾座" #(Chuánwěizuò)  
+    zh-Hans: "船尾座" #(Chuánwěizuò)
 ---
 LocalizableText:
   UniqueId: "Text_Pyxidis"
@@ -647,7 +647,7 @@ LocalizableText:
     es: "Pyxidis"
     de: "Pyxidis"
     ru: "Компаса" #(Kompasа)
-    zh-Hans: "罗盘座" #(Luópánzuò)  
+    zh-Hans: "罗盘座" #(Luópánzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Reticuli"
@@ -657,7 +657,7 @@ LocalizableText:
     es: "Reticuli"
     de: "Reticuli"
     ru: "Сетки" #(Setki)
-    zh-Hans: "网罟座" #(Wǎnggǔzuò)  
+    zh-Hans: "网罟座" #(Wǎnggǔzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Scorpii"
@@ -667,7 +667,7 @@ LocalizableText:
     es: "Scorpii"
     de: "Scorpii"
     ru: "Скорпиона" #(Skorpiona)
-    zh-Hans: "天蝎座" #(Tiānxiēzuò)  
+    zh-Hans: "天蝎座" #(Tiānxiēzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Sculptoris"
@@ -677,7 +677,7 @@ LocalizableText:
     es: "Sculptoris"
     de: "Sculptoris"
     ru: "Скульптора" #(Skul’ptora)
-    zh-Hans: "玉夫座" #(Yùfūzuò)  
+    zh-Hans: "玉夫座" #(Yùfūzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Scuti"
@@ -687,7 +687,7 @@ LocalizableText:
     es: "Scuti"
     de: "Scuti"
     ru: "Щита" #(Shchita)
-    zh-Hans: "盾牌座" #(Dùnpáizuò)  
+    zh-Hans: "盾牌座" #(Dùnpáizuò)
 ---
 LocalizableText:
   UniqueId: "Text_Serpentis"
@@ -697,7 +697,7 @@ LocalizableText:
     es: "Serpentis"
     de: "Serpentis"
     ru: "Змеи" #(Zmei)
-    zh-Hans: "巨蛇座" #(Jùshézuò)  
+    zh-Hans: "巨蛇座" #(Jùshézuò)
 ---
 LocalizableText:
   UniqueId: "Text_Sextantis"
@@ -707,7 +707,7 @@ LocalizableText:
     es: "Sextantis"
     de: "Sextantis"
     ru: "Секстанта" #(Sextanta)
-    zh-Hans: "六分仪座" #(Liùfènyízuò)  
+    zh-Hans: "六分仪座" #(Liùfènyízuò)
 ---
 LocalizableText:
   UniqueId: "Text_Sagittae"
@@ -717,7 +717,7 @@ LocalizableText:
     es: "Sagittae"
     de: "Sagittae"
     ru: "Стрелы" #(Strely)
-    zh-Hans: "天箭座" #(Tiānjiànzuò)  
+    zh-Hans: "天箭座" #(Tiānjiànzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Sagittarii"
@@ -727,7 +727,7 @@ LocalizableText:
     es: "Sagittarii"
     de: "Sagittarii"
     ru: "Стрельца" #(Strel’tsa)
-    zh-Hans: "人马座" #(Rénmǎzuò)  
+    zh-Hans: "人马座" #(Rénmǎzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Tauri"
@@ -737,7 +737,7 @@ LocalizableText:
     es: "Tauri"
     de: "Tauri"
     ru: "Тельца" #(Tel’tsa)
-    zh-Hans: "金牛座" #(Jīnniúzuò)  
+    zh-Hans: "金牛座" #(Jīnniúzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Telescopium"
@@ -747,7 +747,7 @@ LocalizableText:
     es: "Telescopio"
     de: "Teleskop"
     ru: "Телескоп" #(Telescopium)
-    zh-Hans: "望远镜座" #(Telescopium)   
+    zh-Hans: "望远镜座" #(Telescopium) 
 ---
 LocalizableText:
   UniqueId: "Text_Trianguli"
@@ -757,7 +757,7 @@ LocalizableText:
     es: "Trianguli"
     de: "Trianguli"
     ru: "Треугольника" #(Treugol’nika)
-    zh-Hans: "三角座" #(Sānjiǎozuò)  
+    zh-Hans: "三角座" #(Sānjiǎozuò)
 ---
 LocalizableText:
   UniqueId: "Text_Tucanae"
@@ -767,7 +767,7 @@ LocalizableText:
     es: "Tucanae"
     de: "Tucanae"
     ru: "Тукана" #(Tukana)
-    zh-Hans: "杜鹃座" #(Dùjuānzuò)  
+    zh-Hans: "杜鹃座" #(Dùjuānzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Ursae"
@@ -777,7 +777,7 @@ LocalizableText:
     es: "Ursae"
     de: "Ursae"
     ru: "Медведицы" #(Medveditsy)
-    zh-Hans: "大熊座" #(Dàxióngzuò)  
+    zh-Hans: "大熊座" #(Dàxióngzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Velorum"
@@ -787,7 +787,7 @@ LocalizableText:
     es: "Velorum"
     de: "Velorum"
     ru: "Парусов" #(Parusov)
-    zh-Hans: "船帆座" #(Chuánfānzuò)  
+    zh-Hans: "船帆座" #(Chuánfānzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Virginis"
@@ -797,7 +797,7 @@ LocalizableText:
     es: "Virginis"
     de: "Virginis"
     ru: "Девы" #(Devy)
-    zh-Hans: "室女座" #(Shìnǚzuò)  
+    zh-Hans: "室女座" #(Shìnǚzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Volantis"
@@ -807,7 +807,7 @@ LocalizableText:
     es: "Volantis"
     de: "Volantis"
     ru: "Летучей Рыбы" #(Letuchey Ryby)
-    zh-Hans: "飞鱼座" #(Fēiyúzuò)  
+    zh-Hans: "飞鱼座" #(Fēiyúzuò)
 ---
 LocalizableText:
   UniqueId: "Text_Vulpeculae"
@@ -817,7 +817,7 @@ LocalizableText:
     es: "Vulpeculae"
     de: "Vulpeculae"
     ru: "Лисички" #(Lisichki)
-    zh-Hans: "狐狸座" #(Húlízuò)  
+    zh-Hans: "狐狸座" #(Húlízuò)
 ---
 LocalizableText:
   UniqueId: "Text_Ascendis"

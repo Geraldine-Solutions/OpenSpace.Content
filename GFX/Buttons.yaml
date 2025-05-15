@@ -24,3 +24,4 @@ sprite:
     rows: 3
   sliceIndex: 2  # Botttom slice for disabled state
   wrapMode: Clamp
+  
