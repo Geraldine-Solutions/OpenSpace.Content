@@ -1,0 +1,13 @@
+name: Lint Content
+
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Lint YAML
+        run: yamllint Base/
+      - name: Validate GLTF files
+        run: find . -name "*.gltf" -exec gltf-validator {} \;
