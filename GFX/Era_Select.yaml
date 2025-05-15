@@ -1,0 +1,32 @@
+﻿sprite:
+  uniqueId: GFX_era_select_genesis
+  texturefile: gfx/buttons/eras/Genesis Era Thumbnail.png
+---
+sprite:
+  uniqueId: GFX_era_select_genesis_disabled
+  texturefile: gfx/buttons/eras/Genesis Era Disabled.png
+---
+sprite:
+  uniqueId: GFX_era_select_frontier
+  texturefile: gfx/buttons/eras/Frontier Era Thumbnail.png
+---
+sprite:
+  uniqueId: GFX_era_select_frontier_disabled
+  texturefile: gfx/buttons/eras/Frontier Era Disabled.png
+---
+sprite:
+  uniqueId: GFX_era_select_celestial
+  texturefile: gfx/buttons/eras/Celestial Era Thumbnail.png
+---
+sprite:
+  uniqueId: GFX_era_select_celestial_disabled
+  texturefile: gfx/buttons/eras/Celestial Era Disabled.png
+---
+sprite:
+  uniqueId: GFX_era_select_interstellar
+  texturefile: gfx/buttons/eras/Interstellar Era Thumbnail.png
+---
+sprite:
+  uniqueId: GFX_era_select_interstellar_disabled
+  texturefile: gfx/buttons/eras/Interstellar Era Disabled.png
+---

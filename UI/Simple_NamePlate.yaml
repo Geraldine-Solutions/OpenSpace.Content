@@ -1,0 +1,19 @@
+﻿Variables:
+  nameplate_width: 100
+  nameplate_height: 20
+---
+gui:
+  UniqueId: simple_nameplate
+  gameObjects:
+    - textMeshPro:
+        Name: "StarSystemName"
+        Font: "Nacelle-Regular SDF"
+        Text: "{Scope.Name}"
+        Color: "#FFFFFF88"
+        Position: [0, 20]
+        Size: [$nameplate_width, $nameplate_height]
+        Localizable: true
+        FontSize: 12
+        EnableWordWrapping: true
+        Alignment: center
+        Visible: true

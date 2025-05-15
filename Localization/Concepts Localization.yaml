@@ -1,0 +1,65 @@
+﻿LocalizableText:
+  UniqueId: text_concept_era
+  Name: "Era"
+  Translations:
+    en-US: "Era"
+    fr: "Ère"
+    es: "Era"
+    de: "Ära"
+    ru: "Эра"
+    zh-Hans: "时代"
+---
+LocalizableText:
+  UniqueId: text_concept_species
+  Name: "Species Concept"
+  Translations:
+    en-US: "Species"
+    fr: "Espèce"
+    es: "Especie"
+    de: "Spezies"
+    ru: "Вид"
+    zh-Hans: "物种"
+---
+LocalizableText:
+  UniqueId: text_concept_homeworld
+  Name: "Homeworld Concept"
+  Translations:
+    en-US: "Homeworld"
+    fr: "Monde natal"
+    es: "Mundo natal"
+    de: "Heimatwelt"
+    ru: "Родной мир"
+    zh-Hans: "母星"
+---
+LocalizableText:
+  UniqueId: text_concept_ethics
+  Name: "Ethics Concept"
+  Translations:
+    en-US: "Ethics"
+    fr: "Éthique"
+    es: "Ética"
+    de: "Ethik"
+    ru: "Этика"
+    zh-Hans: "道德观"
+---
+LocalizableText:
+  UniqueId: text_concept_authority
+  Name: "Authority Concept"
+  Translations:
+    en-US: "Authority"
+    fr: "Autorité"
+    es: "Autoridad"
+    de: "Autorität"
+    ru: "Власть"
+    zh-Hans: "权威"
+---
+LocalizableText:
+  UniqueId: text_concept_ascension
+  Name: "Ascension Concept"
+  Translations:
+    en-US: "Ascension"
+    fr: "Ascension"
+    es: "Ascensión"
+    de: "Aufstieg"
+    ru: "Вознесение"
+    zh-Hans: "飞升"

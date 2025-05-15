@@ -1,0 +1,11 @@
+﻿LocalizableText:
+  UniqueId: text_select_era
+  Name: "Select Era"
+  Translations:
+    en-US: "Select Era"
+    fr: ""
+    es: ""
+    de: ""
+    ru: ""
+    zh-Hans: ""
+---

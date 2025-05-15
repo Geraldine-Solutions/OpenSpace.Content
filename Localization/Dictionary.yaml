@@ -1,0 +1,22 @@
+﻿LocalizableText:
+  UniqueId: text_cancel
+  Name: "Cancel"
+  Translations:
+    en-US: "Cancel"
+    fr: ""
+    es: ""
+    de: ""
+    ru: ""
+    zh-Hans: ""
+---
+LocalizableText:
+  UniqueId: text_next
+  Name: "Next"
+  Translations:
+    en-US: "Next"
+    fr: ""
+    es: ""
+    de: ""
+    ru: ""
+    zh-Hans: ""
+---

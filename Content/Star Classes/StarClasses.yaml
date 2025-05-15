@@ -1,0 +1,134 @@
+
+###############
+# Standard Stars
+###############
+---
+# Blue Stars
+StarClass:
+  UniqueId: sc_b
+  CelestialBodyClass: pc_b_star
+  SpawnOdds: 10
+  NumPlanets: 4 10
+  CelestialBodyOdds:
+    pc_habitable: 0.6
+---
+# White or Blueish Stars
+StarClass:
+  UniqueId: sc_a
+  CelestialBodyClass: pc_a_star
+  SpawnOdds: 10
+  NumPlanets: 4 10
+  CelestialBodyOdds:
+    pc_habitable: 0.6
+---
+# Yellow-White Dwarves
+StarClass:
+  UniqueId: sc_f
+  CelestialBodyClass: pc_f_star
+  SpawnOdds: 15
+  NumPlanets: 4 10
+---
+# Yellow Dwarves
+StarClass:
+  UniqueId: sc_g
+  CelestialBodyClass: pc_g_star
+  SpawnOdds: 30
+  NumPlanets: 4 10
+---
+# Orange Dwarves
+StarClass:
+  UniqueId: sc_k
+  CelestialBodyClass: pc_k_star
+  SpawnOdds: 20
+  NumPlanets: 4 10
+---
+# Red Dwarves
+StarClass:
+  UniqueId: sc_m
+  CelestialBodyClass: pc_m_star
+  SpawnOdds: 20
+  NumPlanets: 4 10
+  CelestialBodyOdds:
+    pc_habitable: 0.4
+---
+# Red Giants
+StarClass:
+  UniqueId: sc_m_giant
+  CelestialBodyClass: pc_m_giant_star
+  SpawnOdds: 20
+  NumPlanets: 4 10
+  CelestialBodyOdds:
+    pc_habitable: 0.1
+---
+# Brown Dwarves
+StarClass:
+  UniqueId: sc_t
+  CelestialBodyClass: pc_t_star
+  SpawnOdds: 10
+  NumPlanets: 4 10
+  CelestialBodyOdds:
+    pc_habitable: 0.4
+---
+###############
+# Rare Stars
+###############
+# Black Holes
+StarClass:
+  UniqueId: sc_black_hole
+  Namelist: nl_black_holes
+  CelestialBodyClass: pc_black_hole
+  SpawnOdds: 0.8
+  NumPlanets: 1 4
+  IsEnvironmentalHazard: true
+  CelestialBodyOdds:
+    pc_habitable: 0
+    pc_gas_giant: 0
+---
+###############
+# RANDOM LISTS
+###############
+RandomList:
+  UniqueId: rl_standard_stars
+  Name: Standard Stars
+  Choices:
+    - sc_b
+    - sc_a
+    - sc_f
+    - sc_g
+    - sc_k
+    - sc_m
+    - sc_m_giant
+---
+RandomList:
+  UniqueId: rl_special_stars
+  Name: Special Stars
+  Choices:
+    - sc_black_hole
+    - sc_neutron_star
+    - sc_pulsar
+---
+RandomList:
+  UniqueId: rl_dwarf_stars
+  Name: Dwarf Stars
+  Choices:
+    - sc_f
+    - sc_g
+    - sc_k
+    - sc_m
+    - sc_t
+---
+RandomList:
+  UniqueId: rl_all_stars
+  Name: All Stars
+  Choices:
+    - sc_b
+    - sc_a
+    - sc_f
+    - sc_g
+    - sc_k
+    - sc_m
+    - sc_m_giant
+    - sc_t
+    - sc_black_hole
+    - sc_neutron_star
+    - sc_pulsar

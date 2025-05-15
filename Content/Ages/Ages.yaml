@@ -1,0 +1,71 @@
+﻿Age:
+  UniqueId: age_tribal
+  Name: Tribal Age
+  Tier: 1
+  EraId: era_hex
+---
+Age:
+  UniqueId: age_feudal
+  Name: Feudal Age
+  Tier: 2
+  EraId: era_hex
+---
+Age:
+  UniqueId: age_renaissance
+  Name: Renaissance Age
+  Tier: 3
+  EraId: era_region
+---
+Age:
+  UniqueId: age_industrial
+  Name: Industrial Age
+  Tier: 4
+  EraId: era_region
+---
+Age:
+  UniqueId: age_information
+  Name: Information Age
+  Tier: 5
+  EraId: era_celestial
+---
+Age:
+  UniqueId: age_early_space
+  Name: Early Space Age
+  Tier: 6
+  EraId: era_celestial
+---
+Age:
+  UniqueId: age_interstellar
+  Name: Interstellar Age
+  Tier: 7
+  EraId: era_interstellar
+---
+Age:
+  UniqueId: age_advanced_space
+  Name: Advanced Spacefaring Age
+  Tier: 8
+  EraId: era_interstellar
+---
+Age:
+  UniqueId: age_ascendant
+  Name: Ascendant Age
+  Tier: 9
+  EraId: era_interstellar
+---
+Age:
+  UniqueId: age_transcendent
+  Name: Transcendent Age
+  Tier: 10
+  EraId: era_interstellar
+---
+Age:
+  UniqueId: age_cosmic
+  Name: Cosmic Age
+  Tier: 11
+  EraId: era_interstellar
+---
+Age:
+  UniqueId: age_eternal
+  Name: Eternal Age
+  Tier: 12
+  EraId: era_interstellar 

@@ -1,0 +1,115 @@
+﻿sprite:
+  uniqueId: GFX_main_menu_background
+  texturefile: gfx/backgrounds/main_menu_background_0.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_1
+  texturefile: gfx/backgrounds/main_menu_background_1.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_2
+  texturefile: gfx/backgrounds/main_menu_background_2.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_3
+  texturefile: gfx/backgrounds/main_menu_background_3.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_4
+  texturefile: gfx/backgrounds/main_menu_background_4.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_5
+  texturefile: gfx/backgrounds/main_menu_background_5.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_6
+  texturefile: gfx/backgrounds/main_menu_background_6.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_7
+  texturefile: gfx/backgrounds/main_menu_background_7.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_8
+  texturefile: gfx/backgrounds/main_menu_background_8.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_9
+  texturefile: gfx/backgrounds/main_menu_background_9.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_10
+  texturefile: gfx/backgrounds/main_menu_background_10.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_11
+  texturefile: gfx/backgrounds/main_menu_background_11.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_12
+  texturefile: gfx/backgrounds/main_menu_background_12.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_13
+  texturefile: gfx/backgrounds/main_menu_background_13.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_14
+  texturefile: gfx/backgrounds/main_menu_background_14.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_15
+  texturefile: gfx/backgrounds/main_menu_background_15.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_16
+  texturefile: gfx/backgrounds/main_menu_background_16.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_17
+  texturefile: gfx/backgrounds/main_menu_background_17.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_18
+  texturefile: gfx/backgrounds/main_menu_background_18.png
+---
+sprite:
+  uniqueId: GFX_main_menu_background_19
+  texturefile: gfx/backgrounds/main_menu_background_19.png
+---
+sprite:
+  uniqueId: GFX_open_space_logo
+  texturefile: gfx/logos/open_space_logo_wide.png
+---
+sprite:
+  uniqueId: GFX_frame
+  texturefile: gfx/frame.png
+---
+sprite:
+  uniqueId: GFX_gradient
+  texturefile: gfx/gradient.png
+---
+RandomList:
+  UniqueId: rl_mainMenuBgs
+  Choices:
+    - GFX_main_menu_background
+    - GFX_main_menu_background_1
+    - GFX_main_menu_background_2
+    - GFX_main_menu_background_3
+    - GFX_main_menu_background_4
+    - GFX_main_menu_background_5
+    - GFX_main_menu_background_6
+    - GFX_main_menu_background_7
+    - GFX_main_menu_background_8
+    - GFX_main_menu_background_9
+    - GFX_main_menu_background_10
+    - GFX_main_menu_background_11
+    - GFX_main_menu_background_12
+    - GFX_main_menu_background_13
+    - GFX_main_menu_background_14
+    - GFX_main_menu_background_15
+    - GFX_main_menu_background_16
+    - GFX_main_menu_background_17
+    - GFX_main_menu_background_18
+    - GFX_main_menu_background_19

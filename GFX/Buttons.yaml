@@ -1,0 +1,26 @@
+﻿sprite:
+  uniqueId: "GFX_menu_button_normal"
+  texturefile: "gfx/buttons/menu_button.png"
+  gridSize:
+    columns: 1
+    rows: 3
+  sliceIndex: 0  # Top slice for normal state
+  wrapMode: Clamp
+---
+sprite:
+  uniqueId: "GFX_menu_button_highlight"
+  texturefile: "gfx/buttons/menu_button.png"
+  gridSize:
+    columns: 1
+    rows: 3
+  sliceIndex: 1  # Middle slice for highlighted state
+  wrapMode: Clamp
+---
+sprite:
+  uniqueId: "GFX_menu_button_disabled"
+  texturefile: "gfx/buttons/menu_button.png"
+  gridSize:
+    columns: 1
+    rows: 3
+  sliceIndex: 2  # Botttom slice for disabled state
+  wrapMode: Clamp

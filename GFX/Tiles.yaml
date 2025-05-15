@@ -1,0 +1,38 @@
+﻿sprite:
+  uniqueId: "GFX_tiled_window_transparent"
+  texturefile: "gfx/tiles/tiled_window_transparent.png"
+  alwaysTransparent: true  # Ensures transparency is respected
+  pivot:
+    x: 0.5  # Center pivot
+    y: 0.5
+  pixelsPerUnit: 32  # Adjust based on your sprite's resolution (e.g., 32px per unit for pixel art)
+  size:
+    width: 64  # Width in pixels (adjust to match your texture)
+    height: 64  # Height in pixels (adjust to match your texture)
+  enableTiling: true  # Enable tiling support
+  tilingFrequency:
+    x: 4  # Repeat 4 times horizontally
+    y: 4  # Repeat 4 times vertically
+  wrapMode: Repeat  # Allows seamless tiling
+  border:
+    left: 0  # No 9-slicing borders (adjust if needed for stretching)
+    bottom: 0
+    right: 0
+    top: 0
+---
+sprite:
+  uniqueId: "GFX_tile_large_bg"
+  texturefile: "gfx/tiles/tile_large_bg.png"  # Replace with the actual path to your dark green gradient image
+  pivot:
+    x: 0.5  # Center pivot for balanced positioning
+    y: 0.5
+  size:
+    width: 680  # Width in pixels (match your texture's width)
+    height: 612  # Height in pixels (match your texture's height)
+  enableTiling: true  # Enable tiling for the center area
+  border:
+    left: 10  # Left border to preserve the left edge (adjust based on header design)
+    bottom: 10  # Bottom border to preserve the bottom edge
+    right: 10  # Right border to preserve the right edge
+    top: 10    # Top border to preserve the header aspect ratio (adjust to match header height)
+---

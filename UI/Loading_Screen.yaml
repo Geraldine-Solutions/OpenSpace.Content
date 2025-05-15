@@ -1,0 +1,34 @@
+﻿gui:
+  UniqueId: loading_screen
+  gameObjects:
+    - image:
+        Name: frontendgui
+        Size: [100%, 100%]
+        Sprite: rl_mainMenuBgs
+        children:
+          - slider:
+              Name: ProgressBar
+              Size: [90%, 40]
+              Orientation: lower_center
+              Position: [0, 100]
+              Value: "{Scope.Percentage}"
+              minValue: 0
+              maxValue: 1
+              wholeNumbers: false
+              direction: LeftToRight
+              interactable: false
+              Transition: ColorTint
+              NormalColor: [255, 0, 0]  # Light gray RGB
+              HighlightedColor: [255, 255, 255]     # White
+              PressedColor: [0, 255, 0]   # Darker gray
+              SelectedColor: [0, 0, 255]  # Slightly off-white
+              DisabledColor: [0, 0, 0]  # Medium gray
+              FadeDuration: 0.2
+    - image:
+        Name: gradientgui
+        Size: [100%, 100%]
+        Sprite: GFX_gradient
+    - image:
+        Name: framegui
+        Size: [100%, 100%]
+        Sprite: GFX_frame

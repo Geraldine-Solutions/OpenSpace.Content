@@ -1,0 +1,17 @@
+﻿---
+# Black Holes
+StarSystem:
+  UniqueId: special_init_01
+  Class: sc_black_hole
+  Usage: misc_system_init
+  UsageOdds:
+    - Factor: 2
+  Children:
+    - Class: star
+      Size: 20 30
+      HasRing: false
+    - Class: pc_barren
+      Count: 1 4
+      Orbit:
+        SemiMajorAxis: 300
+---

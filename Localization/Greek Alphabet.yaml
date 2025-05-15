@@ -1,0 +1,241 @@
+﻿---
+LocalizableText:
+  UniqueId: "Text_Alpha"
+  Translations:
+    en-US: "Alpha"
+    fr: "Alpha"
+    es: "Alfa"
+    de: "Alpha"
+    ru: "Альфа" #(Al'fa)
+    zh-Hans: "阿尔法" #(Ā'ěrfǎ)  
+---
+LocalizableText:
+  UniqueId: "Text_Beta"
+  Translations:
+    en-US: "Beta"
+    fr: "Bêta"
+    es: "Beta"
+    de: "Beta"
+    ru: "Бета" #(Beta)
+    zh-Hans: "贝塔" #(Bèitǎ)  
+---
+LocalizableText:
+  UniqueId: "Text_Gamma"
+  Translations:
+    en-US: "Gamma"
+    fr: "Gamma"
+    es: "Gamma"
+    de: "Gamma"
+    ru: "Гамма" #(Gamma)
+    zh-Hans: "伽马" #(Jiāmǎ)  
+---
+LocalizableText:
+  UniqueId: "Text_Delta"
+  Translations:
+    en-US: "Delta"
+    fr: "Delta"
+    es: "Delta"
+    de: "Delta"
+    ru: "Дельта" #(Del'ta)
+    zh-Hans: "德尔塔" #(Dé'ěrtǎ)  
+---
+LocalizableText:
+  UniqueId: "Text_Epsilon"
+  Translations:
+    en-US: "Epsilon"
+    fr: "Epsilon"
+    es: "Épsilon"
+    de: "Epsilon"
+    ru: "Эпсилон" #(Epsilon)
+    zh-Hans: "艾普西隆" #(Àipǔxīlóng)  
+---
+LocalizableText:
+  UniqueId: "Text_Zeta"
+  Translations:
+    en-US: "Zeta"
+    fr: "Zêta"
+    es: "Zeta"
+    de: "Zeta"
+    ru: "Зета" #(Zeta)
+    zh-Hans: "泽塔" #(Zétǎ)  
+---
+LocalizableText:
+  UniqueId: "Text_Eta"
+  Translations:
+    en-US: "Eta"
+    fr: "Êta"
+    es: "Eta"
+    de: "Eta"
+    ru: "Эта" #(Eta)
+    zh-Hans: "伊塔" #(Yītǎ)  
+---
+LocalizableText:
+  UniqueId: "Text_Theta"
+  Translations:
+    en-US: "Theta"
+    fr: "Thêta"
+    es: "Teta"
+    de: "Theta"
+    ru: "Тета" #(Teta)
+    zh-Hans: "西塔" #(Xītǎ)  
+---
+LocalizableText:
+  UniqueId: "Text_Iota"
+  Translations:
+    en-US: "Iota"
+    fr: "Iota"
+    es: "Iota"
+    de: "Iota"
+    ru: "Йота" #(Yota)
+    zh-Hans: "约塔" #(Yuētǎ)  
+---
+LocalizableText:
+  UniqueId: "Text_Kappa"
+  Translations:
+    en-US: "Kappa"
+    fr: "Kappa"
+    es: "Kappa"
+    de: "Kappa"
+    ru: "Каппа" #(Kappa)
+    zh-Hans: "卡帕" #(Kǎpà)  
+---
+LocalizableText:
+  UniqueId: "Text_Lambda"
+  Translations:
+    en-US: "Lambda"
+    fr: "Lambda"
+    es: "Lambda"
+    de: "Lambda"
+    ru: "Лямбда" #(Lyambda)
+    zh-Hans: "兰姆达" #(Lánmǔdá)  
+---
+LocalizableText:
+  UniqueId: "Text_Mu"
+  Translations:
+    en-US: "Mu"
+    fr: "Mu"
+    es: "Mu"
+    de: "My"
+    ru: "Мю" #(Myu)
+    zh-Hans: "缪" #(Miù)  
+---
+LocalizableText:
+  UniqueId: "Text_Nu"
+  Translations:
+    en-US: "Nu"
+    fr: "Nu"
+    es: "Nu"
+    de: "Ny"
+    ru: "Ню" #(Nyu)
+    zh-Hans: "纽" #(Niǔ)  
+---
+LocalizableText:
+  UniqueId: "Text_Xi"
+  Translations:
+    en-US: "Xi"
+    fr: "Xi"
+    es: "Xi"
+    de: "Xi"
+    ru: "Кси" #(Ksi)
+    zh-Hans: "克西" #(Kèxī)  
+---
+LocalizableText:
+  UniqueId: "Text_Omicron"
+  Translations:
+    en-US: "Omicron"
+    fr: "Omicron"
+    es: "Ómicron"
+    de: "Omikron"
+    ru: "Омикрон" #(Omikron)
+    zh-Hans: "奥米克戎" #(Àomǐkèróng)  
+---
+LocalizableText:
+  UniqueId: "Text_Pi"
+  Translations:
+    en-US: "Pi"
+    fr: "Pi"
+    es: "Pi"
+    de: "Pi"
+    ru: "Пи" #(Pi)
+    zh-Hans: "派" #(Pài)  
+---
+LocalizableText:
+  UniqueId: "Text_Rho"
+  Translations:
+    en-US: "Rho"
+    fr: "Rhô"
+    es: "Ro"
+    de: "Rho"
+    ru: "Ро" #(Ro)
+    zh-Hans: "罗" #(Luó)  
+---
+LocalizableText:
+  UniqueId: "Text_Sigma"
+  Translations:
+    en-US: "Sigma"
+    fr: "Sigma"
+    es: "Sigma"
+    de: "Sigma"
+    ru: "Сигма" #(Sigma)
+    zh-Hans: "西格玛" #(Xīgémǎ)  
+---
+LocalizableText:
+  UniqueId: "Text_Tau"
+  Translations:
+    en-US: "Tau"
+    fr: "Tau"
+    es: "Tau"
+    de: "Tau"
+    ru: "Тау" #(Tau)
+    zh-Hans: "陶" #(Táo)  
+---
+LocalizableText:
+  UniqueId: "Text_Upsilon"
+  Translations:
+    en-US: "Upsilon"
+    fr: "Upsilon"
+    es: "Ípsilon"
+    de: "Upsilon"
+    ru: "Ипсилон" #(Ipsilon)
+    zh-Hans: "乌普西隆" #(Wūpǔxīlóng)  
+---
+LocalizableText:
+  UniqueId: "Text_Phi"
+  Translations:
+    en-US: "Phi"
+    fr: "Phi"
+    es: "Fi"
+    de: "Phi"
+    ru: "Фи" #(Fi)
+    zh-Hans: "菲" #(Fēi)  
+---
+LocalizableText:
+  UniqueId: "Text_Chi"
+  Translations:
+    en-US: "Chi"
+    fr: "Chi"
+    es: "Ji"
+    de: "Chi"
+    ru: "Хи" #(Khi)
+    zh-Hans: "希" #(Xī)  
+---
+LocalizableText:
+  UniqueId: "Text_Psi"
+  Translations:
+    en-US: "Psi"
+    fr: "Psi"
+    es: "Psi"
+    de: "Psi"
+    ru: "Пси" #(Psi)
+    zh-Hans: "普西" #(Pǔxī)  
+---
+LocalizableText:
+  UniqueId: "Text_Omega"
+  Translations:
+    en-US: "Omega"
+    fr: "Oméga"
+    es: "Omega"
+    de: "Omega"
+    ru: "Омега" #(Omega)
+    zh-Hans: "欧米伽" #(Ōumǐjiā)  
+

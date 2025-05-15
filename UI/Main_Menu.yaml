@@ -1,0 +1,147 @@
+﻿Variables:
+  button_width: 300
+  button_height: 60
+  button_spacing: 10
+  button_font_size: 36
+---
+gui:
+  UniqueId: main_menu
+  gameObjects:
+    - image:
+        Name: frontendgui
+        Size: [100%, 100%]
+        Sprite: rl_mainMenuBgs
+        children:
+          - image:
+              Name: game_logo
+              Sprite: GFX_open_space_logo
+              Position: [0, -150]
+              Orientation: center_up
+              PreserveAspect: true
+              Size: [900, 300]
+              Visible: true
+
+          - scrollView:
+              Name: menu_buttons
+              Size: [400, 500]
+              Orientation: center
+              Visible: true
+              Horizontal: false
+              Vertical: false 
+              MovementType: Elastic
+              Elasticity: 0.1
+              Inertia: true
+              DecelerationRate: 0.135
+              ScrollSensitivity: 300  # Updated from movementSpeed
+              LayoutType: vertical
+              Spacing: $button_spacing
+              ChildAlignment: UpperCenter
+              ChildControlWidth: true
+              ChildControlHeight: false
+              ChildForceExpandWidth: true
+              ChildForceExpandHeight: false
+              children:  # Changed from "content"
+                - button:
+                    UniqueId: debugStart
+                    Name: debeugStart_button
+                    Sprite: GFX_menu_button_normal
+                    DisabledSprite: GFX_menu_button_disabled
+                    HighlightedSprite: GFX_menu_button_highlight
+                    Position: [0, 0]
+                    Size: [$button_width, $button_height]
+                    Text: "Debug Start"
+                    Font: "Nacelle-Regular SDF"
+                    FontSize: $button_font_size
+                    Localizable: false
+                    ClickSound: confirm_click
+                    Transition: SpriteSwap
+                    Interactable: true
+                    OnlyVisibleInEditor: true 
+                    OnClicked: "DebugStart:"
+                - button:
+                    UniqueId: continue
+                    Name: continue_button
+                    Sprite: GFX_menu_button_normal
+                    DisabledSprite: GFX_menu_button_disabled
+                    HighlightedSprite: GFX_menu_button_highlight
+                    Position: [0, 0]
+                    Size: [$button_width, $button_height]
+                    Text: text_continue_game
+                    Font: "Nacelle-Regular SDF"
+                    FontSize: $button_font_size
+                    Localizable: true
+                    ClickSound: confirm_click
+                    Transition: SpriteSwap
+                    Interactable: true
+                    OnClicked: "ContinueLastSave:"
+                - button:
+                    UniqueId: new_game
+                    Name: new_game_button
+                    Sprite: GFX_menu_button_normal
+                    DisabledSprite: GFX_menu_button_disabled
+                    HighlightedSprite: GFX_menu_button_highlight
+                    Size: [$button_width, $button_height]
+                    Text: text_new_game
+                    Font: "Nacelle-Regular SDF"
+                    FontSize: $button_font_size
+                    Localizable: true
+                    ClickSound: confirm_click
+                    Transition: SpriteSwap
+                    Interactable: true
+                    OnClicked: "OpenWindow:new_game"
+                - button:
+                    UniqueId: load_game
+                    Name: load_game_button
+                    Sprite: GFX_menu_button_normal
+                    DisabledSprite: GFX_menu_button_disabled
+                    HighlightedSprite: GFX_menu_button_highlight
+                    Size: [$button_width, $button_height]
+                    Text: text_load_game
+                    Font: "Nacelle-Regular SDF"
+                    FontSize: $button_font_size
+                    Localizable: true
+                    ClickSound: confirm_click
+                    Transition: SpriteSwap
+                    Interactable: true
+                    OnClicked: "LoadUI:Load_Game_UI"
+                - button:
+                    UniqueId: editor_tools
+                    Name: editor_tools_button
+                    Sprite: GFX_menu_button_normal
+                    DisabledSprite: GFX_menu_button_disabled
+                    HighlightedSprite: GFX_menu_button_highlight
+                    Size: [$button_width, $button_height]
+                    Text: text_editor_tools
+                    Font: "Nacelle-Regular SDF"
+                    FontSize: $button_font_size
+                    Localizable: true
+                    ClickSound: confirm_click
+                    Transition: SpriteSwap
+                    Interactable: true
+                    OnClicked: "LoadUI:EditorTools_UI"
+                - button:
+                    UniqueId: close
+                    Name: close_button
+                    Sprite: GFX_menu_button_normal
+                    DisabledSprite: GFX_menu_button_disabled
+                    HighlightedSprite: GFX_menu_button_highlight
+                    Size: [$button_width, $button_height]
+                    Text: text_close_game
+                    Font: "Nacelle-Regular SDF"
+                    FontSize: $button_font_size
+                    Localizable: true
+                    ClickSound: confirm_click
+                    Transition: SpriteSwap
+                    Interactable: true
+                    OnClicked: "Quit:"
+
+          - textMeshPro:
+              Name: version_text
+              Font: "Nacelle-Regular SDF"
+              Text: VERSION_TEXT
+              Position: [-105, 25]
+              Size: [200, 20]
+              AutoSize: true
+              Alignment: right
+              Orientation: lower_right
+              Visible: true

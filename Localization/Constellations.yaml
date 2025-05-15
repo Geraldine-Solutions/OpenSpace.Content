@@ -1,0 +1,1382 @@
+﻿---
+LocalizableText:
+  UniqueId: "Text_Andromedae"
+  Translations:
+    en-US: "Andromedae"
+    fr: "Andromedae"
+    es: "Andromedae"
+    de: "Andromedae"
+    ru: "Андромеды" #(Andromedy)
+    zh-Hans: "仙女座" #(Xiānnǚzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Antliae"
+  Translations:
+    en-US: "Antliae"
+    fr: "Antliae"
+    es: "Antliae"
+    de: "Antliae"
+    ru: "Насоса" #(Nasosa)
+    zh-Hans: "唧筒座" #(Jītǒngzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Apodis"
+  Translations:
+    en-US: "Apodis"
+    fr: "Apodis"
+    es: "Apodis"
+    de: "Apodis"
+    ru: "Райской Птицы" #(Rayskoy Ptitsy)
+    zh-Hans: "天堂鸟座" #(Tiāntángniǎozuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Aquarii"
+  Translations:
+    en-US: "Aquarii"
+    fr: "Aquarii"
+    es: "Aquarii"
+    de: "Aquarii"
+    ru: "Водолея" #(Vodoleya)
+    zh-Hans: "宝瓶座" #(Bǎopíngzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Aquilae"
+  Translations:
+    en-US: "Aquilae"
+    fr: "Aquilae"
+    es: "Aquilae"
+    de: "Aquilae"
+    ru: "Орла" #(Orla)
+    zh-Hans: "天鹰座" #(Tiānyīngzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Arae"
+  Translations:
+    en-US: "Arae"
+    fr: "Arae"
+    es: "Arae"
+    de: "Arae"
+    ru: "Жертвенника" #(Zhertvennika)
+    zh-Hans: "天坛座" #(Tiāntánzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Arietis"
+  Translations:
+    en-US: "Arietis"
+    fr: "Arietis"
+    es: "Arietis"
+    de: "Arietis"
+    ru: "Овна" #(Ovna)
+    zh-Hans: "白羊座" #(Báiyángzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Aurigae"
+  Translations:
+    en-US: "Aurigae"
+    fr: "Aurigae"
+    es: "Aurigae"
+    de: "Aurigae"
+    ru: "Возничего" #(Voznichego)
+    zh-Hans: "御夫座" #(Yùfūzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Bootis"
+  Translations:
+    en-US: "Bootis"
+    fr: "Bootis"
+    es: "Bootis"
+    de: "Bootis"
+    ru: "Волопаса" #(Volopasa)
+    zh-Hans: "牧夫座" #(Mùfūzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Caeli"
+  Translations:
+    en-US: "Caeli"
+    fr: "Caeli"
+    es: "Caeli"
+    de: "Caeli"
+    ru: "Резца" #(Reztsa)
+    zh-Hans: "雕具座" #(Diāojùzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Camelopardalis"
+  Translations:
+    en-US: "Camelopardalis"
+    fr: "Camelopardalis"
+    es: "Camelopardalis"
+    de: "Camelopardalis"
+    ru: "Жирафа" #(Zhirafa)
+    zh-Hans: "鹿豹座" #(Lùbàozuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Capricorni"
+  Translations:
+    en-US: "Capricorni"
+    fr: "Capricorni"
+    es: "Capricorni"
+    de: "Capricorni"
+    ru: "Козерога" #(Kozheroga)
+    zh-Hans: "摩羯座" #(Mójiézuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Carinae"
+  Translations:
+    en-US: "Carinae"
+    fr: "Carinae"
+    es: "Carinae"
+    de: "Carinae"
+    ru: "Киля" #(Kilya)
+    zh-Hans: "船底座" #(Chuándǐzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Cassiopeiae"
+  Translations:
+    en-US: "Cassiopeiae"
+    fr: "Cassiopeiae"
+    es: "Cassiopeiae"
+    de: "Cassiopeiae"
+    ru: "Кассиопеи" #(Kassiopeyi)
+    zh-Hans: "仙后座" #(Xiānhòuzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Centauri"
+  Translations:
+    en-US: "Centauri"
+    fr: "Centauri"
+    es: "Centauri"
+    de: "Centauri"
+    ru: "Центавра" #(Tsentavra)
+    zh-Hans: "半人马座" #(Bànrénmǎzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Cephei"
+  Translations:
+    en-US: "Cephei"
+    fr: "Cephei"
+    es: "Cephei"
+    de: "Cephei"
+    ru: "Цефея" #(Tsefeya)
+    zh-Hans: "仙王座" #(Xiānwángzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Ceti"
+  Translations:
+    en-US: "Ceti"
+    fr: "Ceti"
+    es: "Ceti"
+    de: "Ceti"
+    ru: "Кита" #(Kita)
+    zh-Hans: "鲸鱼座" #(Jīngyúzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Chamaeleontis"
+  Translations:
+    en-US: "Chamaeleontis"
+    fr: "Chamaeleontis"
+    es: "Chamaeleontis"
+    de: "Chamaeleontis"
+    ru: "Хамелеона" #(Khameleona)
+    zh-Hans: "变色龙座" #(Biànsèlóngzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Circini"
+  Translations:
+    en-US: "Circini"
+    fr: "Circini"
+    es: "Circini"
+    de: "Circini"
+    ru: "Циркуля" #(Tsirkulya)
+    zh-Hans: "圆规座" #(Yuánguīzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Canis"
+  Translations:
+    en-US: "Canis"
+    fr: "Canis"
+    es: "Canis"
+    de: "Canis"
+    ru: "Пса" #(Psa)
+    zh-Hans: "猎犬座" #(Lièquǎnzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Cancri"
+  Translations:
+    en-US: "Cancri"
+    fr: "Cancri"
+    es: "Cancri"
+    de: "Cancri"
+    ru: "Рака" #(Raka)
+    zh-Hans: "巨蟹座" #(Jùxièzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Columbae"
+  Translations:
+    en-US: "Columbae"
+    fr: "Columbae"
+    es: "Columbae"
+    de: "Columbae"
+    ru: "Голубя" #(Golubya)
+    zh-Hans: "天鸽座" #(Tiāngēzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Comae"
+  Translations:
+    en-US: "Comae"
+    fr: "Comae"
+    es: "Comae"
+    de: "Comae"
+    ru: "Волос Вероники" #(Volos Veroniki)
+    zh-Hans: "后发座" #(Hòufāzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Coronae"
+  Translations:
+    en-US: "Coronae"
+    fr: "Coronae"
+    es: "Coronae"
+    de: "Coronae"
+    ru: "Короны" #(Korony)
+    zh-Hans: "北冕座" #(Běimiǎnzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Crateris"
+  Translations:
+    en-US: "Crateris"
+    fr: "Crateris"
+    es: "Crateris"
+    de: "Crateris"
+    ru: "Чаши" #(Chashi)
+    zh-Hans: "巨爵座" #(Jùjuézuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Crucis"
+  Translations:
+    en-US: "Crucis"
+    fr: "Crucis"
+    es: "Crucis"
+    de: "Crucis"
+    ru: "Креста" #(Kresta)
+    zh-Hans: "南十字座" #(Nánshízìzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Corvi"
+  Translations:
+    en-US: "Corvi"
+    fr: "Corvi"
+    es: "Corvi"
+    de: "Corvi"
+    ru: "Ворона" #(Vorona)
+    zh-Hans: "乌鸦座" #(Wūyāzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Canum"
+  Translations:
+    en-US: "Canum"
+    fr: "Canum"
+    es: "Canum"
+    de: "Canum"
+    ru: "Гончих Псов" #(Gonchikh Psov)
+    zh-Hans: "猎犬座" #(Lièquǎnzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Cygni"
+  Translations:
+    en-US: "Cygni"
+    fr: "Cygni"
+    es: "Cygni"
+    de: "Cygni"
+    ru: "Лебедя" #(Lebedya)
+    zh-Hans: "天鹅座" #(Tiān’ézuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Delphini"
+  Translations:
+    en-US: "Delphini"
+    fr: "Delphini"
+    es: "Delphini"
+    de: "Delphini"
+    ru: "Дельфина" #(Delfina)
+    zh-Hans: "海豚座" #(Hǎitúnzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Doradus"
+  Translations:
+    en-US: "Doradus"
+    fr: "Doradus"
+    es: "Doradus"
+    de: "Doradus"
+    ru: "Золотой Рыбы" #(Zolotoy Ryby)
+    zh-Hans: "剑鱼座" #(Jiànyúzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Draconis"
+  Translations:
+    en-US: "Draconis"
+    fr: "Draconis"
+    es: "Draconis"
+    de: "Draconis"
+    ru: "Дракона" #(Drakona)
+    zh-Hans: "天龙座" #(Tiānlóngzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Equulei"
+  Translations:
+    en-US: "Equulei"
+    fr: "Equulei"
+    es: "Equulei"
+    de: "Equulei"
+    ru: "Жеребёнка" #(Zherebyonka)
+    zh-Hans: "小马座" #(Xiǎomǎzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Eridani"
+  Translations:
+    en-US: "Eridani"
+    fr: "Eridani"
+    es: "Eridani"
+    de: "Eridani"
+    ru: "Эридана" #(Eridana)
+    zh-Hans: "波江座" #(Bōjiāngzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Fornacis"
+  Translations:
+    en-US: "Fornacis"
+    fr: "Fornacis"
+    es: "Fornacis"
+    de: "Fornacis"
+    ru: "Печи" #(Pechi)
+    zh-Hans: "天炉座" #(Tiānlúzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Geminorum"
+  Translations:
+    en-US: "Geminorum"
+    fr: "Geminorum"
+    es: "Geminorum"
+    de: "Geminorum"
+    ru: "Близнецов" #(Bliznetsov)
+    zh-Hans: "双子座" #(Shuāngzǐzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Gruis"
+  Translations:
+    en-US: "Gruis"
+    fr: "Gruis"
+    es: "Gruis"
+    de: "Gruis"
+    ru: "Журавля" #(Zhuravlya)
+    zh-Hans: "天鹤座" #(Tiānhèzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Herculis"
+  Translations:
+    en-US: "Herculis"
+    fr: "Herculis"
+    es: "Herculis"
+    de: "Herculis"
+    ru: "Геркулеса" #(Gerkulesa)
+    zh-Hans: "武仙座" #(Wǔxiānzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Horologii"
+  Translations:
+    en-US: "Horologii"
+    fr: "Horologii"
+    es: "Horologii"
+    de: "Horologii"
+    ru: "Часов" #(Chasov)
+    zh-Hans: "时钟座" #(Shízhōngzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Hydrae"
+  Translations:
+    en-US: "Hydrae"
+    fr: "Hydrae"
+    es: "Hydrae"
+    de: "Hydrae"
+    ru: "Гидры" #(Gidry)
+    zh-Hans: "长蛇座" #(Chángshézuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Hydri"
+  Translations:
+    en-US: "Hydri"
+    fr: "Hydri"
+    es: "Hydri"
+    de: "Hydri"
+    ru: "Малой Гидры" #(Maloy Gidry)
+    zh-Hans: "水蛇座" #(Shuǐshézuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Indi"
+  Translations:
+    en-US: "Indi"
+    fr: "Indi"
+    es: "Indi"
+    de: "Indi"
+    ru: "Индейца" #(Indeytsa)
+    zh-Hans: "印第安座" #(Yìndì’ānzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Lacertae"
+  Translations:
+    en-US: "Lacertae"
+    fr: "Lacertae"
+    es: "Lacertae"
+    de: "Lacertae"
+    ru: "Ящерицы" #(Yashcheritsy)
+    zh-Hans: "蜥蜴座" #(Xīyìzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Leonis"
+  Translations:
+    en-US: "Leonis"
+    fr: "Leonis"
+    es: "Leonis"
+    de: "Leonis"
+    ru: "Льва" #(L’va)
+    zh-Hans: "狮子座" #(Shīzǐzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Leporis"
+  Translations:
+    en-US: "Leporis"
+    fr: "Leporis"
+    es: "Leporis"
+    de: "Leporis"
+    ru: "Зайца" #(Zaytsa)
+    zh-Hans: "天兔座" #(Tiāntùzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Librae"
+  Translations:
+    en-US: "Librae"
+    fr: "Librae"
+    es: "Librae"
+    de: "Librae"
+    ru: "Весов" #(Vesov)
+    zh-Hans: "天秤座" #(Tiānchèngzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Lupi"
+  Translations:
+    en-US: "Lupi"
+    fr: "Lupi"
+    es: "Lupi"
+    de: "Lupi"
+    ru: "Волка" #(Volka)
+    zh-Hans: "豺狼座" #(Cháilángzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Lyncis"
+  Translations:
+    en-US: "Lyncis"
+    fr: "Lyncis"
+    es: "Lyncis"
+    de: "Lyncis"
+    ru: "Рыси" #(Rysi)
+    zh-Hans: "天猫座" #(Tiānmāozuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Lyrae"
+  Translations:
+    en-US: "Lyrae"
+    fr: "Lyrae"
+    es: "Lyrae"
+    de: "Lyrae"
+    ru: "Лиры" #(Liry)
+    zh-Hans: "天琴座" #(Tiānqínzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Mensae"
+  Translations:
+    en-US: "Mensae"
+    fr: "Mensae"
+    es: "Mensae"
+    de: "Mensae"
+    ru: "Столовой Горы" #(Stolovoy Gory)
+    zh-Hans: "山案座" #(Shān’ànzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Muscae"
+  Translations:
+    en-US: "Muscae"
+    fr: "Muscae"
+    es: "Muscae"
+    de: "Muscae"
+    ru: "Мухи" #(Mukhi)
+    zh-Hans: "苍蝇座" #(Cāngyíngzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Microscopium"
+  Translations:
+    en-US: "Microscopium"
+    fr: "Microscope"
+    es: "Microscopio"
+    de: "Mikroskop"
+    ru: "Микроскоп" #(Microscopium)
+    zh-Hans: "显微镜座" #(Microscopium)  
+---
+LocalizableText:
+  UniqueId: "Text_Monoceros"
+  Translations:
+    en-US: "Monoceros"
+    fr: "Monocéros"
+    es: "Monoceros"
+    de: "Einhorn"
+    ru: "Единорог" #(Monoceros)
+    zh-Hans: "独角兽座" #(Monoceros)    
+---
+LocalizableText:
+  UniqueId: "Text_Normae"
+  Translations:
+    en-US: "Normae"
+    fr: "Normae"
+    es: "Normae"
+    de: "Normae"
+    ru: "Наугольника" #(Naugol’nika)
+    zh-Hans: "矩尺座" #(Jǔchǐzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Octantis"
+  Translations:
+    en-US: "Octantis"
+    fr: "Octantis"
+    es: "Octantis"
+    de: "Octantis"
+    ru: "Октанта" #(Oktanta)
+    zh-Hans: "八分仪座" #(Bāfènyízuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Ophiuchi"
+  Translations:
+    en-US: "Ophiuchi"
+    fr: "Ophiuchi"
+    es: "Ophiuchi"
+    de: "Ophiuchi"
+    ru: "Змееносца" #(Zmeenosetsa)
+    zh-Hans: "蛇夫座" #(Shéfūzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Orionis"
+  Translations:
+    en-US: "Orionis"
+    fr: "Orionis"
+    es: "Orionis"
+    de: "Orionis"
+    ru: "Ориона" #(Oriona)
+    zh-Hans: "猎户座" #(Lièhùzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Pavonis"
+  Translations:
+    en-US: "Pavonis"
+    fr: "Pavonis"
+    es: "Pavonis"
+    de: "Pavonis"
+    ru: "Павлина" #(Pavlina)
+    zh-Hans: "孔雀座" #(Kǒngquèzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Pegasi"
+  Translations:
+    en-US: "Pegasi"
+    fr: "Pegasi"
+    es: "Pegasi"
+    de: "Pegasi"
+    ru: "Пегаса" #(Pegasа)
+    zh-Hans: "飞马座" #(Fēimǎzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Persei"
+  Translations:
+    en-US: "Persei"
+    fr: "Persei"
+    es: "Persei"
+    de: "Persei"
+    ru: "Персея" #(Perseya)
+    zh-Hans: "英仙座" #(Yīngxiānzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Phoenicis"
+  Translations:
+    en-US: "Phoenicis"
+    fr: "Phoenicis"
+    es: "Phoenicis"
+    de: "Phoenicis"
+    ru: "Феникса" #(Feniksa)
+    zh-Hans: "凤凰座" #(Fènghuángzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Pictoris"
+  Translations:
+    en-US: "Pictoris"
+    fr: "Pictoris"
+    es: "Pictoris"
+    de: "Pictoris"
+    ru: "Живописца" #(Zhivopistsa)
+    zh-Hans: "绘架座" #(Huìjiàzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Piscium"
+  Translations:
+    en-US: "Piscium"
+    fr: "Piscium"
+    es: "Piscium"
+    de: "Piscium"
+    ru: "Рыб" #(Ryb)
+    zh-Hans: "双鱼座" #(Shuāngyúzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Puppis"
+  Translations:
+    en-US: "Puppis"
+    fr: "Puppis"
+    es: "Puppis"
+    de: "Puppis"
+    ru: "Кормы" #(Kormy)
+    zh-Hans: "船尾座" #(Chuánwěizuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Pyxidis"
+  Translations:
+    en-US: "Pyxidis"
+    fr: "Pyxidis"
+    es: "Pyxidis"
+    de: "Pyxidis"
+    ru: "Компаса" #(Kompasа)
+    zh-Hans: "罗盘座" #(Luópánzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Reticuli"
+  Translations:
+    en-US: "Reticuli"
+    fr: "Reticuli"
+    es: "Reticuli"
+    de: "Reticuli"
+    ru: "Сетки" #(Setki)
+    zh-Hans: "网罟座" #(Wǎnggǔzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Scorpii"
+  Translations:
+    en-US: "Scorpii"
+    fr: "Scorpii"
+    es: "Scorpii"
+    de: "Scorpii"
+    ru: "Скорпиона" #(Skorpiona)
+    zh-Hans: "天蝎座" #(Tiānxiēzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Sculptoris"
+  Translations:
+    en-US: "Sculptoris"
+    fr: "Sculptoris"
+    es: "Sculptoris"
+    de: "Sculptoris"
+    ru: "Скульптора" #(Skul’ptora)
+    zh-Hans: "玉夫座" #(Yùfūzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Scuti"
+  Translations:
+    en-US: "Scuti"
+    fr: "Scuti"
+    es: "Scuti"
+    de: "Scuti"
+    ru: "Щита" #(Shchita)
+    zh-Hans: "盾牌座" #(Dùnpáizuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Serpentis"
+  Translations:
+    en-US: "Serpentis"
+    fr: "Serpentis"
+    es: "Serpentis"
+    de: "Serpentis"
+    ru: "Змеи" #(Zmei)
+    zh-Hans: "巨蛇座" #(Jùshézuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Sextantis"
+  Translations:
+    en-US: "Sextantis"
+    fr: "Sextantis"
+    es: "Sextantis"
+    de: "Sextantis"
+    ru: "Секстанта" #(Sextanta)
+    zh-Hans: "六分仪座" #(Liùfènyízuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Sagittae"
+  Translations:
+    en-US: "Sagittae"
+    fr: "Sagittae"
+    es: "Sagittae"
+    de: "Sagittae"
+    ru: "Стрелы" #(Strely)
+    zh-Hans: "天箭座" #(Tiānjiànzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Sagittarii"
+  Translations:
+    en-US: "Sagittarii"
+    fr: "Sagittarii"
+    es: "Sagittarii"
+    de: "Sagittarii"
+    ru: "Стрельца" #(Strel’tsa)
+    zh-Hans: "人马座" #(Rénmǎzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Tauri"
+  Translations:
+    en-US: "Tauri"
+    fr: "Tauri"
+    es: "Tauri"
+    de: "Tauri"
+    ru: "Тельца" #(Tel’tsa)
+    zh-Hans: "金牛座" #(Jīnniúzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Telescopium"
+  Translations:
+    en-US: "Telescopium"
+    fr: "Télescope"
+    es: "Telescopio"
+    de: "Teleskop"
+    ru: "Телескоп" #(Telescopium)
+    zh-Hans: "望远镜座" #(Telescopium)   
+---
+LocalizableText:
+  UniqueId: "Text_Trianguli"
+  Translations:
+    en-US: "Trianguli"
+    fr: "Trianguli"
+    es: "Trianguli"
+    de: "Trianguli"
+    ru: "Треугольника" #(Treugol’nika)
+    zh-Hans: "三角座" #(Sānjiǎozuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Tucanae"
+  Translations:
+    en-US: "Tucanae"
+    fr: "Tucanae"
+    es: "Tucanae"
+    de: "Tucanae"
+    ru: "Тукана" #(Tukana)
+    zh-Hans: "杜鹃座" #(Dùjuānzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Ursae"
+  Translations:
+    en-US: "Ursae"
+    fr: "Ursae"
+    es: "Ursae"
+    de: "Ursae"
+    ru: "Медведицы" #(Medveditsy)
+    zh-Hans: "大熊座" #(Dàxióngzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Velorum"
+  Translations:
+    en-US: "Velorum"
+    fr: "Velorum"
+    es: "Velorum"
+    de: "Velorum"
+    ru: "Парусов" #(Parusov)
+    zh-Hans: "船帆座" #(Chuánfānzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Virginis"
+  Translations:
+    en-US: "Virginis"
+    fr: "Virginis"
+    es: "Virginis"
+    de: "Virginis"
+    ru: "Девы" #(Devy)
+    zh-Hans: "室女座" #(Shìnǚzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Volantis"
+  Translations:
+    en-US: "Volantis"
+    fr: "Volantis"
+    es: "Volantis"
+    de: "Volantis"
+    ru: "Летучей Рыбы" #(Letuchey Ryby)
+    zh-Hans: "飞鱼座" #(Fēiyúzuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Vulpeculae"
+  Translations:
+    en-US: "Vulpeculae"
+    fr: "Vulpeculae"
+    es: "Vulpeculae"
+    de: "Vulpeculae"
+    ru: "Лисички" #(Lisichki)
+    zh-Hans: "狐狸座" #(Húlízuò)  
+---
+LocalizableText:
+  UniqueId: "Text_Ascendis"
+  Translations:
+    en-US: "Ascendis"
+    fr: "Ascendis"
+    es: "Ascendis"
+    de: "Aufsteigend"
+    ru: "Восходящий" #(Ascendis)
+    zh-Hans: "上升座" #(Ascendis)
+---
+LocalizableText:
+  UniqueId: "Text_Citadel"
+  Translations:
+    en-US: "Citadel"
+    fr: "Citadelle"
+    es: "Ciudadela"
+    de: "Zitadelle"
+    ru: "Цитадель" #(Citadel)
+    zh-Hans: "堡垒座" #(Citadel)
+---
+LocalizableText:
+  UniqueId: "Text_Coruscantis"
+  Translations:
+    en-US: "Coruscantis"
+    fr: "Coruscantis"
+    es: "Coruscant"
+    de: "Coruscantis"
+    ru: "Корусант" #(Coruscantis)
+    zh-Hans: "科洛桑座" #(Coruscantis)
+---
+LocalizableText:
+  UniqueId: "Text_Elysium"
+  Translations:
+    en-US: "Elysium"
+    fr: "Élysée"
+    es: "Elíseo"
+    de: "Elysium"
+    ru: "Элизиум" #(Elysium)
+    zh-Hans: "极乐座" #(Elysium)
+---
+LocalizableText:
+  UniqueId: "Text_Flux"
+  Translations:
+    en-US: "Flux"
+    fr: "Flux"
+    es: "Flujo"
+    de: "Fluss"
+    ru: "Поток" #(Flux)
+    zh-Hans: "流动座" #(Flux)
+---
+LocalizableText:
+  UniqueId: "Text_Galacticum"
+  Translations:
+    en-US: "Galacticum"
+    fr: "Galactique"
+    es: "Galáctico"
+    de: "Galaktisch"
+    ru: "Галактический" #(Galacticum)
+    zh-Hans: "银河座" #(Galacticum)
+---
+LocalizableText:
+  UniqueId: "Text_Hyperion"
+  Translations:
+    en-US: "Hyperion"
+    fr: "Hypérion"
+    es: "Hiperión"
+    de: "Hyperion"
+    ru: "Гиперион" #(Hyperion)
+    zh-Hans: "许珀里翁座" #(Hyperion)
+---
+LocalizableText:
+  UniqueId: "Text_Imperium"
+  Translations:
+    en-US: "Imperium"
+    fr: "Imperium"
+    es: "Imperio"
+    de: "Imperium"
+    ru: "Империя" #(Imperium)
+    zh-Hans: "帝国座" #(Imperium)
+---
+LocalizableText:
+  UniqueId: "Text_Navis"
+  Translations:
+    en-US: "Navis"
+    fr: "Navire"
+    es: "Nave"
+    de: "Schiff"
+    ru: "Корабль" #(Navis)
+    zh-Hans: "船座" #(Navis)
+---
+LocalizableText:
+  UniqueId: "Text_Nexis"
+  Translations:
+    en-US: "Nexis"
+    fr: "Nexis"
+    es: "Nexo"
+    de: "Nexis"
+    ru: "Нексус" #(Nexis)
+    zh-Hans: "枢纽座" #(Nexis)
+---
+LocalizableText:
+  UniqueId: "Text_Vulcanis"
+  Translations:
+    en-US: "Vulcanis"
+    fr: "Vulcainis"
+    es: "Vulcano"
+    de: "Vulkanis"
+    ru: "Вулкан" #(Vulcanis)
+    zh-Hans: "火神座" #(Vulcanis)
+---
+LocalizableTexts:
+- LocalizableText:
+    Translations:
+      de: Aureth
+      en-US: Aureth
+      es: Aurecio
+      fr: Aurèthe
+      ru: Аурет
+      zh-Hans: 金灵座
+    UniqueId: Text_Aureth
+- LocalizableText:
+    Translations:
+      de: Averin
+      en-US: Averin
+      es: Averino
+      fr: Averin
+      ru: Аверин
+      zh-Hans: 艾维林座
+    UniqueId: Text_Averin
+- LocalizableText:
+    Translations:
+      de: Kaldris
+      en-US: Caldris
+      es: Caldrís
+      fr: Caldryce
+      ru: Калдрис
+      zh-Hans: 炎脊座
+    UniqueId: Text_Caldris
+- LocalizableText:
+    Translations:
+      de: Zentrix
+      en-US: Cenrix
+      es: Cénrix
+      fr: Cenrix
+      ru: Ценрикс
+      zh-Hans: 森瑞克斯座
+    UniqueId: Text_Cenrix
+- LocalizableText:
+    Translations:
+      de: Zirella
+      en-US: Cirella
+      es: Cirela
+      fr: Cirelle
+      ru: Сирелла
+      zh-Hans: 希雷拉座
+    UniqueId: Text_Cirella
+- LocalizableText:
+    Translations:
+      de: Kravien
+      en-US: Cravien
+      es: Cravieno
+      fr: Cravien
+      ru: Кравьен
+      zh-Hans: 克拉维恩座
+    UniqueId: Text_Cravien
+- LocalizableText:
+    Translations:
+      de: Dravon
+      en-US: Dravon
+      es: Dravón
+      fr: Dravon
+      ru: Дравон
+      zh-Hans: 德拉冯座
+    UniqueId: Text_Dravon
+- LocalizableText:
+    Translations:
+      de: Drexal
+      en-US: Drexal
+      es: Drexal
+      fr: Drexal
+      ru: Дрексал
+      zh-Hans: 德雷萨尔座
+    UniqueId: Text_Drexal
+- LocalizableText:
+    Translations:
+      de: Eldros
+      en-US: Eldros
+      es: Eldros
+      fr: Eldros
+      ru: Эльдрос
+      zh-Hans: 埃尔德罗斯座
+    UniqueId: Text_Eldros
+- LocalizableText:
+    Translations:
+      de: Embera
+      en-US: Embera
+      es: Embera
+      fr: Embère
+      ru: Эмбера
+      zh-Hans: 炽焰座
+    UniqueId: Text_Embera
+- LocalizableText:
+    Translations:
+      de: Falnix
+      en-US: Falnix
+      es: Fálnix
+      fr: Falnix
+      ru: Фалникс
+      zh-Hans: 法尔尼克斯座
+    UniqueId: Text_Falnix
+- LocalizableText:
+    Translations:
+      de: Halvix
+      en-US: Halvix
+      es: Hálvix
+      fr: Halvix
+      ru: Халвикс
+      zh-Hans: 哈维克斯座
+    UniqueId: Text_Halvix
+- LocalizableText:
+    Translations:
+      de: Ixaryn
+      en-US: Ixaryn
+      es: Ixarín
+      fr: Ixaryne
+      ru: Иксарин
+      zh-Hans: 伊克萨林座
+    UniqueId: Text_Ixaryn
+- LocalizableText:
+    Translations:
+      de: Jandros
+      en-US: Jandros
+      es: Jándros
+      fr: Jandros
+      ru: Яндрос
+      zh-Hans: 詹德罗斯座
+    UniqueId: Text_Jandros
+- LocalizableText:
+    Translations:
+      de: Kelvaris
+      en-US: Kelvaris
+      es: Kelvaris
+      fr: Kelvaris
+      ru: Келварис
+      zh-Hans: 凯瓦里斯座
+    UniqueId: Text_Kelvaris
+- LocalizableText:
+    Translations:
+      de: Kurnos
+      en-US: Kurnos
+      es: Kurnós
+      fr: Kournos
+      ru: Курнос
+      zh-Hans: 库尔诺斯座
+    UniqueId: Text_Kurnos
+- LocalizableText:
+    Translations:
+      de: Lazora
+      en-US: Lazora
+      es: Lazora
+      fr: Lazore
+      ru: Лазора
+      zh-Hans: 拉索拉座
+    UniqueId: Text_Lazora
+- LocalizableText:
+    Translations:
+      de: Lunit
+      en-US: Lunith
+      es: Lunita
+      fr: Lunith
+      ru: Лунит
+      zh-Hans: 露妮丝座
+    UniqueId: Text_Lunith
+- LocalizableText:
+    Translations:
+      de: Mirex
+      en-US: Mirex
+      es: Mirex
+      fr: Mirex
+      ru: Мирекс
+      zh-Hans: 米雷克斯座
+    UniqueId: Text_Mirex
+- LocalizableText:
+    Translations:
+      de: Myrren
+      en-US: Myrren
+      es: Mirren
+      fr: Myrrène
+      ru: Миррен
+      zh-Hans: 密瑞恩座
+    UniqueId: Text_Myrren
+- LocalizableText:
+    Translations:
+      de: Navara
+      en-US: Navara
+      es: Návara
+      fr: Navarre
+      ru: Навара
+      zh-Hans: 纳瓦拉座
+    UniqueId: Text_Navara
+- LocalizableText:
+    Translations:
+      de: Nerion
+      en-US: Nerion
+      es: Nerión
+      fr: Nérion
+      ru: Нерион
+      zh-Hans: 涅里昂座
+    UniqueId: Text_Nerion
+- LocalizableText:
+    Translations:
+      de: Nyxis
+      en-US: Nyxis
+      es: Níxis
+      fr: Nyxys
+      ru: Никсис
+      zh-Hans: 尼克西斯座
+    UniqueId: Text_Nyxis
+- LocalizableText:
+    Translations:
+      de: Orbrix
+      en-US: Orbrix
+      es: Órbrix
+      fr: Orbric
+      ru: Орбрикс
+      zh-Hans: 奥布里克斯座
+    UniqueId: Text_Orbrix
+- LocalizableText:
+    Translations:
+      de: Orvan
+      en-US: Orvane
+      es: Orvano
+      fr: Orvane
+      ru: Орван
+      zh-Hans: 奥尔文座
+    UniqueId: Text_Orvane
+- LocalizableText:
+    Translations:
+      de: Phorex
+      en-US: Phorex
+      es: Fórex
+      fr: Phorex
+      ru: Форекс
+      zh-Hans: 福瑞克斯座
+    UniqueId: Text_Phorex
+- LocalizableText:
+    Translations:
+      de: Pirex
+      en-US: Pirex
+      es: Piréx
+      fr: Pirex
+      ru: Пирекс
+      zh-Hans: 皮雷克斯座
+    UniqueId: Text_Pirex
+- LocalizableText:
+    Translations:
+      de: Quenara
+      en-US: Quenara
+      es: Quenara
+      fr: Quenara
+      ru: Квена́ра
+      zh-Hans: 奎娜拉座
+    UniqueId: Text_Quenara
+- LocalizableText:
+    Translations:
+      de: Rovath
+      en-US: Rovath
+      es: Róvath
+      fr: Rovath
+      ru: Роват
+      zh-Hans: 罗瓦斯座
+    UniqueId: Text_Rovath
+- LocalizableText:
+    Translations:
+      de: Selvra
+      en-US: Selvra
+      es: Selvra
+      fr: Selvre
+      ru: Сельвра
+      zh-Hans: 塞尔芙拉座
+    UniqueId: Text_Selvra
+- LocalizableText:
+    Translations:
+      de: Soltrek
+      en-US: Soltrek
+      es: Soltreco
+      fr: Soltrèque
+      ru: Солтрек
+      zh-Hans: 索特雷克座
+    UniqueId: Text_Soltrek
+- LocalizableText:
+    Translations:
+      de: Surnia
+      en-US: Surnia
+      es: Surnía
+      fr: Surnie
+      ru: Сурния
+      zh-Hans: 苏尼娅座
+    UniqueId: Text_Surnia
+- LocalizableText:
+    Translations:
+      de: Sylith
+      en-US: Sylith
+      es: Silita
+      fr: Sylithe
+      ru: Силиф
+      zh-Hans: 希丽丝座
+    UniqueId: Text_Sylith
+- LocalizableText:
+    Translations:
+      de: Tarnyx
+      en-US: Tarnyx
+      es: Tárnyx
+      fr: Tarnyx
+      ru: Тарникс
+      zh-Hans: 塔尼克斯座
+    UniqueId: Text_Tarnyx
+- LocalizableText:
+    Translations:
+      de: Tessari
+      en-US: Tessari
+      es: Tesari
+      fr: Tessari
+      ru: Тессари
+      zh-Hans: 特萨里座
+    UniqueId: Text_Tessari
+- LocalizableText:
+    Translations:
+      de: Thalara
+      en-US: Thalara
+      es: Tálara
+      fr: Thalara
+      ru: Талара
+      zh-Hans: 塔拉拉座
+    UniqueId: Text_Thalara
+- LocalizableText:
+    Translations:
+      de: Traskel
+      en-US: Traskel
+      es: Tráskel
+      fr: Traskel
+      ru: Траскел
+      zh-Hans: 特拉斯克座
+    UniqueId: Text_Traskel
+- LocalizableText:
+    Translations:
+      de: Umbara
+      en-US: Umbara
+      es: Úmbara
+      fr: Umbara
+      ru: Умбара
+      zh-Hans: 昂巴拉座
+    UniqueId: Text_Umbara
+- LocalizableText:
+    Translations:
+      de: Umbrix
+      en-US: Umbrix
+      es: Úmbrix
+      fr: Umbrix
+      ru: Умбрикс
+      zh-Hans: 昂布里克斯座
+    UniqueId: Text_Umbrix
+- LocalizableText:
+    Translations:
+      de: Valdrax
+      en-US: Valdrax
+      es: Valdrás
+      fr: Valdrax
+      ru: Валдракс
+      zh-Hans: 瓦尔德拉克斯座
+    UniqueId: Text_Valdrax
+- LocalizableText:
+    Translations:
+      de: Veltrix
+      en-US: Veltrix
+      es: Veltrix
+      fr: Veltrix
+      ru: Велтрикс
+      zh-Hans: 维尔特里克斯座
+    UniqueId: Text_Veltrix
+- LocalizableText:
+    Translations:
+      de: Vireon
+      en-US: Vireon
+      es: Vireón
+      fr: Vireon
+      ru: Виреон
+      zh-Hans: 维瑞昂座
+    UniqueId: Text_Vireon
+- LocalizableText:
+    Translations:
+      de: Voltren
+      en-US: Voltren
+      es: Voltrén
+      fr: Voltren
+      ru: Вольтрен
+      zh-Hans: 沃特伦座
+    UniqueId: Text_Voltren
+- LocalizableText:
+    Translations:
+      de: Voruna
+      en-US: Voruna
+      es: Voruna
+      fr: Voroune
+      ru: Воруна
+      zh-Hans: 沃鲁娜座
+    UniqueId: Text_Voruna
+- LocalizableText:
+    Translations:
+      de: Xavion
+      en-US: Xavion
+      es: Xavión
+      fr: Xavion
+      ru: Ксавион
+      zh-Hans: 萨维昂座
+    UniqueId: Text_Xavion
+- LocalizableText:
+    Translations:
+      de: Xerion
+      en-US: Xerion
+      es: Jerión
+      fr: Xérion
+      ru: Ксерион
+      zh-Hans: 泽里昂座
+    UniqueId: Text_Xerion
+- LocalizableText:
+    Translations:
+      de: Yelrix
+      en-US: Yelrix
+      es: Yélrix
+      fr: Yelrix
+      ru: Йелрикс
+      zh-Hans: 叶尔里克斯座
+    UniqueId: Text_Yelrix
+- LocalizableText:
+    Translations:
+      de: Zelphar
+      en-US: Zelphar
+      es: Zélfar
+      fr: Zelphar
+      ru: Зельфар
+      zh-Hans: 泽尔法座
+    UniqueId: Text_Zelphar
+- LocalizableText:
+    Translations:
+      de: Zenthra
+      en-US: Zenthra
+      es: Zéntira
+      fr: Zenthra
+      ru: Зентра
+      zh-Hans: 岑特拉座
+    UniqueId: Text_Zenthra
+- LocalizableText:
+    Translations:
+      de: Zorune
+      en-US: Zorune
+      es: Zoruna
+      fr: Zorune
+      ru: Зоруне
+      zh-Hans: 佐鲁涅座
+    UniqueId: Text_Zorune

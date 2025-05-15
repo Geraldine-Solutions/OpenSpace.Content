@@ -1,0 +1,49 @@
+﻿Authority:
+  UniqueId: "auth_democratic"
+  Name: ""
+  election_term_years: 10
+  re_election_allowed: yes
+  election_type: democratic
+  uses_mandates: yes
+  color: [81, 140, 44, 255]
+  ruler_council_position: councilor_ruler_democratic
+  country_modifier:
+    faction_approval: 0.10
+    country_leader_pool_size: 1
+    custom_tooltip: auth_democratic_tt
+  random_weight:
+    base: 2.0
+  advanced_authority_swap:
+    - name: auth_cyber_creed_democratic
+      description: auth_cyber_creed_democratic_desc
+      inherit_icon: no
+      inherit_effects: no
+      trigger:
+        is_scope_valid: yes
+        has_country_flag: cyber_creed_advanced_government
+      modifier:
+        pop_ethic_spiritualist_attraction_mult: 0.2
+        pop_cyborg_happiness: 0.15
+        pop_non_cyborg_happiness: -0.15
+        pop_factions_produces_mult: 0.10
+        all_technology_research_speed: 0.05
+    - name: auth_cyber_democratic_individualist
+      description: auth_cyber_democratic_individualist_desc
+      inherit_icon: no
+      inherit_effects: no
+      trigger:
+        is_scope_valid: yes
+        has_country_flag: cyber_individualist
+      modifier:
+        custom_tooltip: auth_cyber_democratic_individualist_tt
+        show_only_custom_tooltip: no
+        pop_cyborg_happiness: 0.2
+        pop_non_cyborg_happiness: -0.15
+        empire_size_pops_mult: -0.15
+        leaders_cost_mult: -0.25
+        pop_factions_produces_mult: 0.2
+        planet_jobs_specialist_produces_mult: 0.1
+  tags:
+    - AUTHORITY_SUCCESSION_TYPE
+    - AUTHORITY_DEMOCRATIC_SUCCESSION
+---

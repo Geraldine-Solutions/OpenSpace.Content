@@ -1,0 +1,66 @@
+﻿Species:
+  UniqueId: s_Humanoid_1
+  Name: Human
+  Plural: Humans
+  Adjective: Human
+---
+Species:
+  UniqueId: s_Zorathian_1
+  Name: Zorathian
+  Plural: Zorathians
+  Adjective: Zorathian
+---
+Species:
+  UniqueId: s_Velthari_1
+  Name: Velthari
+  Plural: Velthari
+  Adjective: Veltharian
+---
+Species:
+  UniqueId: s_Ta’Kor_1
+  Name: Ta’Kor
+  Plural: Ta’Kor
+  Adjective: Ta’Korian
+---
+Species:
+  UniqueId: s_Syrren_1
+  Name: Syrren
+  Plural: Syrren
+  Adjective: Syrrenic
+---
+Species:
+  UniqueId: s_Kelbrax_1
+  Name: Kelbrax
+  Plural: Kelbraxi
+  Adjective: Kelbraxian
+---
+Species:
+  UniqueId: s_Myrrak_1
+  Name: Myrrak
+  Plural: Myrraki
+  Adjective: Myrrakian
+---
+Species:
+  UniqueId: s_Vor’Quen_1
+  Name: Vor’Quen
+  Plural: Vor’Queni
+  Adjective: Vor’Quenic
+---
+Species:
+  UniqueId: s_Drexari_1
+  Name: Drexari
+  Plural: Drexari
+  Adjective: Drexarian
+---
+Species:
+  UniqueId: s_Ossirian_1
+  Name: Ossirian
+  Plural: Ossirians
+  Adjective: Ossirian
+---
+Species:
+  UniqueId: s_Chorvax_1
+  Name: Chorvax
+  Plural: Chorvaxi
+  Adjective: Chorvaxian
+---

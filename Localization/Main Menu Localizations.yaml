@@ -1,0 +1,54 @@
+﻿LocalizableText:
+  UniqueId: text_continue_game
+  Name: "Continue Game"
+  Translations:
+    en-US: "Continue"
+    fr: "Continuer"
+    es: "Continuar"
+    de: "Spiel"
+    ru: "Продолжить"
+    zh-Hans: "继续"
+---
+LocalizableText:
+  UniqueId: text_new_game
+  Name: "New Game"
+  Translations:
+    en-US: "New Game"
+    fr: "Nouvelle partie"
+    es: "Nuevo juego"
+    de: "Neues Spiel"
+    ru: "Новая игра"
+    zh-Hans: "新游戏"
+---
+LocalizableText:
+  UniqueId: text_load_game
+  Name: "Load Game"
+  Translations:
+    en-US: "Load Game"
+    fr: "Charger la partie"
+    es: "Cargar juego"
+    de: "Spiel laden"
+    ru: "Загрузить игру"
+    zh-Hans: "加载游戏"
+---
+LocalizableText:
+  UniqueId: text_editor_tools
+  Name: "Editor Tools"
+  Translations:
+    en-US: "Editor Tools"
+    fr: "Outils d'édition"
+    es: "Herramientas de edición"
+    de: "Editor-Werkzeuge"
+    ru: "Инструменты редактора"
+    zh-Hans: "编辑工具"
+---
+LocalizableText:
+  UniqueId: text_close_game
+  Name: "Close Game"
+  Translations:
+    en-US: "Close"
+    fr: "Quitter"
+    es: "Cerrar"
+    de: "Spiel"
+    ru: "Выйти"
+    zh-Hans: "关闭"

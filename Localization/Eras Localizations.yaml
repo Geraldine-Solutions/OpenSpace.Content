@@ -1,0 +1,44 @@
+﻿LocalizableText:
+  UniqueId: text_era_genesis
+  Name: "Genesis Era"
+  Translations:
+    en-US: "Genesis Era"
+    fr: "Ère de la Genèse"
+    es: "Era Génesis"
+    de: "Genesis-Ära"
+    ru: "Эра Генезиса"
+    zh-Hans: "创世纪"
+---
+LocalizableText:
+  UniqueId: text_era_frontier
+  Name: "Frontier Era"
+  Translations:
+    en-US: "Frontier Era"
+    fr: "Ère de la Frontière"
+    es: "Era Fronteriza"
+    de: "Grenz-Ära"
+    ru: "Эра Границ"
+    zh-Hans: "边疆时代"
+---
+LocalizableText:
+  UniqueId: text_era_celestial
+  Name: "Celestial Era"
+  Translations:
+    en-US: "Celestial Era"
+    fr: "Ère Céleste"
+    es: "Era Celestial"
+    de: "Himmlische Ära"
+    ru: "Небесная Эра"
+    zh-Hans: "天体时代"
+---
+LocalizableText:
+  UniqueId: text_era_interstellar
+  Name: "Interstellar Era"
+  Translations:
+    en-US: "Interstellar Era"
+    fr: "Ère Interstellaire"
+    es: "Era Interestelar"
+    de: "Interstellare Ära"
+    ru: "Межзвёздная Эра"
+    zh-Hans: "星际时代"
+---

@@ -1,0 +1,19 @@
+---
+# Star
+Mesh:
+  UniqueId: "star_mesh"
+  FilePath: "Star.gltf" # Path to the mesh file
+  Scale: 1.0
+---
+# Planet
+Mesh:
+  UniqueId: "geosphere_mesh"
+  FilePath: "Geosphere.gltf"
+  Scale: 2.0
+---
+# Asteroid
+Mesh:
+  UniqueId: "asteroid_mesh"
+  FilePath: "Asteroid.gltf" # Path to the mesh file
+  Scale: 1.0
+---

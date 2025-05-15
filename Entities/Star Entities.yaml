@@ -1,0 +1,348 @@
+########
+# Stars
+########
+---
+# Blue Stars
+Entity:
+  UniqueId: "b_star_class_star_entity"
+  Mesh: "star_mesh"
+  DefaultState: "idle"
+  Scale: 1.8
+  Materials:
+    Clouds_Geosphere:
+      Shader: "Space Graphics Toolkit/Star"
+      Properties:
+        # Basic Properties
+        _Color: "#C8F9FF"
+        _Brightness: "1.0"
+        _MainWarp: "0.005"
+        _MainTex: ""
+        
+        # Rim
+        _RimColor: "#009EB7"
+        _RimPower: "1.04"
+          
+        # Noise
+        _NoiseColor: "#FFFFFF"
+        _NoiseStrength: "0.5"
+        _NoiseTile: "80"
+        _NoiseSpeed: "10.0"
+        _NoiseOctaves: "6"
+        
+        # Flow
+        _FlowStrength: "1.0"
+        _FlowTex: "Textures/StarFlow.png"
+          
+        # Sunspots
+        _SunspotsColor: "#FFFFFF"
+        _SunspotsStrength: "1.0"
+        _SunspotsWarp: "0.005"
+        _SunspotsTex: ""
+
+        # Unity Fog
+        _CW_DisableFog: "false"
+          
+        # Sphere Mask
+        _SGT_SphereMask: false
+        _SGT_SphereMaskPosition: "0.0,0.0,0.0,0.0"
+        _SGT_SphereMaskRadius: "1.0"
+        _SGT_SphereMaskFalloff: "3.0"
+---
+# White or Blueish Stars
+Entity:
+  UniqueId: "a_star_class_star_entity"
+  Mesh: "star_mesh"
+  DefaultState: "idle"
+  Scale: 1.6
+  Materials:
+    Clouds_Geosphere:
+      Shader: "Space Graphics Toolkit/Star"
+      Properties:
+        # Basic Properties
+        _Color: "#C8F9FF"
+        _Brightness: "1.0"
+        _MainWarp: "0.005"
+        _MainTex: ""
+        
+        # Rim
+        _RimColor: "#009EB7"
+        _RimPower: "1.04"
+          
+        # Noise
+        _NoiseColor: "#FFFFFF"
+        _NoiseStrength: "0.5"
+        _NoiseTile: "80"
+        _NoiseSpeed: "10.0"
+        _NoiseOctaves: "6"
+        
+        # Flow
+        _FlowStrength: "1.0"
+        _FlowTex: "Textures/StarFlow.png"
+          
+        # Sunspots
+        _SunspotsColor: "#FFFFFF"
+        _SunspotsStrength: "1.0"
+        _SunspotsWarp: "0.005"
+        _SunspotsTex: ""
+ 
+        # Unity Fog
+        _CW_DisableFog: "false"
+          
+        # Sphere Mask
+        _SGT_SphereMask: false
+        _SGT_SphereMaskPosition: "0.0,0.0,0.0,0.0"
+        _SGT_SphereMaskRadius: "1.0"
+        _SGT_SphereMaskFalloff: "3.0"
+---
+# Yellow-White Dwarves
+Entity:
+  UniqueId: "f_star_class_star_entity"
+  Mesh: "star_mesh"
+  DefaultState: "idle"
+  Scale: 1.5
+  Materials:
+    Clouds_Geosphere:
+      Shader: "Space Graphics Toolkit/Star"
+      Properties:
+        # Basic Properties
+        _Color: "#FFC67E"
+        _Brightness: "1.0"
+        _MainWarp: "0.005"
+        _MainTex: ""
+        
+        # Rim
+        _RimColor: "#FFFFFF"
+        _RimPower: "2.61"
+          
+        # Noise
+        _NoiseColor: "#FFFFFF"
+        _NoiseStrength: "0.5"
+        _NoiseTile: "80"
+        _NoiseSpeed: "10.0"
+        _NoiseOctaves: "6"
+        
+        # Flow
+        _FlowStrength: "1.0"
+        _FlowTex: "Textures/StarFlow.png"
+          
+        # Sunspots
+        _SunspotsColor: "#FFFFFF"
+        _SunspotsStrength: "1.0"
+        _SunspotsWarp: "0.005"
+        _SunspotsTex: ""
+
+        # Unity Fog
+        _CW_DisableFog: "false"
+          
+        # Sphere Mask
+        _SGT_SphereMask: false
+        _SGT_SphereMaskPosition: "0.0,0.0,0.0,0.0"
+        _SGT_SphereMaskRadius: "1.0"
+        _SGT_SphereMaskFalloff: "3.0"
+---
+# Yellow Dwarves
+Entity:
+  UniqueId: "g_star_class_star_entity"
+  Mesh: "star_mesh"
+  DefaultState: "idle"
+  Scale: 1.3
+  Materials:
+    Clouds_Geosphere:
+      Shader: "Space Graphics Toolkit/Star"
+      Properties:
+        # Basic Properties
+        _Color: "#BA9D0C"
+        _Brightness: "1.0"
+        _MainWarp: "0.005"
+        _MainTex: ""
+        
+        # Rim
+        _RimColor: "#FFBB00"
+        _RimPower: "1.04"
+          
+        # Noise
+        _NoiseColor: "#FFFFFF"
+        _NoiseStrength: "0.5"
+        _NoiseTile: "80"
+        _NoiseSpeed: "10.0"
+        _NoiseOctaves: "6"
+        
+        # Flow
+        _FlowStrength: "1.0"
+        _FlowTex: "Textures/StarFlow.png"
+          
+        # Sunspots
+        _SunspotsColor: "#FFFFFF"
+        _SunspotsStrength: "1.0"
+        _SunspotsWarp: "0.005"
+        _SunspotsTex: ""
+
+        # Unity Fog
+        _CW_DisableFog: "false"
+          
+        # Sphere Mask
+        _SGT_SphereMask: false
+        _SGT_SphereMaskPosition: "0.0,0.0,0.0,0.0"
+        _SGT_SphereMaskRadius: "1.0"
+        _SGT_SphereMaskFalloff: "3.0"
+---
+# Orange Dwarves
+Entity:
+  UniqueId: "k_star_class_star_entity"
+  Mesh: "star_mesh"
+  DefaultState: "idle"
+  Scale: 1.2
+  Materials:
+    Clouds_Geosphere:
+      Shader: "Space Graphics Toolkit/Star"
+      Properties:
+        # Basic Properties
+        _Color: "#B35512"
+        _Brightness: "1.0"
+        _MainWarp: "0.005"
+        _MainTex: ""
+        
+        # Rim
+        _RimColor: "#D56500"
+        _RimPower: "1.04"
+          
+        # Noise
+        _NoiseColor: "#FFFFFF"
+        _NoiseStrength: "0.5"
+        _NoiseTile: "80"
+        _NoiseSpeed: "10.0"
+        _NoiseOctaves: "6"
+        
+        # Flow
+        _FlowStrength: "1.0"
+        _FlowTex: "Textures/StarFlow.png"
+          
+        # Sunspots
+        _SunspotsColor: "#FFFFFF"
+        _SunspotsStrength: "1.0"
+        _SunspotsWarp: "0.005"
+        _SunspotsTex: ""
+
+        # Unity Fog
+        _CW_DisableFog: "false"
+          
+        # Sphere Mask
+        _SGT_SphereMask: false
+        _SGT_SphereMaskPosition: "0.0,0.0,0.0,0.0"
+        _SGT_SphereMaskRadius: "1.0"
+        _SGT_SphereMaskFalloff: "3.0"
+---
+# Red Stars
+Entity:
+  UniqueId: "m_star_class_star_entity"
+  Mesh: "star_mesh"
+  DefaultState: "idle"
+  Scale: 1.0
+  Materials:
+    Clouds_Geosphere:
+      Shader: "Space Graphics Toolkit/Star"
+      Properties:
+        # Basic Properties
+        _Color: "#C41E19"
+        _Brightness: "1.0"
+        _MainWarp: "0.005"
+        _MainTex: ""
+        
+        # Rim
+        _RimColor: "#D56500"
+        _RimPower: "1.04"
+          
+        # Noise
+        _NoiseColor: "#FFFFFF"
+        _NoiseStrength: "0.5"
+        _NoiseTile: "80"
+        _NoiseSpeed: "10.0"
+        _NoiseOctaves: "6"
+        
+        # Flow
+        _FlowStrength: "1.0"
+        _FlowTex: "Textures/StarFlow.png"
+          
+        # Sunspots
+        _SunspotsColor: "#FFFFFF"
+        _SunspotsStrength: "1.0"
+        _SunspotsWarp: "0.005"
+        _SunspotsTex: ""
+          
+        # Unity Fog
+        _CW_DisableFog: "false"
+          
+        # Sphere Mask
+        _SGT_SphereMask: false
+        _SGT_SphereMaskPosition: "0.0,0.0,0.0,0.0"
+        _SGT_SphereMaskRadius: "1.0"
+        _SGT_SphereMaskFalloff: "3.0"
+---
+# Brown Dwarves
+Entity:
+  UniqueId: "t_star_class_star_entity"
+  Mesh: "star_mesh"
+  DefaultState: "idle"
+  Scale: 0.8
+  Materials:
+    Clouds_Geosphere:
+      Shader: "Space Graphics Toolkit/Star"
+      Properties:
+        # Basic Properties
+        _Color: "#664928"
+        _Brightness: "1.0"
+        _MainWarp: "0.005"
+        _MainTex: ""
+        
+        # Rim
+        _RimColor: "#D56500"
+        _RimPower: "1.04"
+          
+        # Noise
+        _NoiseColor: "#FFFFFF"
+        _NoiseStrength: "0.5"
+        _NoiseTile: "80"
+        _NoiseSpeed: "10.0"
+        _NoiseOctaves: "6"
+        
+        # Flow
+        _FlowStrength: "1.0"
+        _FlowTex: "Textures/StarFlow.png"
+          
+        # Sunspots
+        _SunspotsColor: "#FFFFFF"
+        _SunspotsStrength: "1.0"
+        _SunspotsWarp: "0.005"
+        _SunspotsTex: ""
+          
+        # Unity Fog
+        _CW_DisableFog: "false"
+          
+        # Sphere Mask
+        _SGT_SphereMask: false
+        _SGT_SphereMaskPosition: "0.0,0.0,0.0,0.0"
+        _SGT_SphereMaskRadius: "1.0"
+        _SGT_SphereMaskFalloff: "3.0"
+---
+########
+# Rare Stars
+########
+# Black Hole
+Entity:
+  UniqueId: "balck_hole_entity"
+  Mesh: "star_mesh"
+  DefaultState: "idle"
+  EmmissiveColor: [0, 0, 0]
+  EmmissiveIntensity: 0.8
+  EmmissiveWidth: 1.4
+  States:
+    - Name: "idle"
+      Animation: "idle"
+      Events:
+        - Time: 0.0
+          Node: "planet"
+          Particle: "b_class_star_particle"
+          KeepParticle: false
+          TriggerOnce: true
+          SoundEffect: "amb_star_fusion"
+  Scale: 1.8
