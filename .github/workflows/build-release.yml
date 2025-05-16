@@ -9,10 +9,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Zip Content Files
-        run: zip -r content.zip ./Assets ./Defs ./Data
-      - uses: actions/upload-artifact@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Zip All Top-Level Folders Except .github
+        run: |
+          mkdir content_temp
+          for dir in */ ; do
+            if [[ "$dir" != ".github/" ]]; then
+              cp -r "$dir" content_temp/
+            fi
+          done
+          zip -r content.zip content_temp
+
+      - name: Upload Content Package
+        uses: actions/upload-artifact@v4
         with:
           name: content-package
           path: content.zip
