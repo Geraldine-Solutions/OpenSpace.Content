@@ -1,5 +1,4 @@
-﻿---
-LocalizableText:
+﻿LocalizableText:
   UniqueId: "Text_Alpha"
   Translations:
     en-US: "Alpha"
@@ -7,7 +6,7 @@ LocalizableText:
     es: "Alfa"
     de: "Alpha"
     ru: "Альфа" #(Al'fa)
-    zh-Hans: "阿尔法" #(Ā'ěrfǎ)  
+    zh-Hans: "阿尔法" #(Ā'ěrfǎ)
 ---
 LocalizableText:
   UniqueId: "Text_Beta"
@@ -17,7 +16,7 @@ LocalizableText:
     es: "Beta"
     de: "Beta"
     ru: "Бета" #(Beta)
-    zh-Hans: "贝塔" #(Bèitǎ)  
+    zh-Hans: "贝塔" #(Bèitǎ)
 ---
 LocalizableText:
   UniqueId: "Text_Gamma"
@@ -27,7 +26,7 @@ LocalizableText:
     es: "Gamma"
     de: "Gamma"
     ru: "Гамма" #(Gamma)
-    zh-Hans: "伽马" #(Jiāmǎ)  
+    zh-Hans: "伽马" #(Jiāmǎ)
 ---
 LocalizableText:
   UniqueId: "Text_Delta"
@@ -37,7 +36,7 @@ LocalizableText:
     es: "Delta"
     de: "Delta"
     ru: "Дельта" #(Del'ta)
-    zh-Hans: "德尔塔" #(Dé'ěrtǎ)  
+    zh-Hans: "德尔塔" #(Dé'ěrtǎ)
 ---
 LocalizableText:
   UniqueId: "Text_Epsilon"
@@ -47,7 +46,7 @@ LocalizableText:
     es: "Épsilon"
     de: "Epsilon"
     ru: "Эпсилон" #(Epsilon)
-    zh-Hans: "艾普西隆" #(Àipǔxīlóng)  
+    zh-Hans: "艾普西隆" #(Àipǔxīlóng)
 ---
 LocalizableText:
   UniqueId: "Text_Zeta"
@@ -57,7 +56,7 @@ LocalizableText:
     es: "Zeta"
     de: "Zeta"
     ru: "Зета" #(Zeta)
-    zh-Hans: "泽塔" #(Zétǎ)  
+    zh-Hans: "泽塔" #(Zétǎ)
 ---
 LocalizableText:
   UniqueId: "Text_Eta"
@@ -67,7 +66,7 @@ LocalizableText:
     es: "Eta"
     de: "Eta"
     ru: "Эта" #(Eta)
-    zh-Hans: "伊塔" #(Yītǎ)  
+    zh-Hans: "伊塔" #(Yītǎ)
 ---
 LocalizableText:
   UniqueId: "Text_Theta"
@@ -77,7 +76,7 @@ LocalizableText:
     es: "Teta"
     de: "Theta"
     ru: "Тета" #(Teta)
-    zh-Hans: "西塔" #(Xītǎ)  
+    zh-Hans: "西塔" #(Xītǎ)
 ---
 LocalizableText:
   UniqueId: "Text_Iota"
@@ -87,7 +86,7 @@ LocalizableText:
     es: "Iota"
     de: "Iota"
     ru: "Йота" #(Yota)
-    zh-Hans: "约塔" #(Yuētǎ)  
+    zh-Hans: "约塔" #(Yuētǎ)
 ---
 LocalizableText:
   UniqueId: "Text_Kappa"
@@ -97,7 +96,7 @@ LocalizableText:
     es: "Kappa"
     de: "Kappa"
     ru: "Каппа" #(Kappa)
-    zh-Hans: "卡帕" #(Kǎpà)  
+    zh-Hans: "卡帕" #(Kǎpà)
 ---
 LocalizableText:
   UniqueId: "Text_Lambda"
@@ -107,7 +106,7 @@ LocalizableText:
     es: "Lambda"
     de: "Lambda"
     ru: "Лямбда" #(Lyambda)
-    zh-Hans: "兰姆达" #(Lánmǔdá)  
+    zh-Hans: "兰姆达" #(Lánmǔdá)
 ---
 LocalizableText:
   UniqueId: "Text_Mu"
@@ -117,7 +116,7 @@ LocalizableText:
     es: "Mu"
     de: "My"
     ru: "Мю" #(Myu)
-    zh-Hans: "缪" #(Miù)  
+    zh-Hans: "缪" #(Miù)
 ---
 LocalizableText:
   UniqueId: "Text_Nu"
@@ -127,7 +126,7 @@ LocalizableText:
     es: "Nu"
     de: "Ny"
     ru: "Ню" #(Nyu)
-    zh-Hans: "纽" #(Niǔ)  
+    zh-Hans: "纽" #(Niǔ)
 ---
 LocalizableText:
   UniqueId: "Text_Xi"
@@ -137,7 +136,7 @@ LocalizableText:
     es: "Xi"
     de: "Xi"
     ru: "Кси" #(Ksi)
-    zh-Hans: "克西" #(Kèxī)  
+    zh-Hans: "克西" #(Kèxī)
 ---
 LocalizableText:
   UniqueId: "Text_Omicron"
@@ -147,7 +146,7 @@ LocalizableText:
     es: "Ómicron"
     de: "Omikron"
     ru: "Омикрон" #(Omikron)
-    zh-Hans: "奥米克戎" #(Àomǐkèróng)  
+    zh-Hans: "奥米克戎" #(Àomǐkèróng)
 ---
 LocalizableText:
   UniqueId: "Text_Pi"
@@ -157,7 +156,7 @@ LocalizableText:
     es: "Pi"
     de: "Pi"
     ru: "Пи" #(Pi)
-    zh-Hans: "派" #(Pài)  
+    zh-Hans: "派" #(Pài)
 ---
 LocalizableText:
   UniqueId: "Text_Rho"
@@ -167,7 +166,7 @@ LocalizableText:
     es: "Ro"
     de: "Rho"
     ru: "Ро" #(Ro)
-    zh-Hans: "罗" #(Luó)  
+    zh-Hans: "罗" #(Luó)
 ---
 LocalizableText:
   UniqueId: "Text_Sigma"
@@ -177,7 +176,7 @@ LocalizableText:
     es: "Sigma"
     de: "Sigma"
     ru: "Сигма" #(Sigma)
-    zh-Hans: "西格玛" #(Xīgémǎ)  
+    zh-Hans: "西格玛" #(Xīgémǎ)
 ---
 LocalizableText:
   UniqueId: "Text_Tau"
@@ -187,7 +186,7 @@ LocalizableText:
     es: "Tau"
     de: "Tau"
     ru: "Тау" #(Tau)
-    zh-Hans: "陶" #(Táo)  
+    zh-Hans: "陶" #(Táo)
 ---
 LocalizableText:
   UniqueId: "Text_Upsilon"
@@ -197,7 +196,7 @@ LocalizableText:
     es: "Ípsilon"
     de: "Upsilon"
     ru: "Ипсилон" #(Ipsilon)
-    zh-Hans: "乌普西隆" #(Wūpǔxīlóng)  
+    zh-Hans: "乌普西隆" #(Wūpǔxīlóng)
 ---
 LocalizableText:
   UniqueId: "Text_Phi"
@@ -207,7 +206,7 @@ LocalizableText:
     es: "Fi"
     de: "Phi"
     ru: "Фи" #(Fi)
-    zh-Hans: "菲" #(Fēi)  
+    zh-Hans: "菲" #(Fēi)
 ---
 LocalizableText:
   UniqueId: "Text_Chi"
@@ -217,7 +216,7 @@ LocalizableText:
     es: "Ji"
     de: "Chi"
     ru: "Хи" #(Khi)
-    zh-Hans: "希" #(Xī)  
+    zh-Hans: "希" #(Xī)
 ---
 LocalizableText:
   UniqueId: "Text_Psi"
@@ -227,7 +226,7 @@ LocalizableText:
     es: "Psi"
     de: "Psi"
     ru: "Пси" #(Psi)
-    zh-Hans: "普西" #(Pǔxī)  
+    zh-Hans: "普西" #(Pǔxī)
 ---
 LocalizableText:
   UniqueId: "Text_Omega"
@@ -237,5 +236,4 @@ LocalizableText:
     es: "Omega"
     de: "Omega"
     ru: "Омега" #(Omega)
-    zh-Hans: "欧米伽" #(Ōumǐjiā)  
-
+    zh-Hans: "欧米伽" #(Ōumǐjiā)
