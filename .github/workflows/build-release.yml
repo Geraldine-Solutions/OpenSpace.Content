@@ -21,8 +21,9 @@ jobs:
       - name: Prepare Content
         run: |
           mkdir content_temp
-          for dir in */; do
-            if [[ "$dir" != ".github/" ]]; then
+          for dir in */ ; do
+            # Skip .github and content_temp itself
+            if [[ "$dir" != ".github/" && "$dir" != "content_temp/" ]]; then
               cp -r "$dir" content_temp/
             fi
           done
