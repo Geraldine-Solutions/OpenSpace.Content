@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Prepare Content
         run: |
@@ -35,20 +35,14 @@ jobs:
 
       - name: Create Git Tag (if workflow_dispatch)
         if: github.event_name == 'workflow_dispatch'
-        env:
-          PAT_TOKEN: ${{ secrets.ACTIONS_PAT }}
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git remote set-url origin https://x-access-token:${PAT_TOKEN}@github.com/${{ github.repository }}
-          git tag "${{ env.RELEASE_TAG }}"
-          git push origin "${{ env.RELEASE_TAG }}"
+        uses: mathieudutour/github-tag-action@v6.2
+        with:
+          github_token: ${{ secrets.ACTIONS_PAT }}
+          custom_tag: ${{ env.RELEASE_TAG }}
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
+        uses: ncipollo/release-action@v1
         with:
-          tag_name: ${{ env.RELEASE_TAG }}
-          name: Release ${{ env.RELEASE_TAG }}
-          files: content.zip
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ steps.tag_version.outputs.new_tag }}
+          name: Release ${{ steps.tag_version.outputs.new_tag }}
+          body: ${{ steps.tag_version.outputs.changelog }}
