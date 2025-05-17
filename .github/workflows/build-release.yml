@@ -3,7 +3,13 @@ name: Build Release
 on:
   push:
     tags:
-      - 'v*'
+      - 'v*'  # Automatically runs on tags like v1.0.0
+
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Version tag (e.g. v1.0.0)'
+        required: true
 
 jobs:
   build:
@@ -12,19 +18,29 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Zip All Top-Level Folders Except .github
+      - name: Prepare Content
         run: |
           mkdir content_temp
-          for dir in */ ; do
-            # Skip .github and content_temp itself
-            if [[ "$dir" != ".github/" && "$dir" != "content_temp/" ]]; then
+          for dir in */; do
+            if [[ "$dir" != ".github/" ]]; then
               cp -r "$dir" content_temp/
             fi
           done
           zip -r content.zip content_temp
 
-      - name: Upload Content Package
-        uses: actions/upload-artifact@v4
+      - name: Create Git Tag (if workflow_dispatch)
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git tag ${{ github.event.inputs.tag }}
+          git push origin ${{ github.event.inputs.tag }}
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
         with:
-          name: content-package
-          path: content.zip
+          tag_name: ${{ github.event.inputs.tag || github.ref_name }}
+          name: Release ${{ github.event.inputs.tag || github.ref_name }}
+          files: content.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
