@@ -27,7 +27,7 @@ jobs:
               cp -r "$dir" content_temp/
             fi
           done
-          zip -r content.zip ./
+          zip -r content.zip build/
 
       - name: Create Git Tag (if workflow_dispatch)
         id: tag_version
