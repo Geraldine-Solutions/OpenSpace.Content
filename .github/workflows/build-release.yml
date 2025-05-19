@@ -20,21 +20,21 @@ jobs:
 
       - name: 🧹 Prepare Content Folder Structure
         run: |
-          echo "📁 Creating content_temp/build directory..."
-          mkdir -p content_temp/build
+          echo "📁 Creating build directory..."
+          mkdir -p build
 
           echo "🔍 Scanning for top-level folders to copy..."
           for dir in */ ; do
-            # Skip .github and content_temp
-            if [[ "$dir" != ".github/" && "$dir" != "content_temp/" ]]; then
-              echo "📂 Copying $dir → content_temp/build/$dir"
-              mkdir -p "content_temp/build/$dir"
-              cp -r "$dir" "content_temp/build/"
+            # Skip .github and build
+            if [[ "$dir" != ".github/" && "$dir" != "build/" ]]; then
+              echo "📂 Copying $dir → build/$dir"
+              mkdir -p "build/$dir"
+              cp -r "$dir" "build/"
             fi
           done
 
           echo "🗜️ Zipping folder structure to content.zip..."
-          zip -r content.zip content_temp
+          zip -r content.zip build
 
       - name: 🏷️ Create Git Tag (if manual dispatch)
         id: tag_version
