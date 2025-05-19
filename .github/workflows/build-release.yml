@@ -24,10 +24,10 @@ jobs:
           for dir in */ ; do
             # Skip .github and content_temp itself
             if [[ "$dir" != ".github/" && "$dir" != "content_temp/" ]]; then
-              cp -r "$dir" content_temp/
+              cp -r "$dir" content_temp/build
             fi
           done
-          zip -r content.zip build
+          zip -r content.zip content_temp
 
       - name: Create Git Tag (if workflow_dispatch)
         id: tag_version
