@@ -1,10 +1,10 @@
-name: Build Release
+name: 📦 Build Content Release
 
 on:
   workflow_dispatch:
     inputs:
       tag:
-        description: 'Version number (e.g. 1.0.0)'
+        description: '🔖 Version number (e.g. 1.0.0)'
         required: true
 
 jobs:
@@ -15,21 +15,28 @@ jobs:
       RELEASE_TAG: ${{ github.event.inputs.tag != '' && github.event.inputs.tag || github.ref_name }}
 
     steps:
-      - name: Checkout Repository
+      - name: 🛎️ Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Prepare Content
+      - name: 🧹 Prepare Content Folder Structure
         run: |
-          mkdir content_temp
+          echo "📁 Creating content_temp/build directory..."
+          mkdir -p content_temp/build
+
+          echo "🔍 Scanning for top-level folders to copy..."
           for dir in */ ; do
-            # Skip .github and content_temp itself
+            # Skip .github and content_temp
             if [[ "$dir" != ".github/" && "$dir" != "content_temp/" ]]; then
-              cp -r "$dir" content_temp/build
+              echo "📂 Copying $dir → content_temp/build/$dir"
+              mkdir -p "content_temp/build/$dir"
+              cp -r "$dir" "content_temp/build/"
             fi
           done
+
+          echo "🗜️ Zipping folder structure to content.zip..."
           zip -r content.zip content_temp
 
-      - name: Create Git Tag (if workflow_dispatch)
+      - name: 🏷️ Create Git Tag (if manual dispatch)
         id: tag_version
         if: github.event_name == 'workflow_dispatch'
         uses: mathieudutour/github-tag-action@v6.2
@@ -37,16 +44,16 @@ jobs:
           github_token: ${{ secrets.ACTIONS_PAT }}
           custom_tag: ${{ env.RELEASE_TAG }}
 
-      - name: Create GitHub Release
+      - name: 🚀 Create GitHub Release
         id: create_release
         uses: ncipollo/release-action@v1
         with:
           tag: ${{ steps.tag_version.outputs.new_tag }}
-          name: Release ${{ steps.tag_version.outputs.new_tag }}
+          name: "Release ${{ steps.tag_version.outputs.new_tag }}"
           body: ${{ steps.tag_version.outputs.changelog }}
           token: ${{ secrets.ACTIONS_PAT }}
 
-      - name: Upload Release Artifact
+      - name: 📤 Upload Release Artifact
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.ACTIONS_PAT }}
