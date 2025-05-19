@@ -1,13 +1,37 @@
-name: Lint Content
+name: 🚦 Lint Content
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches:
+      - '**'
 
 jobs:
   validate:
+    name: 🛠️ Validate YAML and GLTF
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Lint YAML
-        run: yamllint -c .yamllint ./
-      - name: Validate GLTF files
-        run: find . -name "*.gltf" -exec gltf-validator {} \;
+      - name: 🛎️ Checkout Code
+        uses: actions/checkout@v4
+
+      - name: 📥 Install Tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y yamllint
+          npm install -g gltf-validator
+
+      - name: 🧹 Lint YAML Files
+        run: |
+          echo "🔍 Running yamllint..."
+          yamllint -c .yamllint ./
+
+      - name: ✅ Validate GLTF Files
+        run: |
+          echo "🔍 Validating .gltf files..."
+          find . -name "*.gltf" -print0 | while IFS= read -r -d '' file; do
+            echo "🧪 Validating $file"
+            gltf-validator "$file"
+          done

@@ -1,4 +1,4 @@
-name: 📦 Build Content Release
+name: 🚀 Build Release
 
 on:
   workflow_dispatch:
