@@ -1,9 +1,6 @@
 name: 🚦 Lint Content
 
 on:
-  push:
-    branches:
-      - '**'
   pull_request:
     branches:
       - '**'
