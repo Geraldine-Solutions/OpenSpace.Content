@@ -1,0 +1,16 @@
+﻿Atmospheres:
+  - Atmosphere:
+      UniqueId: atmo_None
+      Name: "Text_None"
+  - Atmosphere:
+      UniqueId: atmo_CO2
+      Name: "Text_CO2"
+  - Atmosphere:
+      UniqueId: atmo_Methane
+      Name: "Text_Methane"
+  - Atmosphere:
+      UniqueId: atmo_Ammonia
+      Name: "Text_Ammonia"
+  - Atmosphere:
+      UniqueId: atmo_Oxygenated
+      Name: "Text_Oxygenated"

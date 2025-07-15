@@ -1,0 +1,36 @@
+﻿Initializers:
+#Habitable
+  - CelestialBody:
+    UniqueId: habitable_init_01  
+    DistanceFromTheSun: [1000, 4000]
+    ChanceOfRing: 0.2
+    PlanetSize: [8, 20]
+    MoonSize: [3, 7]
+    Climate:
+      Atmosphere: "atmo_Oxygenated"
+      Humidity: "hum_Mild"
+      Temperature: "temp_Temperate"
+#Barren
+  - CelestialBody:
+    UniqueId: barren_init_01  
+    DistanceFromTheSun: [0, 10000]
+    ChanceOfRing: 0.2
+    PlanetSize: [8, 20]
+    MoonSize: [3, 7]
+    Climate:
+      Atmosphere: "atmo_None"
+      Humidity: "hum_Dry"
+      Temperature: "temp_Cold"
+#Gas Giant
+  - CelestialBody:
+    UniqueId: gas_giant_init_01  
+    DistanceFromTheSun: [400, 10000]
+    CanBeMoon: false
+    ChanceOfRing: 0.6
+    PlanetSize: [20, 30]
+#Asteroid
+  - CelestialBody:
+    UniqueId: asteroid_init_01  
+    DistanceFromTheSun: [0, 10000]
+    Asteroid: true
+    PlanetSize: [2, 5]

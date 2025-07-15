@@ -10,7 +10,7 @@ CelestialBodyClass:
   AtmosphereColor: [0.71, 0.6, 0.7]
   AtmosphereIntensity: 0.8
   AtmosphereWidth: 1.4
-  PlanetSize: 20 35
+  PlanetSize: [20, 35]
   Star: true
   DistanceFromTheSun: 0
   SpawnOdds: 0
@@ -24,7 +24,7 @@ CelestialBodyClass:
   AtmosphereColor: [0.56, 0.4, 0.7]
   AtmosphereIntensity: 0.5
   AtmosphereWidth: 1.2
-  PlanetSize: 20 35
+  PlanetSize: [20, 35]
   Star: true
   DistanceFromTheSun: 0
   SpawnOdds: 0
@@ -38,7 +38,7 @@ CelestialBodyClass:
   AtmosphereColor: [0.6, 0.3, 0.6]
   AtmosphereIntensity: 1.0
   AtmosphereWidth: 0.5
-  PlanetSize: 20 35
+  PlanetSize: [20, 35]
   Star: true
   DistanceFromTheSun: 0
   SpawnOdds: 0
@@ -52,7 +52,7 @@ CelestialBodyClass:
   AtmosphereColor: [0.09, 0.7, 0.7]
   AtmosphereIntensity: 0.5
   AtmosphereWidth: 1.9
-  PlanetSize: 20 35
+  PlanetSize: [20, 35]
   Star: true
   DistanceFromTheSun: 0
   SpawnOdds: 0
@@ -66,7 +66,7 @@ CelestialBodyClass:
   AtmosphereColor: [0.06, 0.65, 0.7]
   AtmosphereIntensity: 0.6
   AtmosphereWidth: 1.25
-  PlanetSize: 20 35
+  PlanetSize: [20, 35]
   Star: true
   DistanceFromTheSun: 0
   SpawnOdds: 0
@@ -80,7 +80,7 @@ CelestialBodyClass:
   AtmosphereColor: [0.01, 0.9, 0.6]
   AtmosphereIntensity: 0.1
   AtmosphereWidth: 1.0
-  PlanetSize: 20 30
+  PlanetSize: [20, 30]
   Star: true
   DistanceFromTheSun: 0
   SpawnOdds: 0
@@ -94,7 +94,7 @@ CelestialBodyClass:
   AtmosphereColor: [0.01, 0.9, 0.6]
   AtmosphereIntensity: 0.1
   AtmosphereWidth: 1.0
-  PlanetSize: 30 40
+  PlanetSize: [30, 40]
   Star: true
   DistanceFromTheSun: 0
   SpawnOdds: 0
@@ -108,7 +108,7 @@ CelestialBodyClass:
   AtmosphereColor: [0.87, 0.6, 0.4]
   AtmosphereIntensity: 0.7
   AtmosphereWidth: 0.7
-  PlanetSize: 30 35
+  PlanetSize: [30, 35]
   Star: true
   DistanceFromTheSun: 0
   SpawnOdds: 0
@@ -125,9 +125,8 @@ CelestialBodyClass:
   AtmosphereColor: [0.075, 0.13, 1.5]
   AtmosphereIntensity: 1
   AtmosphereWidth: 1
-  PlanetSize: 20 35
+  PlanetSize: [20, 35]
   Star: true
   DistanceFromTheSun: 0
   SpawnOdds: 0
   Colonizable: false
----

@@ -1,0 +1,10 @@
+﻿Temperatures:
+  - Temperature:
+      UniqueId: temp_cold
+      Name: "Text_Cold"
+  - Temperature:
+      UniqueId: temp_temperate
+      Name: "Text_Temperate"
+  - Temperature:
+      UniqueId: temp_hot
+      Name: "Text_Hot"

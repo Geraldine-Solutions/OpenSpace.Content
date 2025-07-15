@@ -1,22 +1,131 @@
-﻿LocalizableText:
-  UniqueId: text_cancel
-  Name: "Cancel"
-  Translations:
-    en-US: "Cancel"
-    fr: ""
-    es: ""
-    de: ""
-    ru: ""
-    zh-Hans: ""
----
-LocalizableText:
-  UniqueId: text_next
-  Name: "Next"
-  Translations:
-    en-US: "Next"
-    fr: ""
-    es: ""
-    de: ""
-    ru: ""
-    zh-Hans: ""
----
+﻿Localization:
+  - LocalizableText:
+      UniqueId: Text_Cancel
+      Name: "Cancel"
+      Translations:
+        en-US: "Cancel"
+        fr: "Annuler"
+        es: "Cancelar"
+        de: "Abbrechen"
+        ru: "Отмена"
+        zh-Hans: "取消"
+  - LocalizableText:
+      UniqueId: Text_Next
+      Name: "Next"
+      Translations:
+        en-US: "Next"
+        fr: "Suivant"
+        es: "Siguiente"
+        de: "Weiter"
+        ru: "Далее"
+        zh-Hans: "下一步"
+  - LocalizableText:
+      UniqueId: Text_None
+      Name: "None"
+      Translations:
+        en-US: "None"
+        fr: "Aucune"
+        es: "Ninguna"
+        de: "Keine"
+        ru: "Отсутствует"
+        zh-Hans: "无"
+  - LocalizableText:
+      UniqueId: Text_CO2
+      Name: "CO2"
+      Translations:
+        en-US: "CO₂"
+        fr: "CO₂"
+        es: "CO₂"
+        de: "CO₂"
+        ru: "CO₂"
+        zh-Hans: "二氧化碳"
+  - LocalizableText:
+      UniqueId: Text_Methane
+      Name: "Methane"
+      Translations:
+        en-US: "Methane"
+        fr: "Méthane"
+        es: "Metano"
+        de: "Methan"
+        ru: "Метан"
+        zh-Hans: "甲烷"
+  - LocalizableText:
+      UniqueId: Text_Ammonia
+      Name: "Ammonia"
+      Translations:
+        en-US: "Ammonia"
+        fr: "Ammoniac"
+        es: "Amoniaco"
+        de: "Ammoniak"
+        ru: "Аммиак"
+        zh-Hans: "氨气"
+  - LocalizableText:
+      UniqueId: Text_Oxygenated
+      Name: "Oxygenated"
+      Translations:
+        en-US: "Oxygenated"
+        fr: "Oxygénée"
+        es: "Oxigenada"
+        de: "Sauerstoffhaltig"
+        ru: "С кислородом"
+        zh-Hans: "含氧"
+  - LocalizableText:
+      UniqueId: Text_Cold
+      Name: "Cold"
+      Translations:
+        en-US: "Cold"
+        fr: "Froid"
+        es: "Frío"
+        de: "Kalt"
+        ru: "Холодный"
+        zh-Hans: "寒冷"
+  - LocalizableText:
+      UniqueId: Text_Temperate
+      Name: "Temperate"
+      Translations:
+        en-US: "Temperate"
+        fr: "Tempéré"
+        es: "Templado"
+        de: "Gemäßigt"
+        ru: "Умеренный"
+        zh-Hans: "温带"
+  - LocalizableText:
+      UniqueId: Text_Hot
+      Name: "Hot"
+      Translations:
+        en-US: "Hot"
+        fr: "Chaud"
+        es: "Caliente"
+        de: "Heiß"
+        ru: "Жаркий"
+        zh-Hans: "炎热"
+  - LocalizableText:
+      UniqueId: Text_Dry
+      Name: "Dry"
+      Translations:
+        en-US: "Dry"
+        fr: "Sec"
+        es: "Seco"
+        de: "Trocken"
+        ru: "Сухой"
+        zh-Hans: "干燥"
+  - LocalizableText:
+      UniqueId: Text_Mild
+      Name: "Mild"
+      Translations:
+        en-US: "Mild"
+        fr: "Doux"
+        es: "Suave"
+        de: "Mild"
+        ru: "Мягкий"
+        zh-Hans: "温和"
+  - LocalizableText:
+      UniqueId: Text_Wet
+      Name: "Wet"
+      Translations:
+        en-US: "Wet"
+        fr: "Humide"
+        es: "Húmedo"
+        de: "Feucht"
+        ru: "Влажный"
+        zh-Hans: "潮湿"

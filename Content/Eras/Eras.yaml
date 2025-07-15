@@ -1,38 +1,31 @@
-﻿Era:
-  UniqueId: era_genesis
-  Name: "Genesis Era"
-  Text: text_era_genesis
-  SortOrder: 0
-  EnabledImagePath: "gfx/eras/Genesis Era Thumbnail"
-  DisabledImagePath: "gfx/eras/Genesis Era Disabled"
-  SetEthicsInMenu: false
-  SetAuthorityInMenu: false
-  SetAscensionInMenu: false
----
-Era:
-  UniqueId: era_frontier
-  Name: "Frontier Era"
-  Text: text_era_frontier
-  SortOrder: 1
-  EnabledImagePath: "gfx/eras/Frontier Era Thumbnail"
-  DisabledImagePath: "gfx/eras/Frontier Era Disabled"
-  SetAuthorityInMenu: false
-  SetAscensionInMenu: false
----
-Era:
-  UniqueId: era_celestial
-  Name: "Celestial Era"
-  Text: text_era_celestial
-  SortOrder: 2
-  EnabledImagePath: "gfx/eras/Celestial Era Thumbnail"
-  DisabledImagePath: "gfx/eras/Celestial Era Disabled"
-  SetAscensionInMenu: false
----
-Era:
-  UniqueId: era_interstellar
-  Name: "Interstellar Era"
-  Text: text_era_interstellar
-  SortOrder: 3
-  EnabledImagePath: "gfx/eras/Interstellar Era Thumbnail"
-  DisabledImagePath: "gfx/eras/Interstellar Era Disabled"
----
+﻿Eras:
+  - UniqueId: era_genesis
+    Name: "Genesis Era"
+    Text: text_era_genesis
+    SortOrder: 0
+    EnabledImagePath: "gfx/eras/Genesis Era Thumbnail"
+    DisabledImagePath: "gfx/eras/Genesis Era Disabled"
+    SetEthicsInMenu: false
+    SetAuthorityInMenu: false
+    SetAscensionInMenu: false
+  - UniqueId: era_frontier
+    Name: "Frontier Era"
+    Text: text_era_frontier
+    SortOrder: 1
+    EnabledImagePath: "gfx/eras/Frontier Era Thumbnail"
+    DisabledImagePath: "gfx/eras/Frontier Era Disabled"
+    SetAuthorityInMenu: false
+    SetAscensionInMenu: false
+  - UniqueId: era_celestial
+    Name: "Celestial Era"
+    Text: text_era_celestial
+    SortOrder: 2
+    EnabledImagePath: "gfx/eras/Celestial Era Thumbnail"
+    DisabledImagePath: "gfx/eras/Celestial Era Disabled"
+    SetAscensionInMenu: false
+  - UniqueId: era_interstellar
+    Name: "Interstellar Era"
+    Text: text_era_interstellar
+    SortOrder: 3
+    EnabledImagePath: "gfx/eras/Interstellar Era Thumbnail"
+    DisabledImagePath: "gfx/eras/Interstellar Era Disabled"

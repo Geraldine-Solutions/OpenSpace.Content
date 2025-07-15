@@ -1,0 +1,304 @@
+﻿Biomes:
+  - Biome:
+      UniqueId: bio_Scorched_Wastes
+      Name: "Text_Scorched_Wastes"
+      AllowedTemperatures:
+        - temp_Hot
+      AllowedHumidityLevels:
+        - hum_Dry
+        - hum_Mild
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_None
+
+  - Biome:
+      UniqueId: bio_Volcanic_Barrens
+      Name: "Text_Volcanic_Barrens"
+      AllowedTemperatures:
+        - temp_Hot
+      AllowedHumidityLevels:
+        - hum_Dry
+      AllowedAtmospheres:
+        - atmo_CO2
+
+  - Biome:
+      UniqueId: bio_Desert_Highlands
+      Name: "Text_Desert_Highlands"
+      AllowedTemperatures:
+        - temp_Hot
+      AllowedHumidityLevels:
+        - hum_Dry
+      AllowedAtmospheres:
+        - atmo_Oxygenated
+
+  - Biome:
+      UniqueId: bio_Toxic_Savannah
+      Name: "Text_Toxic_Savannah"
+      AllowedTemperatures:
+        - temp_Hot
+      AllowedHumidityLevels:
+        - hum_Mild
+      AllowedAtmospheres:
+        - atmo_CO2
+        - atmo_Methane
+
+  - Biome:
+      UniqueId: bio_Tropical_Jungle
+      Name: "Text_Tropical_Jungle"
+      AllowedTemperatures:
+        - temp_Hot
+      AllowedHumidityLevels:
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_Oxygenated
+
+  - Biome:
+      UniqueId: bio_Boiling_Mire
+      Name: "Text_Boiling_Mire"
+      AllowedTemperatures:
+        - temp_Hot
+      AllowedHumidityLevels:
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_Methane
+        - atmo_Ammonia
+
+  - Biome:
+      UniqueId: bio_Sulfur_Flats
+      Name: "Text_Sulfur_Flats"
+      AllowedTemperatures:
+        - temp_Hot
+      AllowedHumidityLevels:
+        - hum_Mild
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_CO2
+
+  - Biome:
+      UniqueId: bio_Frozen_Wastes
+      Name: "Text_Frozen_Wastes"
+      AllowedTemperatures:
+        - temp_Cold
+      AllowedHumidityLevels:
+        - hum_Dry
+        - hum_Mild
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_None
+        - atmo_CO2
+        - atmo_Methane
+
+  - Biome:
+      UniqueId: bio_Glacial_Highlands
+      Name: "Text_Glacial_Highlands"
+      AllowedTemperatures:
+        - temp_Cold
+      AllowedHumidityLevels:
+        - hum_Mild
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_Oxygenated
+
+  - Biome:
+      UniqueId: bio_Snowfields
+      Name: "Text_Snowfields"
+      AllowedTemperatures:
+        - temp_Cold
+      AllowedHumidityLevels:
+        - hum_Dry
+      AllowedAtmospheres:
+        - atmo_Oxygenated
+
+  - Biome:
+      UniqueId: bio_Cryo_Marsh
+      Name: "Text_Cryo_Marsh"
+      AllowedTemperatures:
+        - temp_Cold
+      AllowedHumidityLevels:
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_Methane
+        - atmo_Ammonia
+
+  - Biome:
+      UniqueId: bio_Toxic_Tundra
+      Name: "Text_Toxic_Tundra"
+      AllowedTemperatures:
+        - temp_Cold
+      AllowedHumidityLevels:
+        - hum_Mild
+      AllowedAtmospheres:
+        - atmo_CO2
+        - atmo_Ammonia
+
+  - Biome:
+      UniqueId: bio_Martian_Barrens
+      Name: "Text_Martian_Barrens"
+      AllowedTemperatures:
+        - temp_Temperate
+      AllowedHumidityLevels:
+        - hum_Dry
+      AllowedAtmospheres:
+        - atmo_None
+        - atmo_CO2
+
+  - Biome:
+      UniqueId: bio_Toxic_Steppe
+      Name: "Text_Toxic_Steppe"
+      AllowedTemperatures:
+        - temp_Temperate
+      AllowedHumidityLevels:
+        - hum_Dry
+        - hum_Mild
+      AllowedAtmospheres:
+        - atmo_CO2
+        - atmo_Methane
+        - atmo_Ammonia
+
+  - Biome:
+      UniqueId: bio_Badlands
+      Name: "Text_Badlands"
+      AllowedTemperatures:
+        - temp_Temperate
+      AllowedHumidityLevels:
+        - hum_Dry
+      AllowedAtmospheres:
+        - atmo_Oxygenated
+
+  - Biome:
+      UniqueId: bio_Temperate_Forest
+      Name: "Text_Temperate_Forest"
+      AllowedTemperatures:
+        - temp_Temperate
+      AllowedHumidityLevels:
+        - hum_Mild
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_Oxygenated
+
+  - Biome:
+      UniqueId: bio_Shrouded_Jungle
+      Name: "Text_Shrouded_Jungle"
+      AllowedTemperatures:
+        - temp_Temperate
+      AllowedHumidityLevels:
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_CO2
+        - atmo_Methane
+        - atmo_Ammonia
+
+  - Biome:
+      UniqueId: bio_Alien_Swamplands
+      Name: "Text_Alien_Swamplands"
+      AllowedTemperatures:
+        - temp_Temperate
+      AllowedHumidityLevels:
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_Methane
+        - atmo_Ammonia
+
+  - Biome:
+      UniqueId: bio_Toxic_Savanna
+      Name: "Text_Toxic_Savanna"
+      AllowedTemperatures:
+        - temp_Hot
+      AllowedHumidityLevels:
+        - hum_Mild
+      AllowedAtmospheres:
+        - atmo_CO2
+        - atmo_Methane
+
+  - Biome:
+      UniqueId: bio_Xenogrove
+      Name: "Text_Xenogrove"
+      AllowedTemperatures:
+        - temp_Temperate
+        - temp_Hot
+      AllowedHumidityLevels:
+        - hum_Mild
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_Methane
+        - atmo_Ammonia
+
+  - Biome:
+      UniqueId: bio_Frozen_Dunes
+      Name: "Text_Frozen_Dunes"
+      AllowedTemperatures:
+        - temp_Cold
+      AllowedHumidityLevels:
+        - hum_Dry
+      AllowedAtmospheres:
+        - atmo_Methane
+
+  - Biome:
+      UniqueId: bio_Vacuum_Ranges
+      Name: "Text_Vacuum_Ranges"
+      AllowedTemperatures:
+        - temp_Cold
+        - temp_Temperate
+        - temp_Hot
+      AllowedHumidityLevels:
+        - hum_Dry
+        - hum_Mild
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_None
+
+  - Biome:
+      UniqueId: bio_Subzero_Basin
+      Name: "Text_Subzero_Basin"
+      AllowedTemperatures:
+        - temp_Cold
+      AllowedHumidityLevels:
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_CO2
+
+  - Biome:
+      UniqueId: bio_Ashlands
+      Name: "Text_Ashlands"
+      AllowedTemperatures:
+        - temp_Hot
+        - temp_Temperate
+      AllowedHumidityLevels:
+        - hum_Dry
+      AllowedAtmospheres:
+        - atmo_CO2
+        - atmo_Ammonia
+
+  - Biome:
+      UniqueId: bio_Blight_Fields
+      Name: "Text_Blight_Fields"
+      AllowedTemperatures:
+        - temp_Cold
+        - temp_Temperate
+        - temp_Hot
+      AllowedHumidityLevels:
+        - hum_Mild
+      AllowedAtmospheres:
+        - atmo_Ammonia
+        - atmo_Methane
+
+  - Biome:
+      UniqueId: bio_Plains
+      Name: "Text_Plains"
+      AllowedTemperatures:
+        - temp_Temperate
+      AllowedHumidityLevels:
+        - hum_Mild
+      AllowedAtmospheres:
+        - atmo_Oxygenated
+
+  - Biome:
+      UniqueId: bio_Ocean_Shelf
+      Name: "Text_Ocean_Shelf"
+      AllowedTemperatures:
+        - temp_Temperate
+        - temp_Hot
+      AllowedHumidityLevels:
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_Oxygenated
