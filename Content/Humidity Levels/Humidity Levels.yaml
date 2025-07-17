@@ -1,0 +1,10 @@
+﻿Humidity Levels:
+  - Humidity:
+      UniqueId: hum_Dry
+      Name: "Text_Dry"
+  - Humidity:
+      UniqueId: hum_Mild
+      Name: "Text_Mild"
+  - Humidity:
+      UniqueId: hum_Wet
+      Name: "Text_Wet"

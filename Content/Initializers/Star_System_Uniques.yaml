@@ -1,0 +1,57 @@
+﻿Initializers:
+# Balor
+  - StarSystem:
+      UniqueId: balor_unique_init
+      Name: Balor
+      Class: rl_standard_stars
+      Usage: misc_system_init
+      MaxInstances: 1
+      Children:
+        - Class: star
+          Size: 30
+          HasRing: false
+        - Name: Baal
+          Class: pc_barren
+          Size: 18
+          Orbit:
+            SemiMajorAxis: 550
+          Neighbors:
+            - Name: Baal Primus
+              Class: pc_barren
+              Size: 8
+              Orbit:
+                SemiMajorAxis: 150
+            - Name: Baal Secundus
+              Class: pc_habitable
+              Size: 12
+              Orbit:
+                SemiMajorAxis: 250
+        - Name: Set
+          Class: pc_gas_giant
+          Size: 25
+          HasRing: true
+          Orbit:
+            SemiMajorAxis: 950
+        - Count: 2
+          Class: pc_asteroid
+          Orbit:
+            IsAbsolute: true
+            SemiMajorAxis: 1150
+        - Name: Kheru
+          Class: pc_barren
+          Size: 15
+          Orbit:
+            SemiMajorAxis: 1350
+        - Name: Amair
+          Class: pc_barren
+          Size: 10
+          Orbit:
+            SemiMajorAxis: 1650
+        - Name: Ammonai
+          Class: pc_barren
+          Size: 8
+          Orbit:
+            SemiMajorAxis: 2000
+      AsteroidBelts:
+        - Class: rocky_asteroid_belt
+          Radius: 1150

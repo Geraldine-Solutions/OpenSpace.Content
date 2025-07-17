@@ -1,0 +1,96 @@
+﻿####### Matrix #####
+#####  |Hot |Temperate |Cold |
+# Dry  | X  |    X     |  X  |
+# Mild | X  |    X     |  X  |
+# Wet  | X  |    X     |  X  |
+Initializers:
+#Desert
+  - Region:
+      UniqueId: region_oxygenated_atmo_01
+      Name: "Text_Desert"
+      AllowedTemperatures:
+        - temp_Hot
+      AllowedHumidityLevels:
+        - hum_Dry
+      AllowedAtmospheres:
+        - atmo_Oxygenated
+#Savannah
+  - Region:
+      UniqueId: region_oxygenated_atmo_02
+      Name: "Text_Savannah"
+      AllowedTemperatures:
+        - temp_Hot
+      AllowedHumidityLevels:
+        - hum_Mild
+      AllowedAtmospheres:
+        - atmo_Oxygenated
+#Rainforest
+  - Region:
+      UniqueId: region_oxygenated_atmo_03
+      Name: "Text_Rainforest"
+      AllowedTemperatures:
+        - temp_Hot
+      AllowedHumidityLevels:
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_Oxygenated
+#Arid
+  - Region:
+      UniqueId: region_oxygenated_atmo_04
+      Name: "Text_Arid"
+      AllowedTemperatures:
+        - temp_Temperate
+      AllowedHumidityLevels:
+        - hum_Dry
+      AllowedAtmospheres:
+        - atmo_Oxygenated
+#Plains
+  - Region:
+      UniqueId: region_oxygenated_atmo_05
+      Name: "Text_Plains"
+      AllowedTemperatures:
+        - temp_Temperate
+      AllowedHumidityLevels:
+        - hum_Mild
+      AllowedAtmospheres:
+        - atmo_Oxygenated
+#Wetlands
+  - Region:
+      UniqueId: region_oxygenated_atmo_06
+      Name: "Text_Wetlands"
+      AllowedTemperatures:
+        - temp_Temperate
+      AllowedHumidityLevels:
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_Oxygenated
+#Tundra
+  - Region:
+      UniqueId: region_oxygenated_atmo_07
+      Name: "Text_Tundra"
+      AllowedTemperatures:
+        - temp_Cold
+      AllowedHumidityLevels:
+        - hum_Dry
+      AllowedAtmospheres:
+        - atmo_Oxygenated
+#Boreal
+  - Region:
+      UniqueId: region_oxygenated_atmo_08
+      Name: "Text_Boreal"
+      AllowedTemperatures:
+        - temp_Cold
+      AllowedHumidityLevels:
+        - hum_Mild
+      AllowedAtmospheres:
+        - atmo_Oxygenated
+#Snow
+  - Region:
+      UniqueId: region_oxygenated_atmo_09
+      Name: "Text_Snow"
+      AllowedTemperatures:
+        - temp_Cold
+      AllowedHumidityLevels:
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_Oxygenated

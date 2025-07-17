@@ -9,7 +9,7 @@ Entity:
   Scale: 1.0
   Mesh: "geosphere_mesh"
   Materials:
-    Clouds_Geosphere:
+    001:
       Shader: "Space Graphics Toolkit/Planet"
       Properties:
         # Basic Properties
@@ -61,7 +61,7 @@ Entity:
         _SGT_SphereMaskPosition: [0.0, 0.0, 0.0, 0.0]
         _SGT_SphereMaskRadius: 1.0
         _SGT_SphereMaskFalloff: 3.0
-#    Clouds_Geosphere:
+    Clouds_Geosphere:
 #      Shader: "Space Graphics Toolkit/Cloudsphere"
 #      Properties:
 #        # Basic Properties

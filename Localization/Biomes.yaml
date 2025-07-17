@@ -1,0 +1,261 @@
+﻿Localization:
+  - LocalizableText:
+      UniqueId: Text_Scorched_Wastes
+      Name: "Scorched Wastes"
+      Translations:
+        en-US: "Scorched Wastes"
+        fr: "Terres Brûlées"
+        es: "Yermos Abrasados"
+        de: "Verbrannte Ödnis"
+        ru: "Опалённые Пустоши"
+        zh-Hans: "灼热荒原"
+  - LocalizableText:
+      UniqueId: Text_Volcanic_Barrens
+      Name: "Volcanic Barrens"
+      Translations:
+        en-US: "Volcanic Barrens"
+        fr: "Terres Volcaniques"
+        es: "Yermos Volcánicos"
+        de: "Vulkanische Einöde"
+        ru: "Вулканические Пустоши"
+        zh-Hans: "火山荒地"
+  - LocalizableText:
+      UniqueId: Text_Desert_Highlands
+      Name: "Desert Highlands"
+      Translations:
+        en-US: "Desert Highlands"
+        fr: "Hautes Terres Désertiques"
+        es: "Altiplano Desértico"
+        de: "Wüstenhochland"
+        ru: "Пустынное Нагорье"
+        zh-Hans: "沙漠高地"
+  - LocalizableText:
+      UniqueId: Text_Toxic_Savannah
+      Name: "Toxic Savannah"
+      Translations:
+        en-US: "Toxic Savannah"
+        fr: "Savane Toxique"
+        es: "Sabana Tóxica"
+        de: "Toxische Savanne"
+        ru: "Ядовитая Саванна"
+        zh-Hans: "毒性稀树草原"
+  - LocalizableText:
+      UniqueId: Text_Tropical_Jungle
+      Name: "Tropical Jungle"
+      Translations:
+        en-US: "Tropical Jungle"
+        fr: "Jungle Tropicale"
+        es: "Selva Tropical"
+        de: "Tropischer Dschungel"
+        ru: "Тропические Джунгли"
+        zh-Hans: "热带丛林"
+  - LocalizableText:
+      UniqueId: Text_Boiling_Mire
+      Name: "Boiling Mire"
+      Translations:
+        en-US: "Boiling Mire"
+        fr: "Marécage Bouillant"
+        es: "Ciénaga Hirviente"
+        de: "Kochendes Sumpfgebiet"
+        ru: "Кипящее Болото"
+        zh-Hans: "沸腾泥沼"
+  - LocalizableText:
+      UniqueId: Text_Sulfur_Flats
+      Name: "Sulfur Flats"
+      Translations:
+        en-US: "Sulfur Flats"
+        fr: "Plaines Sulfureuses"
+        es: "Llanuras de Azufre"
+        de: "Schwefelebenen"
+        ru: "Серные Равнины"
+        zh-Hans: "硫磺平原"
+  - LocalizableText:
+      UniqueId: Text_Frozen_Wastes
+      Name: "Frozen Wastes"
+      Translations:
+        en-US: "Frozen Wastes"
+        fr: "Terres Gelées"
+        es: "Yermos Helados"
+        de: "Gefrorene Ödnis"
+        ru: "Замёрзшие Пустоши"
+        zh-Hans: "冰封荒原"
+  - LocalizableText:
+      UniqueId: Text_Glacial_Highlands
+      Name: "Glacial Highlands"
+      Translations:
+        en-US: "Glacial Highlands"
+        fr: "Hautes Terres Glaciaires"
+        es: "Altiplano Glacial"
+        de: "Gletscherhochland"
+        ru: "Ледниковое Нагорье"
+        zh-Hans: "冰川高地"
+  - LocalizableText:
+      UniqueId: Text_Snowfields
+      Name: "Snowfields"
+      Translations:
+        en-US: "Snowfields"
+        fr: "Champs de Neige"
+        es: "Campos de Nieve"
+        de: "Schneefelder"
+        ru: "Снежные Поля"
+        zh-Hans: "雪原"
+  - LocalizableText:
+      UniqueId: Text_Cryo_Marsh
+      Name: "Cryo Marsh"
+      Translations:
+        en-US: "Cryo Marsh"
+        fr: "Marais Cryogénique"
+        es: "Pantano Criogénico"
+        de: "Kryosumpf"
+        ru: "Крио-Болото"
+        zh-Hans: "冷冻沼泽"
+  - LocalizableText:
+      UniqueId: Text_Toxic_Tundra
+      Name: "Toxic Tundra"
+      Translations:
+        en-US: "Toxic Tundra"
+        fr: "Toundra Toxique"
+        es: "Tundra Tóxica"
+        de: "Toxische Tundra"
+        ru: "Ядовитая Тундра"
+        zh-Hans: "毒性苔原"
+  - LocalizableText:
+      UniqueId: Text_Martian_Barrens
+      Name: "Martian Barrens"
+      Translations:
+        en-US: "Martian Barrens"
+        fr: "Terres Martiennes"
+        es: "Yermos Marcianos"
+        de: "Marsöde"
+        ru: "Марсианские Пустоши"
+        zh-Hans: "火星荒原"
+  - LocalizableText:
+      UniqueId: Text_Toxic_Steppe
+      Name: "Toxic Steppe"
+      Translations:
+        en-US: "Toxic Steppe"
+        fr: "Steppe Toxique"
+        es: "Estepa Tóxica"
+        de: "Toxische Steppe"
+        ru: "Ядовитая Степь"
+        zh-Hans: "毒性草原"
+  - LocalizableText:
+      UniqueId: Text_Badlands
+      Name: "Badlands"
+      Translations:
+        en-US: "Badlands"
+        fr: "Terres Inhospitalières"
+        es: "Tierras Baldías"
+        de: "Ödland"
+        ru: "Пустоши"
+        zh-Hans: "荒地"
+  - LocalizableText:
+      UniqueId: Text_Temperate_Forest
+      Name: "Temperate Forest"
+      Translations:
+        en-US: "Temperate Forest"
+        fr: "Forêt Tempérée"
+        es: "Bosque Templado"
+        de: "Gemäßigter Wald"
+        ru: "Умеренный Лес"
+        zh-Hans: "温带森林"
+  - LocalizableText:
+      UniqueId: Text_Shrouded_Jungle
+      Name: "Shrouded Jungle"
+      Translations:
+        en-US: "Shrouded Jungle"
+        fr: "Jungle Voilée"
+        es: "Selva Oculta"
+        de: "Verhüllter Dschungel"
+        ru: "Скрытые Джунгли"
+        zh-Hans: "迷雾丛林"
+  - LocalizableText:
+      UniqueId: Text_Alien_Swamplands
+      Name: "Alien Swamplands"
+      Translations:
+        en-US: "Alien Swamplands"
+        fr: "Marais Extraterrestres"
+        es: "Pantanos Alienígenas"
+        de: "Fremdartige Sümpfe"
+        ru: "Инопланетные Болота"
+        zh-Hans: "异星沼泽"
+  - LocalizableText:
+      UniqueId: Text_Xenogrove
+      Name: "Xenogrove"
+      Translations:
+        en-US: "Xenogrove"
+        fr: "Bosquet Xéno"
+        es: "Bosque Xeno"
+        de: "Xenohain"
+        ru: "Ксено-роща"
+        zh-Hans: "异种树林"
+  - LocalizableText:
+      UniqueId: Text_Frozen_Dunes
+      Name: "Frozen Dunes"
+      Translations:
+        en-US: "Frozen Dunes"
+        fr: "Dunes Gelées"
+        es: "Dunas Congeladas"
+        de: "Gefrorene Dünen"
+        ru: "Замерзшие Дюны"
+        zh-Hans: "冰冻沙丘"
+  - LocalizableText:
+      UniqueId: Text_Vacuum_Ranges
+      Name: "Vacuum Ranges"
+      Translations:
+        en-US: "Vacuum Ranges"
+        fr: "Chaînes du Vide"
+        es: "Cordilleras del Vacío"
+        de: "Vakuumgebirge"
+        ru: "Вакуумные Хребты"
+        zh-Hans: "真空山脉"
+  - LocalizableText:
+      UniqueId: Text_Subzero_Basin
+      Name: "Subzero Basin"
+      Translations:
+        en-US: "Subzero Basin"
+        fr: "Bassin Glacial"
+        es: "Cuenca Subcero"
+        de: "Tiefkaltbecken"
+        ru: "Субнолевая Впадина"
+        zh-Hans: "零下盆地"
+  - LocalizableText:
+      UniqueId: Text_Ashlands
+      Name: "Ashlands"
+      Translations:
+        en-US: "Ashlands"
+        fr: "Terres de Cendres"
+        es: "Tierras de Ceniza"
+        de: "Ascheland"
+        ru: "Пепельные Земли"
+        zh-Hans: "灰烬之地"
+  - LocalizableText:
+      UniqueId: Text_Blight_Fields
+      Name: "Blight Fields"
+      Translations:
+        en-US: "Blight Fields"
+        fr: "Champs Ravagés"
+        es: "Campos Marchitos"
+        de: "Seuchenfelder"
+        ru: "Поля Порчи"
+        zh-Hans: "枯萎之原"
+  - LocalizableText:
+      UniqueId: Text_Plains
+      Name: "Plains"
+      Translations:
+        en-US: "Plains"
+        fr: "Plaines"
+        es: "Llanuras"
+        de: "Ebenen"
+        ru: "Равнины"
+        zh-Hans: "平原"
+  - LocalizableText:
+      UniqueId: Text_Ocean_Shelf
+      Name: "Ocean Shelf"
+      Translations:
+        en-US: "Ocean Shelf"
+        fr: "Plateau Océanique"
+        es: "Plataforma Oceánica"
+        de: "Ozeanschelf"
+        ru: "Океаническое Плато"
+        zh-Hans: "海洋陆架"

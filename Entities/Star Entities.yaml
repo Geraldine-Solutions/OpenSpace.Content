@@ -106,9 +106,8 @@ Entity:
       Properties:
         # Basic Properties
         _Color: "#FFC67E"
-        _Brightness: "1.0"
+        _Brightness: 10
         _MainWarp: "0.005"
-        _MainTex: ""
         
         # Rim
         _RimColor: "#FFFFFF"
@@ -129,7 +128,6 @@ Entity:
         _SunspotsColor: "#FFFFFF"
         _SunspotsStrength: "1.0"
         _SunspotsWarp: "0.005"
-        _SunspotsTex: ""
 
         # Unity Fog
         _CW_DisableFog: "false"

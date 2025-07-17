@@ -35,4 +35,3 @@ sprite:
     bottom: 10  # Bottom border to preserve the bottom edge
     right: 10  # Right border to preserve the right edge
     top: 10    # Top border to preserve the header aspect ratio (adjust to match header height)
----

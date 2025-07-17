@@ -66,4 +66,3 @@ Ethic:
                       OR:
                         - has_ethic: ethic_fanatic_authoritarian
                         - has_ethic: ethic_authoritarian
----
