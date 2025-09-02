@@ -1,36 +1,161 @@
 ﻿Initializers:
-#Habitable
+###############
+# Standard Stars
+###############
+# Blue Stars
   - CelestialBody:
-    UniqueId: habitable_init_01  
-    DistanceFromTheSun: [1000, 4000]
-    ChanceOfRing: 0.2
-    PlanetSize: [8, 20]
-    MoonSize: [3, 7]
-    Climate:
-      Atmosphere: "atmo_Oxygenated"
-      Humidity: "hum_Mild"
-      Temperature: "temp_Temperate"
-#Barren
+      UniqueId: star_init_b 
+      RenderEntity: "UI_Star_Render_Entity"
+      Star: true
+      Icon: "GFX_map_b_star"
+      Material: "mat_b_class_star"
+      PlanetSize: [1460970, 4591620] #KM
+      SpawnOdds: 10
+      Colonizable: false
+      Climate:
+        Atmosphere: "corona_b_type"
+# White or Blueish Stars
   - CelestialBody:
-    UniqueId: barren_init_01  
-    DistanceFromTheSun: [0, 10000]
-    ChanceOfRing: 0.2
-    PlanetSize: [8, 20]
-    MoonSize: [3, 7]
-    Climate:
-      Atmosphere: "atmo_None"
-      Humidity: "hum_Dry"
-      Temperature: "temp_Cold"
-#Gas Giant
+      UniqueId: star_init_a 
+      RenderEntity: "UI_Star_Render_Entity"
+      Star: true
+      Icon: "GFX_map_a_star"
+      Material: "mat_a_class_star"
+      PlanetSize: [800055, 1460970] #KM
+      SpawnOdds: 10
+      Colonizable: false
+      Climate:
+        Atmosphere: "corona_a_type"
+# Yellow-White Dwarves
   - CelestialBody:
-    UniqueId: gas_giant_init_01  
-    DistanceFromTheSun: [400, 10000]
-    CanBeMoon: false
-    ChanceOfRing: 0.6
-    PlanetSize: [20, 30]
-#Asteroid
+      UniqueId: star_init_f
+      RenderEntity: "UI_Star_Render_Entity"
+      Star: true
+      Icon: "GFX_map_f_star"
+      Material: "mat_f_class_star"
+      PlanetSize: [667872, 800055] #KM
+      SpawnOdds: 20
+      Colonizable: false
+      Climate:
+        Atmosphere: "corona_f_type"
+# Yellow Dwarves
   - CelestialBody:
-    UniqueId: asteroid_init_01  
-    DistanceFromTheSun: [0, 10000]
-    Asteroid: true
-    PlanetSize: [2, 5]
+      UniqueId: star_init_g
+      RenderEntity: "UI_Star_Render_Entity"
+      Star: true
+      Icon: "GFX_map_g_star"
+      Material: "mat_g_class_star"
+      PlanetSize: [55656, 667872] #KM
+      SpawnOdds: 15
+      Colonizable: false
+      Climate:
+        Atmosphere: "corona_g_type"
+# Orange Dwarves
+  - CelestialBody:
+      UniqueId: star_init_k
+      RenderEntity: "UI_Star_Render_Entity"
+      Star: true
+      Icon: "GFX_map_k_star"
+      Material: "mat_k_class_star"
+      PlanetSize: [55656, 55656] #KM
+      SpawnOdds: 20
+      Colonizable: false
+      Climate:
+        Atmosphere: "corona_k_type"
+# Red Dwarves
+  - CelestialBody:
+      UniqueId: star_init_m
+      RenderEntity: "UI_Star_Render_Entity"
+      Star: true
+      Icon: "GFX_map_m_star"
+      Material: "mat_m_class_star"
+      PlanetSize: [55656, 4591620] #KM
+      SpawnOdds: 20
+      Colonizable: false
+      Climate:
+        Atmosphere: "corona_m_type"
+# Red Giants
+  - CelestialBody:
+      UniqueId: star_init_m_giant
+      RenderEntity: "UI_Star_Render_Entity"
+      Star: true
+      Icon: "GFX_map_m_giant_star"
+      Material: "mat_m_class_star"
+      PlanetSize: [4591620, 11131200] #KM
+      SpawnOdds: 20
+      Colonizable: false
+      Climate:
+        Atmosphere: "corona_m_type"
+# Brown Dwarves
+  - CelestialBody:
+      UniqueId: star_init_t
+      RenderEntity: "UI_Star_Render_Entity"
+      Star: true
+      Icon: "GFX_map_t_star"
+      Material: "mat_t_class_star"
+      PlanetSize: [55656, 55656] #KM
+      SpawnOdds: 10
+      Colonizable: false
+      Climate:
+        Atmosphere: "corona_t_type"
+###############
+# Rare Stars
+###############
+# Black Holes
+  - CelestialBody:
+      UniqueId: star_init_black_hole
+      RenderEntity: "UI_Black_hole_Render_Entity"
+      Star: true
+      Icon: "GFX_map_black_hole"
+      PlanetSize: [55656, 4591620] #KM
+      SpawnOdds: 0.8
+      Colonizable: false
+---
+###############
+# RANDOM LISTS
+###############
+RandomList:
+  UniqueId: rl_standard_stars
+  Name: Standard Stars
+  Choices:
+    - star_init_b
+    - star_init_a
+    - star_init_f
+    - star_init_g
+    - star_init_k
+    - star_init_m
+    - star_init_m_giant
+---
+RandomList:
+  UniqueId: rl_special_stars
+  Name: Special Stars
+  Choices:
+    - star_init_black_hole
+#    - sc_neutron_star
+#    - sc_pulsar
+---
+RandomList:
+  UniqueId: rl_dwarf_stars
+  Name: Dwarf Stars
+  Choices:
+    - star_init_f
+    - star_init_g
+    - star_init_k
+    - star_init_m
+    - star_init_t
+---
+RandomList:
+  UniqueId: rl_all_stars
+  Name: All Stars
+  Choices:
+    - star_init_b
+    - star_init_a
+    - star_init_f
+    - star_init_g
+    - star_init_k
+    - star_init_m
+    - star_init_m_giant
+    - star_init_t
+    - star_init_black_hole
+#    - sc_neutron_star
+#    - sc_pulsar

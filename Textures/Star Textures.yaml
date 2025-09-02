@@ -1,0 +1,39 @@
+﻿Textures:
+#Stars
+  - UniqueId: "tex_prominence1"
+    Kind: "Texture2D"
+    Path: "Stars/Prominence1.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Bilinear"
+    WrapMode: "Per-axis"
+    uAxis: "Clamp"
+    vAxis: "Repeat"
+    AnisoLevel: 8
+  - UniqueId: "tex_prominence_noise"
+    Kind: "Single Channel"
+    TextureShape: "2D"
+    Channel: "Alpha"
+    AlphaSource: "From Gray Scale"
+    Path: "Stars/ProminenceNoise.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 8
+  - UniqueId: "tex_star_flow"
+    Kind: "Texture2D"
+    Path: "Stars/StarFlow.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_star_sunspots"
+    Kind: "Texture2D"
+    Path: "Stars/StarSunspots.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4

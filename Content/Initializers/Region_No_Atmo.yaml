@@ -8,6 +8,7 @@ Initializers:
   - Region:
       UniqueId: region_no_atmo_01
       Name: "Text_Vacuum_Ranges"
+      RenderEntity: "UI_Headless_Floating_Target"
       AllowedTemperatures:
         - temp_Cold
         - temp_Temperate
@@ -20,25 +21,27 @@ Initializers:
         - atmo_None
 #Scorched Wastes
   - Region:
-    UniqueId: region_no_atmo_02
-    Name: "Text_Scorched_Wastes"
-    AllowedTemperatures:
-      - temp_Hot
-    AllowedHumidityLevels:
-      - hum_Dry
-      - hum_Mild
-      - hum_Wet
-    AllowedAtmospheres:
-      - atmo_None
+      UniqueId: region_no_atmo_02
+      Name: "Text_Scorched_Wastes"
+      RenderEntity: "UI_Headless_Floating_Target"
+      AllowedTemperatures:
+        - temp_Hot
+      AllowedHumidityLevels:
+        - hum_Dry
+        - hum_Mild
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_None
 #Frozen Wastes
   - Region:
-    UniqueId: region_no_atmo_03
-    Name: "Text_Frozen_Wastes"
-    AllowedTemperatures:
-      - temp_Cold
-    AllowedHumidityLevels:
-      - hum_Dry
-      - hum_Mild
-      - hum_Wet
-    AllowedAtmospheres:
-      - atmo_None
+      UniqueId: region_no_atmo_03
+      Name: "Text_Frozen_Wastes"
+      RenderEntity: "UI_Headless_Floating_Target"
+      AllowedTemperatures:
+        - temp_Cold
+      AllowedHumidityLevels:
+        - hum_Dry
+        - hum_Mild
+        - hum_Wet
+      AllowedAtmospheres:
+        - atmo_None

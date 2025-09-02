@@ -1,0 +1,36 @@
+﻿Initializers:
+#Deep
+  - Hex:
+      UniqueId: "hex_deep"
+      Name: "Text_Deep"
+      RenderEntity: "UI_Headless_Floating_Target"
+      MinElevation: 0.0
+      MaxElevation: 0.2
+#Shallow
+  - Hex:
+      UniqueId: "hex_shallow"
+      Name: "Text_Shallow"
+      RenderEntity: "UI_Headless_Floating_Target"
+      MinElevation: 0.2
+      MaxElevation: 0.4
+#Flat
+  - Hex:
+      UniqueId: "hex_flat"
+      Name: "Text_Flat"
+      RenderEntity: "UI_Headless_Floating_Target"
+      MinElevation: 0.4
+      MaxElevation: 0.6
+#Hills
+  - Hex:
+      UniqueId: "hex_hills"
+      Name: "Text_Hills"
+      RenderEntity: "UI_Headless_Floating_Target"
+      MinElevation: 0.6
+      MaxElevation: 0.8
+#Mountains
+  - Hex:
+      UniqueId: "hex_mountains"
+      Name: "Text_Mountains"
+      RenderEntity: "UI_Headless_Floating_Target"
+      MinElevation: 0.8
+      MaxElevation: 1.0

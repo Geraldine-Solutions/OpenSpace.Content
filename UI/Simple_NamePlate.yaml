@@ -4,16 +4,14 @@
 ---
 gui:
   UniqueId: simple_nameplate
-  gameObjects:
-    - textMeshPro:
-        Name: "StarSystemName"
-        Font: "Nacelle-Regular SDF"
-        Text: "{Scope.Name}"
-        Color: "#FFFFFF88"
-        Position: [0, 20]
-        Size: [$nameplate_width, $nameplate_height]
-        Localizable: true
-        FontSize: 12
-        EnableWordWrapping: true
-        Alignment: center
-        Visible: true
+  Name: "StarSystemName"
+  Components:
+    rectTransform:
+      Position: [0, 20, 0]
+    textMeshPro:
+      Font: "Nacelle-Regular SDF"
+      Text: "{Scope.Name}"
+      Color: "#FFFFFF88"
+      Size: [$nameplate_width, $nameplate_height]
+      Localizable: true
+      FontSize: 12

@@ -1,0 +1,98 @@
+LocalizableText:
+  UniqueId: text_game_menu
+  Name: "Game Menu"
+  Translations:
+    en-US: "Game Menu"
+    fr: "Menu du jeu"
+    es: "Menú del juego"
+    de: "Spielmenü"
+    ru: "Игровое меню"
+    zh-Hans: "游戏菜单"
+---
+LocalizableText:
+  UniqueId: text_resume_game
+  Name: "Resume Game"
+  Translations:
+    en-US: "Resume"
+    fr: "Reprendre"
+    es: "Reanudar"
+    de: "Fortsetzen"
+    ru: "Продолжить"
+    zh-Hans: "继续游戏"
+---
+LocalizableText:
+  UniqueId: text_save_game
+  Name: "Save Game"
+  Translations:
+    en-US: "Save Game"
+    fr: "Sauvegarder"
+    es: "Guardar juego"
+    de: "Spiel speichern"
+    ru: "Сохранить игру"
+    zh-Hans: "保存游戏"
+---
+LocalizableText:
+  UniqueId: text_exit_to_main_menu
+  Name: "Exit to Main Menu"
+  Translations:
+    en-US: "Exit to Main Menu"
+    fr: "Retourner au menu principal"
+    es: "Salir al menú principal"
+    de: "Zum Hauptmenü"
+    ru: "В главное меню"
+    zh-Hans: "退出到主菜单"
+---
+LocalizableText:
+  UniqueId: text_warp
+  Name: "Warp"
+  Translations:
+    en-US: "WARP"
+    fr: "DISTORSION"
+    es: "SALTO"
+    de: "SPRUNG"
+    ru: "ВАРП"
+    zh-Hans: "跃迁"
+---
+LocalizableText:
+  UniqueId: text_menu
+  Name: "Menu"
+  Translations:
+    en-US: "MENU"
+    fr: "MENU"
+    es: "MENÚ"
+    de: "MENÜ"
+    ru: "МЕНЮ"
+    zh-Hans: "菜单"
+---
+LocalizableText:
+  UniqueId: text_game_title
+  Name: "Game Title"
+  Translations:
+    en-US: "OpenSpace"
+    fr: "OpenSpace"
+    es: "OpenSpace"
+    de: "OpenSpace"
+    ru: "OpenSpace"
+    zh-Hans: "OpenSpace"
+---
+LocalizableText:
+  UniqueId: text_current_location
+  Name: "Current Location"
+  Translations:
+    en-US: "Current Location"
+    fr: "Emplacement actuel"
+    es: "Ubicación actual"
+    de: "Aktueller Standort"
+    ru: "Текущее местоположение"
+    zh-Hans: "当前位置"
+---
+LocalizableText:
+  UniqueId: text_depth
+  Name: "Depth"
+  Translations:
+    en-US: "Depth"
+    fr: "Profondeur"
+    es: "Profundidad"
+    de: "Tiefe"
+    ru: "Глубина"
+    zh-Hans: "深度" 

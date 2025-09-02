@@ -4,7 +4,6 @@
 ---
 # Rocky
 AsteroidBeltClass:
-  UniqueId: rocky_asteroid_belt
-  Name: Rocky Asteroid Belt
-  AsteroidEntities:
-    - asteroid_entity
+  UniqueId: "rocky_asteroid_belt"
+  Name: "Rocky Asteroid Belt"
+  RenderEntity: "UI_Asteroid_Belt_Render_Entity"

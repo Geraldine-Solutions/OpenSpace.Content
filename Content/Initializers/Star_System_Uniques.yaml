@@ -1,57 +1,252 @@
 ﻿Initializers:
 # Balor
   - StarSystem:
-      UniqueId: balor_unique_init
-      Name: Balor
-      Class: rl_standard_stars
-      Usage: misc_system_init
+      UniqueId: "balor_unique_init"
+      RenderEntity: "UI_StarSystem_Render_Entity"
+      Name: "Balor"
+      Usage: "misc_system_init"
       MaxInstances: 1
       Children:
-        - Class: star
-          Size: 30
-          HasRing: false
-        - Name: Baal
-          Class: pc_barren
-          Size: 18
+        - UniqueId: "star_init_f"
+          Size: 800055 #KM
+        - UniqueId: "barren_init_01"
+          Name: "Baal"
+          Size: 18000 #KM
           Orbit:
-            SemiMajorAxis: 550
+            SemiMajorAxis: .55 #AU
           Neighbors:
-            - Name: Baal Primus
-              Class: pc_barren
-              Size: 8
+            - Name: "Baal Primus"
+              UniqueId: "barren_init_01"
+              Size: 8000 #KM
               Orbit:
-                SemiMajorAxis: 150
-            - Name: Baal Secundus
-              Class: pc_habitable
-              Size: 12
+                SemiMajorAxis: .15 #AU
+            - Name: "Baal Secundus"
+              UniqueId: "habitable_init_01"
+              Size: 12000 #KM
               Orbit:
-                SemiMajorAxis: 250
-        - Name: Set
-          Class: pc_gas_giant
-          Size: 25
+                SemiMajorAxis: .25 #AU
+        - UniqueId: "rl_gas_giants"
+          Name: "Set"
+          Size: 25000 #KM
           HasRing: true
           Orbit:
-            SemiMajorAxis: 950
-        - Count: 2
-          Class: pc_asteroid
+            SemiMajorAxis: .95 #AU
+        - UniqueId: "asteroid_init_01"
+          Count: 2
           Orbit:
             IsAbsolute: true
-            SemiMajorAxis: 1150
-        - Name: Kheru
-          Class: pc_barren
-          Size: 15
+            SemiMajorAxis: 1.15 #AU
+        - UniqueId: "barren_imit_01"
+          Name: "Kheru"
+          Size: 15000 #KM
           Orbit:
-            SemiMajorAxis: 1350
-        - Name: Amair
-          Class: pc_barren
-          Size: 10
+            SemiMajorAxis: 1.35 #AU
+        - UniqueId: "barren_init_01"
+          Name: "Amair"
+          Size: 10000 #KM
           Orbit:
-            SemiMajorAxis: 1650
-        - Name: Ammonai
-          Class: pc_barren
-          Size: 8
+            SemiMajorAxis: 1.65 #AU
+        - UniqueId: "barren_init_01"
+          Name: "Ammonai"
+          Size: 8000 #KM
           Orbit:
-            SemiMajorAxis: 2000
+            SemiMajorAxis: 2 #AU
       AsteroidBelts:
-        - Class: rocky_asteroid_belt
-          Radius: 1150
+        - Class: "rocky_asteroid_belt"
+          Radius: 1.15 #AU
+# Kerbol
+  - StarSystem:
+      UniqueId: "kerbol_unique_init"
+      RenderEntity: "UI_StarSystem_Render_Entity"
+      Name: "Kerbol"
+      Usage: "misc_system_init"
+      MaxInstances: 1
+      Children:
+        - UniqueId: "star_init_f"
+          Size: 800055 #KM
+        - UniqueId: "barren_init_01"
+          Name: "Text_Moho"
+          Material: "mat_Moho"
+          Size: 10000 #KM
+          Orbit:
+            SemiMajorAxis: .4 #AU
+        - UniqueId: "barren_init_01"
+          Name: "Text_Eve"
+          Material: "mat_Eve"
+          Size: 18000 #KM
+          Orbit:
+            SemiMajorAxis: .25 #AU
+        - UniqueId: "habitable_init_01"
+          Name: "Text_Kerbin"
+          Material: "mat_Kerbin"
+          Size: 19000 #KM
+          Orbit:
+            SemiMajorAxis: .25 #AU
+          Neighbors:
+            - Name: "Text_Mun"
+              UniqueId: "barren_init_01"
+              Material: "mat_Mun"
+              Size: 8000 #KM
+              Orbit:
+                SemiMajorAxis: .12 #AU
+            - Name: "Text_Minimus"
+              UniqueId: "barren_init_01"
+              Material: "mat_Minimus"
+              Size: 3000 #KM
+              Orbit:
+                SemiMajorAxis: .12 #AU
+        - UniqueId: "barren_init_01"
+          Name: "Text_Duna"
+          Material: "mat_Duna"
+          Size: 13000 #KM
+          Orbit:
+            SemiMajorAxis: .3 #AU
+          Neighbors:
+            - Name: "Text_Ike"
+              UniqueId: "barren_init_01"
+              Material: "mat_Ike"
+              Size: 10000 #KM
+              Orbit:
+                SemiMajorAxis: .12 #AU
+        - UniqueId: "barren_init_01"
+          Name: "Text_Dres"
+          Material: "mat_Dres"
+          Size: 6000 #KM
+          Orbit:
+            SemiMajorAxis: .3 #AU
+        - UniqueId: "gas_giant_init_01"
+          Name: "Text_Jool"
+          Material: "mat_Jool"
+          Size: 55000 #KM
+          Orbit:
+            SemiMajorAxis: .35 #AU
+          Neighbors:
+            - Name: "Text_Laythe"
+              UniqueId: "habitable_init_01"
+              Material: "mat_Laythe"
+              Size: 10000 #KM
+              Orbit:
+                SemiMajorAxis: .12 #AU
+            - Name: "Text_Val"
+              UniqueId: "barren_init_01"
+              Material: "mat_Val"
+              Size: 8000 #KM
+              Orbit:
+                SemiMajorAxis: .03 #AU
+            - Name: "Text_Tylo"
+              UniqueId: "barren_init_01"
+              Material: "mat_Tylo"
+              Size: 14000 #KM
+              Orbit:
+                SemiMajorAxis: .025 #AU
+            - Name: "Text_Bop"
+              UniqueId: "asteroid_init_01"
+              Material: "mat_Bop"
+              Size: 2000 #KM
+              Orbit:
+                SemiMajorAxis: .025 #AU
+            - Name: "Text_Pol"
+              UniqueId: "asteroid_init_01"
+              Material: "mat_Pol"
+              Size: 1000 #KM
+              Orbit:
+                SemiMajorAxis: .02 #AU
+        - UniqueId: "gas_giant_init_01"
+          Name: "Text_Sarnus"
+          Material: "mat_Sarnus"
+          Size: 45000 #KM
+          Orbit:
+            SemiMajorAxis: .35 #AU
+          Neighbors:
+            - Name: "Text_Hale"
+              UniqueId: "asteroid_init_01"
+              Material: "mat_Hale"
+              Size: 1000 #KM
+              Orbit:
+                SemiMajorAxis: .12 #AU
+            - Name: "Text_Ovok"
+              UniqueId: "asteroid_init_01"
+              Material: "mat_Ovok"
+              Size: 1000 #KM
+              Orbit:
+                SemiMajorAxis: .02 #AU
+            - Name: "Text_Eeloo"
+              UniqueId: "barren_init_01"
+              Material: "mat_Eeloo"
+              Size: 6000 #KM
+              Orbit:
+                SemiMajorAxis: .4 #AU
+            - Name: "Text_Slate"
+              UniqueId: "asteroid_init_01"
+              Material: "mat_Bop"
+              Size: 11000 #KM
+              Orbit:
+                SemiMajorAxis: .5 #AU
+            - Name: "Text_Tekto"
+              UniqueId: "asteroid_init_01"
+              Material: "mat_Pol"
+              Size: 8000 #KM
+              Orbit:
+                SemiMajorAxis: .1 #AU
+        - UniqueId: "gas_giant_init_01"
+          Name: "Text_Urlum"
+          Material: "mat_Urlum"
+          Size: 3000 #KM
+          Orbit:
+            SemiMajorAxis: .35 #AU
+          Neighbors:
+            - Name: "Text_Priax"
+              UniqueId: "asteroid_init_01"
+              Material: "mat_Priax"
+              Size: 2000 #KM
+              Orbit:
+                SemiMajorAxis: .13 #AU
+            - Name: "Text_Polta"
+              UniqueId: "barren_init_01"
+              Material: "mat_Polta"
+              Size: 6000 #KM
+              Orbit:
+                SemiMajorAxis: 0 #AU
+            - Name: "Text_Wal"
+              UniqueId: "asteroid_init_01"
+              Material: "mat_Wal"
+              Size: 9000 #KM
+              Orbit:
+                SemiMajorAxis: .15 #AU
+        - UniqueId: "gas_giant_init_01"
+          Name: "Text_Neidon"
+          Material: "mat_Neidon"
+          Size: 25000 #KM
+          Orbit:
+            SemiMajorAxis: .35 #AU
+          Neighbors:
+            - Name: "Text_Thatmo"
+              UniqueId: "barren_init_01"
+              Material: "mat_Thatmo"
+              Size: 7000 #KM
+              Orbit:
+                SemiMajorAxis: .12 #AU
+            - Name: "Text_Nissee"
+              UniqueId: "asteroid_init_01"
+              Material: "mat_Wal"
+              Size: 1000 #KM
+              Orbit:
+                SemiMajorAxis: .13 #AU
+        - UniqueId: "barren_init_01"
+          Name: "Text_Plock"
+          Material: "mat_Plock"
+          Size: 6000 #KM
+          Orbit:
+            SemiMajorAxis: .3 #AU
+          Neighbors:
+            - Name: "Text_Karen"
+              UniqueId: "barren_init_01"
+              Material: "mat_Karen"
+              Size: 6000 #KM
+              Orbit:
+                SemiMajorAxis: .05 #AU
+      AsteroidBelts:
+        - Class: "rocky_asteroid_belt"
+          Radius: 1.45 #AU
+        - Class: "rocky_asteroid_belt"
+          Radius: 3.2 #AU

@@ -1,36 +1,254 @@
 ﻿Initializers:
-#Habitable
+###############
+#  Habitable  #
+###############
+#Alpine
   - CelestialBody:
-    UniqueId: habitable_init_01  
-    DistanceFromTheSun: [1000, 4000]
-    ChanceOfRing: 0.2
-    PlanetSize: [8, 20]
-    MoonSize: [3, 7]
-    Climate:
-      Atmosphere: "atmo_Oxygenated"
-      Humidity: "hum_Mild"
-      Temperature: "temp_Temperate"
+      UniqueId: alpine_planet_init  
+      RenderEntity: "UI_Planet_Render_Entity"
+      MainTex: "rl_Alpine_Planets"
+      DistanceFromTheSun: [10, 40] #AU
+      CanBeMoon: true
+      Colonizable: true
+      ChanceOfRing: 0.2
+      PlanetSize: [4000, 20000] #KM
+      MoonSize: [1000, 2500] #KM
+      Climate:
+        Atmosphere: "atmo_Oxygenated"
+        Humidity: "hum_Mild"
+        Temperature: "temp_Cold"
+#Arctic
+  - CelestialBody:
+      UniqueId: arctic_planet_init  
+      RenderEntity: "UI_Planet_Render_Entity"
+      MainTex: "rl_Arctic_Planets"
+      DistanceFromTheSun: [10, 40] #AU
+      CanBeMoon: true
+      Colonizable: true
+      ChanceOfRing: 0.2
+      PlanetSize: [4000, 20000] #KM
+      MoonSize: [1000, 2500] #KM
+      Climate:
+        Atmosphere: "atmo_Oxygenated"
+        Humidity: "hum_Wet"
+        Temperature: "temp_Cold"
+#Arid
+  - CelestialBody:
+      UniqueId: arid_planet_init  
+      RenderEntity: "UI_Planet_Render_Entity"
+      MainTex: "rl_Arid_Planets"
+      DistanceFromTheSun: [10, 40] #AU
+      CanBeMoon: true
+      Colonizable: true
+      ChanceOfRing: 0.2
+      PlanetSize: [4000, 20000] #KM
+      MoonSize: [1000, 2500] #KM
+      Climate:
+        Atmosphere: "atmo_Oxygenated"
+        Humidity: "hum_Mild"
+        Temperature: "temp_Hot"
+#Desert
+  - CelestialBody:
+      UniqueId: desert_planet_init  
+      RenderEntity: "UI_Planet_Render_Entity"
+      MainTex: "rl_Deset_Planets"
+      DistanceFromTheSun: [10, 40] #AU
+      CanBeMoon: true
+      Colonizable: true
+      ChanceOfRing: 0.2
+      PlanetSize: [4000, 20000] #KM
+      MoonSize: [1000, 2500] #KM
+      Climate:
+        Atmosphere: "atmo_Oxygenated"
+        Humidity: "hum_Dry"
+        Temperature: "temp_Hot"
+#Ocean
+  - CelestialBody:
+      UniqueId: ocean_planet_init  
+      RenderEntity: "UI_Planet_Render_Entity"
+      MainTex: "rl_Ocean_Planets"
+      DistanceFromTheSun: [10, 40] #AU
+      CanBeMoon: true
+      Colonizable: true
+      ChanceOfRing: 0.2
+      PlanetSize: [4000, 20000] #KM
+      MoonSize: [1000, 2500] #KM
+      Climate:
+        Atmosphere: "atmo_Oxygenated"
+        Humidity: "hum_Wet"
+        Temperature: "temp_Temperate"
+#Savannah
+  - CelestialBody:
+      UniqueId: savannah_planet_init  
+      RenderEntity: "UI_Planet_Render_Entity"
+      MainTex: "rl_Savannah_Planets"
+      DistanceFromTheSun: [10, 40] #AU
+      CanBeMoon: true
+      Colonizable: true
+      ChanceOfRing: 0.2
+      PlanetSize: [4000, 20000] #KM
+      MoonSize: [1000, 2500] #KM
+      Climate:
+        Atmosphere: "atmo_Oxygenated"
+        Humidity: "hum_Wet"
+        Temperature: "temp_Hot"
+#Temperate
+  - CelestialBody:
+      UniqueId: temperate_planet_init  
+      RenderEntity: "UI_Planet_Render_Entity"
+      MainTex: "rl_Temperate_Planets"
+      DistanceFromTheSun: [10, 40] #AU
+      CanBeMoon: true
+      Colonizable: true
+      ChanceOfRing: 0.2
+      PlanetSize: [4000, 20000] #KM
+      MoonSize: [1000, 2500] #KM
+      Climate:
+        Atmosphere: "atmo_Oxygenated"
+        Humidity: "hum_Mild"
+        Temperature: "temp_Temperate"
+#Tropical
+  - CelestialBody:
+      UniqueId: tropical_planet_init  
+      RenderEntity: "UI_Planet_Render_Entity"
+      MainTex: "rl_Tropical_Planets"
+      DistanceFromTheSun: [10, 40] #AU
+      CanBeMoon: true
+      Colonizable: true
+      ChanceOfRing: 0.2
+      PlanetSize: [4000, 20000] #KM
+      MoonSize: [1000, 2500] #KM
+      Climate:
+        Atmosphere: "atmo_Oxygenated"
+        Humidity: "hum_Wet"
+        Temperature: "temp_Hot"
+#Tundra
+  - CelestialBody:
+      UniqueId: tundra_planet_init  
+      RenderEntity: "UI_Planet_Render_Entity"
+      MainTex: "rl_Tundra_Planets"
+      DistanceFromTheSun: [10, 40] #AU
+      CanBeMoon: true
+      Colonizable: true
+      ChanceOfRing: 0.2
+      PlanetSize: [4000, 20000] #KM
+      MoonSize: [1000, 2500] #KM
+      Climate:
+        Atmosphere: "atmo_Oxygenated"
+        Humidity: "hum_Dry"
+        Temperature: "temp_Cold"
+
+###################
+#  Uninhabitable  #
+###################
 #Barren
   - CelestialBody:
-    UniqueId: barren_init_01  
-    DistanceFromTheSun: [0, 10000]
-    ChanceOfRing: 0.2
-    PlanetSize: [8, 20]
-    MoonSize: [3, 7]
-    Climate:
-      Atmosphere: "atmo_None"
-      Humidity: "hum_Dry"
-      Temperature: "temp_Cold"
+      UniqueId: barren_planet_init
+      RenderEntity: "UI_Planet_Render_Entity"
+      MainTex: "rl_Barren_Planets"
+      DistanceFromTheSun: [0, 100] #AU
+      CanBeMoon: true
+      Colonizable: true
+      ChanceOfRing: 0.2
+      PlanetSize: [4000, 20000] #KM
+      MoonSize: [1000, 2500] #KM
+      Entity: "barren_planet_entity"
+      Climate:
+        Atmosphere: "atmo_None"
+        Humidity: "hum_Dry"
+        Temperature: "temp_Cold"
+#Frozen
+  - CelestialBody:
+      UniqueId: frozen_planet_init
+      RenderEntity: "UI_Planet_Render_Entity"
+      MainTex: "rl_Frozen_Planets"
+      DistanceFromTheSun: [0, 100] #AU
+      CanBeMoon: true
+      Colonizable: true
+      ChanceOfRing: 0.2
+      PlanetSize: [4000, 20000] #KM
+      MoonSize: [1000, 2500] #KM
+      Entity: "barren_planet_entity"
+      Climate:
+        Atmosphere: "atmo_None"
+        Humidity: "hum_Wet"
+        Temperature: "temp_Cold"
+#Molten
+  - CelestialBody:
+      UniqueId: molten_planet_init
+      RenderEntity: "UI_Planet_Render_Entity"
+      MainTex: "rl_Molten_Planets"
+      DistanceFromTheSun: [0, 100] #AU
+      CanBeMoon: true
+      Colonizable: true
+      ChanceOfRing: 0.2
+      PlanetSize: [4000, 20000] #KM
+      MoonSize: [1000, 2500] #KM
+      Entity: "barren_planet_entity"
+      Climate:
+        Atmosphere: "atmo_None"
+        Humidity: "hum_Dry"
+        Temperature: "temp_Hot"
+
+
+################
+#  Gas Giants  #
+################
 #Gas Giant
   - CelestialBody:
-    UniqueId: gas_giant_init_01  
-    DistanceFromTheSun: [400, 10000]
-    CanBeMoon: false
-    ChanceOfRing: 0.6
-    PlanetSize: [20, 30]
+      UniqueId: gas_giant_init
+      RenderEntity: "UI_Gas_Giant_Render_Entity"
+      MainTex: "rl_Gas_Giants"
+      DistanceFromTheSun: [4, 100] #AU
+      CanBeMoon: false
+      ChanceOfRing: 0.6  
+      PlanetSize: [20000, 75000] #KM
+
+###############
+#  Asteroids  #
+###############
 #Asteroid
   - CelestialBody:
-    UniqueId: asteroid_init_01  
-    DistanceFromTheSun: [0, 10000]
-    Asteroid: true
-    PlanetSize: [2, 5]
+      UniqueId: asteroid_init_01
+      RenderEntity: "UI_Asteroid_Render_Entity"
+      MainTex: "tex_asteroid_albedo"
+      DistanceFromTheSun: [0, 100] #AU
+      Asteroid: true
+      PlanetSize: [750, 1500] #KM
+---
+###############
+# RANDOM LISTS
+###############
+RandomList:
+  UniqueId: rl_habitable_planets
+  Name: Habitable Planets
+  Choices:
+    - alpine_planet_init
+    - arctic_planet_init
+    - arid_planet_init
+    - desert_planet_init
+    - ocean_planet_init
+    - savannah_planet_init
+    - temperate_planet_init
+    - tropical_planet_init
+    - tundra_planet_init
+---
+RandomList:
+  UniqueId: rl_barren_planets
+  Name: Barren Planets
+  Choices:
+    - barren_planet_init
+    - frozen_planet_init
+    - molten_planet_init
+---
+RandomList:
+  UniqueId: rl_gas_giants
+  Name: Gas Giants
+  Choices:
+    - gas_giant_init
+---
+RandomList:
+  UniqueId: rl_asteroids
+  Name: Asteroids
+  Choices:
+    - asteroid_init_01

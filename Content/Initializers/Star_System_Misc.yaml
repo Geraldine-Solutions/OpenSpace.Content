@@ -2,97 +2,91 @@
 # Basic 1
   - StarSystem:
       UniqueId: basic_init_01
-      Class: rl_standard_stars
+      RenderEntity: "UI_StarSystem_Render_Entity"
       Usage: misc_system_init
       UsageOdds:
         - Factor: 20
       Children:
-        - Class: star
-          Size: [20, 30]
+        - UniqueId: rl_standard_stars
         - Count: [2, 10]
           Orbit:
-            SemiMajorAxis: 500
+            SemiMajorAxis: 5 #AU
           Neighbors:
             - Count: [0, 1]
               Orbit:
-                SemiMajorAxis: 150
+                SemiMajorAxis: 1.5 #AU
 # Basic 2
   - StarSystem:
       UniqueId: basic_init_02
-      Class: rl_standard_stars
+      RenderEntity: "UI_StarSystem_Render_Entity"
       Usage: misc_system_init
       UsageOdds:
         - Factor: 20
       AsteroidBelts:
         - Class: rocky_asteroid_belt
-          Radius: 950
+          Radius: 9.5 #AU
       Children:
-        - Class: star
-          Size: [20, 30]
+        - UniqueId: rl_standard_stars
         - Count: 2
           Orbit:
-            SemiMajorAxis: 200
+            SemiMajorAxis: 2 #AU
         - Count: [1, 4]
-          Class: pc_asteroid
+          UniqueId: rl_asteroids
           Orbit:
             IsAbsolute: true
-            SemiMajorAxis: 950
+            SemiMajorAxis: 9.5 #AU
         - Count: [2, 5]
           Orbit:
-            SemiMajorAxis: 250
+            SemiMajorAxis: 2.5 #AU
           Neighbors:
             - Count: [0, 1]
               Orbit:
-                SemiMajorAxis: 100
+                SemiMajorAxis: 1 #AU
                 MeanAnomaly: 0.3
                 OrbitalPeriod: 27.3
 # Basic 3
   - StarSystem:
       UniqueId: basic_init_03
-      Class: rl_standard_stars
+      RenderEntity: "UI_StarSystem_Render_Entity"
       Usage: misc_system_init
       UsageOdds:
         - Factor: 10
       Children:
-        - Class: star
-          Size: [20, 30]
+        - UniqueId: rl_standard_stars
         - Count: [0, 1]
           Orbit:
-            SemiMajorAxis: 100
+            SemiMajorAxis: 1 #AU
         - Count: [1, 2]
-          Class: pc_gas_giant
-          Size: 25
+          UniqueId: rl_gas_giants
           Orbit:
-            SemiMajorAxis: 600
+            SemiMajorAxis: 6 #AU
           Neighbors:
             - Count: [1, 4]
-              Size: [8, 20]
               Orbit:
-                SemiMajorAxis: 100
+                SemiMajorAxis: 1 #AU
         - Count: [0, 2]
           Orbit:
-            SemiMajorAxis: 200
+            SemiMajorAxis: 2 #AU
 # Basic 4
   - StarSystem:
       UniqueId: basic_init_04
-      Class: rl_standard_stars
+      RenderEntity: "UI_StarSystem_Render_Entity"
       Usage: misc_system_init
       UsageOdds:
         - Factor: 10
       AsteroidBelts:
         - Class: rocky_asteroid_belt
-          Radius: 1200
+          Radius: 12 #AU
       Children:
-        - Class: star
-          Size: [20, 30]
+        - UniqueId: rl_standard_stars
         - Count: [3, 6]
-          Class: pc_asteroid
+          UniqueId: rl_asteroids
           Orbit:
             IsAbsolute: true
-            SemiMajorAxis: 1200
+            SemiMajorAxis: 12 #AU
         - Count: [0, 2]
           Orbit:
-            SemiMajorAxis: 200
+            SemiMajorAxis: 2 #AU
         - Count: [0, 2]
           Orbit:
-            SemiMajorAxis: 400
+            SemiMajorAxis: 4 #AU

@@ -1,0 +1,32 @@
+LocalizableText:
+  UniqueId: text_no_saves_found
+  Name: "No Saves Found"
+  Translations:
+    en-US: "No saved games found"
+    fr: "Aucune sauvegarde trouvée"
+    es: "No se encontraron partidas guardadas"
+    de: "Keine gespeicherten Spiele gefunden"
+    ru: "Сохранённые игры не найдены"
+    zh-Hans: "未找到保存的游戏"
+---
+LocalizableText:
+  UniqueId: text_load_selected_save
+  Name: "Load Selected Save"
+  Translations:
+    en-US: "Load"
+    fr: "Charger"
+    es: "Cargar"
+    de: "Laden"
+    ru: "Загрузить"
+    zh-Hans: "加载"
+---
+LocalizableText:
+  UniqueId: text_cancel
+  Name: "Cancel"
+  Translations:
+    en-US: "Cancel"
+    fr: "Annuler"
+    es: "Cancelar"
+    de: "Abbrechen"
+    ru: "Отмена"
+    zh-Hans: "取消" 

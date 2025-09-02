@@ -1,0 +1,289 @@
+Variables:
+  top_bar_height: 60
+  bottom_bar_height: 50
+  top_bar_button_width: 120
+  top_bar_button_height: 40
+  bottom_bar_button_height: 35
+  navigation_panel_width: 400
+  font_size_large: 18
+  font_size_medium: 16
+  font_size_small: 14
+  menu_spacing: 10
+---
+gui:
+  UniqueId: frontend
+  Components:
+    RectTransform:
+      anchorMin: [0, 0]
+      anchorMax: [1, 1]
+      sizeDelta: [0, 0]
+      pivot: [0.5, 0.5]
+    CanvasGroup:
+      alpha: 1.0
+      blocksRaycasts: true
+      interactable: true
+  Children:
+    # Top Bar - Menu and Information
+    - Name: top_bar
+      Components:
+        RectTransform:
+          anchorMin: [0, 1]
+          anchorMax: [1, 1]
+          anchoredPosition: [0, 0]
+          sizeDelta: [0, $top_bar_height]
+          pivot: [0.5, 1]
+        Image:
+          sprite: GFX_tile_large_bg
+          color: [0.05, 0.05, 0.05, 0.95]  # Very dark semi-transparent
+      Children:
+        # Left side - Game menu button
+        - Name: menu_section
+          Components:
+            RectTransform:
+              anchorMin: [0, 0]
+              anchorMax: [0.3, 1]
+              sizeDelta: [-15, -20]  # Margin: left=15, top/bottom=10
+              anchoredPosition: [15, 0]
+              pivot: [0, 0.5]
+            HorizontalLayoutGroup:
+              spacing: $menu_spacing
+              childAlignment: MiddleLeft
+              childControlWidth: false
+              childControlHeight: false
+          Children:
+            - Name: game_menu_button
+              Components:
+                RectTransform:
+                  sizeDelta: [$top_bar_button_width, $top_bar_button_height]
+                  pivot: [0.5, 0.5]
+                Button:
+                  targetGraphic: "{Children.Background}"
+                  transition: ColorTint
+                  colors:
+                    normalColor: [1, 1, 1, 1]
+                    highlightedColor: [1.2, 1.2, 1.2, 1]
+                    pressedColor: [0.8, 0.8, 0.8, 1]
+                    disabledColor: [0.5, 0.5, 0.5, 0.5]
+                  interactable: true
+                  onClicked: "ToggleGameMenu:"
+                TextMeshProUGUI:
+                  text: text_menu
+                  font: "Nacelle-Regular SDF"
+                  fontSize: $font_size_medium
+                  localizable: true
+                  color: "#FFFFFF"
+                  alignment: Center
+                  fontStyle: Bold
+              Children:
+                - Name: "Background"
+                  Components:
+                    RectTransform:
+                      anchorMin: [0, 0]
+                      anchorMax: [1, 1]
+                      sizeDelta: [0, 0]
+                      pivot: [0.5, 0.5]
+                    Image:
+                      sprite: GFX_menu_button_normal
+                      color: [0.2, 0.4, 0.8, 1]
+        # Center - Game information (extensible)
+        - Name: info_section
+          Components:
+            RectTransform:
+              anchorMin: [0.3, 0]
+              anchorMax: [0.7, 1]
+              sizeDelta: [0, 0]
+              pivot: [0.5, 0.5]
+          Children:
+            - Name: game_info_text
+              Components:
+                RectTransform:
+                  anchorMin: [0, 0]
+                  anchorMax: [1, 1]
+                  sizeDelta: [0, 0]
+                  pivot: [0.5, 0.5]
+                TextMeshProUGUI:
+                  text: text_game_title
+                  font: "Nacelle-Regular SDF"
+                  fontSize: $font_size_large
+                  localizable: true
+                  color: "#FFFFFF"
+                  alignment: Center
+                  fontStyle: Bold
+        # Right side - Additional buttons (extensible)
+        - Name: actions_section
+          Components:
+            RectTransform:
+              anchorMin: [0.7, 0]
+              anchorMax: [1, 1]
+              sizeDelta: [-15, -20]  # Margin: right=15, top/bottom=10
+              anchoredPosition: [-15, 0]
+              pivot: [1, 0.5]
+            HorizontalLayoutGroup:
+              spacing: $menu_spacing
+              childAlignment: MiddleRight
+              childControlWidth: false
+              childControlHeight: false
+          Children:
+            - Name: settings_button
+              Components:
+                RectTransform:
+                  sizeDelta: [$top_bar_button_height, $top_bar_button_height]  # Square button
+                  pivot: [0.5, 0.5]
+                Button:
+                  targetGraphic: "{Children.Background}"
+                  transition: ColorTint
+                  colors:
+                    normalColor: [1, 1, 1, 1]
+                    highlightedColor: [1.2, 1.2, 1.2, 1]
+                    pressedColor: [0.8, 0.8, 0.8, 1]
+                    disabledColor: [0.5, 0.5, 0.5, 0.5]
+                  interactable: true
+                  onClicked: "OpenSettings:"
+                TextMeshProUGUI:
+                  text: "⚙"
+                  font: "Nacelle-Regular SDF"
+                  fontSize: $font_size_large
+                  localizable: false
+                  color: "#FFFFFF"
+                  alignment: Center
+              Children:
+                - Name: "Background"
+                  Components:
+                    RectTransform:
+                      anchorMin: [0, 0]
+                      anchorMax: [1, 1]
+                      sizeDelta: [0, 0]
+                      pivot: [0.5, 0.5]
+                    Image:
+                      sprite: GFX_menu_button_normal
+                      color: [0.4, 0.4, 0.4, 1]
+    # Bottom Bar - Navigation Information
+    - Name: bottom_bar
+      Components:
+        RectTransform:
+          anchorMin: [0.3, 0]
+          anchorMax: [0.7, 0]
+          anchoredPosition: [0, 0]
+          sizeDelta: [0, $bottom_bar_height]
+          pivot: [0.5, 0]
+        Image:
+          sprite: GFX_tile_large_bg
+          color: [0.05, 0.05, 0.05, 0.9]  # Dark semi-transparent
+      Children:
+        - Name: navigation_panel
+          Components:
+            RectTransform:
+              anchorMin: [0, 0]
+              anchorMax: [1, 1]
+              sizeDelta: [-40, -16]  # Margin: left/right=20, top/bottom=8
+              pivot: [0.5, 0.5]
+            HorizontalLayoutGroup:
+              spacing: 15
+              childAlignment: MiddleCenter
+              childControlWidth: false
+              childControlHeight: false
+          Children:
+            - Name: back_button
+              Components:
+                RectTransform:
+                  sizeDelta: [$bottom_bar_button_height, $bottom_bar_button_height]
+                  pivot: [0.5, 0.5]
+                Button:
+                  targetGraphic: "{Children.Background}"
+                  transition: ColorTint
+                  colors:
+                    normalColor: [1, 1, 1, 1]
+                    highlightedColor: [0.8, 0.8, 1, 1]
+                    pressedColor: [0.6, 0.6, 0.8, 1]
+                    disabledColor: [0.3, 0.3, 0.3, 0.5]
+                  interactable: false  # Will be enabled by script
+                  onClicked: "NavigateBack:"
+                TextMeshProUGUI:
+                  text: "←"
+                  font: "Nacelle-Regular SDF"
+                  fontSize: $font_size_large
+                  localizable: false
+                  color: "#FFFFFF"
+                  alignment: Center
+                  fontStyle: Bold
+              Children:
+                - Name: "Background"
+                  Components:
+                    RectTransform:
+                      anchorMin: [0, 0]
+                      anchorMax: [1, 1]
+                      sizeDelta: [0, 0]
+                      pivot: [0.5, 0.5]
+                    Image:
+                      sprite: GFX_menu_button_normal
+                      color: [0.2, 0.4, 0.8, 1]
+            - Name: location_info
+              Components:
+                RectTransform:
+                  sizeDelta: [250, $bottom_bar_button_height]
+                  pivot: [0.5, 0.5]
+              Children:
+                - Name: location_label
+                  Components:
+                    RectTransform:
+                      anchorMin: [0, 0.6]
+                      anchorMax: [1, 1]
+                      sizeDelta: [0, 0]
+                      pivot: [0.5, 0.5]
+                    TextMeshProUGUI:
+                      text: text_current_location
+                      font: "Nacelle-Regular SDF"
+                      fontSize: $font_size_small
+                      localizable: true
+                      color: "#CCCCCC"
+                      alignment: Center
+                - Name: location_name
+                  Components:
+                    RectTransform:
+                      anchorMin: [0, 0]
+                      anchorMax: [1, 0.6]
+                      sizeDelta: [0, 0]
+                      pivot: [0.5, 0.5]
+                    TextMeshProUGUI:
+                      text: "Starting Location"
+                      font: "Nacelle-Regular SDF"
+                      fontSize: $font_size_medium
+                      localizable: false
+                      color: "#FFFFFF"
+                      alignment: Center
+                      fontStyle: Bold
+            - Name: navigation_depth_indicator
+              Components:
+                RectTransform:
+                  sizeDelta: [60, $bottom_bar_button_height]
+                  pivot: [0.5, 0.5]
+              Children:
+                - Name: depth_label
+                  Components:
+                    RectTransform:
+                      anchorMin: [0, 0.6]
+                      anchorMax: [1, 1]
+                      sizeDelta: [0, 0]
+                      pivot: [0.5, 0.5]
+                    TextMeshProUGUI:
+                      text: text_depth
+                      font: "Nacelle-Regular SDF"
+                      fontSize: $font_size_small
+                      localizable: true
+                      color: "#CCCCCC"
+                      alignment: Center
+                - Name: depth_value
+                  Components:
+                    RectTransform:
+                      anchorMin: [0, 0]
+                      anchorMax: [1, 0.6]
+                      sizeDelta: [0, 0]
+                      pivot: [0.5, 0.5]
+                    TextMeshProUGUI:
+                      text: "1"
+                      font: "Nacelle-Regular SDF"
+                      fontSize: $font_size_medium
+                      localizable: false
+                      color: "#FFFFFF"
+                      alignment: Center
+                      fontStyle: Bold 

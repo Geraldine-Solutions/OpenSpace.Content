@@ -8,6 +8,7 @@ Initializers:
   - Region:
       UniqueId: region_oxygenated_atmo_01
       Name: "Text_Desert"
+      RenderEntity: "UI_Headless_Floating_Target"
       AllowedTemperatures:
         - temp_Hot
       AllowedHumidityLevels:
@@ -18,6 +19,7 @@ Initializers:
   - Region:
       UniqueId: region_oxygenated_atmo_02
       Name: "Text_Savannah"
+      RenderEntity: "UI_Headless_Floating_Target"
       AllowedTemperatures:
         - temp_Hot
       AllowedHumidityLevels:
@@ -28,6 +30,7 @@ Initializers:
   - Region:
       UniqueId: region_oxygenated_atmo_03
       Name: "Text_Rainforest"
+      RenderEntity: "UI_Headless_Floating_Target"
       AllowedTemperatures:
         - temp_Hot
       AllowedHumidityLevels:
@@ -38,6 +41,7 @@ Initializers:
   - Region:
       UniqueId: region_oxygenated_atmo_04
       Name: "Text_Arid"
+      RenderEntity: "UI_Headless_Floating_Target"
       AllowedTemperatures:
         - temp_Temperate
       AllowedHumidityLevels:
@@ -48,6 +52,7 @@ Initializers:
   - Region:
       UniqueId: region_oxygenated_atmo_05
       Name: "Text_Plains"
+      RenderEntity: "UI_Headless_Floating_Target"
       AllowedTemperatures:
         - temp_Temperate
       AllowedHumidityLevels:
@@ -58,6 +63,7 @@ Initializers:
   - Region:
       UniqueId: region_oxygenated_atmo_06
       Name: "Text_Wetlands"
+      RenderEntity: "UI_Headless_Floating_Target"
       AllowedTemperatures:
         - temp_Temperate
       AllowedHumidityLevels:
@@ -68,6 +74,7 @@ Initializers:
   - Region:
       UniqueId: region_oxygenated_atmo_07
       Name: "Text_Tundra"
+      RenderEntity: "UI_Headless_Floating_Target"
       AllowedTemperatures:
         - temp_Cold
       AllowedHumidityLevels:
@@ -78,6 +85,7 @@ Initializers:
   - Region:
       UniqueId: region_oxygenated_atmo_08
       Name: "Text_Boreal"
+      RenderEntity: "UI_Headless_Floating_Target"
       AllowedTemperatures:
         - temp_Cold
       AllowedHumidityLevels:
@@ -88,6 +96,7 @@ Initializers:
   - Region:
       UniqueId: region_oxygenated_atmo_09
       Name: "Text_Snow"
+      RenderEntity: "UI_Headless_Floating_Target"
       AllowedTemperatures:
         - temp_Cold
       AllowedHumidityLevels:

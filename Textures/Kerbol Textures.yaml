@@ -1,0 +1,291 @@
+﻿#Bop
+  - UniqueId: "tex_bop_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Bop Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Dres
+  - UniqueId: "tex_dres_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Dres Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Duna
+  - UniqueId: "tex_duna_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Duna Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Eeloo
+  - UniqueId: "tex_eeloo_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Eeloo Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Eve
+  - UniqueId: "tex_eve_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Eve Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Gilly
+  - UniqueId: "tex_gilly_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Gilly Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Hale
+  - UniqueId: "tex_hale_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Hale Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Ike
+  - UniqueId: "tex_ike_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Ike Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Jool
+  - UniqueId: "tex_jool_albedo"
+    Kind: "Cubemap"
+    Path: "Planets/Kerbol/Jool Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Karen
+  - UniqueId: "tex_karen_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Karen Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Kerbin
+  - UniqueId: "tex_kerbin_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Kerbin Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_kerbin_specular"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Kerbin Specular.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Laythe
+  - UniqueId: "tex_laythe_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Laythe Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Minimus
+  - UniqueId: "tex_minimus_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Minimus Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Moho
+  - UniqueId: "tex_moho_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Moho Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Mun
+  - UniqueId: "tex_mun_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Mun Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Neidon
+  - UniqueId: "tex_neidon_albedo"
+    Kind: "Cubemap"
+    Path: "Planets/Kerbol/Neidon Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Nissee
+  - UniqueId: "tex_nissee_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Nissee Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Ovok
+  - UniqueId: "tex_ovok_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Ovok Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Plock
+  - UniqueId: "tex_plock_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Plock Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Pol
+  - UniqueId: "tex_pol_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Pol Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Polta
+  - UniqueId: "tex_polta_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Polta Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Priax
+  - UniqueId: "tex_priax_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Priax Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Sarnus
+  - UniqueId: "tex_sarnus_albedo"
+    Kind: "Cubemap"
+    Path: "Planets/Kerbol/Sarnus Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Slate
+  - UniqueId: "tex_slate_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Slate Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Tal
+  - UniqueId: "tex_Tal_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Tal Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Tekto
+  - UniqueId: "tex_tekto_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Tekto Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Thatmo
+  - UniqueId: "tex_thatmo_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Thatmo Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Tylo
+  - UniqueId: "tex_tylo_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Tylo Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Urlum
+  - UniqueId: "tex_urlum_albedo"
+    Kind: "Cubemap"
+    Path: "Planets/Kerbol/Urlum Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Val
+  - UniqueId: "tex_val_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Val Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Wal
+  - UniqueId: "tex_wal_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Kerbol/Wal Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4

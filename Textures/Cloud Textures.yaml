@@ -1,0 +1,44 @@
+﻿Textures:
+#Detail
+  - UniqueId: "tex_cloudsphere_detail1"
+    Kind: "Texture2D"
+    Path: "Clouds/CloudsphereDetail1.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_cloudsphere_detail2"
+    Kind: "Texture2D"
+    Path: "Clouds/CloudsphereDetail2.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_cloudsphere_detail3"
+    Kind: "Texture2D"
+    Path: "Clouds/CloudsphereDetail3.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_cloudsphere_detail4"
+    Kind: "Texture2D"
+    Path: "Clouds/CloudsphereDetail4.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Cloud Density
+  - UniqueId: "tex_dense_clouds"
+    Kind: "Cubemap"
+    Path: "Clouds/Clouds Dense Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4

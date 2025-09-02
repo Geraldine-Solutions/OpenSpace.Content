@@ -2,15 +2,14 @@
 # Black Holes
   - StarSystem:
       UniqueId: special_init_01
-      Class: sc_black_hole
+      RenderEntity: "UI_StarSystem_Render_Entity"
       Usage: misc_system_init
       UsageOdds:
         - Factor: 2
       Children:
-        - Class: star
-          Size: [20, 30]
+        - UniqueId: star_init_black_hole
           HasRing: false
-        - Class: pc_barren
+        - UniqueId: rl_barren_planets
           Count: [1, 4]
           Orbit:
-            SemiMajorAxis: 300
+            SemiMajorAxis: 3 #AU

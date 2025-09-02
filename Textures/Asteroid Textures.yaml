@@ -1,0 +1,35 @@
+﻿Textures:
+#Asteroid Celestial Body
+  - UniqueId: "tex_asteroid_albedo"
+    Kind: "Texture2D"
+    Path: "Asteroids/Asteroid_Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_asteroid_mos"
+    Kind: "Texture2D"
+    Path: "Asteroids/Asteroid_Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_asteroid_normal"
+    Kind: "Texture2D"
+    Path: "Asteroids/Asteroid_Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Asteroid Belts
+  - UniqueId: "tex_asteroid_belt"
+    Kind: "Texture2D"
+    Path: "Asteroids/Asteroid_Belt.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 8

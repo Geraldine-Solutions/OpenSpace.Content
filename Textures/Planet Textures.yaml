@@ -1,0 +1,1859 @@
+﻿Textures:
+#Orbit Ring
+  - UniqueId: "tex_orbit_ring"
+    Kind: "Texture2D"
+    Path: "Orbit Ring.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#####################
+#      Standard     #
+#####################
+#Aeolian
+  - UniqueId: "tex_aeolian_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Aeolian 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Aerial
+  - UniqueId: "tex_aerial_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Aerial 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Algae
+  - UniqueId: "tex_algae_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Algae 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Alpine
+  - UniqueId: "tex_alpine_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Alpine 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_alpine_2_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Alpine 02 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_alpine_3_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Alpine 03 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Amethyst
+  - UniqueId: "tex_amethyst_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Amethyst 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Antarctic
+  - UniqueId: "tex_antarctic_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Antarctic 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Aquifer
+  - UniqueId: "tex_aquifer_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Aquifer 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Archipelago
+  - UniqueId: "tex_archipelago_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Archipelago 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_archipelago_2_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Archipelago 02 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Arctic
+  - UniqueId: "tex_arctic_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Arctic 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_arctic_2_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Arctic 02 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_arctic_3_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Arctic 03 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_arctic_4_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Arctic 04 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Arid
+  - UniqueId: "tex_arid_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Arid 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_arid_2_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Arid 02 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_arid_3_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Arid 03 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_arid_4_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Arid 04 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Aspen
+  - UniqueId: "tex_aspen_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Aspen 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Badlands
+  - UniqueId: "tex_badlands_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Badlands 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Barren
+  - UniqueId: "tex_barren_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Barren 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_barren_2_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Barren 02 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_barren_3_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Barren 03 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_barren_4_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Barren 04 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Basalt
+  - UniqueId: "tex_basalt_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Basalt 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Bioluminescent
+  - UniqueId: "tex_bioluminescent_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Bioluminescent 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Blossom
+  - UniqueId: "tex_blossom_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Blossom 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Boreal
+  - UniqueId: "tex_boreal_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Boreal 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Cactus
+  - UniqueId: "tex_cactus_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Cactus 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Calcite
+  - UniqueId: "tex_calcite_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Calcite 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Carbon
+  - UniqueId: "tex_carbon_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Carbon 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Cascadian
+  - UniqueId: "tex_cascadian_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Cascadian 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Cenote
+  - UniqueId: "tex_cenote_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Cenote 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Chthonian 
+  - UniqueId: "tex_chthonian_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Chthonian 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#City 
+  - UniqueId: "tex_city_planet"
+    Kind: "Texture2D"
+    Path: "Planets/City Planet 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Coastal 
+  - UniqueId: "tex_coastal_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Coastal 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Cold Barren
+  - UniqueId: "tex_cold_barren_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Cold Barren 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_cold_barren_2_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Cold Barren 02 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_cold_barren_3_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Cold Barren 03 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_cold_barren_4_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Cold Barren 04 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Columnar
+  - UniqueId: "tex_columnar_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Columnar 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Coral
+  - UniqueId: "tex_coral_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Coral 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Craton
+  - UniqueId: "tex_craton_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Craton 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Crevasse
+  - UniqueId: "tex_crevasse_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Crevasse 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Cryoflora
+  - UniqueId: "tex_cryoflora_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Cryoflora 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Cryovolcano
+  - UniqueId: "tex_cryovolcano_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Cryovolcano 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Desert
+  - UniqueId: "tex_desert_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Desert 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_desert_02_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Desert 02 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_desert_03_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Desert 03 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_desert_04_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Desert 04 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Diamond
+  - UniqueId: "tex_diamond_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Diamond 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Dune Forest
+  - UniqueId: "tex_dune_forest_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Dune Forest 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Fjord
+  - UniqueId: "tex_fjord_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Fjord 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Fog
+  - UniqueId: "tex_fog_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Fog 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Forest
+  - UniqueId: "tex_forest_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Forest 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Frozen
+  - UniqueId: "tex_frozen_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Frozen 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_frozen_2_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Frozen 02 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_frozen_3_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Frozen 03 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Frozen Desert
+  - UniqueId: "tex_frozen_desert_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Frozen Desert 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Fungal
+  - UniqueId: "tex_fungal_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Fungal 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Fungi
+  - UniqueId: "tex_fungi_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Fungi 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Geothermal
+  - UniqueId: "tex_geothermal_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Geothermal 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Glacial
+  - UniqueId: "tex_glacial_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Glacial 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Glacio
+  - UniqueId: "tex_glacio_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Glacio 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Highland
+  - UniqueId: "tex_highland_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Highland 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_highland_desert_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Highland Desert 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_highland_jungle_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Highland Jungle 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Hot House
+  - UniqueId: "tex_hot_house_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Hot House 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_hot_house_2_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Hot House 02 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_hot_house_3_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Hot House 03 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Hydrocarbon
+  - UniqueId: "tex_hydrocarbon_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Hydrocarbon 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Icee Dune
+  - UniqueId: "tex_ice_dune_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Ice Dune 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Ice Spike
+  - UniqueId: "tex_ice_spike_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Ice Spike 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Iceberg
+  - UniqueId: "tex_iceberg_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Iceberg 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Ironsand
+  - UniqueId: "tex_ironsand_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Ironsand 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Kelp
+  - UniqueId: "tex_kelp_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Kelp 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Lake
+  - UniqueId: "tex_lake_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Lake 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Lanthanide
+  - UniqueId: "tex_lanthanide_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Lanthanide 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Lichen
+  - UniqueId: "tex_lichen_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Lichen 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Lilypad
+  - UniqueId: "tex_lilypad_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Lilypad 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Mangrove
+  - UniqueId: "tex_mangrove_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Mangrove 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Marsh
+  - UniqueId: "tex_marsh_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Marsh 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Mediterranian
+  - UniqueId: "tex_mediterranian_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Mediterranian 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Methane Ocean
+  - UniqueId: "tex_methane_ocean_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Methane Ocean 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Molten
+  - UniqueId: "tex_molten_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Molten 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_molten_2_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Molten 02 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_molten_3_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Molten 03 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_molten_4_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Molten 04 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Moss
+  - UniqueId: "tex_moss_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Moss 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Mud
+  - UniqueId: "tex_mud_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Mud 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Mushroom
+  - UniqueId: "tex_mushroom_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Mushroom 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Mycellium
+  - UniqueId: "tex_mycellium_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Mycellium 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Oasis
+  - UniqueId: "tex_oasis_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Oasis 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Ocean
+  - UniqueId: "tex_ocean_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Ocean 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_ocean_2_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Ocean 02 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_ocean_3_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Ocean 03 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_ocean_4_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Ocean 04 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_ocean_5_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Ocean 05 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Outback
+  - UniqueId: "tex_outback_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Outback 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Petrified
+  - UniqueId: "tex_petrified_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Petrified 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Prairie
+  - UniqueId: "tex_prarie_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Prarie 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Primal
+  - UniqueId: "tex_primal_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Primal 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Reef
+  - UniqueId: "tex_reef_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Reef 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Retinal
+  - UniqueId: "tex_retinal_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Retinal 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Sakura
+  - UniqueId: "tex_sakura_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Sakura 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Salt
+  - UniqueId: "tex_salt_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Salt 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Sandsea
+  - UniqueId: "tex_sandsea_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Sandsea 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Sandstone
+  - UniqueId: "tex_sandstone_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Sandstone 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Savannah
+  - UniqueId: "tex_savannah_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Savannah 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_savannah_2_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Savannah 02 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_savannah_3_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Savannah 03 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Semiarid
+  - UniqueId: "tex_semiarid_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Semiarid 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Sinkhole
+  - UniqueId: "tex_sinkhole_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Sinkhole 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Snow
+  - UniqueId: "tex_snow_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Snow 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Steppe
+  - UniqueId: "tex_steppe_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Steppe 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Storm
+  - UniqueId: "tex_storm_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Storm 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Striped
+  - UniqueId: "tex_striped_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Striped 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Subarctic
+  - UniqueId: "tex_subarctic_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Subarctic 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Subglacial
+  - UniqueId: "tex_subglacial_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Subglacial 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Succulent
+  - UniqueId: "tex_succulent_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Succulent 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Supercontinental
+  - UniqueId: "tex_supercontinental_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Supercontinental 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Swamp
+  - UniqueId: "tex_swamp_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Swamp 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Taiga
+  - UniqueId: "tex_taiga_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Taiga 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Temperate
+  - UniqueId: "tex_temperate_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Temperate 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_temperate_2_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Temperate 02 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_temperate_3_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Temperate 03 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_temperate_4_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Temperate 04 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_temperate_5_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Temperate 05 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_temperate_6_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Temperate 06 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Toxic
+  - UniqueId: "tex_toxic_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Toxic 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_toxic_2_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Toxic 02 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_toxic_3_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Toxic 03 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_toxic_4_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Toxic 04 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Treeline
+  - UniqueId: "tex_treeline_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Treeline 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Tropical
+  - UniqueId: "tex_tropical_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Tropical 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_tropical_2_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Tropical 02 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_tropical_3_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Tropical 03 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_tropical_4_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Tropical 04 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Tundra
+  - UniqueId: "tex_tundra_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Tundra 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_tundra_2_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Tundra 02 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_tundr_3_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Tundra 03 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Turquoise
+  - UniqueId: "tex_turquoise_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Turquoise 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Tuya
+  - UniqueId: "tex_tuya_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Tuya 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Veld
+  - UniqueId: "tex_veld_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Veld 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Volcanic
+  - UniqueId: "tex_volcanic_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Volcanic 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Wasteland
+  - UniqueId: "tex_wasteland_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Wasteland 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Wet Swamp
+  - UniqueId: "tex_wet_swamp_planet"
+    Kind: "Texture2D"
+    Path: "Planets/Wet Swamp 01 Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+
+#####################
+#     Gas Giants    #
+#####################
+  - UniqueId: "tex_marble_flow"
+    Kind: "Cubemap"
+    Path: "Planets/Marble_Flow.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 01 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_2_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 02 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_3_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 03 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_4_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 04 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_5_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 05 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_6_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 06 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_7_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 07 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_8_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 08 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_9_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 09 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_10_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 10 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_11_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 11 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_12_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 12 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_13_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 13 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_14_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 14 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_15_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 15 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_16_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 16 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_17_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 17 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_18_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 18 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_gas_giant_19_planet"
+    Kind: "Cubemap"
+    Path: "Planets/Gas Giant 19 Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+
+#Earth
+  - UniqueId: "tex_earth_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Earth Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_earth_land"
+    Kind: "Texture2D"
+    Path: "Planets/Earth Land.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_earth_night"
+    Kind: "Texture2D"
+    Path: "Planets/Earth Night.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_earth_Normal"
+    Kind: "Texture2D"
+    Path: "Planets/Earth Normal.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_earth_specular"
+    Kind: "Texture2D"
+    Path: "Planets/Earth Specular.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Moon
+  - UniqueId: "tex_moon"
+    Kind: "Texture2D"
+    Path: "Planets/Moon.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Gas Giant
+  - UniqueId: "tex_marble"
+    Kind: "Cubemap"
+    Path: "Planets/Marble_Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Detail
+  - UniqueId: "tex_planetdetail1"
+    Kind: "Texture2D"
+    Path: "Planets/PlanetDetail1.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_planetdetail1"
+    Kind: "Texture2D"
+    Path: "Planets/PlanetDetail1.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_planetdetail2"
+    Kind: "Texture2D"
+    Path: "Planets/PlanetDetail2.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_planetdetail3"
+    Kind: "Texture2D"
+    Path: "Planets/PlanetDetail3.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_planetdetail4"
+    Kind: "Texture2D"
+    Path: "Planets/PlanetDetail4.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_planetdetail5"
+    Kind: "Texture2D"
+    Path: "Planets/PlanetDetail5.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_planetdetail6"
+    Kind: "Texture2D"
+    Path: "Planets/PlanetDetail6.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_planetdetail7"
+    Kind: "Texture2D"
+    Path: "Planets/PlanetDetail7.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_planetdetail8"
+    Kind: "Texture2D"
+    Path: "Planets/PlanetDetail8.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_planetdetail9"
+    Kind: "Texture2D"
+    Path: "Planets/PlanetDetail9.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_planetdetail10"
+    Kind: "Texture2D"
+    Path: "Planets/PlanetDetail10.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_planetdetail11"
+    Kind: "Texture2D"
+    Path: "Planets/PlanetDetail11.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_planetdetail12"
+    Kind: "Texture2D"
+    Path: "Planets/PlanetDetail12.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_planetdetail13"
+    Kind: "Texture2D"
+    Path: "Planets/PlanetDetail13.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_planetdetail14"
+    Kind: "Texture2D"
+    Path: "Planets/PlanetDetail14.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_planetdetail15"
+    Kind: "Texture2D"
+    Path: "Planets/PlanetDetail15.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_planetdetail16"
+    Kind: "Texture2D"
+    Path: "Planets/PlanetDetail16.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Rings
+  - UniqueId: "tex_ring_diffuse"
+    Kind: "Texture2D"
+    Path: "Planets/Rings/Ring1_Diffuse.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Bilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 2
+  - UniqueId: "tex_ring_detail"
+    Kind: "Single Channel"
+    TextureShape: "2D"
+    Channel: "Alpha"
+    AlphaSource: "From Gray Scale"
+    Path: "Planets/Rings/RingDetail1.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 8
+  - UniqueId: "tex_accretion"
+    Kind: "Texture2D"
+    Path: "Planets/Rings/Accretion1.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Per-axis"
+    uAxis: "Clamp"
+    vAxis: "Repeat"
+    AnisoLevel: 2
+  - UniqueId: "tex_accretion_detail"
+    Kind: "Texture2D"
+    Path: "Planets/Rings/AccretionDetail.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 8
+
+---
+###############
+# RANDOM LISTS
+###############
+RandomList:
+  UniqueId: rl_Alpine_Planets
+  Name: Alpine Planets
+  Choices:
+    - tex_alpine_planet
+    - tex_alpine_2_planet
+    - tex_alpine_3_planet
+---
+RandomList:
+  UniqueId: rl_Arctic_Planets
+  Name: Arctic Planets
+  Choices:
+    - tex_arctic_planet
+    - tex_arctic_2_planet
+    - tex_arctic_3_planet
+    - tex_arctic_4_planet
+---
+RandomList:
+  UniqueId: rl_Arid_Planets
+  Name: Arid Planets
+  Choices:
+    - tex_arid_planet
+    - tex_arid_2_planet
+    - tex_arid_3_planet
+    - tex_arid_4_planet
+---
+RandomList:
+  UniqueId: rl_Desert_Planets
+  Name: Desert Planets
+  Choices:
+    - tex_desert_planet
+    - tex_desert_2_planet
+    - tex_desert_3_planet
+    - tex_desert_4_planet
+---
+RandomList:
+  UniqueId: rl_Ocean_Planets
+  Name: Desert Planets
+  Choices:
+    - tex_ocean_planet
+    - tex_ocean_2_planet
+    - tex_ocean_3_planet
+    - tex_ocean_4_planet
+    - tex_ocean_5_planet
+---
+RandomList:
+  UniqueId: rl_Savannah_Planets
+  Name: Savannah Planets
+  Choices:
+    - tex_savannah_planet
+    - tex_savannah_2_planet
+    - tex_savannah_3_planet
+---
+RandomList:
+  UniqueId: rl_Temperate_Planets
+  Name: Temperate Planets
+  Choices:
+    - tex_temperate_planet
+    - tex_temperate_2_planet
+    - tex_temperate_3_planet
+    - tex_temperate_4_planet
+    - tex_temperate_5_planet
+    - tex_temperate_6_planet
+---
+RandomList:
+  UniqueId: rl_Tropical_Planets
+  Name: Tropical Planets
+  Choices:
+    - tex_tropical_planet
+    - tex_tropical_2_planet
+    - tex_tropical_3_planet
+    - tex_tropical_4_planet
+---
+RandomList:
+  UniqueId: rl_Tundra_Planets
+  Name: Tundra Planets
+  Choices:
+    - tex_tundra_planet
+    - tex_tundra_2_planet
+    - tex_tundra_3_planet
+---
+RandomList:
+  UniqueId: rl_Barren_Planets
+  Name: Tundra Planets
+  Choices:
+    - tex_barren_planet
+    - tex_barren_2_planet
+    - tex_barren_3_planet
+    - tex_barren_4_planet
+    - tex_cold_barren_planet
+    - tex_cold_barren_2_planet
+    - tex_cold_barren_3_planet
+    - tex_cold_barren_4_planet
+---
+RandomList:
+  UniqueId: rl_Frozen_Planets
+  Name: Frozen Planets
+  Choices:
+    - tex_frozen_planet
+    - tex_frozen_2_planet
+    - tex_frozen_3_planet
+---
+RandomList:
+  UniqueId: rl_Molten_Planets
+  Name: Molten Planets
+  Choices:
+    - tex_Molten_planet
+    - tex_Molten_2_planet
+    - tex_Molten_3_planet
+---
+RandomList:
+  UniqueId: rl_Gas_Giants
+  Name: Gas Giants
+  Choices:
+    - tex_gas_giant_planet
+    - tex_gas_giant_2_planet
+    - tex_gas_giant_3_planet
+    - tex_gas_giant_3_planet
+    - tex_gas_giant_4_planet
+    - tex_gas_giant_5_planet
+    - tex_gas_giant_6_planet
+    - tex_gas_giant_7_planet
+    - tex_gas_giant_8_planet
+    - tex_gas_giant_9_planet
+    - tex_gas_giant_10_planet
+    - tex_gas_giant_11_planet
+    - tex_gas_giant_12_planet
+    - tex_gas_giant_13_planet
+    - tex_gas_giant_14_planet
+    - tex_gas_giant_15_planet
+    - tex_gas_giant_16_planet
+    - tex_gas_giant_17_planet
+    - tex_gas_giant_18_planet
+    - tex_gas_giant_19_planet
+---

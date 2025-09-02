@@ -6,142 +6,267 @@
 ---
 gui:
   UniqueId: main_menu
-  gameObjects:
-    - image:
-        Name: frontendgui
-        Size: [100%, 100%]
-        Sprite: rl_mainMenuBgs
-        children:
-          - image:
-              Name: game_logo
-              Sprite: GFX_open_space_logo
-              Position: [0, -150]
-              Orientation: center_up
-              PreserveAspect: true
-              Size: [900, 300]
-              Visible: true
-
-          - scrollView:
-              Name: menu_buttons
-              Size: [400, 500]
-              Orientation: center
-              Visible: true
-              Horizontal: false
-              Vertical: false 
-              MovementType: Elastic
-              Elasticity: 0.1
-              Inertia: true
-              DecelerationRate: 0.135
-              ScrollSensitivity: 300  # Updated from movementSpeed
-              LayoutType: vertical
-              Spacing: $button_spacing
-              ChildAlignment: UpperCenter
-              ChildControlWidth: true
-              ChildControlHeight: false
-              ChildForceExpandWidth: true
-              ChildForceExpandHeight: false
-              children:  # Changed from "content"
-                - button:
-                    UniqueId: debugStart
-                    Name: debeugStart_button
-                    Sprite: GFX_menu_button_normal
-                    DisabledSprite: GFX_menu_button_disabled
-                    HighlightedSprite: GFX_menu_button_highlight
-                    Position: [0, 0]
-                    Size: [$button_width, $button_height]
-                    Text: "Debug Start"
-                    Font: "Nacelle-Regular SDF"
-                    FontSize: $button_font_size
-                    Localizable: false
-                    ClickSound: confirm_click
-                    Transition: SpriteSwap
-                    Interactable: true
-                    OnlyVisibleInEditor: true 
-                    OnClicked: "DebugStart:"
-                - button:
-                    UniqueId: continue
-                    Name: continue_button
-                    Sprite: GFX_menu_button_normal
-                    DisabledSprite: GFX_menu_button_disabled
-                    HighlightedSprite: GFX_menu_button_highlight
-                    Position: [0, 0]
-                    Size: [$button_width, $button_height]
-                    Text: text_continue_game
-                    Font: "Nacelle-Regular SDF"
-                    FontSize: $button_font_size
-                    Localizable: true
-                    ClickSound: confirm_click
-                    Transition: SpriteSwap
-                    Interactable: true
-                    OnClicked: "ContinueLastSave:"
-                - button:
-                    UniqueId: new_game
-                    Name: new_game_button
-                    Sprite: GFX_menu_button_normal
-                    DisabledSprite: GFX_menu_button_disabled
-                    HighlightedSprite: GFX_menu_button_highlight
-                    Size: [$button_width, $button_height]
-                    Text: text_new_game
-                    Font: "Nacelle-Regular SDF"
-                    FontSize: $button_font_size
-                    Localizable: true
-                    ClickSound: confirm_click
-                    Transition: SpriteSwap
-                    Interactable: true
-                    OnClicked: "OpenWindow:new_game"
-                - button:
-                    UniqueId: load_game
-                    Name: load_game_button
-                    Sprite: GFX_menu_button_normal
-                    DisabledSprite: GFX_menu_button_disabled
-                    HighlightedSprite: GFX_menu_button_highlight
-                    Size: [$button_width, $button_height]
-                    Text: text_load_game
-                    Font: "Nacelle-Regular SDF"
-                    FontSize: $button_font_size
-                    Localizable: true
-                    ClickSound: confirm_click
-                    Transition: SpriteSwap
-                    Interactable: true
-                    OnClicked: "LoadUI:Load_Game_UI"
-                - button:
-                    UniqueId: editor_tools
-                    Name: editor_tools_button
-                    Sprite: GFX_menu_button_normal
-                    DisabledSprite: GFX_menu_button_disabled
-                    HighlightedSprite: GFX_menu_button_highlight
-                    Size: [$button_width, $button_height]
-                    Text: text_editor_tools
-                    Font: "Nacelle-Regular SDF"
-                    FontSize: $button_font_size
-                    Localizable: true
-                    ClickSound: confirm_click
-                    Transition: SpriteSwap
-                    Interactable: true
-                    OnClicked: "LoadUI:EditorTools_UI"
-                - button:
-                    UniqueId: close
-                    Name: close_button
-                    Sprite: GFX_menu_button_normal
-                    DisabledSprite: GFX_menu_button_disabled
-                    HighlightedSprite: GFX_menu_button_highlight
-                    Size: [$button_width, $button_height]
-                    Text: text_close_game
-                    Font: "Nacelle-Regular SDF"
-                    FontSize: $button_font_size
-                    Localizable: true
-                    ClickSound: confirm_click
-                    Transition: SpriteSwap
-                    Interactable: true
-                    OnClicked: "Quit:"
-
-          - textMeshPro:
-              Name: version_text
-              Font: "Nacelle-Regular SDF"
-              Text: VERSION_TEXT
-              Position: [-105, 25]
-              Size: [200, 20]
-              AutoSize: true
-              Alignment: right
-              Orientation: lower_right
-              Visible: true
+  Components:
+      RectTransform:
+        anchorMin: [0, 0]
+        anchorMax: [1, 1]
+        sizeDelta: [0, 0]
+        pivot: [0.5, 0.5]
+      Image:
+        sprite: rl_mainMenuBgs
+  Children:
+    - Name: game_logo
+      Components:
+        RectTransform:
+          anchorMin: [0.5, 1]
+          anchorMax: [0.5, 1]
+          anchoredPosition: [0, -150]
+          sizeDelta: [900, 300]
+          pivot: [0.5, 0.5]
+        Image:
+          sprite: GFX_open_space_logo
+          preserveAspect: true
+    - Name: menu_buttons
+      Components:
+        RectTransform:
+          sizeDelta: [400, 500]
+          pivot: [0.5, 0.5]
+        ScrollRect:
+          horizontal: false
+          vertical: true
+          movementType: Elastic
+          elasticity: 0.1
+          inertia: true
+          decelerationRate: 0.135
+          scrollSensitivity: 300
+          content: "{Children.Content}"
+          viewport: "{Children.Viewport}"
+      Children:
+        - Name: Viewport
+          Components:
+            RectTransform:
+              anchorMin: [0, 0]
+              anchorMax: [1, 1]
+              sizeDelta: [0, 0]
+              pivot: [0.5, 0.5]
+            Mask:
+              showMaskGraphic: false
+          Children:
+            - Name: Content
+              Components:
+                RectTransform:
+                  anchorMin: [0, 0]
+                  anchorMax: [1, 1]
+                  sizeDelta: [0, 0]
+                  pivot: [0.5, 0.5]
+                VerticalLayoutGroup:
+                  spacing: $button_spacing
+                  childAlignment: UpperCenter
+                  childControlWidth: true
+                  childControlHeight: false
+                  childForceExpandWidth: true
+                  childForceExpandHeight: false
+              Children:
+                - Name: debugStart_button
+                  Components:
+                    RectTransform:
+                      sizeDelta: [$button_width, $button_height]
+                      pivot: [0.5, 0.5]
+                    TextMeshProUGUI:
+                      text: "Debug Start"
+                      font: "Nacelle-Regular SDF"
+                      fontSize: $button_font_size
+                      localizable: false
+                      color: "#FFFFFF"
+                      alignment: Center
+                      # Add more text properties as needed
+                    Button:
+                      targetGraphic: "{Children.Background}"
+                      transition: SpriteSwap
+                      spriteState:
+                        highlightedSprite: GFX_menu_button_highlight
+                        disabledSprite: GFX_menu_button_disabled
+                      interactable: true
+                      onlyVisibleInEditor: true
+                      onClicked: "DebugStart:"
+                  Children:
+                    - Name: "Background"
+                      Components:
+                        RectTransform:
+                          anchorMin: [0, 0]
+                          anchorMax: [1, 1]
+                          sizeDelta: [0, 0]
+                          pivot: [0.5, 0.5]
+                        Image:
+                          sprite: GFX_menu_button_normal
+                          Color: "#FFFFFF"
+                - Name: continue_button
+                  Components:
+                    RectTransform:
+                      sizeDelta: [$button_width, $button_height]
+                      pivot: [0.5, 0.5]
+                    Button:
+                      targetGraphic: "{Children.Background}"
+                      transition: SpriteSwap
+                      spriteState:
+                        highlightedSprite: GFX_menu_button_highlight
+                        disabledSprite: GFX_menu_button_disabled
+                      interactable: true
+                      onClicked: "ContinueLastSave:"
+                    TextMeshProUGUI:
+                      text: text_continue_game
+                      font: "Nacelle-Regular SDF"
+                      fontSize: $button_font_size
+                      localizable: true
+                      color: "#FFFFFF"
+                      alignment: Center
+                  Children:
+                    - Name: "Background"
+                      Components:
+                        RectTransform:
+                          anchorMin: [0, 0]
+                          anchorMax: [1, 1]
+                          sizeDelta: [0, 0]
+                          pivot: [0.5, 0.5]
+                        Image:
+                          sprite: GFX_menu_button_normal
+                          Color: "#FFFFFF"
+                - Name: new_game_button
+                  Components:
+                    RectTransform:
+                      sizeDelta: [$button_width, $button_height]
+                      pivot: [0.5, 0.5]
+                    Button:
+                      targetGraphic: "{Children.Background}"
+                      transition: SpriteSwap
+                      spriteState:
+                        highlightedSprite: GFX_menu_button_highlight
+                        disabledSprite: GFX_menu_button_disabled
+                      interactable: true
+                      onClicked: "OpenWindow:new_game"
+                    TextMeshProUGUI:
+                      text: text_new_game
+                      font: "Nacelle-Regular SDF"
+                      fontSize: $button_font_size
+                      localizable: true
+                      color: "#FFFFFF"
+                      alignment: Center
+                  Children:
+                    - Name: "Background"
+                      Components:
+                        RectTransform:
+                          anchorMin: [0, 0]
+                          anchorMax: [1, 1]
+                          sizeDelta: [0, 0]
+                          pivot: [0.5, 0.5]
+                        Image:
+                          sprite: GFX_menu_button_normal
+                          Color: "#FFFFFF"
+                - Name: load_game_button
+                  Components:
+                    RectTransform:
+                      sizeDelta: [$button_width, $button_height]
+                      pivot: [0.5, 0.5]
+                    Button:
+                      targetGraphic: "{Children.Background}"
+                      transition: SpriteSwap
+                      spriteState:
+                        highlightedSprite: GFX_menu_button_highlight
+                        disabledSprite: GFX_menu_button_disabled
+                      interactable: true
+                      onClicked: "LoadUI:Load_Game_UI"
+                    TextMeshProUGUI:
+                      text: text_load_game
+                      font: "Nacelle-Regular SDF"
+                      fontSize: $button_font_size
+                      localizable: true
+                      color: "#FFFFFF"
+                      alignment: Center
+                  Children:
+                    - Name: "Background"
+                      Components:
+                        RectTransform:
+                          anchorMin: [0, 0]
+                          anchorMax: [1, 1]
+                          sizeDelta: [0, 0]
+                          pivot: [0.5, 0.5]
+                        Image:
+                          sprite: GFX_menu_button_normal
+                          Color: "#FFFFFF"
+                - Name: editor_tools_button
+                  Components:
+                    RectTransform:
+                      sizeDelta: [$button_width, $button_height]
+                      pivot: [0.5, 0.5]
+                    Button:
+                      targetGraphic: "{Children.Background}"
+                      transition: SpriteSwap
+                      spriteState:
+                        highlightedSprite: GFX_menu_button_highlight
+                        disabledSprite: GFX_menu_button_disabled
+                      interactable: true
+                      onClicked: "LoadUI:EditorTools_UI"
+                    TextMeshProUGUI:
+                      text: text_editor_tools
+                      font: "Nacelle-Regular SDF"
+                      fontSize: $button_font_size
+                      localizable: true
+                      color: "#FFFFFF"
+                      alignment: Center
+                  Children:
+                    - Name: "Background"
+                      Components:
+                        RectTransform:
+                          anchorMin: [0, 0]
+                          anchorMax: [1, 1]
+                          sizeDelta: [0, 0]
+                          pivot: [0.5, 0.5]
+                        Image:
+                          sprite: GFX_menu_button_normal
+                          Color: "#FFFFFF"
+                - Name: close_button
+                  Components:
+                    RectTransform:
+                      sizeDelta: [$button_width, $button_height]
+                      pivot: [0.5, 0.5]
+                    Button:
+                      targetGraphic: "{Children.Background}"
+                      transition: SpriteSwap
+                      spriteState:
+                        highlightedSprite: GFX_menu_button_highlight
+                        disabledSprite: GFX_menu_button_disabled
+                      interactable: true
+                      onClicked: "Quit:"
+                    TextMeshProUGUI:
+                      text: text_close_game
+                      font: "Nacelle-Regular SDF"
+                      fontSize: $button_font_size
+                      localizable: true
+                      color: "#FFFFFF"
+                      alignment: Center
+                  Children:
+                    - Name: "Background"
+                      Components:
+                        RectTransform:
+                          anchorMin: [0, 0]
+                          anchorMax: [1, 1]
+                          sizeDelta: [0, 0]
+                          pivot: [0.5, 0.5]
+                        Image:
+                          sprite: GFX_menu_button_normal
+                          Color: "#FFFFFF"
+    - Name: version_text
+      Components:
+        RectTransform:
+          anchorMin: [1, 0]
+          anchorMax: [1, 0]
+          anchoredPosition: [-105, 25]
+          sizeDelta: [200, 20]
+          pivot: [0.5, 0.5]
+        TextMeshProUGUI:
+          text: VERSION_TEXT
+          font: "Nacelle-Regular SDF"
+          fontSize: 20
+          autoSize: true
+          alignment: right
+          visible: true

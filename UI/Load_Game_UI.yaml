@@ -1,0 +1,252 @@
+Variables:
+  panel_width: 600
+  panel_height: 500
+  button_width: 280
+  button_height: 50
+  button_spacing: 5
+  button_font_size: 28
+  title_font_size: 36
+  save_item_height: 60
+---
+gui:
+  UniqueId: Load_Game_UI
+  Components:
+      RectTransform:
+        anchorMin: [0, 0]
+        anchorMax: [1, 1]
+        sizeDelta: [0, 0]
+        pivot: [0.5, 0.5]
+      Image:
+        sprite: rl_mainMenuBgs
+        color: [0, 0, 0, 0.8]  # Semi-transparent overlay
+  Children:
+    - Name: load_game_panel
+      Components:
+        RectTransform:
+          anchorMin: [0.5, 0.5]
+          anchorMax: [0.5, 0.5]
+          anchoredPosition: [0, 0]
+          sizeDelta: [$panel_width, $panel_height]
+          pivot: [0.5, 0.5]
+        Image:
+          sprite: GFX_tile_large_bg
+          color: "#FFFFFF"
+      Children:
+        - Name: title_text
+          Components:
+            RectTransform:
+              anchorMin: [0.5, 1]
+              anchorMax: [0.5, 1]
+              anchoredPosition: [0, -40]
+              sizeDelta: [400, 50]
+              pivot: [0.5, 0.5]
+            TextMeshProUGUI:
+              text: text_load_game
+              font: "Nacelle-Regular SDF"
+              fontSize: $title_font_size
+              localizable: true
+              color: "#000000"
+              alignment: Center
+        - Name: saves_scroll_area
+          Components:
+            RectTransform:
+              anchorMin: [0.5, 0.5]
+              anchorMax: [0.5, 0.5]
+              anchoredPosition: [0, 20]
+              sizeDelta: [520, 300]
+              pivot: [0.5, 0.5]
+            ScrollRect:
+              horizontal: false
+              vertical: true
+              movementType: Elastic
+              elasticity: 0.1
+              inertia: true
+              decelerationRate: 0.135
+              scrollSensitivity: 300
+              content: "{Children.Viewport.Children.Content}"
+              viewport: "{Children.Viewport}"
+          Children:
+            - Name: Viewport
+              Components:
+                RectTransform:
+                  anchorMin: [0, 0]
+                  anchorMax: [1, 1]
+                  sizeDelta: [0, 0]
+                  pivot: [0.5, 0.5]
+                Mask:
+                  showMaskGraphic: false
+                Image:
+                  sprite: GFX_tile_large_bg
+                  color: [0.9, 0.9, 0.9, 1.0]
+              Children:
+                - Name: Content
+                  Components:
+                    RectTransform:
+                      anchorMin: [0, 1]
+                      anchorMax: [1, 1]
+                      anchoredPosition: [0, 0]
+                      sizeDelta: [0, 0]
+                      pivot: [0.5, 1]
+                    VerticalLayoutGroup:
+                      spacing: $button_spacing
+                      childAlignment: UpperCenter
+                      childControlWidth: true
+                      childControlHeight: false
+                      childForceExpandWidth: true
+                      childForceExpandHeight: false
+                    ContentSizeFitter:
+                      verticalFit: PreferredSize
+                  Children:
+                    - Name: save_item_template
+                      Components:
+                        RectTransform:
+                          sizeDelta: [480, $save_item_height]
+                          pivot: [0.5, 0.5]
+                        Button:
+                          targetGraphic: "{Children.Background}"
+                          transition: ColorTint
+                          colors:
+                            normalColor: [1, 1, 1, 1]
+                            highlightedColor: [0.8, 0.8, 1, 1]
+                            selectedColor: [0.6, 0.6, 1, 1]
+                            pressedColor: [0.7, 0.7, 0.9, 1]
+                            disabledColor: [0.5, 0.5, 0.5, 0.5]
+                          interactable: true
+                          onClicked: "SelectSave:template"
+                      Children:
+                        - Name: Background
+                          Components:
+                            RectTransform:
+                              anchorMin: [0, 0]
+                              anchorMax: [1, 1]
+                              sizeDelta: [0, 0]
+                              pivot: [0.5, 0.5]
+                            Image:
+                              sprite: GFX_menu_button_normal
+                              color: "#FFFFFF"
+                        - Name: save_name_text
+                          Components:
+                            RectTransform:
+                              anchorMin: [0, 0.5]
+                              anchorMax: [0.7, 0.5]
+                              anchoredPosition: [20, 5]
+                              sizeDelta: [0, 30]
+                              pivot: [0, 0.5]
+                            TextMeshProUGUI:
+                              text: "Template Save"
+                              font: "Nacelle-Regular SDF"
+                              fontSize: 24
+                              localizable: false
+                              color: "#000000"
+                              alignment: Left
+                        - Name: save_date_text
+                          Components:
+                            RectTransform:
+                              anchorMin: [0, 0.5]
+                              anchorMax: [0.7, 0.5]
+                              anchoredPosition: [20, -15]
+                              sizeDelta: [0, 20]
+                              pivot: [0, 0.5]
+                            TextMeshProUGUI:
+                              text: "2024-01-01 12:00:00"
+                              font: "Nacelle-Regular SDF"
+                              fontSize: 16
+                              localizable: false
+                              color: "#666666"
+                              alignment: Left
+        - Name: no_saves_message
+          Components:
+            RectTransform:
+              anchorMin: [0.5, 0.5]
+              anchorMax: [0.5, 0.5]
+              anchoredPosition: [0, 20]
+              sizeDelta: [400, 100]
+              pivot: [0.5, 0.5]
+            TextMeshProUGUI:
+              text: text_no_saves_found
+              font: "Nacelle-Regular SDF"
+              fontSize: $button_font_size
+              localizable: true
+              color: "#666666"
+              alignment: Center
+            CanvasGroup:
+              alpha: 0  # Hidden by default, shown when no saves exist
+              interactable: false
+        - Name: control_buttons
+          Components:
+            RectTransform:
+              anchorMin: [0.5, 0]
+              anchorMax: [0.5, 0]
+              anchoredPosition: [0, 50]
+              sizeDelta: [520, $button_height]
+              pivot: [0.5, 0.5]
+            HorizontalLayoutGroup:
+              spacing: 20
+              childAlignment: MiddleCenter
+              childControlWidth: false
+              childControlHeight: true
+              childForceExpandWidth: false
+              childForceExpandHeight: true
+          Children:
+            - Name: load_button
+              Components:
+                RectTransform:
+                  sizeDelta: [$button_width, $button_height]
+                  pivot: [0.5, 0.5]
+                Button:
+                  targetGraphic: "{Children.Background}"
+                  transition: SpriteSwap
+                  spriteState:
+                    highlightedSprite: GFX_menu_button_highlight
+                    disabledSprite: GFX_menu_button_disabled
+                  interactable: false  # Disabled until save is selected
+                  onClicked: "LoadSelectedSave:"
+                TextMeshProUGUI:
+                  text: text_load_selected_save
+                  font: "Nacelle-Regular SDF"
+                  fontSize: $button_font_size
+                  localizable: true
+                  color: "#FFFFFF"
+                  alignment: Center
+              Children:
+                - Name: Background
+                  Components:
+                    RectTransform:
+                      anchorMin: [0, 0]
+                      anchorMax: [1, 1]
+                      sizeDelta: [0, 0]
+                      pivot: [0.5, 0.5]
+                    Image:
+                      sprite: GFX_menu_button_normal
+                      color: "#FFFFFF"
+            - Name: cancel_button
+              Components:
+                RectTransform:
+                  sizeDelta: [$button_width, $button_height]
+                  pivot: [0.5, 0.5]
+                Button:
+                  targetGraphic: "{Children.Background}"
+                  transition: SpriteSwap
+                  spriteState:
+                    highlightedSprite: GFX_menu_button_highlight
+                    disabledSprite: GFX_menu_button_disabled
+                  interactable: true
+                  onClicked: "CloseUI:"
+                TextMeshProUGUI:
+                  text: text_cancel
+                  font: "Nacelle-Regular SDF"
+                  fontSize: $button_font_size
+                  localizable: true
+                  color: "#FFFFFF"
+                  alignment: Center
+              Children:
+                - Name: Background
+                  Components:
+                    RectTransform:
+                      anchorMin: [0, 0]
+                      anchorMax: [1, 1]
+                      sizeDelta: [0, 0]
+                      pivot: [0.5, 0.5]
+                    Image:
+                      sprite: GFX_menu_button_normal
+                      color: "#FFFFFF" 

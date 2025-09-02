@@ -1,34 +1,80 @@
 ﻿gui:
   UniqueId: loading_screen
-  gameObjects:
-    - image:
-        Name: frontendgui
-        Size: [100%, 100%]
-        Sprite: rl_mainMenuBgs
-        children:
-          - slider:
-              Name: ProgressBar
-              Size: [90%, 40]
-              Orientation: lower_center
-              Position: [0, 100]
-              Value: "{Scope.Percentage}"
+  Components:
+    RectTransform:
+      anchorMin: [0, 0]
+      anchorMax: [1, 1]
+      sizeDelta: [0, 0]
+      pivot: [0.5, 0.5]
+  Children:
+    - Name: frontendgui
+      Components:
+        RectTransform:
+          anchorMin: [0, 0]
+          anchorMax: [1, 1]
+          sizeDelta: [0, 0]
+          pivot: [0.5, 0.5]
+        Image:
+          sprite: rl_mainMenuBgs
+      Children:
+        - Name: ProgressBar
+          Components:
+            RectTransform:
+              anchorMin: [0, 0]
+              anchorMax: [1, 0]
+              offsetMin: [100, 100]
+              offsetMax: [-100, 180]
+            Slider:
+              value: "{Scope.Percentage}"
               minValue: 0
               maxValue: 1
               wholeNumbers: false
               direction: LeftToRight
               interactable: false
-              Transition: ColorTint
-              NormalColor: [255, 0, 0]  # Light gray RGB
-              HighlightedColor: [255, 255, 255]     # White
-              PressedColor: [0, 255, 0]   # Darker gray
-              SelectedColor: [0, 0, 255]  # Slightly off-white
-              DisabledColor: [0, 0, 0]  # Medium gray
-              FadeDuration: 0.2
-    - image:
-        Name: gradientgui
-        Size: [100%, 100%]
-        Sprite: GFX_gradient
-    - image:
-        Name: framegui
-        Size: [100%, 100%]
-        Sprite: GFX_frame
+              transition: None
+              fillRect: "{Children.Fill}"
+          Children:
+            - Name: Background
+              Components:
+                RectTransform:
+                  anchorMin: [0, 0.25]
+                  anchorMax: [1, 0.75]
+                  sizeDelta: [0, 0]
+                  pivot: [0.5, 0.5]
+                Image:
+                  color: "#222222"
+            - Name: Fill Area
+              Components:
+                RectTransform:
+                  anchorMin: [0, 0.25]
+                  anchorMax: [1, 0.75]
+                  sizeDelta: [0, 0]
+                  pivot: [0.5, 0.5]
+              Children:
+                - Name: Fill
+                  Components:
+                    RectTransform:
+                      anchorMin: [0, 0]
+                      anchorMax: [0, 1]
+                      sizeDelta: [0, 0]
+                      pivot: [0.5, 0.5]
+                    Image:
+                      color: "#FFFFFF"
+    - Name: gradientgui
+      Components:
+        RectTransform:
+          anchorMin: [0, 0]
+          anchorMax: [1, 1]
+          sizeDelta: [0, 0]
+          pivot: [0.5, 0.5]
+        Image:
+          sprite: GFX_gradient
+    - Name: framegui
+      Components:
+        RectTransform:
+          anchorMin: [0, 0]
+          anchorMax: [1, 1]
+          sizeDelta: [0, 0]
+          pivot: [0.5, 0.5]
+        Image:
+          sprite: GFX_frame

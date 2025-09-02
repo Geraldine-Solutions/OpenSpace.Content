@@ -9,7 +9,7 @@
   toggle_height: 100
 gui:
   UniqueId: new_game
-  gameObjects:
+  GameObjects:
     - image:
         Name: new_game_panel
         Size: [$panel_width, $panel_height]

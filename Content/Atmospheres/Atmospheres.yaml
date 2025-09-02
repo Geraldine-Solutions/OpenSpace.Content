@@ -2,15 +2,30 @@
   - Atmosphere:
       UniqueId: atmo_None
       Name: "Text_None"
+      HorizonColor: "#FFFFFF00"
+      InnerColor: "#FFFFFF00"
+      OuterColor: "#FFFFFF00"
   - Atmosphere:
       UniqueId: atmo_CO2
       Name: "Text_CO2"
+      HorizonColor: "#AAE1FF"
+      InnerColor: "#E8F7FF"
+      OuterColor: "#1A63F3"
   - Atmosphere:
       UniqueId: atmo_Methane
       Name: "Text_Methane"
+      HorizonColor: "#70c496"
+      InnerColor: "#204d96"
+      OuterColor: "#e0195f"
   - Atmosphere:
       UniqueId: atmo_Ammonia
       Name: "Text_Ammonia"
+      HorizonColor: "#CBE085"
+      InnerColor: "#7A8f33"
+      OuterColor: "#D1FF36"
   - Atmosphere:
       UniqueId: atmo_Oxygenated
       Name: "Text_Oxygenated"
+      HorizonColor: "#CED7FF"
+      InnerColor: "#6BA6DA"
+      OuterColor: "#4ABAFF"
