@@ -24,7 +24,7 @@ UI:
         Components:
           SpriteRenderer:
             Sprite: "{Scope.Icon}"
-          SgtBillboard:
+          Billboard:
             AvoidClipping: true
 ######################
 #Celestial Body Nodes#
@@ -97,7 +97,7 @@ UI:
                     OuterAlphaSharpness: 3
               - Name: "ProminenceA"
                 Components:
-                  SgtProminence:
+                  Prominence:
                     SourceMaterial: "mat_Prominence_Detail_Distort"
                     Color: "{Scope.Atmosphere.HorizonColor}"
                     Brightness: 0.55
@@ -108,7 +108,7 @@ UI:
                     RadiusMax: 1.29
               - Name: "ProminenceB"
                 Components:
-                  SgtProminence:
+                  Prominence:
                     SourceMaterial: "mat_Prominence_Detail_Distort"
                     Color: "{Scope.Atmosphere.HorizonColor}"
                     Brightness: 0.1
@@ -162,7 +162,7 @@ UI:
         Children:
           - Name: "Singularity"
             Components:
-              SgtBlackHole:
+              BlackHole:
                 SourceMaterial: "mat_black_hole"
                 Mesh: "Meshes/Geosphere"
                 Pinch: 10
@@ -340,7 +340,7 @@ UI:
             Components:
               Ring:
                 SourceMaterial: "mat_ring_scattering_detail_near_fade"
-                Color: ""
+                Color: "#FFFFFF"
                 Brightness: 1
                 MainTex: "tex_ring_diffuse"
                 RadiusInner: 1.44
@@ -373,12 +373,16 @@ UI:
       FloatingTarget:
         WarpName: "{Scope.Name}"
         WarpDistance: "2500 KM"
-
-      FloatingScaler:
-        Target: "{Children.Body}"
-        Scale: [1, 1, 1]
-        Multiplier: "1"
-        Range: "50000 KM"
+    Children:
+      - Name: "Sphere"
+        Components:
+        # Mesh + renderer
+          MeshFilter:
+            sharedMesh: "Meshes/Geosphere"
+          MeshRenderer:
+            shadowCastingMode: Off
+            receiveShadows: false
+            enabled: true
 
 ### Gas Giants ###
   - UniqueId: UI_Gas_Giant_Render_Entity
@@ -452,7 +456,7 @@ UI:
             Components:
               Ring:
                 SourceMaterial: "mat_ring_scattering_detail_near_fade"
-                Color: ""
+                Color: "#FFFFFF"
                 Brightness: 1
                 MainTex: "tex_ring_diffuse"
                 RadiusInner: 1.44
@@ -528,7 +532,7 @@ UI:
           Transform:
             Scale: [1,1,1]
 
-          SgtBeltSimple:
+          BeltSimple:
             SourceMaterial: "mat_opaque_belt_lighting"
             Color: "#FFFFFFFF"
             Brightness: 1
@@ -554,7 +558,7 @@ UI:
             AsteroidRadiusMax: 8
             AsteroidRadiusBias: 50
 
-          SgtBeltLightingTex:
+          BeltLightingTex:
             FrontPower: 2
             BackPower: 3
             BackStrength: 0
