@@ -1,4 +1,4 @@
-﻿Variables:
+Variables:
   panel_width: 900
   panel_height: 600
   small_button_width: 120
@@ -125,12 +125,12 @@ gui:
                           ClickSound: confirm_click
                           Transition: SpriteSwap
                           Interactable: true
-                          OnClicked: "SetEra:era_interstellar"  
+                          OnClicked: "SetEra:era_system"  
                           children:
                             - textMeshPro:
                                 Name: interstellar_era_text
                                 Font: "Nacelle-Regular SDF"
-                                Text: text_era_interstellar
+                                Text: text_era_system
                                 Position: [0, -30]
                                 Size: [100%, 30]
                                 AutoSize: true

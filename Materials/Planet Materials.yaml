@@ -1,4 +1,4 @@
-﻿#################
+#################
 #    Planets    #
 #################
 Materials:
@@ -22,7 +22,7 @@ Materials:
       _SphereMaskFalloff: "3"
       _SphereMaskRadius: "1"
 
-      # Colors
+      
       _Color: "#FFFFFF"
       _AmbientColor: "#000000"
       _ScatteringInner: "[0.5,0.25,0.25,0.1]"
@@ -69,7 +69,7 @@ Materials:
       _SphereMask: "0"
       _SphereMaskFalloff: "3"
       _SphereMaskRadius: "1"
-      _SphereShadowCount: "0"
+      
 
       # Colors
       _Color: "#FFFFFF"
@@ -77,14 +77,14 @@ Materials:
       _SphereMaskPosition: "#000000"
 
 #Planet
-  - UniqueId: "mat_Planet"
-    Name: "Planet"
+  - UniqueId: "mat_Planet_Far"
+    Name: "Planet (Far)"
     Shader: "Geraldine/4XSpace/Rendering/Planet"
     Properties:
       # Core textures
       _MainTex: "tex_earth_albedo"
       _BumpMap: "tex_earth_Normal"
-      _HeightMap: "tex_earth_land"
+      _HeightMap: "tex_earth_land_albedo"
 
       # Night lights and noise
       _NightTex: "tex_earth_night"
@@ -131,7 +131,76 @@ Materials:
       _SphereMaskFalloff: "3"
       _SphereMaskRadius: "1"
 
-      # Colors
+      
+      _Color: "#FFFFFF"
+      _NightDirection: "#FF0000"
+      _SphereMaskPosition: "#000000"
+
+      # Keywords
+
+#Gas Giant
+  - UniqueId: "mat_Planet"
+    Name: "Planet"
+    Shader: "Geraldine/4XSpace/Rendering/Terrain Planet"
+    Properties:
+      # Core textures
+      _MainTex: "tex_earth_albedo"
+      _BumpMap: "tex_earth_Normal"
+      _HeightMap: "tex_earth_land_albedo"
+
+      # Night lights and noise
+      _NightTex: "tex_earth_night"
+      _NoiseTex: "res:Textures/Noise2D"
+
+      # Floats
+      _AlbedoShift: "0"
+      _BumpScale: "0.66"
+      _DisableFog: "0"
+      _DetailFadeBound: "1000"
+      _DetailFadeBound_Ext_1: "1000"
+      _DetailFadeRange: "10"
+      _DetailFadeRange_Ext_1: "0"
+      _DetailScaleA: "1"
+      _DetailScaleA_Ext_1: "1"
+      _DetailScaleB: "1"
+      _DetailScaleB_Ext_1: "1"
+      _DetailScaleG: "1"
+      _DetailScaleG_Ext_1: "1"
+      _DetailScaleR: "1"
+      _DetailScaleR_Ext_1: "1"
+      _DetailTiling: "16"
+      _DetailTiling_Ext_1: "200"
+      _FlatShadingBlend: "0.9"
+      _GlossMapScale: "0.202"
+      _HasDetail: "1"
+      _HasDetailA: "0"
+      _HasDetailAlbedo: "0"
+      _HasDetailB: "0"
+      _HasDetailG: "0"
+      _HasDetailNormal: "1"
+      _HasDetailR: "1"
+      _HasDetail_Ext_1: "1"
+      _HasFaceted: "0"
+      _HasNight: "1"
+      _HasWater: "1"
+      _Metallic: "0"
+      _NightBrightness: "1"
+      _NightOffset: "0.91"
+      _NightSharpness: "6.8"
+      _QueueControl: "-1"
+      _QueueOffset: "0"
+      _SphereMask: "0"
+      _SphereMaskFalloff: "3"
+      _SphereMaskRadius: "1"
+
+      # Hex overlay (runtime set via MPB)
+      _HexCellDataTex: ""
+      _HexCellDataDim: "[0,0,0,0]"
+      _HexCount: "0"
+      _HexOverlayStrength: "0.35"
+      _HexOverlayOn: "0"
+
+      
       _Color: "#FFFFFF"
       _NightDirection: "#FF0000"
       _SphereMaskPosition: "#000000"
@@ -160,7 +229,7 @@ Materials:
       _SphereMask: "0"
       _SphereMaskFalloff: "3"
       _SphereMaskRadius: "1"
-      _SphereShadowCount: "0"
+      
 
       # Colors
       _Color: "#FFFFFF"
@@ -196,7 +265,7 @@ Materials:
       _SphereMask: "0"
       _SphereMaskFalloff: "3"
       _SphereMaskRadius: "1"
-      _SphereShadowCount: "0"
+      
       _Tiling: "5"
 
       # Color Properties (using vector notation for Vector4 colors)
@@ -245,7 +314,7 @@ Materials:
       _SphereMask: "0"
       _SphereMaskFalloff: "3"
       _SphereMaskRadius: "1"
-      _Tiling: "5"
+      
 
       # Color Properties (using vector notation for Vector4 colors)
       _DetailOffset: "[0,0,0,1]"
@@ -303,7 +372,7 @@ Materials:
       _SphereMaskFalloff: "3"
       _SphereMaskRadius: "1"
 
-      # Colors
+      
       _Color: "#FFFFFF"
       _AmbientColor: "#000000"
       _SphereMaskPosition: "#000000"
@@ -326,3 +395,21 @@ Materials:
 
       # Colors
       _Color: "#FFFFFF"
+
+#Asteroid Material
+  - UniqueId: "mat_asteroid"
+    Name: "Asteroid Standard"
+    Shader: "Standard"
+    Properties:
+      # Textures
+      _MainTex: "tex_asteroid_albedo"
+
+      # Floats
+      _Metallic: "0.1"
+      _Smoothness: "0.2"
+      _OcclusionStrength: "0.5"
+
+      # Colors
+      _Color: "#8B7355"
+      _EmissionColor: "#0A0A0A"
+

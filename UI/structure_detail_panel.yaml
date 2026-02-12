@@ -1,0 +1,139 @@
+gui:
+  UniqueId: structure_detail_panel
+  Components:
+      RectTransform:
+        anchorMin: [0, 0]
+        anchorMax: [0, 0]
+        pivot: [0, 0]
+        sizeDelta: [300, 200]
+        anchoredPosition: [10, 10]
+      CanvasGroup:
+        alpha: 1
+        interactable: true
+        blocksRaycasts: true
+      Image:
+        color: "#000000E9"
+      VerticalLayoutGroup:
+        spacing: 8
+        childAlignment: UpperLeft
+        childControlWidth: true
+        childControlHeight: false
+        childForceExpandWidth: true
+        childForceExpandHeight: false
+  Children:
+    - Name: title_text
+      Components:
+        RectTransform:
+          anchorMin: [0, 0]
+          anchorMax: [1, 1]
+          sizeDelta: [0, 0]
+          pivot: [0.5, 0.5]
+        TextMeshProUGUI:
+          text: "{Scope.Title}"
+          fontSize: 20
+          color: "#FFFFFF"
+          alignment: Center
+          fontStyle: Bold
+        LayoutElement:
+          minHeight: 30
+          preferredHeight: 30
+
+    - Name: stats_section
+      Components:
+        RectTransform:
+          anchorMin: [0, 0]
+          anchorMax: [1, 1]
+          sizeDelta: [0, 0]
+          pivot: [0.5, 0.5]
+        VerticalLayoutGroup:
+          spacing: 5
+          childAlignment: UpperLeft
+          childControlWidth: true
+          childControlHeight: false
+          childForceExpandWidth: true
+          childForceExpandHeight: false
+      Children:
+        - Name: stats_header
+          Components:
+            RectTransform:
+              anchorMin: [0, 0]
+              anchorMax: [1, 1]
+              sizeDelta: [0, 0]
+              pivot: [0.5, 0.5]
+            TextMeshProUGUI:
+              text: "Stats:"
+              fontSize: 16
+              color: "#FFFFFF"
+              fontStyle: Bold
+            LayoutElement:
+              minHeight: 20
+              preferredHeight: 20
+
+        - Name: stats_text
+          Components:
+            RectTransform:
+              anchorMin: [0, 0]
+              anchorMax: [1, 1]
+              sizeDelta: [0, 0]
+              pivot: [0.5, 0.5]
+            TextMeshProUGUI:
+              text: "{Scope.ResourcesText}"
+              fontSize: 14
+              color: "#FFFFFF"
+              alignment: Left
+              enableWordWrapping: true
+              overflowMode: Overflow
+            LayoutElement:
+              minHeight: 80
+              preferredHeight: 80
+              flexibleHeight: 1
+
+    - Name: info_section
+      Components:
+        RectTransform:
+          anchorMin: [0, 0]
+          anchorMax: [1, 1]
+          sizeDelta: [0, 0]
+          pivot: [0.5, 0.5]
+        VerticalLayoutGroup:
+          spacing: 5
+          childAlignment: UpperLeft
+          childControlWidth: true
+          childControlHeight: false
+          childForceExpandWidth: true
+          childForceExpandHeight: false
+      Children:
+        - Name: info_header
+          Components:
+            RectTransform:
+              anchorMin: [0, 0]
+              anchorMax: [1, 1]
+              sizeDelta: [0, 0]
+              pivot: [0.5, 0.5]
+            TextMeshProUGUI:
+              text: "Info:"
+              fontSize: 16
+              color: "#FFFFFF"
+              fontStyle: Bold
+            LayoutElement:
+              minHeight: 20
+              preferredHeight: 20
+
+        - Name: info_text
+          Components:
+            RectTransform:
+              anchorMin: [0, 0]
+              anchorMax: [1, 1]
+              sizeDelta: [0, 0]
+              pivot: [0.5, 0.5]
+            TextMeshProUGUI:
+              text: "{Scope.ModifiersText}"
+              fontSize: 14
+              color: "#FFFFFF"
+              alignment: Left
+              enableWordWrapping: true
+              overflowMode: Overflow
+            LayoutElement:
+              minHeight: 40
+              preferredHeight: 40
+              flexibleHeight: 1

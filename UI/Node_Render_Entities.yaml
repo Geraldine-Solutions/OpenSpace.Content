@@ -4,6 +4,13 @@ Variables:
 ---
 UI:
 ######################
+#   Galaxy Nodes     #
+######################
+  - UniqueId: UI_Galaxy_Render_Entity
+    Name: "{Scope.UniqueId}"
+    Components:
+      FastBillboardManager: {}
+######################
 # Star System Nodes  #
 ######################
   - UniqueId: UI_StarSystem_Render_Entity
@@ -13,7 +20,10 @@ UI:
         Seed: 0
       FloatingTarget:
         WarpName: "{Scope.Name}"
-        WarpDistance: "50 AU"
+        WarpDistance: "25 AU"
+      FloatingSelectable:
+        isMovable: false
+        uiPanelDefinition: "node_detail_panel"
       FloatingScaler:
         Target: "{Children.Billboard}"
         Scale: [1,1,1]
@@ -22,10 +32,24 @@ UI:
     Children:
       - Name: "Billboard"
         Components:
-          SpriteRenderer:
-            Sprite: "{Scope.Icon}"
-          Billboard:
+          FastBillboard:
             AvoidClipping: true
+        Children:
+          - Name: "Icon"
+            Components:
+              SpriteRenderer:
+                Sprite: "{Scope.Icon}"
+          - Name: "Nameplate"
+            Components:
+              RectTransform:
+                anchoredPosition: [0, -0.5]
+                sizeDelta: [5, 1]
+              TextMeshPro:
+                text: "{Scope.Name}"
+                fontSize: 4
+                fontStyle: "Bold"
+                color: "#FFFFFF"
+                alignment: MiddleCenter
 ######################
 #Celestial Body Nodes#
 ######################
@@ -40,20 +64,26 @@ UI:
       # Allow warping to star; distance prevents too-close warp
       FloatingTarget:
         WarpName: "{Scope.Name}"
-        WarpDistance: "100000 KM"
+        WarpDistance: "{Scope.Body.WarpDistance}"
 
-      # Scale helper so star stays visible from far away without blowing precision
-      FloatingScaler:
-        Target: "{Children.Star}"
-        Scale: [1, 1, 1]
-        Multiplier: 1
-        Range: "100 AU"
+      # Make this star selectable
+      FloatingSelectable:
+        isMovable: false
+        uiPanelDefinition: "node_detail_panel"
+
+      # Render scale system: focus-based stylized scaling (replaces VisualDistanceScaler)
+      # Scale/separation config is data-driven here - modders can tune these per entity type
+      RenderScaler:
+        AuthoringRadiusMeters: "{Scope.Body.RadiusMeters}"
+        DepthModifiers: [260]
+        MaxExaggeration: 150000
+        SubtreeViewDistanceScaleFactor: 2
 
     Children:
       - Name: "Star"
         Components:
           Transform:
-            Scale: ["{Scope.Body.RadiusKm}","{Scope.Body.RadiusKm}","{Scope.Body.RadiusKm}"]
+            localScale: ["{Scope.Body.RadiusMeters}","{Scope.Body.RadiusMeters}","{Scope.Body.RadiusMeters}"]
         Children:
           - Name: "Sphere"
             Components:
@@ -65,6 +95,9 @@ UI:
                 shadowCastingMode: Off
                 receiveShadows: false
                 enabled: true
+              # Collider to block raycasts (prevent clicking through star)
+              SphereCollider:
+                radius: 1.0
             Children:
               - Name: "Corona"
                 Components:
@@ -122,19 +155,22 @@ UI:
         Components:
           # Main light source
           Light:
-            type: Directional
-            intensity: 1.0
-            color: "#FFF6E3FF"
+            Type: Directional
+            Mode: Realtime
+            LightAppearance: Color
+            Color: "#FFF6E3"
+            Intensity: 1.0
+            IndirectMultiplier: 1.0
           RenderLight:
             TreatAsPoint: true
             UseLightIntensity: true
             Brightness: 1
           CwLightIntensity:
-            Multiplier: 1.0
+            Multiplier: 1
             IntensityInStandard: 1
             IntensityInURP: 1
             IntensityInHDRP: 120000
-
+          UniversalAdditionalLightData: {}
 #Black Hole
   - UniqueId: UI_Black_hole_Render_Entity
     Name: "{Scope.Name}"
@@ -145,20 +181,25 @@ UI:
       # Allow warping to star; distance prevents too-close warp
       FloatingTarget:
         WarpName: "{Scope.Name}"
-        WarpDistance: "100000 KM"
+        WarpDistance: "{Scope.Body.WarpDistance}"
 
-      # Scale helper so star stays visible from far away without blowing precision
-      FloatingScaler:
-        Target: "{Children.Star}"
-        Scale: [1, 1, 1]
-        Multiplier: 1
-        Range: "100 AU"
+      # Make this black hole selectable
+      FloatingSelectable:
+        isMovable: false
+        uiPanelDefinition: "node_detail_panel"
+
+      # Render scale system: focus-based stylized scaling
+      RenderScaler:
+        AuthoringRadiusMeters: "{Scope.Body.RadiusMeters}"
+        DepthModifiers: [260]
+        MaxExaggeration: 150000
+        SubtreeViewDistanceScaleFactor: 2
 
     Children:
       - Name: "Black Hole"
         Components:
           Transform:
-            Scale: ["{Scope.Body.RadiusKm}","{Scope.Body.RadiusKm}","{Scope.Body.RadiusKm}"]
+            localScale: ["{Scope.Body.RadiusMeters}","{Scope.Body.RadiusMeters}","{Scope.Body.RadiusMeters}"]
         Children:
           - Name: "Singularity"
             Components:
@@ -199,180 +240,172 @@ UI:
             IntensityInStandard: 1
             IntensityInURP: 1
             IntensityInHDRP: 120000
-
 ### Planets ###
   - UniqueId: UI_Planet_Render_Entity
     Name: "{Scope.Name}"
     Components:
       Transform:
-        Scale: [1,1,1]
+        localScale: [1,1,1]
 
       FloatingObject: {}
 
       FloatingTarget:
         WarpName: "{Scope.Name}"
-        WarpDistance: "25000 KM"
+        WarpDistance: "{Scope.Body.WarpDistance}"
 
-      FloatingScaler:
-        Target: "{Children.Body}"
-        Scale: [1, 1, 1]
-        Multiplier: "{Scope.Body.ScalerMultiplier}"
-        Range: "100 AU"
+      FloatingSelectable:
+        isMovable: false
+        uiPanelDefinition: "node_detail_panel"
+
+      # Render scale system: focus-based stylized scaling
+      RenderScaler:
+        AuthoringRadiusMeters: "{Scope.Body.RadiusMeters}"
+        DepthModifiers: [5000]
+        MaxExaggeration: 150000
+        SubtreeViewDistanceScaleFactor: 5
+
+      ScaledOrbitPath: {}
+
+      FloatingLods:
+        - Prefab: "UI_Planet_Render_Entity_Far"
+          DistanceMin: "40000 km"
+          DistanceMax: "1 Lightyear"
+        - Prefab: "UI_Planet_Render_Entity_Terrain"
+          DistanceMin: "0 m"
+          DistanceMax: "50000 km"
 
     Children:
       - Name: "OrbitVisual"
         Components:
           OrbitVisual:
-            Orbit: "{Scope.Orbit}"
             Material: "mat_orbit_ring"
             Thickness: "5000000 km"
 
-      - Name: "Body"
+      - Name: "PlanetCollider"
         Components:
           Transform:
-            Scale: ["{Scope.Body.RadiusKm}","{Scope.Body.RadiusKm}","{Scope.Body.RadiusKm}"]
-        Children:
-          - Name: "Terrain"
-            Components:
-              TerrainPlanet:
-                Radius: 1
-                SmallestTriangleSize: 0.25
-                Resolution: 128
-                Detail: 1
-                BakedDetailTiningA: 16
-                BakedDetailTiningB: 1000
-                BakedDetailTiningC: 100000
-              TerrainPlanetMaterial:
-                Material: "mat_Planet"
-                MainTex: "{Scope.Body.MainTex}"
-                CastShadows: true
-                ReceiveShadows: true
-                NormallFadeRange: 100
-              TerrainHeightmap:
-                HeightMap: "{Scope.Body.HeightTex}"
-                Channel: "Alpha"
-                Displacement: 40
-#          - Name: "Ocean"
-#            Components:
-#              TerrainOcean:
-#                Radius: 1
-#                SmallestTriangleSize: 0.25
-#                Resolution: 128
-#                Detail: 1
-#                BakedDetailTiningA: 32
-#                BakedDetailTiningB: 1000
-#                BakedDetailTiningC: 100000
-#              TerrainOceanMaterial:
-#                Material: "mat_Ocean"
-#                CastShadows: true
-#                ReceiveShadows: true
-#                NormallFadeRange: 0
-          - Name: "Atmosphere"
-            Components:
-              SharedMaterial: {}
-              Atmosphere:
-                SourceMaterial: "mat_Atmosphere_Lighting_Scattering"
-                Color: "{Scope.Atmosphere.HorizonColor}"
-                Brightness: 1
-                InnerMeshRadius: 1
-                OuterMesh: "Meshes/Geosphere"
-                OuterMeshRadius: 1.05
-                OuterSoftness: 0
-                Height: .01
-                InnerFog: 0
-                OuterFog: 0
-                Sky: 1
-                Middle: 0.5
-                CameraOffset: 0
-                OcclusionPower: 1
-                Night: false
-              AtmosphereDepthTex:
-                HorizonColor: "{Scope.Atmosphere.HorizonColor}"
-                InnerColor: "{Scope.Atmosphere.InnerColor}"
-                InnerEase: "Exponential"
-                InnerColorSharpness: 2
-                InnerAlphaSharpness: 3
-                OuterColor: "{Scope.Atmosphere.OuterColor}"
-                OuterEase: "Quadratic"
-                OuterColorSharpness: 1
-                OuterAlphaSharpness: 2.08
-              AtmosphereLightingTex:
-                SunsetEase: "Smoothstep"
-                SunsetStart: 0.45
-                SunsetEnd: 0.96
-                SunsetSharpnessR: 3
-                SunsetSharpnessG: 3
-                SunsetSharpnessB: 3
-              AtmosphereScatteringTex:
-                  SunsetEase: "Smoothstep"
-                  SunsetStart: 0.413
-                  SunsetEnd: 0.6
-                  SunsetSharpnessR: 2
-                  SunsetSharpnessG: 1
-                  SunsetSharpnessB: 1
-          - Name: "Cloudsphere"
-            Components:
-              Cloudsphere:
-                SourceMaterial: "mat_Cloudsphere_Lighting_Detail"
-                Color: "#FFFFFF"
-                Brightness: 1
-                MainTex: "tex_dense_clouds"
-                Radius: 1.005
-                CameraOffset: 0.001
-                Softness: 0
-                Mesh: "Meshes/Geosphere"
-                MeshRadius: 1
-              CloudsphereDepthTex:
-                RimEase: "Exponential"
-                RimColor: "{Scope.Atmosphere.HorizonColor}"
-                RimPower: 4.4
-                AlphaDensity: 400
-                AlphaFade: 2
-              CloudsphereLightingTex:
-                SunsetEase: "Smoothstep"
-                SunsetStart: 0.45
-                SunsetEnd: 0.897
-                SunsetSharpnessR: 3
-                SunsetSharpnessG: 3
-                SunsetSharpnessB: 3
-          - Name: "Ring"
-            Visible: "{Scope.Body.HasRing}"
-            Components:
-              Ring:
-                SourceMaterial: "mat_ring_scattering_detail_near_fade"
-                Color: "#FFFFFF"
-                Brightness: 1
-                MainTex: "tex_ring_diffuse"
-                RadiusInner: 1.44
-                RadiusOuter: 1.92
-                Split: true
-              RingNearTex:
-                Sharpness: 2
-                Offset: 0
-                OverrideRange: -1
-              RingLightingTex:
-                FrontPower: 2
-                BackPower: 3
-                BackStrength: 0.5
-                BaseStrength: 0.2
-              ShadowRing:
-                RadiusMin: 1.44
-                RadiusMax: 1.92
-              ShadowRingFilter:
-                Iterations: 100
+            localScale: ["{Scope.Body.RadiusMeters}","{Scope.Body.RadiusMeters}","{Scope.Body.RadiusMeters}"]
+          # Collider to block raycasts (prevent clicking through planet)
+          SphereCollider:
+            radius: 1.0
 
-### Headless ###
+      - Name: "Atmosphere"
+        Components:
+          Transform:
+            localScale: ["{Scope.Body.OuterRadiusMeters}","{Scope.Body.OuterRadiusMeters}","{Scope.Body.OuterRadiusMeters}"]
+          SharedMaterial: {}
+          Atmosphere:
+            SourceMaterial: "mat_Atmosphere_Lighting_Scattering"
+            Color: "{Scope.Atmosphere.HorizonColor}"
+            Brightness: 1
+            InnerMeshRadius: 1
+            OuterMesh: "Meshes/Geosphere"
+            OuterMeshRadius: 1.05
+            OuterSoftness: 0
+            Height: .05
+            InnerFog: 0
+            OuterFog: 0
+            Sky: 1
+            Middle: 0.5
+            CameraOffset: 0
+            OcclusionPower: 1
+            Night: false
+          AtmosphereDepthTex:
+            HorizonColor: "{Scope.Atmosphere.HorizonColor}"
+            InnerColor: "{Scope.Atmosphere.InnerColor}"
+            InnerEase: "Exponential"
+            InnerColorSharpness: 2
+            InnerAlphaSharpness: 3
+            OuterColor: "{Scope.Atmosphere.OuterColor}"
+            OuterEase: "Quadratic"
+            OuterColorSharpness: 1
+            OuterAlphaSharpness: 2.08
+          AtmosphereLightingTex:
+            SunsetEase: "Smoothstep"
+            SunsetStart: 0.45
+            SunsetEnd: 0.96
+            SunsetSharpnessR: 3
+            SunsetSharpnessG: 3
+            SunsetSharpnessB: 3
+          AtmosphereScatteringTex:
+            SunsetEase: "Smoothstep"
+            SunsetStart: 0.413
+            SunsetEnd: 0.6
+            SunsetSharpnessR: 2
+            SunsetSharpnessG: 1
+            SunsetSharpnessB: 1
+      - Name: "Cloudsphere"
+        Components:
+          Transform:
+            localScale: ["{Scope.Body.OuterRadiusMeters}","{Scope.Body.OuterRadiusMeters}","{Scope.Body.OuterRadiusMeters}"]
+          Cloudsphere:
+            SourceMaterial: "mat_Cloudsphere_Lighting_Detail"
+            Color: "#FFFFFF"
+            Brightness: 1
+            MainTex: "tex_dense_clouds"
+            Radius: 0.96
+            CameraOffset: 0.001
+            Softness: 0
+            Mesh: "Meshes/Geosphere"
+            MeshRadius: 1
+          CloudsphereDepthTex:
+            RimEase: "Exponential"
+            RimColor: "{Scope.Atmosphere.HorizonColor}"
+            RimPower: 4.4
+            AlphaDensity: 400
+            AlphaFade: 2
+          CloudsphereLightingTex:
+            SunsetEase: "Smoothstep"
+            SunsetStart: 0.45
+            SunsetEnd: 0.897
+            SunsetSharpnessR: 3
+            SunsetSharpnessG: 3
+            SunsetSharpnessB: 3
+      - Name: "Ring"
+        Visible: "{Scope.Body.HasRing}"
+        Components:
+          Transform:
+            localScale: ["{Scope.Body.OuterRadiusMeters}","{Scope.Body.OuterRadiusMeters}","{Scope.Body.OuterRadiusMeters}"]
+          Ring:
+            SourceMaterial: "mat_ring_scattering_detail_near_fade"
+            Color: "#FFFFFF"
+            Brightness: 1
+            MainTex: "tex_ring_diffuse"
+            RadiusInner: 1.44
+            RadiusOuter: 1.92
+            Split: true
+          RingNearTex:
+            Sharpness: 2
+            Offset: 0
+            OverrideRange: -1
+          RingLightingTex:
+            FrontPower: 2
+            BackPower: 3
+            BackStrength: 0.5
+            BaseStrength: 0.2
+          RenderShadowRing:
+            Texture: "res:Textures/Rings_Shadow"
+            RadiusMin: 1.44
+            RadiusMax: 1.92
+          RenderShadowRingFilter:
+            Iterations: 100
+
+
   - UniqueId: UI_Headless_Floating_Target
     Name: "{Scope.Name}"
     Components:
       Transform:
-        Scale: [1,1,1]
+        localScale: [1,1,1]
 
       FloatingObject: {}
 
       FloatingTarget:
         WarpName: "{Scope.Name}"
         WarpDistance: "2500 KM"
+
+      FloatingSelectable:
+        isMovable: false
+        uiPanelDefinition: "node_detail_panel"
     Children:
       - Name: "Sphere"
         Components:
@@ -384,123 +417,249 @@ UI:
             receiveShadows: false
             enabled: true
 
+######################
+# Hex Render Entity  #  DataOnly: no prefab; hex data contributes to planet overlay only
+######################
+  - UniqueId: UI_Hex_Render_Entity
+    RenderMode: DataOnly
+    Name: "{Scope.Name}"
+    Components:
+      FloatingObject: {}
+
+      FloatingTarget:
+        WarpName: "{Scope.Name}"
+        WarpDistance: "500 KM"
+
+      FloatingSelectable:
+        isMovable: false
+        uiPanelDefinition: "node_detail_panel"
+
+    Children:
+      - Name: HexMesh
+        Components:
+            Transform:
+              localScale: [150000, 150000, 150000]
+            MeshFilter:
+              sharedMesh: "Meshes/Geosphere"
+            MeshRenderer:
+              material: Standard
+              color: [0.7, 0.7, 0.7, 1]
+
+      - Name: Nameplate
+        Components:
+          Transform:
+            localPosition: [0, 5000, 0]
+            localScale: [100, 100, 100]
+          Canvas:
+            renderMode: WorldSpace
+            sortingOrder: 100
+          FloatingSelectable:
+            isMovable: false
+            uiPanelDefinition: "node_detail_panel"
+          Billboard:
+            AvoidClipping: true
+        Children:
+          - Name: Background
+            Components:
+              RectTransform:
+                anchorMin: [0.5, 0.5]
+                anchorMax: [0.5, 0.5]
+                pivot: [0.5, 0.5]
+                sizeDelta: [150, 30]
+              Image:
+                color: [0, 0, 0, 0.7]
+                raycastTarget: true
+          - Name: NameText
+            Components:
+              RectTransform:
+                anchorMin: [0, 0]
+                anchorMax: [1, 1]
+                offsetMin: [5, 5]
+                offsetMax: [-5, -5]
+              Text:
+                text: "{Scope.Name}"
+                fontSize: 14
+                alignment: MiddleCenter
+                color: [1, 1, 1, 1]
+                raycastTarget: false
+
+######################
+# Region Render Entity#  DataOnly: no mesh; regions rendered via planet terrain shader
+######################
+  - UniqueId: UI_Region_Render_Entity
+    RenderMode: DataOnly
+    Name: "{Scope.Name}"
+    Components:
+      FloatingObject: {}
+
+      FloatingTarget:
+        WarpName: "{Scope.Name}"
+        WarpDistance: "5000 KM"
+
+      FloatingSelectable:
+        isMovable: false
+        uiPanelDefinition: "node_detail_panel"
+
+    Children:
+      - Name: Nameplate
+        Components:
+          Transform:
+            localPosition: [0, 10000, 0]
+            localScale: [200, 200, 200]
+          Canvas:
+            renderMode: WorldSpace
+            sortingOrder: 100
+          FloatingSelectable:
+            isMovable: false
+            uiPanelDefinition: "node_detail_panel"
+          Billboard:
+            AvoidClipping: true
+        Children:
+          - Name: Background
+            Components:
+              RectTransform:
+                anchorMin: [0.5, 0.5]
+                anchorMax: [0.5, 0.5]
+                pivot: [0.5, 0.5]
+                sizeDelta: [200, 40]
+              Image:
+                color: [0, 0, 0, 0.7]
+                raycastTarget: true
+          - Name: NameText
+            Components:
+              RectTransform:
+                anchorMin: [0, 0]
+                anchorMax: [1, 1]
+                offsetMin: [5, 5]
+                offsetMax: [-5, -5]
+              Text:
+                text: "{Scope.Name}"
+                fontSize: 16
+                alignment: MiddleCenter
+                color: [1, 1, 1, 1]
+                raycastTarget: false
+
 ### Gas Giants ###
   - UniqueId: UI_Gas_Giant_Render_Entity
     Name: "{Scope.Name}"
     Components:
       Transform:
-        Scale: [1,1,1]
+        localScale: [1,1,1]
 
       FloatingObject: {}
 
       FloatingTarget:
         WarpName: "{Scope.Name}"
-        WarpDistance: "50000 KM"
+        WarpDistance: "{Scope.Body.WarpDistance}"
 
-      FloatingScaler:
-        Target: "{Children.Body}"
-        Scale: [1, 1, 1]
-        Multiplier: 0.35
-        Range: "100 AU"
+      FloatingSelectable:
+        isMovable: false
+        uiPanelDefinition: "node_detail_panel"
+
+      # Render scale system: focus-based stylized scaling
+      RenderScaler:
+        AuthoringRadiusMeters: "{Scope.Body.RadiusMeters}"
+        DepthModifiers: [3000]
+        MaxExaggeration: 150000
+        SubtreeViewDistanceScaleFactor: 3
+
+      ScaledOrbitPath: {}
 
     Children:
-      - Name: "OrbitVisual"
+      - Name: "Planet"
         Components:
-          OrbitVisual:
-            Orbit: "{Scope.Orbit}"
-            Material: "mat_orbit_ring"
-            Thickness: "5000000 km"
-
-      - Name: "Body"
+          Jovian:
+            SourceMaterial: "mat_jovian_lighting_scattering_flow"
+            Color: "#FFFFFF"
+            Brightness: 1
+            MainTex: "{Scope.Body.MainTex}"
+            FlowTex: "tex_marble_flow"
+            CameraOffset: 0
+            OcclusionPower: 1
+            Sky: 1
+            Mesh: "Meshes/Geosphere"
+            MeshRadius: 1
+            Radius: 1
+            DistanceRadius: 0.9
+          # Collider to block raycasts (prevent clicking through gas giant)
+          SphereCollider:
+            radius: 1.0
+          JovianDepthTex:
+            RimEase: "Smoothstep"
+            RimColor: "#99C0FB"
+            RimPower: 1.5
+            AlphaDensity: 50
+            AlphaFade: 2
+          JovianLightingTex:
+            SunsetEase: "Quadratic"
+            SunsetStart: 0.4
+            SunsetEnd: 1
+            SunsetSharpnessR: 1
+            SunsetSharpnessG: 2
+            SunsetSharpnessB: 1
+          JovianScatteringTex:
+            SunsetEase: "Smoothstep"
+            SunsetStart: 0.4
+            SunsetEnd: 0.6
+            SunsetSharpnessR: 1
+            SunsetSharpnessG: 1
+            SunsetSharpnessB: 1
+      - Name: "Ring"
+        Visible: "{Scope.Body.HasRing}"
         Components:
-          Transform:
-            Scale: ["{Scope.Body.RadiusKm}","{Scope.Body.RadiusKm}","{Scope.Body.RadiusKm}"]
-        Children:
-          - Name: "Planet"
-            Components:
-              Jovian:
-                SourceMaterial: "mat_jovian_lighting_scattering_flow"
-                Color: "#FFFFFF"
-                Brightness: 1
-                MainTex: "{Scope.Body.MainTex}"
-                FlowTex: "tex_marble_flow"
-                CameraOffset: 0
-                OcclusionPower: 1
-                Sky: 1
-                Mesh: "Meshes/Geosphere"
-                MeshRadius: 1
-                Radius: 1
-                DistanceRadius: 0.9
-              JovianDepthTex:
-                RimEase: "Smoothstep"
-                RimColor: "#99C0FB"
-                RimPower: 1.5
-                AlphaDensity: 50
-                AlphaFade: 2
-              JovianLightingTex:
-                SunsetEase: "Quadratic"
-                SunsetStart: 0.4
-                SunsetEnd: 1
-                SunsetSharpnessR: 1
-                SunsetSharpnessG: 2
-                SunsetSharpnessB: 1
-              JovianScatteringTex:
-                SunsetEase: "Smoothstep"
-                SunsetStart: 0.4
-                SunsetEnd: 0.6
-                SunsetSharpnessR: 1
-                SunsetSharpnessG: 1
-                SunsetSharpnessB: 1
-          - Name: "Ring"
-            Visible: "{Scope.Body.HasRing}"
-            Components:
-              Ring:
-                SourceMaterial: "mat_ring_scattering_detail_near_fade"
-                Color: "#FFFFFF"
-                Brightness: 1
-                MainTex: "tex_ring_diffuse"
-                RadiusInner: 1.44
-                RadiusOuter: 1.92
-                Split: true
-              RingNearTex:
-                Sharpness: 2
-                Offset: 0
-                OverrideRange: -1
-              RingLightingTex:
-                FrontPower: 2
-                BackPower: 3
-                BackStrength: 0.5
-                BaseStrength: 0.2
-              ShadowRing:
-                RadiusMin: 1.44
-                RadiusMax: 1.92
-              ShadowRingFilter:
-                Iterations: 100
+          Ring:
+            SourceMaterial: "mat_ring_scattering_detail_near_fade"
+            Color: "#FFFFFF"
+            Brightness: 1
+            MainTex: "tex_ring_diffuse"
+            RadiusInner: 1.44
+            RadiusOuter: 1.92
+            Split: true
+          RingNearTex:
+            Sharpness: 2
+            Offset: 0
+            OverrideRange: -1
+          RingLightingTex:
+            FrontPower: 2
+            BackPower: 3
+            BackStrength: 0.5
+            BaseStrength: 0.2
+          RenderShadowRing:
+            Texture: "res:Textures/Rings_Shadow"
+            RadiusMin: 1.44
+            RadiusMax: 1.92
+          RenderShadowRingFilter:
+            Iterations: 100
 
 ### Asteroids ###
   - UniqueId: UI_Asteroid_Render_Entity
     Name: "{Scope.Name}"
     Components:
       Transform:
-        Scale: [1,1,1]
+        localScale: [1,1,1]
 
       FloatingObject: {}
 
       FloatingTarget:
         WarpName: "{Scope.Name}"
-        WarpDistance: "1000 KM"
+        WarpDistance: "{Scope.Body.WarpDistance}"
 
-      FloatingScaler:
-        Target: "{Children.Body}"
-        Scale: [1, 1, 1]
-        Multiplier: 0.15
-        Range: "100 AU"
+      FloatingSelectable:
+        isMovable: false
+        uiPanelDefinition: "node_detail_panel"
+
+      # Render scale system: focus-based stylized scaling
+      RenderScaler:
+        AuthoringRadiusMeters: "{Scope.Body.RadiusMeters}"
+        DepthModifiers: [15000]
+        MaxExaggeration: 1500000
+        SubtreeViewDistanceScaleFactor: 15
 
     Children:
       - Name: "Body"
         Components:
           Transform:
-            Scale: ["{Scope.Body.RadiusKm}","{Scope.Body.RadiusKm}","{Scope.Body.RadiusKm}"]
+            localScale: ["{Scope.Body.RadiusMeters}","{Scope.Body.RadiusMeters}","{Scope.Body.RadiusMeters}"]
 
           # Mesh + renderer
           MeshFilter:
@@ -516,62 +675,170 @@ UI:
     Name: "{Scope.Name}"
     Components:
       Transform:
-        Scale: [1,1,1]
+        localScale: [1,1,1]
 
       FloatingObject: {}
 
-      FloatingScaler:
-        Target: "{Children.Belt}"
-        Scale: [1, 1, 1]
-        Multiplier: 0.5
-        Range: "50 AU"
+#      AsteroidBeltRenderer:
+#        BeltRadius: "{Scope.Belt.Radius}"
+#        BeltWidth: "{Scope.Belt.Width}"
+#        PoolSize: 1000
+#        MinAsteroidSize: 0.1
+#        MaxAsteroidSize: 5.0
+#        Seed: "{Scope.Belt.Seed}"
+#        UseDistanceScaling: true
+#        MaxRenderDistance: "150 AU"
+#        SourceMaterial: "mat_asteroid"
+
+### Space Station (orbital structures) ###
+  - UniqueId: UI_Space_Station_Render_Entity
+    Name: "{Scope.Name}"
+    Components:
+      Transform:
+        localScale: [1,1,1]
+
+      FloatingObject: {}
+
+      FloatingTarget:
+        WarpName: "{Scope.Name}"
+        WarpDistance: "2500 KM"
+
+      FloatingSelectable:
+        isMovable: false
+        uiPanelDefinition: "structure_detail_panel"
+
+      # Render scale system: planet-like settings for orbital structures
+      RenderScaler:
+        AuthoringRadiusMeters: 5000
+        DepthModifiers: [5000]
+        MaxExaggeration: 150000
+        SubtreeViewDistanceScaleFactor: 5
+
+      ScaledOrbitPath: {}
 
     Children:
-      - Name: "Belt"
+      - Name: "OrbitVisual"
+        Components:
+          OrbitVisual:
+            Material: "mat_orbit_ring"
+            Thickness: "5000000 km"
+
+      - Name: "Body"
         Components:
           Transform:
-            Scale: [1,1,1]
+            localScale: [5000, 5000, 5000]
+          MeshFilter:
+            sharedMesh: "Meshes/Geosphere"
+          MeshRenderer:
+            material: Standard
+            shadowCastingMode: Off
+            receiveShadows: false
+            enabled: true
+          SphereCollider:
+            radius: 1.0
 
-          BeltSimple:
-            SourceMaterial: "mat_opaque_belt_lighting"
-            Color: "#FFFFFFFF"
-            Brightness: 1
-            MainTex: "tex_asteroid_belt"
-            Atlas: "Grid"
-            Columns: 2
-            Rows: 2
-            OrbitOffset: 0
-            OrbitSpeed: 1
-            Seed: 0
-            Thickness: 10
-            ThicknessBias: 22.8
-            InnerRadius: "{Scope.Belt.InnerRadius}"
-            InnerSpeed: 1
-            OuterRadius: "{Scope.Belt.OuterRadius}"
-            OuterSpeed: 0.05
-            RadiusBias: 0.25
-            SpeedSpread: 0.1
-            AsteroidCount: 100000
-            AsteroidColors: "#FFFFFFFF"
-            AsteroidSpin: 1
-            AsteroidRadiusMin: 0.03
-            AsteroidRadiusMax: 8
-            AsteroidRadiusBias: 50
+### Nebula ###
+  - UniqueId: UI_Nebula_Render_Entity
+    Name: "{Scope.Name}"
+    Components:
+      Transform:
+        localScale: [1,1,1]
 
-          BeltLightingTex:
-            FrontPower: 2
-            BackPower: 3
-            BackStrength: 0
-            BaseStrength: 0
+      StarfieldNebula:
+        SourceMaterial: "mat_Starfield"
+        Color: "#FFFFFF"
+        Brightness: 1
+        MainTex: "tex_starfield_nebula"
+        ClampSizeMin: 10
+        Softness: 0
+        Stretch: false
+        SourceTex: "tex_starfield_nebula_color"
+        Threshold: 0.158
+        Samples: 1
+        Jitter: 0
+        HeightSource: "AverageRGB"
+        ScaleSource: "MaxRGB"
+        Size: [3,0.74,3]
+        HorizontalBrightness: 0.25
+        HorizontalPower: 1
+        StarCount: 10000
+        StarColors: "#FFFFFF"
+        StarTint: 1
+        StarBoost: 1.69
+        StarRadiusMin: 0.15
+        StarRadiusMax: 0.3
+        StarRadiusBias: 1
+        StarPulseSpeedMin: 0
+        StarPulseSpeedMax: 1
 
 ### Hyperlane ###
   - UniqueId: UI_Hyperlane_Render_Entity
     Name: "{Scope.Name}"
     Components:
       Transform:
-        Scale: [1,1,1]
+        localScale: [1,1,1]
 
       HyperlaneVisual:
         Hyperlane: "{Scope.Hyperlane}"
         Material: "mat_hyper_line"
-        Thickness: "1000 AU"
+        Thickness: "{Scope.VisualWidth}"
+
+
+
+
+
+
+
+
+  ### Planet LOD Prefabs ###
+  - UniqueId: UI_Planet_Render_Entity_Far
+    Name: "PlanetFar"
+    IsPrefab: true
+    Components:
+      Transform:
+        localScale: [1,1,1]
+    Children:
+      - Name: "Planet"
+        Components:
+          Planet:
+            Mesh: "Meshes/Geosphere"
+            Radius: "{Scope.Body.RadiusMeters}"
+            Material: "mat_Planet_Far"
+            Displace: false
+            Displacement: 0
+            CastShadows: true
+            ReceiveShadows: true
+            MainTex: "{Scope.Body.MainTex}"
+            HeightTex: "{Scope.Body.HeightTex}"
+            NightTex: "{Scope.Body.NightTex}"
+
+  - UniqueId: UI_Planet_Render_Entity_Terrain
+    Name: "PlanetTerrain"
+    IsPrefab: true
+    Components:
+      Transform:
+        localScale: [1,1,1]
+    Children:
+      - Name: "Terrain"
+        Components:
+          TerrainPlanet:
+            Radius: "{Scope.Body.RadiusMeters}"
+            SmallestTriangleSize: 0.25
+            Resolution: 128
+            Detail: 1
+            BakedDetailTiningA: 16
+            BakedDetailTiningB: 1000
+            BakedDetailTiningC: 100000
+          TerrainPlanetMaterial:
+            Material: "mat_Planet"
+            MainTex: "{Scope.Body.MainTex}"
+            CastShadows: true
+            ReceiveShadows: true
+            NormallFadeRange: 100
+          TerrainHeightmap:
+            HeightMap: "{Scope.Body.HeightTex}"
+            Channel: "Alpha"
+            Displacement: 40
+          PlanetHexOverlayRenderer: {}
+          TerrainHexVertexBake: {}
+

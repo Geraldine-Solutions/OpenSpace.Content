@@ -1,0 +1,245 @@
+# Empire Initialization Scripted Effects
+# Effects for setting up empire starting conditions (planets, districts, pops)
+
+ScriptedEffects:
+  # Main home planet setup - called from initializers
+  - UniqueId: "generate_empire_home_planet"
+    Name: "Generate Empire Home Planet"
+    Description: "Sets up the empire's capital world with deposits and buildings (called from planet init_effect)"
+    Effects:
+      # This is called during planet initialization, so scope is the planet
+      - type: "prevent_anomaly"
+      
+      # Add flag to mark this as a capital world
+      - type: "add_flag"
+        payload:
+          flag: "empire_capital"
+      
+      # More initialization will be added by generate_start_deposits_and_blockers
+
+  # Generate starting deposits and blockers
+  - UniqueId: "generate_start_deposits_and_blockers"
+    Name: "Generate Start Deposits and Blockers"
+    Description: "Adds starting deposits and blockers to the capital planet based on planet class and empire traits"
+    Effects:
+      - type: "clear_deposits"
+
+      # OpenSpace-native starting deposits.
+      # Note: planet class / colonizability conditions are still WIP in code, so this is intentionally simple + deterministic.
+      - type: "add_deposit"
+        payload:
+          deposit: "deposit_forest"
+      - type: "add_deposit"
+        payload:
+          deposit: "deposit_farm"
+      - type: "add_deposit"
+        payload:
+          deposit: "deposit_mineral_deposit"
+      - type: "add_deposit"
+        payload:
+          deposit: "deposit_energy_crystal"
+
+  # Generate starting buildings and districts
+  - UniqueId: "generate_start_buildings_and_districts"
+    Name: "Generate Start Buildings and Districts"
+    Description: "Adds starting buildings and districts to the capital"
+    Effects:
+      # Add basic districts based on empire type
+      - type: "add_district"
+        payload:
+          district: "district_generator"
+          count: 2
+      - type: "add_district"
+        payload:
+          district: "district_mining"
+          count: 2
+      - type: "if"
+        payload:
+          condition:
+            NOT:
+              is_machine_empire: true
+          effects:
+            - type: "add_district"
+              payload:
+                district: "district_farming"
+                count: 3
+      
+      # Add capital building
+      - type: "add_building"
+        payload:
+          building: "building_capital"
+
+  # Life-Seeded planet setup
+  - UniqueId: "create_life_seeded_planet"
+    Name: "Create Life-Seeded Planet"
+    Description: "Transforms the capital into a gaia world with abundant resources"
+    Effects:
+      - type: "change_planet_class"
+        payload:
+          class: "pc_gaia"
+      - type: "set_planet_size"
+        payload:
+          size: 30
+      - type: "clear_deposits"
+      
+      # Add abundant deposits
+      - type: "add_deposit"
+        payload:
+          deposit: "d_searing_desert"
+      - type: "add_deposit"
+        payload:
+          deposit: "d_underwater_vent"
+      - type: "add_deposit"
+        payload:
+          deposit: "d_ore_rich_caverns"
+      - type: "add_deposit"
+        payload:
+          deposit: "d_lush_jungle"
+      - type: "add_deposit"
+        payload:
+          deposit: "d_teeming_reef"
+      - type: "add_deposit"
+        payload:
+          deposit: "d_black_soil"
+      - type: "add_deposit"
+        payload:
+          deposit: "d_crystal_forest"
+
+  # Give starting resources
+  - UniqueId: "give_starting_resources_effect"
+    Name: "Give Starting Resources"
+    Description: "Grants initial stockpile of resources to the empire"
+    Effects:
+      - type: "if"
+        payload:
+          condition:
+            NOT:
+              has_flag: "start_resources_granted"
+          effects:
+            - type: "modify_resource"
+              payload:
+                resource: "res_energy"
+                amount: 200
+            - type: "modify_resource"
+              payload:
+                resource: "res_minerals"
+                amount: 200
+            - type: "modify_resource"
+              payload:
+                resource: "res_building_materials"
+                amount: 150
+            - type: "modify_resource"
+              payload:
+                resource: "res_food"
+                amount: 100
+            - type: "add_flag"
+              payload:
+                flag: "start_resources_granted"
+
+  # Era-specific starting assets
+  # These spawn starting units and structures based on the empire's era
+  
+  - UniqueId: "era_hex_starting_assets"
+    Name: "Hex Era Starting Assets"
+    Description: "Spawns starting units and structures for hex era empires"
+    Effects:
+      - type: "spawn_units"
+        payload:
+          use_start_node: true
+          units:
+            - unit_id: "unit_hex_scout"
+              count: 1
+      - type: "spawn_structures"
+        payload:
+          use_start_node: true
+          structures:
+            - "structure_hex_outpost"
+
+  - UniqueId: "era_region_starting_assets"
+    Name: "Region Era Starting Assets"
+    Description: "Spawns starting units and structures for region era empires"
+    Effects:
+      - type: "spawn_units"
+        payload:
+          use_start_node: true
+          units:
+            - unit_id: "unit_region_ship"
+              count: 1
+      - type: "spawn_structures"
+        payload:
+          use_start_node: true
+          structures:
+            - "structure_region_base"
+
+  - UniqueId: "era_celestial_starting_assets"
+    Name: "Celestial Era Starting Assets"
+    Description: "Spawns starting units and structures for celestial era empires"
+    Effects:
+      - type: "spawn_units"
+        payload:
+          use_start_node: true
+          units:
+            - unit_id: "unit_celestial_shuttle"
+              count: 1
+      - type: "spawn_structures"
+        payload:
+          use_start_node: true
+          structures:
+            - "structure_celestial_station"
+
+  - UniqueId: "era_system_starting_assets"
+    Name: "System Era Starting Assets"
+    Description: "Spawns starting units and structures for system era empires"
+    Effects:
+      - type: "spawn_units"
+        payload:
+          use_start_node: true
+          units:
+            - unit_id: "unit_system_explorer"
+              count: 1
+      - type: "spawn_structures"
+        payload:
+          use_start_node: true
+          structures:
+            - "structure_system_command"
+
+  # Dynamic era router - determines empire era and calls appropriate starting assets effect
+  - UniqueId: "spawn_era_starting_assets"
+    Name: "Spawn Era Starting Assets"
+    Description: "Routes to era-specific starting assets based on empire's current era"
+    Effects:
+      - type: "if"
+        payload:
+          condition:
+            is_era_hex: true
+          effects:
+            - type: "scripted_effect"
+              payload:
+                effect_id: "era_hex_starting_assets"
+      
+      - type: "if"
+        payload:
+          condition:
+            is_era_region: true
+          effects:
+            - type: "scripted_effect"
+              payload:
+                effect_id: "era_region_starting_assets"
+      
+      - type: "if"
+        payload:
+          condition:
+            is_era_celestial: true
+          effects:
+            - type: "scripted_effect"
+              payload:
+                effect_id: "era_celestial_starting_assets"
+      
+      - type: "if"
+        payload:
+          condition:
+            is_era_system: true
+          effects:
+            - type: "scripted_effect"
+              payload:
+                effect_id: "era_system_starting_assets"

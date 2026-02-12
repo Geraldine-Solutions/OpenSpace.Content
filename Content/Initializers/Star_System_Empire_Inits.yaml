@@ -1,0 +1,405 @@
+# Variable definitions (YAML anchors)
+base_moon_distance: &base_moon_distance 0.5
+homeworld_min_size: &homeworld_min_size 18000
+homeworld_max_size: &homeworld_max_size 21000
+
+Initializers:
+# Converted from Stellaris empire_initializers.txt
+# Empire Initializer I
+  - StarSystem:
+      UniqueId: "empire_init_01"
+      RenderEntity: "UI_StarSystem_Render_Entity"
+      Usage: "empire_system_init"
+      Flags: ["empire_home_system"]
+      ExcludeFlags: ["unknown_regions", "bottleneck"]
+      
+      # Init effects run after the system is created
+      InitEffect:
+        - type: "every_neighbor_system"
+          payload:
+            effects:
+              - type: "set_flag"
+                payload:
+                  flag: "empire_cluster"
+                  scope: "star_system"
+              - type: "every_neighbor_system"
+                payload:
+                  effects:
+                    - type: "set_flag"
+                      payload:
+                        flag: "empire_cluster"
+                        scope: "star_system"
+        - type: "scripted_effect"
+          payload:
+            effect_id: "generate_home_system_resources"
+      
+      Children:
+        - UniqueId: "rl_standard_stars"
+          Size: 800055 #KM
+        - Count: [1, 3]
+          UniqueId: "rl_asteroids"
+          Orbit:
+            SemiMajorAxis: 5 #AU
+        - Count: [0, 2]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 2 #AU
+          Neighbors:
+            - Count: [0, 1]
+              Orbit:
+                SemiMajorAxis: 1.5 #AU
+        - Orbit:
+            SemiMajorAxis: 2 #AU
+        - Count: [2, 4]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 2.5 #AU
+          Neighbors:
+            - Count: [0, 1]
+              Orbit:
+                SemiMajorAxis: 1 #AU
+      AsteroidBelts:
+        - Class: "rocky_asteroid_belt"
+          Radius: 5 #AU
+          Width: 0.5 #AU
+      Neighbors:
+        - Trigger: "num_guaranteed_colonies >= 2"
+          Distance: 1
+          Initializer: "neighbor_t1"
+        - Trigger: "num_guaranteed_colonies >= 1"
+          Distance: 1
+          Initializer: "neighbor_t1_first_colony"
+
+# Empire Initializer II
+  - StarSystem:
+      UniqueId: "empire_init_02"
+      RenderEntity: "UI_StarSystem_Render_Entity"
+      Usage: "empire_system_init"
+      Flags: ["empire_home_system"]
+      ExcludeFlags: ["unknown_regions", "bottleneck"]
+      
+      # Init effects for empire home system
+      InitEffect:
+        - type: "scripted_effect"
+          payload:
+            effect_id: "mark_empire_cluster"
+        - type: "scripted_effect"
+          payload:
+            effect_id: "generate_home_system_resources"
+      
+      AsteroidBelts:
+        - Class: "rocky_asteroid_belt"
+          Radius: 11.5 #AU
+          Width: 0.5 #AU
+      Neighbors:
+        - Trigger: "num_guaranteed_colonies >= 2"
+          Distance: 1
+          Initializer: "neighbor_t1"
+        - Trigger: "num_guaranteed_colonies >= 1"
+          Distance: 1
+          Initializer: "neighbor_t1_first_colony"
+      Children:
+        - UniqueId: "rl_standard_stars"
+          Size: 800055 #KM
+        - UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 5 #AU
+        - Count: [2, 5]
+          UniqueId: "rl_asteroids"
+          Orbit:
+            IsAbsolute: true
+            SemiMajorAxis: 11.5 #AU
+        - Count: [2, 5]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 2.5 #AU
+          Neighbors:
+            - Count: [0, 1]
+              Orbit:
+                SemiMajorAxis: 1 #AU
+
+# Empire Initializer III
+  - StarSystem:
+      UniqueId: "empire_init_03"
+      RenderEntity: "UI_StarSystem_Render_Entity"
+      Usage: "empire_system_init"
+      Flags: ["empire_home_system"]
+      ExcludeFlags: ["unknown_regions", "bottleneck"]
+      AsteroidBelts:
+        - Class: "rocky_asteroid_belt"
+          Radius: 8.5 #AU
+          Width: 0.5 #AU
+      Children:
+        - UniqueId: "rl_standard_stars"
+          Size: 800055 #KM
+        - Count: [0, 2]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 4 #AU
+          Neighbors:
+            - Count: [0, 1]
+              Orbit:
+                SemiMajorAxis: 1.5 #AU
+        - Count: [1, 2]
+          UniqueId: "rl_gas_giants"
+          Orbit:
+            SemiMajorAxis: 6 #AU
+          Neighbors:
+            - Count: [1, 4]
+              Orbit:
+                SemiMajorAxis: 1 #AU
+        - Count: [0, 2]
+          Orbit:
+            SemiMajorAxis: 2 #AU
+      Neighbors:
+        - Trigger: "num_guaranteed_colonies >= 2"
+          Distance: 1
+          Initializer: "neighbor_t1"
+        - Trigger: "num_guaranteed_colonies >= 1"
+          Distance: 1
+          Initializer: "neighbor_t1_first_colony"
+
+# Empire Initializer IV
+  - StarSystem:
+      UniqueId: "empire_init_04"
+      RenderEntity: "UI_StarSystem_Render_Entity"
+      Usage: "empire_system_init"
+      Flags: ["empire_home_system"]
+      ExcludeFlags: ["unknown_regions", "bottleneck"]
+      Children:
+        - UniqueId: "rl_standard_stars"
+          Size: 800055 #KM
+        - Count: [1, 3]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 1.5 #AU
+        - UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 2 #AU
+        - Count: [1, 3]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 2.5 #AU
+        - Count: [1, 2]
+          UniqueId: "rl_gas_giants"
+          Orbit:
+            SemiMajorAxis: 2 #AU
+          Neighbors:
+            - Count: [1, 3]
+              Orbit:
+                SemiMajorAxis: *base_moon_distance #AU
+        - Count: [0, 1]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 2 #AU
+      Neighbors:
+        - Trigger: "num_guaranteed_colonies >= 2"
+          Distance: 1
+          Initializer: "neighbor_t1"
+        - Trigger: "num_guaranteed_colonies >= 1"
+          Distance: 1
+          Initializer: "neighbor_t1_first_colony"
+
+# Empire Initializer V (Trinary)
+  - StarSystem:
+      UniqueId: "empire_init_05_trinary"
+      RenderEntity: "UI_StarSystem_Render_Entity"
+      Usage: "empire_system_init"
+      Flags: ["empire_home_system"]
+      ExcludeFlags: ["unknown_regions", "bottleneck"]
+      Children:
+        - UniqueId: "rl_trinary_stars"
+        - Count: [2, 3]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 3 #AU
+          Neighbors:
+            - Count: [0, 1]
+              Orbit:
+                SemiMajorAxis: *base_moon_distance #AU
+        - Count: [2, 4]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 3 #AU
+          Neighbors:
+            - Count: [0, 1]
+              Orbit:
+                SemiMajorAxis: *base_moon_distance #AU
+        - Count: [1, 2]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 1.5 #AU
+        - UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 1.5 #AU
+        - Count: [1, 2]
+          UniqueId: "rl_gas_giants"
+          Orbit:
+            SemiMajorAxis: 1.5 #AU
+          Neighbors:
+            - Count: [1, 2]
+              Orbit:
+                SemiMajorAxis: *base_moon_distance #AU
+      Neighbors:
+        - Trigger: "num_guaranteed_colonies >= 2"
+          Distance: 1
+          Initializer: "neighbor_t1"
+        - Trigger: "num_guaranteed_colonies >= 1"
+          Distance: 1
+          Initializer: "neighbor_t1_first_colony"
+
+# Empire Initializer VI (Binary)
+  - StarSystem:
+      UniqueId: "empire_init_06_binary"
+      RenderEntity: "UI_StarSystem_Render_Entity"
+      Usage: "empire_system_init"
+      Flags: ["empire_home_system"]
+      ExcludeFlags: ["unknown_regions", "bottleneck"]
+      Children:
+        - UniqueId: "rl_binary_stars"
+        - Count: [1, 3]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 1.5 #AU
+        - UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 2 #AU
+        - Count: [1, 3]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 2.5 #AU
+        - Count: [1, 2]
+          UniqueId: "rl_gas_giants"
+          Orbit:
+            SemiMajorAxis: 2 #AU
+          Neighbors:
+            - Count: [1, 3]
+              Orbit:
+                SemiMajorAxis: *base_moon_distance #AU
+        - Count: [0, 1]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 2 #AU
+      Neighbors:
+        - Trigger: "num_guaranteed_colonies >= 2"
+          Distance: 1
+          Initializer: "neighbor_t1"
+        - Trigger: "num_guaranteed_colonies >= 1"
+          Distance: 1
+          Initializer: "neighbor_t1_first_colony"
+
+# Neighbor Tier 1
+  - StarSystem:
+      UniqueId: "neighbor_t1"
+      RenderEntity: "UI_StarSystem_Render_Entity"
+      Usage: "neighbor_system"
+      Flags: ["neighbor_t1"]
+      Children:
+        - UniqueId: "rl_standard_stars"
+          Size: 800055 #KM
+        - Count: [0, 2]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 2 #AU
+          Neighbors:
+            - Count: [0, 1]
+              Orbit:
+                SemiMajorAxis: *base_moon_distance #AU
+        - Count: [2, 5]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 2 #AU
+
+# Neighbor Tier 1 First Colony
+  - StarSystem:
+      UniqueId: "neighbor_t1_first_colony"
+      RenderEntity: "UI_StarSystem_Render_Entity"
+      Usage: "neighbor_system"
+      Flags: ["neighbor_t1_first_colony"]
+      Children:
+        - UniqueId: "rl_standard_stars"
+          Size: 800055 #KM
+        - Count: [0, 2]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 2 #AU
+          Neighbors:
+            - Count: [0, 1]
+              Orbit:
+                SemiMajorAxis: *base_moon_distance #AU
+        - UniqueId: "rl_habitable_planets"
+          Orbit:
+            SemiMajorAxis: 2.5 #AU
+          Size: [*homeworld_min_size, *homeworld_max_size]
+        - Count: [2, 5]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 2.5 #AU
+          Neighbors:
+            - Count: [0, 1]
+              Orbit:
+                SemiMajorAxis: *base_moon_distance #AU
+
+# Neighbor Tier 2
+  - StarSystem:
+      UniqueId: "neighbor_t2"
+      RenderEntity: "UI_StarSystem_Render_Entity"
+      Usage: "neighbor_system"
+      Flags: ["neighbor_t2"]
+      AsteroidBelts:
+        - Class: "rocky_asteroid_belt"
+          Radius: 7 #AU
+          Width: 0.5 #AU
+      Children:
+        - UniqueId: "rl_standard_stars"
+          Size: 800055 #KM
+        - UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 4.5 #AU
+        - Count: [1, 3]
+          UniqueId: "rl_asteroids"
+          Orbit:
+            IsAbsolute: true
+            SemiMajorAxis: 7 #AU
+        - Count: [2, 5]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 2.5 #AU
+          Neighbors:
+            - Count: [0, 1]
+              Orbit:
+                SemiMajorAxis: *base_moon_distance #AU
+
+# Neighbor Tier 2 Second Colony
+  - StarSystem:
+      UniqueId: "neighbor_t2_second_colony"
+      RenderEntity: "UI_StarSystem_Render_Entity"
+      Usage: "neighbor_system"
+      Flags: ["neighbor_t2_second_colony"]
+      Children:
+        - UniqueId: "rl_standard_stars"
+          Size: 800055 #KM
+        - Count: 2
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 2 #AU
+        - UniqueId: "rl_habitable_planets"
+          Orbit:
+            SemiMajorAxis: 2.5 #AU
+          Size: [*homeworld_min_size, *homeworld_max_size]
+          Neighbors:
+            - Count: [0, 1]
+              Orbit:
+                SemiMajorAxis: *base_moon_distance #AU
+        - Count: 2
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 2 #AU
+          Neighbors:
+            - Count: [0, 1]
+              Orbit:
+                SemiMajorAxis: *base_moon_distance #AU
+        - Count: [0, 2]
+          UniqueId: "rl_non_colonizable"
+          Orbit:
+            SemiMajorAxis: 2 #AU

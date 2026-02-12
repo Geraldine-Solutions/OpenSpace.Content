@@ -1,0 +1,12 @@
+PrescriptedEmpires:
+  - Empire:
+      UniqueId: "Prescripted_Empire_Humans1"
+      Name: "TEXT_Prescripted_Empire_Humans1_Name"
+      Flag: "flag_human"
+      Color: "#4A90E2"
+      Species: "species_human"
+      StartingInit: "sol_system_init"
+      Era: "era_celestial"
+      Ethics: ["ethic_fanatic_egalitarian", "ethic_xenophile"]
+      Civics: ["civic_beacon_of_liberty", "civic_idealistic_foundation"]
+      Authority: "auth_democratic"

@@ -1,0 +1,90 @@
+# Unit render definitions using proper GameObjectElement format
+
+# Infantry unit - small green sphere
+gameObject:
+  UniqueId: "Unit_Infantry"
+  Name: "Infantry"
+  Components:
+    MeshFilter:
+      sharedMesh: "Sphere"
+    MeshRenderer:
+      sharedMaterial: "Universal Render Pipeline/Unlit"
+      material.color: "#4CAF50"
+    FloatingObject:
+      positionSet: false
+  localScale: [0.1, 0.1, 0.1]
+---
+
+# Tank unit - medium orange sphere
+gameObject:
+  UniqueId: "Unit_Tank"
+  Name: "Tank"
+  Components:
+    MeshFilter:
+      sharedMesh: "Sphere"
+    MeshRenderer:
+      sharedMaterial: "Universal Render Pipeline/Unlit"
+      material.color: "#FF9800"
+    FloatingObject:
+      positionSet: false
+  localScale: [0.15, 0.15, 0.15]
+---
+
+# Corvette ship - small blue sphere
+gameObject:
+  UniqueId: "Unit_Corvette"
+  Name: "Corvette"
+  Components:
+    MeshFilter:
+      sharedMesh: "Sphere"
+    MeshRenderer:
+      sharedMaterial: "Universal Render Pipeline/Unlit"
+      material.color: "#2196F3"
+    FloatingObject:
+      positionSet: false
+  localScale: [0.2, 0.2, 0.2]
+---
+
+# Frigate ship - medium purple sphere
+gameObject:
+  UniqueId: "Unit_Frigate"
+  Name: "Frigate"
+  Components:
+    MeshFilter:
+      sharedMesh: "Sphere"
+    MeshRenderer:
+      sharedMaterial: "Universal Render Pipeline/Unlit"
+      material.color: "#9C27B0"
+    FloatingObject:
+      positionSet: false
+  localScale: [0.25, 0.25, 0.25]
+---
+
+# Cruiser ship - large red-orange sphere
+gameObject:
+  UniqueId: "Unit_Cruiser"
+  Name: "Cruiser"
+  Components:
+    MeshFilter:
+      sharedMesh: "Sphere"
+    MeshRenderer:
+      sharedMaterial: "Universal Render Pipeline/Unlit"
+      material.color: "#FF5722"
+    FloatingObject:
+      positionSet: false
+  localScale: [0.3, 0.3, 0.3]
+---
+
+# Battleship ship - extra large red sphere
+gameObject:
+  UniqueId: "Unit_Battleship"
+  Name: "Battleship"
+  Components:
+    MeshFilter:
+      sharedMesh: "Sphere"
+    MeshRenderer:
+      sharedMaterial: "Universal Render Pipeline/Unlit"
+      material.color: "#F44336"
+    FloatingObject:
+      positionSet: false
+  localScale: [0.4, 0.4, 0.4]

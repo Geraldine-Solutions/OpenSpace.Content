@@ -1,0 +1,53 @@
+# Event definitions for OpenSpace
+# The DataLoader expects "Events" (uppercase) as the key for multiple contracts
+Events:
+  - UniqueId: "event.welcome_to_open_space"
+    Title: "Welcome to Open Space"
+    Description: "Your empire begins its journey into the stars."
+    Icon: ""
+    Type: "empire_event"
+    Scope: "empire"
+    PreTriggers:
+      - "on_game_started"
+    Weight: 1.0
+    Options:
+      - Title: "Begin the Journey"
+        Description: "Set forth into the stars."
+        Effects:
+          - type: "add_flag"
+            payload:
+              flag: "game_started"
+
+  - UniqueId: "event.debug_test"
+    Title: "Debug Test Event"
+    Description: "This is a test event to verify the event system is working."
+    Icon: ""
+    Type: "empire_event"
+    Scope: "empire"
+    PreTriggers:
+      - "debug_test"
+    Weight: 1.0
+    Options:
+      - Title: "Acknowledge Test"
+        Description: "Confirm the event system is working."
+        Effects:
+          - type: "add_flag"
+            payload:
+              flag: "debug_test_completed"
+
+  # Triggered-only, hidden event fired once per empire at game start to assign starting resources and assets.
+  - UniqueId: "game_start.empire_init"
+    Name: "Game Start - Empire Init"
+    Title: "Empire Initialization"
+    Description: "Internal per-empire initialization at game start."
+    Type: "empire_event"
+    Scope: "empire"
+    IsTriggeredOnly: true
+    ShowModal: false
+    ImmediateEffects:
+      - type: "scripted_effect"
+        payload:
+          effect_id: "give_starting_resources_effect"
+      - type: "scripted_effect"
+        payload:
+          effect_id: "spawn_era_starting_assets"

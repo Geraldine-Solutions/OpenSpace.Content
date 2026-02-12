@@ -1,31 +1,69 @@
-﻿Eras:
-  - UniqueId: era_genesis
-    Name: "Genesis Era"
-    Text: text_era_genesis
+Eras:
+  - UniqueId: era_hex
+    Name: text_era_hex
     SortOrder: 0
-    EnabledImagePath: "gfx/eras/Genesis Era Thumbnail"
-    DisabledImagePath: "gfx/eras/Genesis Era Disabled"
-    SetEthicsInMenu: false
-    SetAuthorityInMenu: false
-    SetAscensionInMenu: false
-  - UniqueId: era_frontier
-    Name: "Frontier Era"
-    Text: text_era_frontier
+    StartingNodeFlag: era_hex_start_node
+    StartingUnits:
+      - unit_hex_scout
+    StartingStructures:
+      - structure_hex_outpost
+    CrisisEraFlag: hex
+    CrisisEventScope: Region
+    CrisisPhases:
+      - PhaseId: mid
+        Year: 500
+        StubEventId: crisis.stub.year_500
+      - PhaseId: end
+        Year: 1000
+        StubEventId: crisis.stub.year_1000
+  - UniqueId: era_region
+    Name: text_era_region
     SortOrder: 1
-    EnabledImagePath: "gfx/eras/Frontier Era Thumbnail"
-    DisabledImagePath: "gfx/eras/Frontier Era Disabled"
-    SetAuthorityInMenu: false
-    SetAscensionInMenu: false
+    StartingNodeFlag: era_region_start_node
+    StartingUnits:
+      - unit_region_ship
+    StartingStructures:
+      - structure_region_base
+    CrisisEraFlag: region
+    CrisisEventScope: CelestialBody
+    CrisisPhases:
+      - PhaseId: mid
+        Year: 1500
+        StubEventId: crisis.stub.year_1500
+      - PhaseId: end
+        Year: 2000
+        StubEventId: crisis.stub.year_2000
   - UniqueId: era_celestial
-    Name: "Celestial Era"
-    Text: text_era_celestial
+    Name: text_era_celestial
     SortOrder: 2
-    EnabledImagePath: "gfx/eras/Celestial Era Thumbnail"
-    DisabledImagePath: "gfx/eras/Celestial Era Disabled"
-    SetAscensionInMenu: false
-  - UniqueId: era_interstellar
-    Name: "Interstellar Era"
-    Text: text_era_interstellar
+    StartingNodeFlag: era_celestial_start_node
+    StartingUnits:
+      - unit_celestial_shuttle
+    StartingStructures:
+      - structure_celestial_station
+    CrisisEraFlag: celestial
+    CrisisEventScope: StarSystem
+    CrisisPhases:
+      - PhaseId: mid
+        Year: 2500
+        StubEventId: crisis.stub.year_2500
+      - PhaseId: end
+        Year: 3000
+        StubEventId: crisis.stub.year_3000
+  - UniqueId: era_system
+    Name: text_era_system
     SortOrder: 3
-    EnabledImagePath: "gfx/eras/Interstellar Era Thumbnail"
-    DisabledImagePath: "gfx/eras/Interstellar Era Disabled"
+    StartingNodeFlag: era_system_start_node
+    StartingUnits:
+      - unit_system_explorer
+    StartingStructures:
+      - structure_system_command
+    CrisisEraFlag: system
+    CrisisEventScope: Galaxy
+    CrisisPhases:
+      - PhaseId: mid
+        Year: 3500
+        StubEventId: crisis.stub.year_3500
+      - PhaseId: end
+        Year: 4000
+        StubEventId: crisis.stub.year_4000

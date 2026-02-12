@@ -1,0 +1,75 @@
+Units:
+  # Era-Specific Starting Units
+  - Unit:
+      UniqueId: "unit_hex_scout"
+      Name: "Hex Scout"
+      primaryMovementType: "movement_land"
+      movementCapabilities: ["movement_land"]
+      baseHealth: 8
+      baseMovementSpeeds:
+        movement_land: 6.0
+      fuelCapacities:
+        movement_land: 0.0
+      unitCost:
+        "res_minerals": 8
+        "res_energy": 4
+      renderEntity: "RenderEntity_Placeholder"
+      icon: "Icon_HexScout"
+
+  - Unit:
+      UniqueId: "unit_region_ship"
+      Name: "Region Ship"
+      primaryMovementType: "movement_sea"
+      movementCapabilities: ["movement_sea"]
+      baseHealth: 12
+      baseMovementSpeeds:
+        movement_sea: 4.0
+      fuelCapacities:
+        movement_sea: 0.0
+      unitCost:
+        "res_minerals": 15
+        "res_energy": 8
+        "res_building_materials": 5
+      renderEntity: "RenderEntity_Placeholder"
+      icon: "Icon_RegionShip"
+
+  - Unit:
+      UniqueId: "unit_celestial_shuttle"
+      Name: "Celestial Shuttle"
+      primaryMovementType: "movement_sublight"
+      movementCapabilities: ["movement_sublight"]
+      baseHealth: 6
+      # Speed in AU/day. 10,000 m/s ≈ 5.78 AU/day
+      baseMovementSpeeds:
+        movement_sublight: 5.78
+      fuelCapacities:
+        movement_sublight: 40.0
+      shipSize: 1
+      unitCost:
+        "res_minerals": 30
+        "res_energy": 25
+        "res_rare_metals": 8
+      renderEntity: "RenderEntity_Placeholder"
+      icon: "Icon_CelestialShuttle"
+
+  - Unit:
+      UniqueId: "unit_system_explorer"
+      Name: "System Explorer"
+      primaryMovementType: "movement_ftl"
+      movementCapabilities: ["movement_sublight", "movement_ftl"]
+      baseHealth: 10
+      # Speed: sublight AU/day (12000 m/s ≈ 6.93), FTL ly/day
+      baseMovementSpeeds:
+        movement_sublight: 6.93
+        movement_ftl: 1.0
+      fuelCapacities:
+        movement_sublight: 50.0
+        movement_ftl: 120.0
+      shipSize: 1
+      unitCost:
+        "res_minerals": 35
+        "res_energy": 30
+        "res_rare_metals": 15
+        "res_building_materials": 10
+      renderEntity: "RenderEntity_Placeholder"
+      icon: "Icon_SystemExplorer"

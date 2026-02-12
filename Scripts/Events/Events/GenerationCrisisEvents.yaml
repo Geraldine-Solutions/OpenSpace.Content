@@ -1,0 +1,168 @@
+# Crisis selection events for the generation pipeline.
+# Kept separate from GenerationPipelineEvents.yaml for organization.
+#
+# Pattern mirrors Stellaris:
+# - roll/select which crisis will be used (generation)
+# - spawn prerequisite empires/nodes now (generation)
+# - later runtime triggers activate the crisis gameplay chain
+#
+# Origin-based chains (e.g. Fear of the Dark) live in dedicated files (FearOfTheDarkCrisisEvents.yaml).
+# Entry event is weighted; follow-ups are IsTriggeredOnly and forced by CrisisSelectionHelper when chain started.
+#
+# Crisis events are identified by Flags:
+# - crisis_mid or crisis_end: indicates phase
+# - crisis_system, crisis_celestial, crisis_region, crisis_hex: indicates era scope
+# Events with IsTriggeredOnly=false are weighted candidates for selection
+#
+# SpawnChance: Base spawn chance (0-100, default 100)
+# ScaledSpawnChance: Scaled spawn chance for weighted selection
+# UsageOdds: List of modifiers that increase odds based on empire/node criteria:
+#   - Factor: Multiplier applied if condition matches
+#   - HasFlag: Node flag that must be present (e.g., "edge", "bottleneck", "spine")
+#   - IsBottleneckSystem: Boolean flag for bottleneck nodes
+
+Events:
+  # ------------------------------------------------------------
+  # System Era Crises
+  # ------------------------------------------------------------
+  - UniqueId: "generation.crisis.system_end.prethoryn_like"
+    Name: "Generation - Select System End Crisis (Prethoryn-like)"
+    Title: "Generation Crisis Selection"
+    Description: "Weighted candidate: Prethoryn-like swarm end crisis for system-era."
+    Type: "generation_event"
+    Scope: "galaxy"
+    IsTriggeredOnly: false
+    ShowModal: false
+    SpawnChance: 10
+    ScaledSpawnChance: 10
+    Flags:
+      - "crisis_end"
+      - "crisis_system"
+    # Edge reservation is forced by the payload's initializer (crisis_swarm_entry_init), which has Flags: ["edge"].
+    # UsageOdds for flag-based selection apply to random initializers, not to this event.
+    PreTriggers:
+      - "on_generation_populate_galaxy"
+    ImmediateEffects:
+      - type: "generation_set_mapping"
+        payload:
+          key: "PopulateGalaxy.CrisisSelection"
+          map:
+            system_end: "prethoryn_like"
+      - type: "generation_append_list"
+        payload:
+          key: "PopulateGalaxy.Empires"
+          values: ["Prescripted_Empire_Crisis1"]
+      # Neighbor requirements (Distance, Initializer) come from the initializer's Neighbors section, not here.
+      - type: "generation_reservation_request"
+        payload:
+          request_id: "crisis_prethoryn_entry_systems"
+          initializer_id: "crisis_swarm_entry_init"
+          count: 4
+
+  - UniqueId: "generation.crisis.system_mid.sample"
+    Name: "Generation - Select System Mid Crisis (Sample)"
+    Title: "Generation Crisis Selection"
+    Description: "Weighted candidate: Sample mid crisis for system-era."
+    Type: "generation_event"
+    Scope: "galaxy"
+    IsTriggeredOnly: false
+    ShowModal: false
+    SpawnChance: 10
+    ScaledSpawnChance: 10
+    Flags:
+      - "crisis_mid"
+      - "crisis_system"
+
+  # ------------------------------------------------------------
+  # Celestial Era Crises (stubbed)
+  # ------------------------------------------------------------
+  - UniqueId: "generation.crisis.celestial_mid.sample"
+    Name: "Generation - Select Celestial Mid Crisis (Sample)"
+    Title: "Generation Crisis Selection"
+    Description: "Weighted candidate: Sample mid crisis for celestial-era."
+    Type: "generation_event"
+    Scope: "star_system"
+    IsTriggeredOnly: false
+    ShowModal: false
+    SpawnChance: 10
+    ScaledSpawnChance: 10
+    Flags:
+      - "crisis_mid"
+      - "crisis_celestial"
+
+  - UniqueId: "generation.crisis.celestial_end.sample"
+    Name: "Generation - Select Celestial End Crisis (Sample)"
+    Title: "Generation Crisis Selection"
+    Description: "Weighted candidate: Sample end crisis for celestial-era."
+    Type: "generation_event"
+    Scope: "star_system"
+    IsTriggeredOnly: false
+    ShowModal: false
+    SpawnChance: 10
+    ScaledSpawnChance: 10
+    Flags:
+      - "crisis_end"
+      - "crisis_celestial"
+
+  # ------------------------------------------------------------
+  # Region Era Crises (stubbed; Fear of the Dark chain in FearOfTheDarkCrisisEvents.yaml)
+  # ------------------------------------------------------------
+  - UniqueId: "generation.crisis.region_mid.sample"
+    Name: "Generation - Select Region Mid Crisis (Sample)"
+    Title: "Generation Crisis Selection"
+    Description: "Weighted candidate: Sample mid crisis for region-era."
+    Type: "generation_event"
+    Scope: "celestial_body"
+    IsTriggeredOnly: false
+    ShowModal: false
+    SpawnChance: 10
+    ScaledSpawnChance: 10
+    Flags:
+      - "crisis_mid"
+      - "crisis_region"
+
+  - UniqueId: "generation.crisis.region_end.sample"
+    Name: "Generation - Select Region End Crisis (Sample)"
+    Title: "Generation Crisis Selection"
+    Description: "Weighted candidate: Sample end crisis for region-era."
+    Type: "generation_event"
+    Scope: "celestial_body"
+    IsTriggeredOnly: false
+    ShowModal: false
+    SpawnChance: 10
+    ScaledSpawnChance: 10
+    Flags:
+      - "crisis_end"
+      - "crisis_region"
+
+  # ------------------------------------------------------------
+  # Hex Era Crises (stubbed)
+  # ------------------------------------------------------------
+  - UniqueId: "generation.crisis.hex_mid.sample"
+    Name: "Generation - Select Hex Mid Crisis (Sample)"
+    Title: "Generation Crisis Selection"
+    Description: "Weighted candidate: Sample mid crisis for hex-era."
+    Type: "generation_event"
+    Scope: "region"
+    IsTriggeredOnly: false
+    ShowModal: false
+    SpawnChance: 10
+    ScaledSpawnChance: 10
+    Flags:
+      - "crisis_mid"
+      - "crisis_hex"
+
+  - UniqueId: "generation.crisis.hex_end.sample"
+    Name: "Generation - Select Hex End Crisis (Sample)"
+    Title: "Generation Crisis Selection"
+    Description: "Weighted candidate: Sample end crisis for hex-era."
+    Type: "generation_event"
+    Scope: "region"
+    IsTriggeredOnly: false
+    ShowModal: false
+    SpawnChance: 10
+    ScaledSpawnChance: 10
+    Flags:
+      - "crisis_end"
+      - "crisis_hex"
+

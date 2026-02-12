@@ -1,0 +1,28 @@
+Initializers:
+  # Minimal crisis entry system initializer (system-era).
+  # Used by generation reservation so the system exists and can be targeted later when the crisis activates.
+  # Flags define which nodes are candidates (e.g. edge). Neighbors define guaranteed neighbor systems to reserve (like empire guaranteed colonies).
+  - StarSystem:
+      UniqueId: "crisis_swarm_entry_init"
+      RenderEntity: "UI_StarSystem_Render_Entity"
+      Usage: "crisis_system_init"
+      # Flags used to match candidate nodes (e.g. edge = rim systems). Other ids are usage metadata.
+      Flags: ["edge"]
+      Children:
+        - UniqueId: "rl_standard_stars"
+      Neighbors:
+        - Distance: 1
+          Initializer: "crisis_swarm_neighbor_init"
+        - Distance: 1
+          Initializer: "crisis_swarm_neighbor_init"
+        - Distance: 2
+          Initializer: "crisis_swarm_neighbor_init"
+  # Neighbor systems for crisis entry (reserved at Distance from entry systems).
+  - StarSystem:
+      UniqueId: "crisis_swarm_neighbor_init"
+      RenderEntity: "UI_StarSystem_Render_Entity"
+      Usage: "crisis_system_init"
+      Flags: []
+      Children:
+        - UniqueId: "rl_standard_stars"
+

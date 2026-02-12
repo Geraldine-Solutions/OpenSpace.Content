@@ -1,0 +1,73 @@
+# Scripted Effects for Game Initialization
+# These are reusable effect blocks that can be called from events, initializers, or other scripted effects
+# Similar to Stellaris' scripted_effects system
+
+ScriptedEffects:
+  # Generate starting resources for empire home systems
+  - UniqueId: "generate_home_system_resources"
+    Name: "Generate Home System Resources"
+    Description: "Adds starting resource deposits to planets in the home system"
+    Effects:
+      # Add energy deposit to the system star
+      - type: "system_star"
+        payload:
+          effects:
+            - type: "add_deposit"
+              payload:
+                deposit: "deposit_energy_crystal"
+      
+      # Add mineral deposits to rocky bodies
+      - type: "every_system_planet"
+        payload:
+          count: 2
+          effects:
+            - type: "add_deposit"
+              payload:
+                deposit: "deposit_mineral_deposit"
+      
+      # Add research deposits to gas giants
+      - type: "random_system_planet"
+        payload:
+          effects:
+            - type: "add_deposit"
+              payload:
+                deposit: "deposit_rare_metal_vein"
+
+  # Setup for default origin empires
+  - UniqueId: "default_origin_setup"
+    Name: "Default Origin Setup"
+    Description: "Standard empire start for the default origin"
+    Effects:
+      - type: "capital_scope"
+        payload:
+          effects:
+            - type: "add_modifier"
+              payload:
+                modifier: "prosp_uni_mod"
+                days: 7200
+            - type: "add_flag"
+              payload:
+                flag: "default_origin_initialized"
+
+  # NOTE: Empire home planet initialization (e.g. `generate_empire_home_planet`, `generate_start_deposits_and_blockers`)
+  # lives in `ScriptedEffects/EmpireInitEffects.yaml` to avoid duplicate UniqueIds across files.
+
+  # Mark neighboring systems as part of empire cluster
+  - UniqueId: "mark_empire_cluster"
+    Name: "Mark Empire Cluster"
+    Description: "Marks neighboring systems as part of the empire's starting cluster"
+    Effects:
+      - type: "every_neighbor_system"
+        payload:
+          effects:
+            - type: "set_flag"
+              payload:
+                flag: "empire_cluster"
+                scope: "star_system"
+            - type: "every_neighbor_system"
+              payload:
+                effects:
+                  - type: "set_flag"
+                    payload:
+                      flag: "empire_cluster"
+                      scope: "star_system"

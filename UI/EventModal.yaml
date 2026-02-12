@@ -1,0 +1,89 @@
+Variables:
+  modal_width: 600
+  modal_height: 400
+  button_height: 40
+  margin: 20
+---
+gui:
+  UniqueId: UI_EventModal
+  Name: "EventModal"
+  Components:
+    EventModal: {}
+    CanvasGroup:
+      alpha: 1
+      interactable: true
+      blocksRaycasts: true
+  Children:
+    - Name: "ModalPanel"
+      Components:
+        RectTransform:
+          anchorMin: [0.5, 0.5]
+          anchorMax: [0.5, 0.5]
+          sizeDelta: [$modal_width, $modal_height]
+          anchoredPosition: [0, 0]
+        Image:
+          color: [21, 21, 21, 241]
+          raycastTarget: true
+      Children:
+        - Name: "TitleText"
+          Components:
+            RectTransform:
+              anchorMin: [0, 0.8]
+              anchorMax: [1, 1]
+              offsetMin: [$margin, 10]
+              offsetMax: [-20, -10]
+            TextMeshProUGUI:
+              text: "Event Title"
+              fontSize: 24
+              color: [255, 255, 255, 255]
+              alignment: Center
+              enableWordWrapping: true
+
+        - Name: "DescriptionText"
+          Components:
+            RectTransform:
+              anchorMin: [0, 0.4]
+              anchorMax: [1, 0.8]
+              offsetMin: [$margin, 10]
+              offsetMax: [-20, -10]
+            TextMeshProUGUI:
+              text: "Event description will appear here."
+              fontSize: 16
+              color: [255, 255, 255, 255]
+              alignment: TopLeft
+              enableWordWrapping: true
+              enableAutoSizing: false
+
+        - Name: "OptionsContainer"
+          Components:
+            RectTransform:
+              anchorMin: [0, 0]
+              anchorMax: [1, 0.35]
+              offsetMin: [$margin, $margin]
+              offsetMax: [-20, -20]
+
+        - Name: "OptionButtonPrefab"
+          Components:
+            RectTransform:
+              anchorMin: [0, 1]
+              anchorMax: [1, 1]
+              sizeDelta: [0, $button_height]
+              pivot: [0.5, 1]
+            Image:
+              color: [21, 21, 21, 241]
+              raycastTarget: true
+            Button: {}
+          Children:
+            - Name: "ButtonText"
+              Components:
+                RectTransform:
+                  anchorMin: [0, 0]
+                  anchorMax: [1, 1]
+                  offsetMin: [10, 5]
+                  offsetMax: [-10, -5]
+                TextMeshProUGUI:
+                  text: "Option Text"
+                  fontSize: 14
+                  color: [255, 255, 255, 255]
+                  alignment: Center
+                  enableWordWrapping: false

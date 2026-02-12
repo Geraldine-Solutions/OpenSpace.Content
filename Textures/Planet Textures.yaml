@@ -1482,56 +1482,6 @@
     WrapMode: "Repeat"
     AnisoLevel: 4
 
-#Earth
-  - UniqueId: "tex_earth_albedo"
-    Kind: "Texture2D"
-    Path: "Planets/Earth Albedo.png"
-    MipMaps: true
-    SRGB: true
-    FilterMode: "Trilinear"
-    WrapMode: "Repeat"
-    AnisoLevel: 4
-  - UniqueId: "tex_earth_land"
-    Kind: "Texture2D"
-    Path: "Planets/Earth Land.png"
-    MipMaps: true
-    SRGB: true
-    FilterMode: "Trilinear"
-    WrapMode: "Repeat"
-    AnisoLevel: 4
-  - UniqueId: "tex_earth_night"
-    Kind: "Texture2D"
-    Path: "Planets/Earth Night.png"
-    MipMaps: true
-    SRGB: true
-    FilterMode: "Trilinear"
-    WrapMode: "Repeat"
-    AnisoLevel: 4
-  - UniqueId: "tex_earth_Normal"
-    Kind: "Texture2D"
-    Path: "Planets/Earth Normal.png"
-    MipMaps: true
-    SRGB: true
-    FilterMode: "Trilinear"
-    WrapMode: "Repeat"
-    AnisoLevel: 4
-  - UniqueId: "tex_earth_specular"
-    Kind: "Texture2D"
-    Path: "Planets/Earth Specular.png"
-    MipMaps: true
-    SRGB: true
-    FilterMode: "Trilinear"
-    WrapMode: "Repeat"
-    AnisoLevel: 4
-#Moon
-  - UniqueId: "tex_moon"
-    Kind: "Texture2D"
-    Path: "Planets/Moon.png"
-    MipMaps: true
-    SRGB: true
-    FilterMode: "Trilinear"
-    WrapMode: "Repeat"
-    AnisoLevel: 4
 #Gas Giant
   - UniqueId: "tex_marble"
     Kind: "Cubemap"

@@ -1,0 +1,77 @@
+# Stubbed events scheduled by in-game year (500-year increments).
+# Used when no crisis is selected for that phase, or as placeholders until real narrative is added.
+# Year mapping: hex_mid=500, hex_end=1000, region_mid=1500, region_end=2000,
+#               celestial_mid=2500, celestial_end=3000, system_mid=3500, system_end=4000.
+
+Events:
+  - UniqueId: "crisis.stub.year_500"
+    Name: "Crisis (Hex Mid Era)"
+    Title: "Hex Mid Era"
+    Description: "Stub. Replace with real crisis content."
+    Type: "crisis_event"
+    Scope: "hex"
+    IsTriggeredOnly: true
+    ShowModal: false
+
+  - UniqueId: "crisis.stub.year_1000"
+    Name: "Crisis (Hex End Era)"
+    Title: "Hex End Era"
+    Description: "Stub. Replace with real crisis content."
+    Type: "crisis_event"
+    Scope: "hex"
+    IsTriggeredOnly: true
+    ShowModal: false
+
+  - UniqueId: "crisis.stub.year_1500"
+    Name: "Crisis (Region Mid Era)"
+    Title: "Region Mid Era"
+    Description: "Stub. Replace with real crisis content."
+    Type: "crisis_event"
+    Scope: "celestial_body"
+    IsTriggeredOnly: true
+    ShowModal: false
+
+  - UniqueId: "crisis.stub.year_2000"
+    Name: "Crisis (Region End Era)"
+    Title: "Region End Era"
+    Description: "Stub. Replace with real crisis content."
+    Type: "crisis_event"
+    Scope: "celestial_body"
+    IsTriggeredOnly: true
+    ShowModal: false
+
+  - UniqueId: "crisis.stub.year_2500"
+    Name: "Crisis (Celestial Mid Era)"
+    Title: "Celestial Mid Era"
+    Description: "Stub. Replace with real crisis content."
+    Type: "crisis_event"
+    Scope: "star_system"
+    IsTriggeredOnly: true
+    ShowModal: false
+
+  - UniqueId: "crisis.stub.year_3000"
+    Name: "Crisis (Celestial End Era)"
+    Title: "Celestial End Era"
+    Description: "Stub. Replace with real crisis content."
+    Type: "crisis_event"
+    Scope: "star_system"
+    IsTriggeredOnly: true
+    ShowModal: false
+
+  - UniqueId: "crisis.stub.year_3500"
+    Name: "Crisis (System Mid Era)"
+    Title: "System Mid Era"
+    Description: "Stub. Replace with real crisis content."
+    Type: "crisis_event"
+    Scope: "galaxy"
+    IsTriggeredOnly: true
+    ShowModal: false
+
+  - UniqueId: "crisis.stub.year_4000"
+    Name: "Crisis (System End Era)"
+    Title: "System End Era"
+    Description: "Stub. Replace with real crisis content."
+    Type: "crisis_event"
+    Scope: "galaxy"
+    IsTriggeredOnly: true
+    ShowModal: false

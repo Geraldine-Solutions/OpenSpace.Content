@@ -1,0 +1,624 @@
+﻿Localization:
+### Sol System
+  - LocalizableText:
+      UniqueId: TEXT_Sol
+      Name: "Sol"
+      Translations:
+        en-US: "Sol"
+        fr: "Sol"
+        es: "Sol"
+        de: "Sol"
+        ru: "Sol"
+        zh-Hans: "Sol"
+  - LocalizableText:
+      UniqueId: TEXT_Mercury
+      Name: "Mercury"
+      Translations:
+        en-US: "Mercury"
+        fr: "Mercure"
+        es: "Mercurio"
+        de: "Merkur"
+        ru: "Меркурий"
+        zh-Hans: "水星"
+  - LocalizableText:
+      UniqueId: TEXT_Venus
+      Name: "Venus"
+      Translations:
+        en-US: "Venus"
+        fr: "Venus"
+        es: "Venus"
+        de: "Venus"
+        ru: "Венера"
+        zh-Hans: "金星"
+  - LocalizableText:
+      UniqueId: TEXT_Earth
+      Name: "Terra"
+      Translations:
+        en-US: "Terra"
+        fr: "Terre"
+        es: "Tierra"
+        de: "Erde"
+        ru: "Земля"
+        zh-Hans: "地球"
+  - LocalizableText:
+      UniqueId: TEXT_Luna
+      Name: "Luna"
+      Translations:
+        en-US: "Luna"
+        fr: "Lune"
+        es: "Luna"
+        de: "Mond"
+        ru: "Луна"
+        zh-Hans: "月球"
+  - LocalizableText:
+      UniqueId: TEXT_Mars
+      Name: "Mars"
+      Translations:
+        en-US: "Mars"
+        fr: "Mars"
+        es: "Marte"
+        de: "Mars"
+        ru: "Марс"
+        zh-Hans: "火星"
+  - LocalizableText:
+      UniqueId: TEXT_Ceres
+      Name: "Ceres"
+      Translations:
+        en-US: "Ceres"
+        fr: "Cérès"
+        es: "Ceres"
+        de: "Ceres"
+        ru: "Церера"
+        zh-Hans: "谷神星"
+  - LocalizableText:
+      UniqueId: TEXT_Pallas
+      Name: "Pallas"
+      Translations:
+        en-US: "Pallas"
+        fr: "Pallas"
+        es: "Pallas"
+        de: "Pallas"
+        ru: "Паллада"
+        zh-Hans: "帕拉斯"
+  - LocalizableText:
+      UniqueId: TEXT_Juno
+      Name: "Juno"
+      Translations:
+        en-US: "Juno"
+        fr: "Juno"
+        es: "Juno"
+        de: "Juno"
+        ru: "Юнона"
+        zh-Hans: "朱诺"
+  - LocalizableText:
+      UniqueId: TEXT_Vesta
+      Name: "Vesta"
+      Translations:
+        en-US: "Vesta"
+        fr: "Vesta"
+        es: "Vesta"
+        de: "Vesta"
+        ru: "Веста"
+        zh-Hans: "维斯特"
+  - LocalizableText:
+      UniqueId: TEXT_Jupiter
+      Name: "Jupiter"
+      Translations:
+        en-US: "Jupiter"
+        fr: "Jupiter"
+        es: "Júpiter"
+        de: "Jupiter"
+        ru: "Юпитер"
+        zh-Hans: "木星"
+  - LocalizableText:
+      UniqueId: TEXT_Io
+      Name: "Io"
+      Translations:
+        en-US: "Io"
+        fr: "Io"
+        es: "Io"
+        de: "Io"
+        ru: "Ио"
+        zh-Hans: "木卫一"
+  - LocalizableText:
+      UniqueId: TEXT_Europa
+      Name: "Europa"
+      Translations:
+        en-US: "Europa"
+        fr: "Europa"
+        es: "Europa"
+        de: "Europa"
+        ru: "Европа"
+        zh-Hans: "木卫二"
+  - LocalizableText:
+      UniqueId: TEXT_Ganymede
+      Name: "Ganymede"
+      Translations:
+        en-US: "Ganymede"
+        fr: "Ganymede"
+        es: "Ganymede"
+        de: "Ganymede"
+        ru: "Ганимед"
+        zh-Hans: "木卫三"
+  - LocalizableText:
+      UniqueId: TEXT_Callisto
+      Name: "Callisto"
+      Translations:
+        en-US: "Callisto"
+        fr: "Callisto"
+        es: "Callisto"
+        de: "Callisto"
+        ru: "Каллисто"
+        zh-Hans: "木卫四"
+  - LocalizableText:
+      UniqueId: TEXT_Saturn
+      Name: "Saturn"
+      Translations:
+        en-US: "Saturn"
+        fr: "Saturne"
+        es: "Saturno"
+        de: "Saturn"
+        ru: "Сатурн"
+        zh-Hans: "土星"
+  - LocalizableText:
+      UniqueId: TEXT_Titan
+      Name: "Titan"
+      Translations:
+        en-US: "Titan"
+        fr: "Titan"
+        es: "Titan"
+        de: "Titan"
+        ru: "Титан"
+        zh-Hans: "土卫六"
+  - LocalizableText:
+      UniqueId: TEXT_Uranus
+      Name: "Uranus"
+      Translations:
+        en-US: "Uranus"
+        fr: "Uranus"
+        es: "Urano"
+        de: "Uranus"
+        ru: "Уран"
+        zh-Hans: "天王星"
+  - LocalizableText:
+      UniqueId: TEXT_Neptune
+      Name: "Neptune"
+      Translations:
+        en-US: "Neptune"
+        fr: "Neptune"
+        es: "Neptuno"
+        de: "Neptun"
+        ru: "Нептун"
+        zh-Hans: "海王星"
+  - LocalizableText:
+      UniqueId: TEXT_Triton
+      Name: "Triton"
+      Translations:
+        en-US: "Triton"
+        fr: "Triton"
+        es: "Tritón"
+        de: "Triton"
+        ru: "Тритон"
+        zh-Hans: "海卫一"
+  - LocalizableText:
+      UniqueId: TEXT_Pluto
+      Name: "Pluto"
+      Translations:
+        en-US: "Pluto"
+        fr: "Pluton"
+        es: "Plutón"
+        de: "Pluto"
+        ru: "Плутон"
+        zh-Hans: "冥王星"
+  - LocalizableText:
+      UniqueId: TEXT_Makemake
+      Name: "Makemake"
+      Translations:
+        en-US: "Makemake"
+        fr: "Makemake"
+        es: "Makemake"
+        de: "Makemake"
+        ru: "Макемаке"
+        zh-Hans: "冥王星"
+  - LocalizableText:
+      UniqueId: TEXT_Huamea
+      Name: "Huamea"
+      Translations:
+        en-US: "Huamea"
+        fr: "Huamea"
+        es: "Huamea"
+        de: "Huamea"
+        ru: "Хаумейя"
+        zh-Hans: "冥王星"
+  - LocalizableText:
+      UniqueId: TEXT_Varuna
+      Name: "Varuna"
+      Translations:
+        en-US: "Varuna"
+        fr: "Varuna"
+        es: "Varuna"
+        de: "Varuna"
+        ru: "Варуна"
+        zh-Hans: "冥王星"
+### Kerbol System
+  - LocalizableText:
+      UniqueId: TEXT_Kerbol
+      Name: "Kerbol"
+      Translations:
+        en-US: "Kerbol"
+        fr: "Kerbol"
+        es: "Kerbol"
+        de: "Kerbol"
+        ru: "Кербол"
+        zh-Hans: "Kerbol"
+  - LocalizableText:
+      UniqueId: TEXT_Moho
+      Name: "Moho"
+      Translations:
+        en-US: "Moho"
+        fr: "Moho"
+        es: "Moho"
+        de: "Moho"
+        ru: "Мохо"
+        zh-Hans: "Moho"
+  - LocalizableText:
+      UniqueId: TEXT_Eve
+      Name: "Eve"
+      Translations:
+        en-US: "Eve"
+        fr: "Eve"
+        es: "Eve"
+        de: "Eve"
+        ru: "Ева"
+        zh-Hans: "Eve"
+  - LocalizableText:
+      UniqueId: TEXT_Kerbin
+      Name: "Kerbin"
+      Translations:
+        en-US: "Kerbin"
+        fr: "Kerbin"
+        es: "Kerbin"
+        de: "Kerbin"
+        ru: "Кербин"
+        zh-Hans: "Kerbin"
+  - LocalizableText:
+      UniqueId: TEXT_Mun
+      Name: "Mun"
+      Translations:
+        en-US: "Mun"
+        fr: "Mun"
+        es: "Mun"
+        de: "Mun"
+        ru: "Мун"
+        zh-Hans: "Mun"
+  - LocalizableText:
+      UniqueId: TEXT_Minimus
+      Name: "Minimus"
+      Translations:
+        en-US: "Minimus"
+        fr: "Minimus"
+        es: "Minimus"
+        de: "Minimus"
+        ru: "Минимус"
+        zh-Hans: "Minimus"
+  - LocalizableText:
+      UniqueId: TEXT_Duna
+      Name: "Duna"
+      Translations:
+        en-US: "Duna"
+        fr: "Duna"
+        es: "Duna"
+        de: "Duna"
+        ru: "Дуна"
+        zh-Hans: "Duna"
+  - LocalizableText:
+      UniqueId: TEXT_Ike
+      Name: "Ike"
+      Translations:
+        en-US: "Ike"
+        fr: "Ike"
+        es: "Ike"
+        de: "Ike"
+        ru: "Ике"
+        zh-Hans: "Ike"
+  - LocalizableText:
+      UniqueId: TEXT_Dres
+      Name: "Dres"
+      Translations:
+        en-US: "Dres"
+        fr: "Dres"
+        es: "Dres"
+        de: "Dres"
+        ru: "Дрес"
+        zh-Hans: "Dres"
+  - LocalizableText:
+      UniqueId: TEXT_Jool
+      Name: "Jool"
+      Translations:
+        en-US: "Jool"
+        fr: "Jool"
+        es: "Jool"
+        de: "Jool"
+        ru: "Юль"
+        zh-Hans: "Jool"
+  - LocalizableText:
+      UniqueId: TEXT_Laythe
+      Name: "Laythe"
+      Translations:
+        en-US: "Laythe"
+        fr: "Laythe"
+        es: "Laythe"
+        de: "Laythe"
+        ru: "Лэйт"
+        zh-Hans: "Laythe"
+  - LocalizableText:
+      UniqueId: TEXT_Val
+      Name: "Val"
+      Translations:
+        en-US: "Val"
+        fr: "Val"
+        es: "Val"
+        de: "Val"
+        ru: "Вал"
+        zh-Hans: "Val"
+  - LocalizableText:
+      UniqueId: TEXT_Tylo
+      Name: "Tylo"
+      Translations:
+        en-US: "Tylo"
+        fr: "Tylo"
+        es: "Tylo"
+        de: "Tylo"
+        ru: "Тыло"
+        zh-Hans: "Tylo"
+  - LocalizableText:
+      UniqueId: TEXT_Bop
+      Name: "Bop"
+      Translations:
+        en-US: "Bop"
+        fr: "Bop"
+        es: "Bop"
+        de: "Bop"
+        ru: "Боб"
+        zh-Hans: "Bop"
+  - LocalizableText:
+      UniqueId: TEXT_Pol
+      Name: "Pol"
+      Translations:
+        en-US: "Pol"
+        fr: "Pol"
+        es: "Pol"
+        de: "Pol"
+        ru: "Пол"
+        zh-Hans: "Pol"
+  - LocalizableText:
+      UniqueId: TEXT_Sarnus
+      Name: "Sarnus"
+      Translations:
+        en-US: "Sarnus"
+        fr: "Sarnus"
+        es: "Sarnus"
+        de: "Sarnus"
+        ru: "Сарнус"
+        zh-Hans: "Sarnus"
+  - LocalizableText:
+      UniqueId: TEXT_Hale
+      Name: "Hale"
+      Translations:
+        en-US: "Hale"
+        fr: "Tylo"
+        es: "Hale"
+        de: "Hale"
+        ru: "Халь"
+        zh-Hans: "Hale"
+  - LocalizableText:
+      UniqueId: TEXT_Ovok
+      Name: "Ovok"
+      Translations:
+        en-US: "Ovok"
+        fr: "Ovok"
+        es: "Ovok"
+        de: "Ovok"
+        ru: "Овок"
+        zh-Hans: "Ovok"
+  - LocalizableText:
+      UniqueId: TEXT_Eeloo
+      Name: "Eeloo"
+      Translations:
+        en-US: "Eeloo"
+        fr: "Eeloo"
+        es: "Eeloo"
+        de: "Eeloo"
+        ru: "Еэло"
+        zh-Hans: "Eeloo"
+  - LocalizableText:
+      UniqueId: TEXT_Slate
+      Name: "Slate"
+      Translations:
+        en-US: "Slate"
+        fr: "Slate"
+        es: "Slate"
+        de: "Slate"
+        ru: "Слайт"
+        zh-Hans: "Slate"
+  - LocalizableText:
+      UniqueId: TEXT_Tekto
+      Name: "Tekto"
+      Translations:
+        en-US: "Tekto"
+        fr: "Tekto"
+        es: "Tekto"
+        de: "Tekto"
+        ru: "Текто"
+        zh-Hans: "Tekto"
+  - LocalizableText:
+      UniqueId: TEXT_Urlum
+      Name: "Urlum"
+      Translations:
+        en-US: "Urlum"
+        fr: "Urlum"
+        es: "Urlum"
+        de: "Urlum"
+        ru: "Урум"
+        zh-Hans: "Urlum"
+  - LocalizableText:
+      UniqueId: TEXT_Priax
+      Name: "Priax"
+      Translations:
+        en-US: "Priax"
+        fr: "Priax"
+        es: "Priax"
+        de: "Priax"
+        ru: "Приакс"
+        zh-Hans: "Priax"
+  - LocalizableText:
+      UniqueId: TEXT_Polta
+      Name: "Polta"
+      Translations:
+        en-US: "Polta"
+        fr: "Polta"
+        es: "Polta"
+        de: "Polta"
+        ru: "Полта"
+        zh-Hans: "Polta"
+  - LocalizableText:
+      UniqueId: TEXT_Wal
+      Name: "Wal"
+      Translations:
+        en-US: "Wal"
+        fr: "Wal"
+        es: "Wal"
+        de: "Wal"
+        ru: "Вал"
+        zh-Hans: "Wal"
+  - LocalizableText:
+      UniqueId: TEXT_Neidon
+      Name: "Neidon"
+      Translations:
+        en-US: "Neidon"
+        fr: "Neidon"
+        es: "Neidon"
+        de: "Neidon"
+        ru: "Неидон"
+        zh-Hans: "Neidon"
+  - LocalizableText:
+      UniqueId: TEXT_Thatmo
+      Name: "Thatmo"
+      Translations:
+        en-US: "Thatmo"
+        fr: "Thatmo"
+        es: "Thatmo"
+        de: "Thatmo"
+        ru: "Татмо"
+        zh-Hans: "Thatmo"
+  - LocalizableText:
+      UniqueId: TEXT_Nissee
+      Name: "Nissee"
+      Translations:
+        en-US: "Nissee"
+        fr: "Nissee"
+        es: "Nissee"
+        de: "Nissee"
+        ru: "Ниссе"
+        zh-Hans: "Nissee"
+  - LocalizableText:
+      UniqueId: TEXT_Plock
+      Name: "Plock"
+      Translations:
+        en-US: "Plock"
+        fr: "Plock"
+        es: "Plock"
+        de: "Plock"
+        ru: "Плок"
+        zh-Hans: "Plock"
+  - LocalizableText:
+      UniqueId: TEXT_Karen
+      Name: "Karen"
+      Translations:
+        en-US: "Karen"
+        fr: "Karen"
+        es: "Karen"
+        de: "Karen"
+        ru: "Карен"
+        zh-Hans: "Karen"
+### Balor System
+  - LocalizableText:
+      UniqueId: TEXT_Balor
+      Name: "Balor"
+      Translations:
+        en-US: "Balor"
+        fr: "Balor"
+        es: "Balor"
+        de: "Balor"
+        ru: "Балор"
+        zh-Hans: "Balor"
+  - LocalizableText:
+      UniqueId: TEXT_Baal
+      Name: "Baal"
+      Translations:
+        en-US: "Baal"
+        fr: "Baal"
+        es: "Baal"
+        de: "Baal"
+        ru: "Баал"
+        zh-Hans: "Baal"
+  - LocalizableText:
+      UniqueId: TEXT_Baal_Primus
+      Name: "Baal Primus"
+      Translations:
+        en-US: "Baal Primus"
+        fr: "Baal Primus"
+        es: "Baal Primus"
+        de: "Baal Primus"
+        ru: "Баал Первый"
+        zh-Hans: "Baal Primus"
+  - LocalizableText:
+      UniqueId: TEXT_Baal_Secundus
+      Name: "Baal Secundus"
+      Translations:
+        en-US: "Baal Secundus"
+        fr: "Baal Secundus"
+        es: "Baal Secundus"
+        de: "Baal Secundus"
+        ru: "Баал Второй"
+        zh-Hans: "Baal Secundus"
+  - LocalizableText:
+      UniqueId: TEXT_Set
+      Name: "Set"
+      Translations:
+        en-US: "Set"
+        fr: "Set"
+        es: "Set"
+        de: "Set"
+        ru: "Сет"
+        zh-Hans: "Set"
+  - LocalizableText:
+      UniqueId: TEXT_Kheru
+      Name: "Kheru"
+      Translations:
+        en-US: "Kheru"
+        fr: "Kheru"
+        es: "Kheru"
+        de: "Kheru"
+        ru: "Кхеру"
+        zh-Hans: "Kheru"
+  - LocalizableText:
+      UniqueId: TEXT_Amair
+      Name: "Amair"
+      Translations:
+        en-US: "Amair"
+        fr: "Amair"
+        es: "Amair"
+        de: "Amair"
+        ru: "Амайр"
+        zh-Hans: "Amair"
+  - LocalizableText:
+      UniqueId: TEXT_Ammonai
+      Name: "Ammonai"
+      Translations:
+        en-US: "Ammonai"
+        fr: "Ammonai"
+        es: "Ammonai"
+        de: "Ammonai"
+        ru: "Аммонай"
+        zh-Hans: "Ammonai"

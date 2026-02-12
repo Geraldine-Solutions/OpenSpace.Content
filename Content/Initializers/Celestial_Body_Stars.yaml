@@ -10,6 +10,7 @@
       Icon: "GFX_map_b_star"
       Material: "mat_b_class_star"
       PlanetSize: [1460970, 4591620] #KM
+      Density: [1400, 2000] # kg/m³ (blue stars are dense)
       SpawnOdds: 10
       Colonizable: false
       Climate:
@@ -22,6 +23,7 @@
       Icon: "GFX_map_a_star"
       Material: "mat_a_class_star"
       PlanetSize: [800055, 1460970] #KM
+      Density: [1400, 1800] # kg/m³
       SpawnOdds: 10
       Colonizable: false
       Climate:
@@ -34,6 +36,7 @@
       Icon: "GFX_map_f_star"
       Material: "mat_f_class_star"
       PlanetSize: [667872, 800055] #KM
+      Density: [1400, 1600] # kg/m³
       SpawnOdds: 20
       Colonizable: false
       Climate:
@@ -46,6 +49,7 @@
       Icon: "GFX_map_g_star"
       Material: "mat_g_class_star"
       PlanetSize: [55656, 667872] #KM
+      Density: [1300, 1500] # kg/m³ (Sun-like: ~1408)
       SpawnOdds: 15
       Colonizable: false
       Climate:
@@ -58,6 +62,7 @@
       Icon: "GFX_map_k_star"
       Material: "mat_k_class_star"
       PlanetSize: [55656, 55656] #KM
+      Density: [1400, 1500] # kg/m³
       SpawnOdds: 20
       Colonizable: false
       Climate:
@@ -70,6 +75,7 @@
       Icon: "GFX_map_m_star"
       Material: "mat_m_class_star"
       PlanetSize: [55656, 4591620] #KM
+      Density: [1400, 2000] # kg/m³ (red dwarves can be quite dense)
       SpawnOdds: 20
       Colonizable: false
       Climate:
@@ -82,6 +88,7 @@
       Icon: "GFX_map_m_giant_star"
       Material: "mat_m_class_star"
       PlanetSize: [4591620, 11131200] #KM
+      Density: [100, 500] # kg/m³ (red giants are much less dense)
       SpawnOdds: 20
       Colonizable: false
       Climate:
@@ -94,6 +101,7 @@
       Icon: "GFX_map_t_star"
       Material: "mat_t_class_star"
       PlanetSize: [55656, 55656] #KM
+      Density: [1000, 2000] # kg/m³ (brown dwarves are intermediate between stars and planets)
       SpawnOdds: 10
       Colonizable: false
       Climate:
@@ -108,8 +116,104 @@
       Star: true
       Icon: "GFX_map_black_hole"
       PlanetSize: [55656, 4591620] #KM
+      Density: [5000, 10000] # kg/m³ (very high density, though black holes are singularities)
       SpawnOdds: 0.8
       Colonizable: false
+###############
+# Binary Stars
+###############
+# A Binary Star
+  - CelestialBody:
+      UniqueId: star_a_binary_star
+      Star: true
+      Icon: "GFX_map_a_binary_star"
+      Material: "mat_a_class_star"
+      PlanetSize: [800055, 1460970] #KM
+      Density: [1400, 1800] # kg/m³
+      SpawnOdds: 4
+      Colonizable: false
+      RenderEntity: "UI_Star_Render_Entity"
+      Climate:
+        Atmosphere: "corona_a_type"
+      Neighbors:
+        - UniqueId: star_init_a
+          Orbit:
+            SemiMajorAxis: 0.5 # AU
+
+# B Binary Star
+  - CelestialBody:
+      UniqueId: star_b_binary_star
+      Star: true
+      Icon: "GFX_map_b_binary_star"
+      Material: "mat_m_class_star"
+      PlanetSize: [4591620, 11131200] #KM
+      Density: [100, 500] # kg/m³ (giant star, less dense)
+      SpawnOdds: 4
+      RenderEntity: "UI_Star_Render_Entity"
+      Climate:
+        Atmosphere: "corona_m_type"
+      Neighbors:
+        - UniqueId: star_init_b
+          Orbit:
+            SemiMajorAxis: 0.5 # AU
+            
+# C Binary Star
+  - CelestialBody:
+      UniqueId: star_c_binary_star
+      Star: true
+      Icon: "GFX_map_c_binary_star"
+      Material: "mat_m_class_star"
+      PlanetSize: [4591620, 11131200] #KM
+      Density: [100, 500] # kg/m³ (giant star, less dense)
+      SpawnOdds: 4
+      RenderEntity: "UI_Star_Render_Entity"
+      Climate:
+        Atmosphere: "corona_m_type"
+      Neighbors:
+        - UniqueId: star_init_f
+          Orbit:
+            SemiMajorAxis: 0.5 # AU
+            
+# D Binary Star
+  - CelestialBody:
+      UniqueId: star_d_binary_star
+      Star: true
+      RenderEntity: "UI_Star_Render_Entity"
+      Icon: "GFX_map_d_binary_star"
+      Material: "mat_k_class_star"
+      PlanetSize: [55656, 55656] #KM
+      Density: [1400, 1500] # kg/m³
+      SpawnOdds: 4
+      Climate:
+        Atmosphere: "corona_k_type"
+      Neighbors:
+        - UniqueId: star_init_g
+          Orbit:
+            SemiMajorAxis: 0.5 # AU
+
+###############
+# Trinary Stars
+###############
+# A Trinary Star
+  - CelestialBody:
+      UniqueId: star_a_trinary_star
+      Star: true
+      Icon: "GFX_map_a_trinary_star"
+      Material: "mat_m_class_star"
+      PlanetSize: [4591620, 11131200] #KM
+      Density: [100, 500] # kg/m³ (giant star, less dense)
+      SpawnOdds: 2
+      Colonizable: false
+      RenderEntity: "UI_Star_Render_Entity"
+      Climate:
+        Atmosphere: "corona_m_type"
+      Neighbors:
+        - UniqueId: star_init_k
+          Orbit:
+            SemiMajorAxis: 0.5 # AU
+        - UniqueId: star_init_g
+          Orbit:
+            SemiMajorAxis: 0.5 # AU
 ---
 ###############
 # RANDOM LISTS
@@ -135,27 +239,17 @@ RandomList:
 #    - sc_pulsar
 ---
 RandomList:
-  UniqueId: rl_dwarf_stars
-  Name: Dwarf Stars
+  UniqueId: rl_binary_stars
+  Name: Binary Stars
   Choices:
-    - star_init_f
-    - star_init_g
-    - star_init_k
-    - star_init_m
-    - star_init_t
+    - star_a_binary_star
+    - star_b_binary_star
+    - star_c_binary_star
+    - star_d_binary_star
 ---
 RandomList:
-  UniqueId: rl_all_stars
-  Name: All Stars
+  UniqueId: rl_trinary_stars
+  Name: Trinary Stars
   Choices:
-    - star_init_b
-    - star_init_a
-    - star_init_f
-    - star_init_g
-    - star_init_k
-    - star_init_m
-    - star_init_m_giant
-    - star_init_t
-    - star_init_black_hole
-#    - sc_neutron_star
-#    - sc_pulsar
+    - star_a_trinary_star
+---

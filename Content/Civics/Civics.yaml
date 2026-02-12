@@ -1,0 +1,25 @@
+Civics:
+  - Civic:
+      UniqueId: "civic_beacon_of_liberty"
+      Name: "Beacon of Liberty"
+      possible: ["auth_democratic", "ethic_egalitarian", "ethic_fanatic_egalitarian"]
+      random_weight:
+        base: 1.0
+      ai_weight: 1.0
+      modifier: {}
+  - Civic:
+      UniqueId: "civic_idealistic_foundation"
+      Name: "Idealistic Foundation"
+      possible: ["auth_democratic", "ethic_egalitarian", "ethic_fanatic_egalitarian", "ethic_xenophile", "ethic_fanatic_xenophile"]
+      random_weight:
+        base: 1.0
+      ai_weight: 1.0
+      modifier: {}
+  - Civic:
+      UniqueId: "civic_meritocracy"
+      Name: "Meritocracy"
+      possible: []
+      random_weight:
+        base: 1.0
+      ai_weight: 1.0
+      modifier: {}

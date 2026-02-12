@@ -1,0 +1,156 @@
+# Origin-Specific Scripted Effects
+# These effects are called based on the empire's chosen origin
+# Similar to Stellaris' origin initialization system
+
+ScriptedEffects:
+  # Default origin - standard empire start
+  - UniqueId: "default_origin_setup"
+    Name: "Default Origin Setup"
+    Description: "Standard initialization for the default origin"
+    Effects:
+      # Add prosperity modifier to capital
+      - type: "capital_scope"
+        payload:
+          effects:
+            - type: "if"
+              payload:
+                condition:
+                  NOT:
+                    is_gestalt: true
+                effects:
+                  - type: "add_modifier"
+                    payload:
+                      modifier: "prosp_uni_mod"
+                      days: 7200
+            - type: "if"
+              payload:
+                condition:
+                  is_gestalt: true
+                effects:
+                  - type: "add_modifier"
+                    payload:
+                      modifier: "prosp_uni_mod_gestalt"
+                      days: 7200
+      
+      # Add default origin initialized flag
+      - type: "add_flag"
+        payload:
+          flag: "default_origin_initialized"
+      
+      # Add starting research options
+      - type: "add_research_option"
+        payload:
+          tech: "tech_planetary_unification"
+
+  # Mechanist origin - starts with robots
+  - UniqueId: "mechanist_origin_setup"
+    Name: "Mechanist Origin Setup"
+    Description: "Initialization for mechanist empires"
+    Effects:
+      - type: "give_technology"
+        payload:
+          tech: "tech_powered_exoskeletons"
+          message: false
+      - type: "give_technology"
+        payload:
+          tech: "tech_robotic_workers"
+          message: false
+      - type: "add_research_option"
+        payload:
+          tech: "tech_robomodding"
+      - type: "capital_scope"
+        payload:
+          effects:
+            - type: "add_building"
+              payload:
+                building: "building_robot_assembly_plant"
+      - type: "add_flag"
+        payload:
+          flag: "mechanist_origin_initialized"
+
+  # Prosperous Unification - extra pops and buildings
+  - UniqueId: "prosperous_unification_setup"
+    Name: "Prosperous Unification Setup"
+    Description: "Initialization for prosperous unification origin"
+    Effects:
+      - type: "capital_scope"
+        payload:
+          effects:
+            - type: "add_modifier"
+              payload:
+                modifier: "prosp_uni_mod"
+                days: 9600  # Longer than default
+            - type: "add_district"
+              payload:
+                district: "district_city"
+                count: 2
+      - type: "add_flag"
+        payload:
+          flag: "prosperous_unification_initialized"
+
+  # Life-Seeded origin - gaia world start
+  - UniqueId: "life_seeded_setup"
+    Name: "Life-Seeded Origin Setup"
+    Description: "Initialization for life-seeded empires"
+    Effects:
+      - type: "capital_scope"
+        payload:
+          effects:
+            - type: "scripted_effect"
+              payload:
+                effect_id: "create_life_seeded_planet"
+      - type: "add_flag"
+        payload:
+          flag: "life_seeded_initialized"
+      # Remove ability to colonize non-gaia worlds (to be implemented)
+
+  # Post-Apocalyptic origin - tomb world start
+  - UniqueId: "post_apocalyptic_setup"
+    Name: "Post-Apocalyptic Origin Setup"
+    Description: "Initialization for post-apocalyptic empires"
+    Effects:
+      - type: "capital_scope"
+        payload:
+          effects:
+            - type: "change_planet_class"
+              payload:
+                class: "pc_nuked"
+            - type: "add_deposit"
+              payload:
+                deposit: "d_tomb_world_ruins"
+            - type: "add_trait"
+              payload:
+                trait: "trait_survivor"
+                species: "owner_main_species"
+      - type: "add_flag"
+        payload:
+          flag: "post_apocalyptic_initialized"
+
+  # Resource reset event (hidden, for dev/testing)
+  - UniqueId: "event.resource_reset"
+    Name: "Resource Management"
+    Title: "Resource Management"
+    Description: "Time to reset and optimize your resources."
+    Icon: ""
+    Type: "empire_event"
+    Scope: "empire"
+
+    PreTriggers:
+      - "resource_reset"
+
+    IsTriggeredOnly: true
+    ShowModal: false
+
+    ImmediateEffects:
+      - type: "set_resource"
+        payload:
+          resource: "influence"
+          amount: 100
+      - type: "set_resource"
+        payload:
+          resource: "energy"
+          amount: 50
+      - type: "set_resource"
+        payload:
+          resource: "minerals"
+          amount: 200

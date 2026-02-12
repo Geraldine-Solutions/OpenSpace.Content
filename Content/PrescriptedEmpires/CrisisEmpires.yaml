@@ -1,0 +1,14 @@
+PrescriptedEmpires:
+  - Empire:
+      UniqueId: "Prescripted_Empire_Crisis1"
+      Name: "TEXT_Prescripted_Empire_Crisis1_Name"
+      Flag: "flag_default"
+      Color: "#D0021B"
+      Species: "species_human"
+      StartingInit: "empire_init_01"
+      Era: "era_system"
+      EmpireTypeId: "empire_type_default"
+      SpawnEnabled: "always"
+      Ethics: ["ethic_fanatic_authoritarian"]
+      Civics: []
+      Authority: "auth_democratic"

@@ -216,6 +216,10 @@ Materials:
     Properties:
 
       _SphereMaskPosition: "[0,0,0,1]"
+
+########
+# Misc
+########    
 #Prominances
   - UniqueId: "mat_Prominence_Detail_Distort"
     Name: "Prominence + Fade Edge + Clip Near + Distort + Detail"
@@ -274,6 +278,29 @@ Materials:
       _ScatteringOuter: "[1,0.25,0.25,0.1]"
       _ScatteringTerms: "[500,500,2,-2]"
       _SphereMaskPosition: "#000000FF"
+
+#Starfield
+  - UniqueId: "mat_Starfield"
+    Name: "Starfield"
+    Shader: "Geraldine/4XSpace/Rendering/Starfield"
+    Properties:
+
+      _DstBlend: "One"
+      _AlignTo: "View"
+
+      # Floats
+      _PowerRGB: "0"
+      _NearFade: "0"
+      _NearRangeRecip: "1"
+      _NearTex: ""
+      _FarFade: "0"
+      _FarRadius: "100"
+      _FarRangeRcip: "1"
+      _FarTex: ""
+      _Pulse: "0"
+      _PulseMin: "0.5"
+      _PulseMax: "1"
+      _PulseSpeed: "100"
 
 #Hyper Line
   - UniqueId: "mat_hyper_line"

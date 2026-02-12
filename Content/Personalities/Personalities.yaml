@@ -1,0 +1,22 @@
+Personalities:
+  - Personality:
+      UniqueId: "personality_default_room"
+      Name: "Default"
+      allow_ethics: []
+      weight: 1.0
+      modifiers: {}
+      behaviour_flags: []
+  - Personality:
+      UniqueId: "personality_diplomatic_room"
+      Name: "Diplomatic"
+      allow_ethics: ["ethic_xenophile", "ethic_fanatic_xenophile", "ethic_egalitarian", "ethic_fanatic_egalitarian"]
+      weight: 2.0
+      modifiers: {}
+      behaviour_flags: []
+  - Personality:
+      UniqueId: "personality_militarist_room"
+      Name: "Militarist"
+      allow_ethics: ["ethic_militarist", "ethic_fanatic_militarist"]
+      weight: 2.0
+      modifiers: {}
+      behaviour_flags: ["conqueror"]

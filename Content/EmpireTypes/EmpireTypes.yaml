@@ -1,0 +1,31 @@
+EmpireTypes:
+  - EmpireType:
+      UniqueId: "empire_type_default"
+      Name: "Default"
+      randomize_ethos: yes
+      playable: yes
+      diplomatic_wars: yes
+      relations: yes
+      ai:
+        enabled: yes
+        declare_war: yes
+        colonizer: yes
+        internal_policies: yes
+        construction: yes
+        tech: yes
+        modules: []
+  - EmpireType:
+      UniqueId: "empire_type_fallen"
+      Name: "Fallen Empire"
+      randomize_ethos: no
+      playable: no
+      diplomatic_wars: no
+      relations: yes
+      ai:
+        enabled: yes
+        declare_war: no
+        colonizer: no
+        internal_policies: yes
+        construction: yes
+        tech: yes
+        modules: []

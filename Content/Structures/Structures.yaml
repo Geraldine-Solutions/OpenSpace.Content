@@ -1,0 +1,79 @@
+Structures:
+  # Era-Specific Starting Structures
+  - Structure:
+      UniqueId: "structure_hex_outpost"
+      Name: "Hex Outpost"
+      StructureType: "outpost"
+      BaseHealth: 70
+      MaxHealth: 70
+      Capabilities:
+        - "sensor"
+        - "defense"
+      StructureCost:
+        energy: 35
+        minerals: 50
+        building_materials: 50
+      RenderEntity: "RenderEntity_Placeholder"
+      Icon: "Icon_HexOutpost"
+      SensorRange: 3
+
+  - Structure:
+      UniqueId: "structure_region_base"
+      Name: "Region Base"
+      StructureType: "base"
+      BaseHealth: 90
+      MaxHealth: 90
+      Capabilities:
+        - "command"
+        - "sensor"
+        - "defense"
+      StructureCost:
+        energy: 50
+        minerals: 70
+        building_materials: 70
+      RenderEntity: "RenderEntity_Placeholder"
+      Icon: "Icon_RegionBase"
+      CommandRadius: 5
+      SensorRange: 5
+
+  - Structure:
+      UniqueId: "structure_celestial_station"
+      Name: "Celestial Station"
+      StructureType: "station"
+      BaseHealth: 120
+      MaxHealth: 120
+      Capabilities:
+        - "command"
+        - "sensor"
+        - "defense"
+        - "coordination"
+      StructureCost:
+        energy: 70
+        minerals: 90
+        rare_metals: 15
+        building_materials: 90
+      RenderEntity: "UI_Space_Station_Render_Entity"
+      Icon: "Icon_CelestialStation"
+      CommandRadius: 8
+      SensorRange: 10
+
+  - Structure:
+      UniqueId: "structure_system_command"
+      Name: "System Command"
+      StructureType: "command_post"
+      BaseHealth: 150
+      MaxHealth: 150
+      Capabilities:
+        - "command"
+        - "coordination"
+        - "sensor"
+        - "detection"
+      StructureCost:
+        energy: 100
+        minerals: 120
+        rare_metals: 30
+        building_materials: 120
+      RenderEntity: "RenderEntity_Placeholder"
+      Icon: "Icon_SystemCommand"
+      CommandRadius: 12
+      SensorRange: 15

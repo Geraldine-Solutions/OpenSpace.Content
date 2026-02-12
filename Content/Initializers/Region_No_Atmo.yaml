@@ -1,4 +1,4 @@
-﻿####### Matrix #####
+####### Matrix #####
 #####  |Hot |Temperate |Cold |
 # Dry  | X  |    X     | X   |
 # Mild | X  |    X     | X   |
@@ -8,7 +8,7 @@ Initializers:
   - Region:
       UniqueId: region_no_atmo_01
       Name: "Text_Vacuum_Ranges"
-      RenderEntity: "UI_Headless_Floating_Target"
+      RenderEntity: "UI_Region_Render_Entity"
       AllowedTemperatures:
         - temp_Cold
         - temp_Temperate
@@ -23,7 +23,7 @@ Initializers:
   - Region:
       UniqueId: region_no_atmo_02
       Name: "Text_Scorched_Wastes"
-      RenderEntity: "UI_Headless_Floating_Target"
+      RenderEntity: "UI_Region_Render_Entity"
       AllowedTemperatures:
         - temp_Hot
       AllowedHumidityLevels:
@@ -36,7 +36,7 @@ Initializers:
   - Region:
       UniqueId: region_no_atmo_03
       Name: "Text_Frozen_Wastes"
-      RenderEntity: "UI_Headless_Floating_Target"
+      RenderEntity: "UI_Region_Render_Entity"
       AllowedTemperatures:
         - temp_Cold
       AllowedHumidityLevels:

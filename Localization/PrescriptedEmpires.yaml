@@ -1,0 +1,16 @@
+Localization:
+  - LocalizableText:
+      UniqueId: TEXT_Prescripted_Empire_Humans1_Name
+      Name: "Prescripted_Empire_Humans1_Name"
+      Translations:
+        en-US: "United Earth Government"
+        fr: "Gouvernement de la Terre Unie"
+        es: "Gobierno de la Tierra Unida"
+        de: "Vereinigte Erde Regierung"
+        ru: "Правительство Объединенной Земли"
+        zh-Hans: "联合国地球政府"
+  - LocalizableText:
+      UniqueId: TEXT_Prescripted_Empire_Crisis1_Name
+      Name: "Prescripted_Empire_Crisis1_Name"
+      Translations:
+        en-US: "The Crisis"

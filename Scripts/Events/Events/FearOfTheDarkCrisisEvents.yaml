@@ -1,0 +1,117 @@
+# Fear of the Dark crisis chain (Stellaris origin).
+#
+# Two layers:
+# 1. Generation events (3) – run during world generation. Each: do generation work, schedule the
+#    corresponding runtime event for in-game year, then immediately call the next generation event.
+# 2. Runtime events (3) – fire at years 1500, 2000, 2500 (the sky falls, great divergence, war beneath).
+#
+# Flow: Select generation.crisis.region_mid.fear_of_dark_falling_sky from pool → fire it →
+#   schedules fear_of_dark.runtime.falling_sky for year 1500, trigger_events great_divergence gen →
+#   great_divergence gen schedules fear_of_dark.runtime.great_divergence for 2000, trigger_events war_beneath gen →
+#   war_beneath gen schedules fear_of_dark.runtime.war_beneath for 2500.
+
+Events:
+  # ========== Generation events (run at generation; schedule runtime event then call next gen event) ==========
+  - UniqueId: "generation.crisis.region_mid.fear_of_dark_falling_sky"
+    Name: "Generation: Fear of the Dark – The Falling Sky"
+    Title: ""
+    Description: ""
+    Type: "generation_event"
+    Scope: "celestial_body"
+    IsTriggeredOnly: false
+    ShowModal: false
+    SpawnChance: 15
+    ScaledSpawnChance: 15
+    Flags:
+      - "crisis_mid"
+      - "crisis_region"
+      - "origin_fear_of_dark"
+    Conditions:
+      AND:
+        - celestial_has_moon: true
+        - system_has_colonizable_planet_excluding_current_and_moons: true
+    ImmediateEffects:
+      - type: "schedule_event"
+        payload:
+          event_id: "fear_of_dark.runtime.falling_sky"
+          year: 1500
+      # TODO: generation effects (e.g. spawn relevant nodes)
+      - type: "trigger_event"
+        payload:
+          event_id: "generation.crisis.region_end.fear_of_dark_great_divergence"
+
+  - UniqueId: "generation.crisis.region_end.fear_of_dark_great_divergence"
+    Name: "Generation: Fear of the Dark – The Great Divergence"
+    Title: ""
+    Description: ""
+    Type: "generation_event"
+    Scope: "celestial_body"
+    IsTriggeredOnly: true
+    ShowModal: false
+    Flags:
+      - "crisis_end"
+      - "crisis_region"
+      - "origin_fear_of_dark"
+    ImmediateEffects:
+      - type: "schedule_event"
+        payload:
+          event_id: "fear_of_dark.runtime.great_divergence"
+          year: 2000
+      # TODO: generation effects
+      - type: "trigger_event"
+        payload:
+          event_id: "generation.crisis.celestial_mid.fear_of_dark_war_beneath"
+
+  - UniqueId: "generation.crisis.celestial_mid.fear_of_dark_war_beneath"
+    Name: "Generation: Fear of the Dark – War Beneath the Same Sun"
+    Title: ""
+    Description: ""
+    Type: "generation_event"
+    Scope: "star_system"
+    IsTriggeredOnly: true
+    ShowModal: false
+    Flags:
+      - "crisis_mid"
+      - "crisis_celestial"
+      - "origin_fear_of_dark"
+    ImmediateEffects:
+      - type: "schedule_event"
+        payload:
+          event_id: "fear_of_dark.runtime.war_beneath"
+          year: 2500
+      # TODO: generation effects
+
+  # ========== Runtime events (fire at years 1500, 2000, 2500 – the actual narrative) ==========
+  - UniqueId: "fear_of_dark.runtime.falling_sky"
+    Name: "The Falling Sky"
+    Title: "The Falling Sky"
+    Description: "The moon catastrophically fractures, bombarding the planet and destabilizing climate. Resolution: Selective shielding and sacrifice."
+    Type: "crisis_event"
+    Scope: "celestial_body"
+    IsTriggeredOnly: true
+    ShowModal: true
+    Flags:
+      - "origin_fear_of_dark"
+    # Options and effects TBD
+
+  - UniqueId: "fear_of_dark.runtime.great_divergence"
+    Name: "The Great Divergence"
+    Title: "The Great Divergence"
+    Description: "Ideological schism over planetary confinement vs expansion. Resolution: Sanctioned exodus — splinter group granted resources to settle a second world."
+    Type: "crisis_event"
+    Scope: "celestial_body"
+    IsTriggeredOnly: true
+    ShowModal: true
+    Flags:
+      - "origin_fear_of_dark"
+
+  - UniqueId: "fear_of_dark.runtime.war_beneath"
+    Name: "War Beneath the Same Sun"
+    Title: "War Beneath the Same Sun"
+    Description: "Interplanetary war erupts between sibling civilizations. Resolution: Cold war stalemate."
+    Type: "crisis_event"
+    Scope: "star_system"
+    IsTriggeredOnly: true
+    ShowModal: true
+    Flags:
+      - "origin_fear_of_dark"

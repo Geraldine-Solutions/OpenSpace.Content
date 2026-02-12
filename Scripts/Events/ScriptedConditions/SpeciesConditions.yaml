@@ -1,0 +1,6 @@
+ScriptedConditions:
+  - UniqueId: "is_human_species"
+    Description: "True if the empire species is human"
+    Conditions:
+      has_species: "species_human"
+

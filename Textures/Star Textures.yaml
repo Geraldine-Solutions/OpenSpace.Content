@@ -37,3 +37,22 @@
     FilterMode: "Trilinear"
     WrapMode: "Repeat"
     AnisoLevel: 4
+#Nebula
+  - UniqueId: "tex_starfield_nebula"
+    Kind: "Sprite"
+    Path: "Stars/NebulaBillboard.png"
+    SpriteMode: "Single"
+    MeshTight: "Tight"
+    ExtrudeEdges: 1
+    Pivot: "Center"
+    GeneratePhysicsShape: true
+    WrapMode: "Clamp"
+    FilterMode: "Trilinear"
+  - UniqueId: "tex_starfield_nebula_color"
+    Kind: "Texture2D"
+    Path: "Stars/NebulaColor.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Bilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 1

@@ -1,16 +1,31 @@
-﻿Initializers:
+﻿# Variable definitions (YAML anchors)
+default_orbit_distance: &default_orbit_distance 5
+asteroid_belt_radius: &asteroid_belt_radius 9.5
+large_asteroid_belt_radius: &large_asteroid_belt_radius 12
+close_orbit_distance: &close_orbit_distance 2
+medium_orbit_distance: &medium_orbit_distance 2.5
+inner_orbit_distance: &inner_orbit_distance 1
+moon_orbit_distance: &moon_orbit_distance 1
+usage_factor_high: &usage_factor_high 20
+usage_factor_medium: &usage_factor_medium 10
+count_small_range: &count_small_range [2, 10]
+count_medium_range: &count_medium_range [1, 4]
+count_large_range: &count_large_range [2, 5]
+far_orbit_distance: &far_orbit_distance 4
+
+Initializers:
 # Basic 1
   - StarSystem:
       UniqueId: basic_init_01
       RenderEntity: "UI_StarSystem_Render_Entity"
       Usage: misc_system_init
       UsageOdds:
-        - Factor: 20
+        - Factor: *usage_factor_high
       Children:
         - UniqueId: rl_standard_stars
-        - Count: [2, 10]
+        - Count: *count_small_range
           Orbit:
-            SemiMajorAxis: 5 #AU
+            SemiMajorAxis: *default_orbit_distance #AU
           Neighbors:
             - Count: [0, 1]
               Orbit:
@@ -21,27 +36,28 @@
       RenderEntity: "UI_StarSystem_Render_Entity"
       Usage: misc_system_init
       UsageOdds:
-        - Factor: 20
+        - Factor: *usage_factor_high
       AsteroidBelts:
         - Class: rocky_asteroid_belt
-          Radius: 9.5 #AU
+          Radius: *asteroid_belt_radius #AU
+          Width: 0.5 #AU
       Children:
         - UniqueId: rl_standard_stars
         - Count: 2
           Orbit:
-            SemiMajorAxis: 2 #AU
-        - Count: [1, 4]
+            SemiMajorAxis: *close_orbit_distance #AU
+        - Count: *count_medium_range
           UniqueId: rl_asteroids
           Orbit:
             IsAbsolute: true
-            SemiMajorAxis: 9.5 #AU
-        - Count: [2, 5]
+            SemiMajorAxis: *asteroid_belt_radius #AU
+        - Count: *count_large_range
           Orbit:
-            SemiMajorAxis: 2.5 #AU
+            SemiMajorAxis: *medium_orbit_distance #AU
           Neighbors:
             - Count: [0, 1]
               Orbit:
-                SemiMajorAxis: 1 #AU
+                SemiMajorAxis: *inner_orbit_distance #AU
                 MeanAnomaly: 0.3
                 OrbitalPeriod: 27.3
 # Basic 3
@@ -50,43 +66,80 @@
       RenderEntity: "UI_StarSystem_Render_Entity"
       Usage: misc_system_init
       UsageOdds:
-        - Factor: 10
+        - Factor: *usage_factor_medium
       Children:
         - UniqueId: rl_standard_stars
         - Count: [0, 1]
           Orbit:
-            SemiMajorAxis: 1 #AU
-        - Count: [1, 2]
+            SemiMajorAxis: *inner_orbit_distance #AU
+        - Count: [1, 2]  # Keep specific range for gas giants
           UniqueId: rl_gas_giants
           Orbit:
             SemiMajorAxis: 6 #AU
           Neighbors:
-            - Count: [1, 4]
+            - Count: *count_medium_range
               Orbit:
-                SemiMajorAxis: 1 #AU
+                SemiMajorAxis: *inner_orbit_distance #AU
         - Count: [0, 2]
           Orbit:
-            SemiMajorAxis: 2 #AU
+            SemiMajorAxis: *close_orbit_distance #AU
 # Basic 4
   - StarSystem:
       UniqueId: basic_init_04
       RenderEntity: "UI_StarSystem_Render_Entity"
       Usage: misc_system_init
       UsageOdds:
-        - Factor: 10
+        - Factor: *usage_factor_medium
       AsteroidBelts:
         - Class: rocky_asteroid_belt
-          Radius: 12 #AU
+          Radius: *large_asteroid_belt_radius #AU
+          Width: 1 #AU
       Children:
         - UniqueId: rl_standard_stars
         - Count: [3, 6]
           UniqueId: rl_asteroids
           Orbit:
             IsAbsolute: true
-            SemiMajorAxis: 12 #AU
+            SemiMajorAxis: *large_asteroid_belt_radius #AU
         - Count: [0, 2]
           Orbit:
-            SemiMajorAxis: 2 #AU
+            SemiMajorAxis: *close_orbit_distance #AU
         - Count: [0, 2]
           Orbit:
-            SemiMajorAxis: 4 #AU
+            SemiMajorAxis: *far_orbit_distance #AU
+
+# Binary Star Systems
+# Binary 1 - Simple binary with orbiting planets
+  - StarSystem:
+      UniqueId: binary_init_01
+      RenderEntity: "UI_StarSystem_Render_Entity"
+      Usage: misc_system_init
+      UsageOdds:
+        - Factor: 6
+      Children:
+        - UniqueId: rl_binary_stars
+        - Count: [2, 10] # planet count min 2 max 10
+          Orbit:
+            SemiMajorAxis: 20 # AU (orbit_distance = 20)
+          Neighbors:
+            - Count: [0, 1] # moon count min 0 max 1
+              Orbit:
+                SemiMajorAxis: 5 # AU (orbit_distance = 5)
+
+# Trinary Star Systems
+# Trinary 1 - Three stars in triangular arrangement
+  - StarSystem:
+      UniqueId: trinary_init_01
+      RenderEntity: "UI_StarSystem_Render_Entity"
+      Usage: misc_system_init
+      UsageOdds:
+        - Factor: 3
+      Children:
+        - UniqueId: rl_trinary_stars
+        - Count: [2, 10] # Planets orbiting system
+          Orbit:
+            SemiMajorAxis: 20 # AU (orbit_distance = 20)
+          Neighbors:
+            - Count: [0, 1] # moon count min 0 max 1
+              Orbit:
+                SemiMajorAxis: 5 # AU (orbit_distance = 5)

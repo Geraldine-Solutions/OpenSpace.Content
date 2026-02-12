@@ -1,4 +1,4 @@
-﻿LocalizableText:
+LocalizableText:
   UniqueId: text_era_genesis
   Name: "Genesis Era"
   Translations:
@@ -41,3 +41,36 @@ LocalizableText:
     de: "Interstellare Ära"
     ru: "Межзвёздная Эра"
     zh-Hans: "星际时代"
+---
+LocalizableText:
+  UniqueId: text_era_hex
+  Name: "Hex Era"
+  Translations:
+    en-US: "Hex Era"
+    fr: "Ère Hexagonale"
+    es: "Era Hexagonal"
+    de: "Hex-Ära"
+    ru: "Эра Гексагона"
+    zh-Hans: "六边形时代"
+---
+LocalizableText:
+  UniqueId: text_era_region
+  Name: "Region Era"
+  Translations:
+    en-US: "Region Era"
+    fr: "Ère Régionale"
+    es: "Era Regional"
+    de: "Regions-Ära"
+    ru: "Эра Региона"
+    zh-Hans: "区域时代"
+---
+LocalizableText:
+  UniqueId: text_era_system
+  Name: "System Era"
+  Translations:
+    en-US: "System Era"
+    fr: "Ère Systémique"
+    es: "Era del Sistema"
+    de: "System-Ära"
+    ru: "Эра Системы"
+    zh-Hans: "系统时代"

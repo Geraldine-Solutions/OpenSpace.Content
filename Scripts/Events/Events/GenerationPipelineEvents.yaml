@@ -1,0 +1,95 @@
+# Generation pipeline event definitions (Stellaris-style on_actions)
+# Factories fire triggers like "on_generation_populate_galaxy"; these triggered-only events
+# exist primarily as modding hook points. By default they do nothing.
+Events:
+  # Galaxy scope hooks
+  - UniqueId: "generation.on_generation_galaxy_lites_built"
+    Name: "Generation - Galaxy Lites Built"
+    Title: "Generation Hook"
+    Description: "Hook: galaxy system-lites and adjacency have been built."
+    Type: "generation_event"
+    Scope: "galaxy"
+    IsTriggeredOnly: true
+    ShowModal: false
+    PreTriggers:
+      - "on_generation_galaxy_lites_built"
+
+  - UniqueId: "generation.on_generation_populate_galaxy"
+    Name: "Generation - Populate Galaxy"
+    Title: "Generation Hook"
+    Description: "Hook: decide empires/system plan/special systems. Write results via generation_* effects."
+    Type: "generation_event"
+    Scope: "galaxy"
+    IsTriggeredOnly: true
+    ShowModal: false
+    PreTriggers:
+      - "on_generation_populate_galaxy"
+
+  - UniqueId: "generation.on_generation_complete"
+    Name: "Generation - Complete"
+    Title: "Generation Hook"
+    Description: "Hook: generation finished (before on_game_started)."
+    Type: "generation_event"
+    Scope: "galaxy"
+    IsTriggeredOnly: true
+    ShowModal: false
+    PreTriggers:
+      - "on_generation_complete"
+
+  # Node population hooks (these are fired by NodeFactoryBase during lazy generation)
+  - UniqueId: "generation.on_generation_populate_children_lazy.system"
+    Name: "Generation - Populate System Children (Lazy)"
+    Title: "Generation Hook"
+    Description: "Hook: before lazy system children are collected (celestials)."
+    Type: "generation_event"
+    Scope: "star_system"
+    IsTriggeredOnly: true
+    ShowModal: false
+    PreTriggers:
+      - "on_generation_populate_children_lazy"
+
+  - UniqueId: "generation.on_generation_populate_children_lazy.celestial"
+    Name: "Generation - Populate Celestial Children (Lazy)"
+    Title: "Generation Hook"
+    Description: "Hook: before lazy celestial children are collected (regions)."
+    Type: "generation_event"
+    Scope: "celestial_body"
+    IsTriggeredOnly: true
+    ShowModal: false
+    PreTriggers:
+      - "on_generation_populate_children_lazy"
+
+  - UniqueId: "generation.on_generation_populate_children_lazy.region"
+    Name: "Generation - Populate Region Children (Lazy)"
+    Title: "Generation Hook"
+    Description: "Hook: before lazy region children are collected (hexes)."
+    Type: "generation_event"
+    Scope: "region"
+    IsTriggeredOnly: true
+    ShowModal: false
+    PreTriggers:
+      - "on_generation_populate_children_lazy"
+
+  # Empire completion hooks
+  - UniqueId: "generation.on_generation_empire_finished_to_era_depth"
+    Name: "Generation - Empire Finished To Era Depth"
+    Title: "Generation Hook"
+    Description: "Hook: empire's home area has been generated down to its era depth."
+    Type: "generation_event"
+    Scope: "empire"
+    IsTriggeredOnly: true
+    ShowModal: false
+    PreTriggers:
+      - "on_generation_empire_finished_to_era_depth"
+
+  - UniqueId: "generation.generate_starting_assets"
+    Name: "Generation - Generate Starting Assets"
+    Title: "Generation Hook"
+    Description: "Hook: spawn starting structures/units appropriate for the empire era."
+    Type: "generation_event"
+    Scope: "empire"
+    IsTriggeredOnly: true
+    ShowModal: false
+    PreTriggers:
+      - "generate_starting_assets"
+

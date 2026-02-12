@@ -1,5 +1,11 @@
-﻿Species:
+Species:
   UniqueId: s_Humanoid_1
+  Name: Human
+  Plural: Humans
+  Adjective: Human
+---
+Species:
+  UniqueId: species_human
   Name: Human
   Plural: Humans
   Adjective: Human

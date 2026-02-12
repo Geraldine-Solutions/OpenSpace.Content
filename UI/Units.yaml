@@ -1,0 +1,69 @@
+UI:
+  # Single placeholder render-entity definition used by ALL units and structures for now.
+  - gui:
+      UniqueId: "RenderEntity_Placeholder"
+      Name: "RenderEntity_Placeholder"
+      IsPrefab: true
+      Components:
+        FloatingObject:
+          requiresFloatingCamera: true
+        FloatingSelectable:
+          # Keep this enabled so units/structures remain selectable while we build real render entities.
+          isMovable: true
+          uiPanelDefinition: "unit_detail_panel"
+        FloatingScaler:
+          Target: "{Children.Mesh}"
+          Scale: [1, 1, 1]
+          Multiplier: 0.04
+          Range: "50 AU"
+      Children:
+        - Name: Mesh
+          Components:
+            Transform:
+              localScale: [300000, 300000, 300000]
+            MeshFilter:
+              sharedMesh: "Meshes/Geosphere"
+            MeshRenderer:
+              material: Standard
+              color: [1, 0, 1, 1]
+              shadowCastingMode: Off
+              receiveShadows: false
+              enabled: true
+
+        - Name: Nameplate
+          Components:
+            Transform:
+              localPosition: [0, 36000, 0]
+              localScale: [120, 120, 120]
+            Canvas:
+              renderMode: WorldSpace
+              sortingOrder: 100
+            FloatingSelectable:
+              isMovable: true
+              uiPanelDefinition: "unit_detail_panel"
+            Billboard:
+              AvoidClipping: true
+          Children:
+            - Name: Background
+              Components:
+                RectTransform:
+                  anchorMin: [0.5, 0.5]
+                  anchorMax: [0.5, 0.5]
+                  pivot: [0.5, 0.5]
+                  sizeDelta: [220, 45]
+                Image:
+                  color: "{Scope.Empire.Color}"
+                  raycastTarget: true
+            - Name: NameText
+              Components:
+                RectTransform:
+                  anchorMin: [0, 0]
+                  anchorMax: [1, 1]
+                  offsetMin: [5, 5]
+                  offsetMax: [-5, -5]
+                Text:
+                  text: "{Scope.Name}"
+                  fontSize: 18
+                  alignment: MiddleCenter
+                  color: [1, 1, 1, 1]
+                  raycastTarget: false

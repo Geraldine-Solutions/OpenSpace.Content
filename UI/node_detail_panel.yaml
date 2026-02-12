@@ -1,0 +1,174 @@
+gui:
+  UniqueId: node_detail_panel
+  Components:
+      RectTransform:
+        anchorMin: [0.5, 0.5]
+        anchorMax: [0.5, 0.5]
+        pivot: [0.5, 0.5]
+        sizeDelta: [600, 400]
+        anchoredPosition: [0, 0]
+      CanvasGroup:
+        alpha: 1
+        interactable: true
+        blocksRaycasts: true
+      Image:
+        color: "#000000E9"
+      VerticalLayoutGroup:
+        spacing: 10
+        childAlignment: UpperLeft
+        childControlWidth: true
+        childControlHeight: false
+        childForceExpandWidth: true
+        childForceExpandHeight: false
+  Children:
+    - Name: title_text
+      Components:
+        RectTransform:
+          anchorMin: [0, 0]
+          anchorMax: [1, 1]
+          sizeDelta: [0, 0]
+          pivot: [0.5, 0.5]
+        TextMeshProUGUI:
+          text: "{Scope.Title}"
+          fontSize: 24
+          color: "#FFFFFF"
+          alignment: Center
+          fontStyle: Bold
+        LayoutElement:
+          minHeight: 40
+          preferredHeight: 40
+
+    - Name: resources_section
+      Components:
+        RectTransform:
+          anchorMin: [0, 0]
+          anchorMax: [1, 1]
+          sizeDelta: [0, 0]
+          pivot: [0.5, 0.5]
+        VerticalLayoutGroup:
+          spacing: 5
+          childAlignment: UpperLeft
+          childControlWidth: true
+          childControlHeight: false
+          childForceExpandWidth: true
+          childForceExpandHeight: false
+      Children:
+        - Name: resources_header
+          Components:
+            RectTransform:
+              anchorMin: [0, 0]
+              anchorMax: [1, 1]
+              sizeDelta: [0, 0]
+              pivot: [0.5, 0.5]
+            TextMeshProUGUI:
+              text: "Resources:"
+              fontSize: 18
+              color: "#FFFFFF"
+              fontStyle: Bold
+            LayoutElement:
+              minHeight: 25
+              preferredHeight: 25
+
+        - Name: resources_text
+          Components:
+            RectTransform:
+              anchorMin: [0, 0]
+              anchorMax: [1, 1]
+              sizeDelta: [0, 0]
+              pivot: [0.5, 0.5]
+            TextMeshProUGUI:
+              text: "{Scope.ResourcesText}"
+              fontSize: 14
+              color: "#FFFFFF"
+              alignment: Left
+              enableWordWrapping: true
+              overflowMode: Overflow
+            LayoutElement:
+              minHeight: 60
+              preferredHeight: 60
+              flexibleHeight: 1
+
+    - Name: modifiers_section
+      Components:
+        RectTransform:
+          anchorMin: [0, 0]
+          anchorMax: [1, 1]
+          sizeDelta: [0, 0]
+          pivot: [0.5, 0.5]
+        VerticalLayoutGroup:
+          spacing: 5
+          childAlignment: UpperLeft
+          childControlWidth: true
+          childControlHeight: false
+          childForceExpandWidth: true
+          childForceExpandHeight: false
+      Children:
+        - Name: modifiers_header
+          Components:
+            RectTransform:
+              anchorMin: [0, 0]
+              anchorMax: [1, 1]
+              sizeDelta: [0, 0]
+              pivot: [0.5, 0.5]
+            TextMeshProUGUI:
+              text: "Modifiers:"
+              fontSize: 18
+              color: "#FFFFFF"
+              fontStyle: Bold
+            LayoutElement:
+              minHeight: 25
+              preferredHeight: 25
+
+        - Name: modifiers_text
+          Components:
+            RectTransform:
+              anchorMin: [0, 0]
+              anchorMax: [1, 1]
+              sizeDelta: [0, 0]
+              pivot: [0.5, 0.5]
+            TextMeshProUGUI:
+              text: "{Scope.ModifiersText}"
+              fontSize: 14
+              color: "#FFFFFF"
+              alignment: Left
+              enableWordWrapping: true
+              overflowMode: Overflow
+            LayoutElement:
+              minHeight: 60
+              preferredHeight: 60
+              flexibleHeight: 1
+
+    - Name: close_button
+      Components:
+        RectTransform:
+          sizeDelta: [100, 35]
+          pivot: [0.5, 0.5]
+        Button:
+          targetGraphic: "{Children.Background}"
+          transition: ColorTint
+          colors:
+            normalColor: "#333333FF"
+            highlightedColor: "#4D4D4DFF"
+            pressedColor: "#1A1A1AFF"
+            disabledColor: "#33333380"
+          interactable: true
+        TextMeshProUGUI:
+          text: "Close"
+          fontSize: 16
+          color: "#FFFFFF"
+          alignment: Center
+        LayoutElement:
+          minHeight: 35
+          preferredHeight: 35
+          minWidth: 100
+          preferredWidth: 100
+      Children:
+        - Name: "Background"
+          Components:
+            RectTransform:
+              anchorMin: [0, 0]
+              anchorMax: [1, 1]
+              sizeDelta: [0, 0]
+              pivot: [0.5, 0.5]
+            Image:
+              color: "#333333FF"

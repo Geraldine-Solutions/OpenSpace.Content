@@ -1,0 +1,140 @@
+Modifiers:
+  # Production Modifiers
+  - Modifier:
+      UniqueId: mod_production_boost
+      Name: "Production Boost"
+      Id: "ProductionBoost"
+      Target: "Self"
+      Value: 0.25
+      Duration: -1
+      IsMultiplicative: false
+      SpawnChance: 20
+      ScaledSpawnChance: 40
+      UsageOdds:
+        - HasFlag: "Fertile"
+          Factor: 2.0
+        - HasFlag: "Plains"
+          Factor: 1.5
+
+  - Modifier:
+      UniqueId: mod_research_bonus
+      Name: "Research Bonus"
+      Id: "ResearchBonus"
+      Target: "Recursive"
+      Value: 0.15
+      Duration: -1
+      IsMultiplicative: false
+      SpawnChance: 10
+      ScaledSpawnChance: 25
+      MaxInstances: 1
+      UsageOdds:
+        - HasFlag: "Scientific"
+          Factor: 3.0
+        - HasFlag: "Ancient"
+          Factor: 2.5
+
+  # Environmental Modifiers
+  - Modifier:
+      UniqueId: mod_harsh_environment
+      Name: "Harsh Environment"
+      Id: "HarshEnvironment"
+      Target: "Self"
+      Value: -0.2
+      Duration: -1
+      IsMultiplicative: false
+      ResourceType: "Population"
+      SpawnChance: 30
+      ScaledSpawnChance: 50
+      UsageOdds:
+        - HasFlag: "Harsh"
+          Factor: 2.0
+        - HasFlag: "Extreme"
+          Factor: 1.8
+
+  - Modifier:
+      UniqueId: mod_defensive_position
+      Name: "Defensive Position"
+      Id: "DefensiveBonus"
+      Target: "Self"
+      Value: 0.3
+      Duration: -1
+      IsMultiplicative: false
+      ResourceType: "Military"
+      SpawnChance: 25
+      ScaledSpawnChance: 45
+      UsageOdds:
+        - HasFlag: "Mountain"
+          Factor: 2.0
+        - HasFlag: "Strategic"
+          Factor: 1.6
+
+  # Resource-Specific Modifiers
+  - Modifier:
+      UniqueId: mod_energy_rich
+      Name: "Energy Rich"
+      Id: "EnergyBonus"
+      Target: "Self"
+      Value: 1.5
+      Duration: -1
+      IsMultiplicative: true
+      ResourceType: "Energy"
+      SpawnChance: 15
+      ScaledSpawnChance: 35
+      MaxInstances: 1
+      UsageOdds:
+        - HasFlag: "Volcanic"
+          Factor: 2.5
+        - HasFlag: "Energy"
+          Factor: 2.0
+
+  - Modifier:
+      UniqueId: mod_mineral_deposit
+      Name: "Mineral Deposit"
+      Id: "MineralBonus"
+      Target: "Self"
+      Value: 1.3
+      Duration: -1
+      IsMultiplicative: true
+      ResourceType: "Minerals"
+      SpawnChance: 20
+      ScaledSpawnChance: 40
+      UsageOdds:
+        - HasFlag: "Mineral"
+          Factor: 2.2
+        - HasFlag: "Rich"
+          Factor: 1.8
+
+  # Temporary Modifiers
+  - Modifier:
+      UniqueId: mod_temporal_anomaly
+      Name: "Temporal Anomaly"
+      Id: "TemporalAnomaly"
+      Target: "Neighbors"
+      Value: 0.1
+      Duration: 10
+      IsMultiplicative: false
+      SpawnChance: 3
+      ScaledSpawnChance: 10
+      MaxInstances: 1
+      UsageOdds:
+        - HasFlag: "Anomaly"
+          Factor: 5.0
+        - HasFlag: "Rare"
+          Factor: 3.0
+
+  - Modifier:
+      UniqueId: mod_seasonal_bloom
+      Name: "Seasonal Bloom"
+      Id: "SeasonalBloom"
+      Target: "Self"
+      Value: 0.4
+      Duration: 5
+      IsMultiplicative: false
+      ResourceType: "Food"
+      SpawnChance: 8
+      ScaledSpawnChance: 20
+      UsageOdds:
+        - HasFlag: "Fertile"
+          Factor: 2.5
+        - HasFlag: "Seasonal"
+          Factor: 2.0

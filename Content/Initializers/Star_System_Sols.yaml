@@ -1,0 +1,218 @@
+Initializers:
+# Standard Sol Start
+  - StarSystem:
+      UniqueId: "sol_system_init"
+      RenderEntity: "UI_StarSystem_Render_Entity"
+      Name: "TEXT_Sol"
+      Usage: "custom_empire"
+      Flags: ["sol_system"]
+      ExcludeFlags: ["unknown_regions", "bottleneck"]
+      Children:
+        - UniqueId: "star_init_g"
+          Name: "TEXT_Sol"
+          Size: 696340 # KM (Sun)
+          Density: 1408 # kg/m³ (Sun's average density)
+
+        - UniqueId: "molten_planet_init"
+          Name: "TEXT_Mercury"
+          MainTex: "tex_mercury_albedo"
+          Size: 2439.7 # KM
+          Density: 5427 # kg/m³ (rocky, dense core)
+          Orbit:
+            SemiMajorAxis: .39 # AU
+
+        - UniqueId: "barren_planet_init"
+          Name: "TEXT_Venus"
+          MainTex: "tex_venus_albedo"
+          Size: 6051.8 # KM
+          Density: 5243 # kg/m³ (similar to Earth)
+          Orbit:
+            SemiMajorAxis: .33 # AU
+
+        - UniqueId: "temperate_planet_init"
+          Name: "TEXT_Earth"
+          MainTex: "tex_earth_albedo"
+          HeightTex: "tex_earth_land_albedo"
+          Size: 6371 # KM
+          Density: 5514 # kg/m³ (Earth's average density)
+          Flags: ["era_celestial_start_node","home_planet"]
+          Orbit:
+            SemiMajorAxis: .28 # AU
+          Neighbors:
+            - Name: "TEXT_Luna"
+              UniqueId: "barren_planet_init"
+              MainTex: "tex_moon_albedo"
+              Size: 1737.4 # KM
+              Density: 3344 # kg/m³
+              Orbit:
+                SemiMajorAxis: 0.00257 # AU (Earth-Moon distance)
+          # Example: InitEffect runs after planet creation
+          # Demonstrates how modders can add custom initialization logic
+          InitEffect:
+            - type: "if"
+              payload:
+                condition:
+                  has_flag: "home_planet"
+                effects:
+                  - type: "scripted_effect"
+                    payload:
+                      effect_id: "generate_empire_home_planet"
+                  - type: "scripted_effect"
+                    payload:
+                      effect_id: "generate_start_deposits_and_blockers"
+
+        - UniqueId: "barren_planet_init"
+          Name: "TEXT_Mars"
+          MainTex: "tex_mars_albedo"
+          Size: 3389.5 # KM
+          Density: 3933 # kg/m³ (less dense than Earth)
+          Orbit:
+            SemiMajorAxis: .52 # AU
+
+        - UniqueId: "rl_asteroids"
+          Name: "TEXT_Ceres"
+          Size: 469.7 # KM
+          Density: 2000 # kg/m³ (typical rocky/icy mix)
+          Orbit:
+            SemiMajorAxis: .48 # AU
+
+        - UniqueId: "rl_asteroids"
+          Name: "TEXT_Pallas"
+          Size: 256 # KM
+          Density: 2000 # kg/m³ (typical rocky/icy mix)
+          Orbit:
+            SemiMajorAxis: 0 # AU
+
+        - UniqueId: "rl_asteroids"
+          Name: "TEXT_Juno"
+          Size: 117 # KM
+          Density: 2000 # kg/m³ (typical rocky/icy mix)
+          Orbit:
+            SemiMajorAxis: 0 # AU
+
+        - UniqueId: "rl_asteroids"
+          Name: "TEXT_Vesta"
+          Size: 262.7 # KM
+          Density: 2000 # kg/m³ (typical rocky/icy mix)
+          Orbit:
+            SemiMajorAxis: 0 # AU
+
+        - UniqueId: "gas_giant_init"
+          Name: "TEXT_Jupiter"
+          Size: 69911 # KM
+          Density: 1326 # kg/m³ (gas giant)
+          Orbit:
+            SemiMajorAxis: 3.2 # AU
+          Neighbors:
+            - Name: "TEXT_Io"
+              UniqueId: "molten_planet_init"
+              Size: 1821.6 # KM
+              Density: 3528 # kg/m³ (rocky)
+              Orbit:
+                SemiMajorAxis: 0.00282 # AU (Io)
+            - Name: "TEXT_Europa"
+              UniqueId: "frozen_planet_init"
+              Size: 1560.8 # KM
+              Density: 3013 # kg/m³ (icy)
+              Orbit:
+                SemiMajorAxis: 0.00449 # AU (Europa)
+            - Name: "TEXT_Ganymede"
+              UniqueId: "barren_planet_init"
+              Size: 2634.1 # KM
+              Density: 1942 # kg/m³ (icy)
+              Orbit:
+                SemiMajorAxis: 0.00716 # AU (Ganymede)
+            - Name: "TEXT_Callisto"
+              UniqueId: "rl_asteroids"
+              Size: 2410.3 # KM
+              Density: 1834 # kg/m³ (icy)
+              Orbit:
+                SemiMajorAxis: 0.0126 # AU (Callisto)
+
+        - UniqueId: "gas_giant_init"
+          Name: "TEXT_Saturn"
+          MainTex: "tex_saturn_albedo"
+          Size: 58232 # KM
+          Density: 687 # kg/m³ (gas giant, less dense)
+          Orbit:
+            SemiMajorAxis: 4.38 # AU
+          Neighbors:
+            - Name: "TEXT_Titan"
+              UniqueId: "ocean_planet_init"
+              Size: 2574.7 # KM
+              Density: 1881 # kg/m³ (icy)
+              Orbit:
+                SemiMajorAxis: 0.00817 # AU (Titan)
+
+        - UniqueId: "gas_giant_init"
+          Name: "TEXT_Uranus"
+          MainTex: "tex_uranus_albedo"
+          Size: 25362 # KM
+          Density: 1270 # kg/m³ (ice giant)
+          Orbit:
+            SemiMajorAxis: 9.72 # AU
+
+        - UniqueId: "gas_giant_init"
+          Name: "TEXT_Neptune"
+          MainTex: "tex_neptune_albedo"
+          Size: 24622 # KM
+          Density: 1638 # kg/m³ (ice giant)
+          Orbit:
+            SemiMajorAxis: 10.9 # AU
+          Neighbors:
+            - Name: "TEXT_Triton"
+              UniqueId: "frozen_planet_init"
+              Size: 1353.4 # KM
+              Density: 2060 # kg/m³ (icy)
+              Orbit:
+                SemiMajorAxis: 0.00237 # AU (Triton)
+
+        - UniqueId: "frozen_planet_init"
+          Name: "TEXT_Pluto"
+          Size: 1188.3 # KM
+          Density: 1854 # kg/m³ (icy dwarf planet)
+          Orbit:
+            SemiMajorAxis: 4.9 # AU
+
+        - UniqueId: "rl_asteroids"
+          Name: "TEXT_Makemake"
+          Size: 715 # KM
+          Density: 2000 # kg/m³ (typical rocky/icy mix)
+          Orbit:
+            SemiMajorAxis: 0 # AU
+
+        - UniqueId: "rl_asteroids"
+          Name: "TEXT_Huamea"
+          Size: 816 # KM (mean radius)
+          Density: 2000 # kg/m³ (typical rocky/icy mix)
+          Orbit:
+            SemiMajorAxis: 0 # AU
+
+        - UniqueId: "rl_asteroids"
+          Name: "TEXT_Varuna"
+          Size: 334 # KM
+          Density: 2000 # kg/m³ (typical rocky/icy mix)
+          Orbit:
+            SemiMajorAxis: 0 # AU
+
+      AsteroidBelts:
+        - Class: "rocky_asteroid_belt"
+          Radius: 2 # AU
+          Width: 0.25 # AU
+        - Class: "rocky_asteroid_belt"
+          Radius: 35 # AU
+          Width: 0.25 # AU
+      Neighbors:
+        - Distance: 1
+          Initializer: "alpha_centauri_init"
+
+# Alpha Centauri – guaranteed neighbor of Sol (nearest stellar system)
+  - StarSystem:
+      UniqueId: "alpha_centauri_init"
+      RenderEntity: "UI_StarSystem_Render_Entity"
+      Name: "Text_Alpha_Centauri"
+      Usage: "neighbor_system"
+      Flags: []
+      Children:
+        - UniqueId: "rl_standard_stars"
+          Size: 834900 # KM (Alpha Centauri A, G-type)

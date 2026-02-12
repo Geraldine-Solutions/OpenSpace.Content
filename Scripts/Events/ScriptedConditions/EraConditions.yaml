@@ -1,0 +1,21 @@
+ScriptedConditions:
+  - UniqueId: "is_era_hex"
+    Description: "True if the empire era is era_hex"
+    Conditions:
+      has_era: "era_hex"
+
+  - UniqueId: "is_era_region"
+    Description: "True if the empire era is era_region"
+    Conditions:
+      has_era: "era_region"
+
+  - UniqueId: "is_era_celestial"
+    Description: "True if the empire era is era_celestial"
+    Conditions:
+      has_era: "era_celestial"
+
+  - UniqueId: "is_era_system"
+    Description: "True if the empire era is era_system"
+    Conditions:
+      has_era: "era_system"
+

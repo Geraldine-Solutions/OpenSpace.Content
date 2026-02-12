@@ -124,6 +124,97 @@ gui:
               childControlWidth: false
               childControlHeight: false
           Children:
+            - Name: time_panel
+              Components:
+                RectTransform:
+                  sizeDelta: [260, $top_bar_button_height]
+                  pivot: [0.5, 0.5]
+                HorizontalLayoutGroup:
+                  spacing: $menu_spacing
+                  childAlignment: MiddleCenter
+                  childControlWidth: false
+                  childControlHeight: false
+              Children:
+                - Name: time_display
+                  Components:
+                    RectTransform:
+                      sizeDelta: [140, $top_bar_button_height]
+                      pivot: [0.5, 0.5]
+                    TextMeshProUGUI:
+                      text: "{Scope.TimeDisplay}"
+                      font: "Nacelle-Regular SDF"
+                      fontSize: $font_size_medium
+                      localizable: false
+                      color: "#FFFFFF"
+                      alignment: Center
+                      fontStyle: Bold
+                - Name: play_pause_button
+                  Components:
+                    RectTransform:
+                      sizeDelta: [$top_bar_button_height, $top_bar_button_height]  # Square button
+                      pivot: [0.5, 0.5]
+                    Button:
+                      targetGraphic: "{Children.Background}"
+                      transition: ColorTint
+                      colors:
+                        normalColor: [1, 1, 1, 1]
+                        highlightedColor: [1.2, 1.2, 1.2, 1]
+                        pressedColor: [0.8, 0.8, 0.8, 1]
+                        disabledColor: [0.5, 0.5, 0.5, 0.5]
+                      interactable: true
+                      onClicked: "ToggleSimulationPause:"
+                    TextMeshProUGUI:
+                      text: "{Scope.PauseButtonText}"
+                      font: "Nacelle-Regular SDF"
+                      fontSize: $font_size_large
+                      localizable: false
+                      color: "#FFFFFF"
+                      alignment: Center
+                  Children:
+                    - Name: "Background"
+                      Components:
+                        RectTransform:
+                          anchorMin: [0, 0]
+                          anchorMax: [1, 1]
+                          sizeDelta: [0, 0]
+                          pivot: [0.5, 0.5]
+                        Image:
+                          sprite: GFX_menu_button_normal
+                          color: [0.4, 0.4, 0.4, 1]
+                - Name: speed_button
+                  Components:
+                    RectTransform:
+                      sizeDelta: [50, $top_bar_button_height]
+                      pivot: [0.5, 0.5]
+                    Button:
+                      targetGraphic: "{Children.Background}"
+                      transition: ColorTint
+                      colors:
+                        normalColor: [1, 1, 1, 1]
+                        highlightedColor: [1.2, 1.2, 1.2, 1]
+                        pressedColor: [0.8, 0.8, 0.8, 1]
+                        disabledColor: [0.5, 0.5, 0.5, 0.5]
+                      interactable: true
+                      onClicked: "CycleTimeSpeed:"
+                    TextMeshProUGUI:
+                      text: "{Scope.SpeedDisplay}"
+                      font: "Nacelle-Regular SDF"
+                      fontSize: $font_size_medium
+                      localizable: false
+                      color: "#FFFFFF"
+                      alignment: Center
+                      fontStyle: Bold
+                  Children:
+                    - Name: "Background"
+                      Components:
+                        RectTransform:
+                          anchorMin: [0, 0]
+                          anchorMax: [1, 1]
+                          sizeDelta: [0, 0]
+                          pivot: [0.5, 0.5]
+                        Image:
+                          sprite: GFX_menu_button_normal
+                          color: [0.4, 0.4, 0.4, 1]
             - Name: settings_button
               Components:
                 RectTransform:

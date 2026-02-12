@@ -1,4 +1,4 @@
-﻿Age:
+Age:
   UniqueId: age_tribal
   Name: Tribal Age
   Tier: 1
@@ -38,34 +38,34 @@ Age:
   UniqueId: age_interstellar
   Name: Interstellar Age
   Tier: 7
-  EraId: era_interstellar
+  EraId: era_system
 ---
 Age:
   UniqueId: age_advanced_space
   Name: Advanced Spacefaring Age
   Tier: 8
-  EraId: era_interstellar
+  EraId: era_system
 ---
 Age:
   UniqueId: age_ascendant
   Name: Ascendant Age
   Tier: 9
-  EraId: era_interstellar
+  EraId: era_system
 ---
 Age:
   UniqueId: age_transcendent
   Name: Transcendent Age
   Tier: 10
-  EraId: era_interstellar
+  EraId: era_system
 ---
 Age:
   UniqueId: age_cosmic
   Name: Cosmic Age
   Tier: 11
-  EraId: era_interstellar
+  EraId: era_system
 ---
 Age:
   UniqueId: age_eternal
   Name: Eternal Age
   Tier: 12
-  EraId: era_interstellar 
+  EraId: era_system 

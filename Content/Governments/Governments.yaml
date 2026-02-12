@@ -1,0 +1,37 @@
+Governments:
+  - Government:
+      UniqueId: "gov_democratic_beacon"
+      Name: "Democratic Republic"
+      authority: "auth_democratic"
+      civics: ["civic_beacon_of_liberty"]
+      weight: 2.0
+      display_name: "Democratic Republic"
+      ruler_title: "President"
+      heir_title: "Successor"
+  - Government:
+      UniqueId: "gov_democratic_idealistic"
+      Name: "Idealistic Democracy"
+      authority: "auth_democratic"
+      civics: ["civic_idealistic_foundation"]
+      weight: 2.0
+      display_name: "Idealistic Democracy"
+      ruler_title: "President"
+      heir_title: "Successor"
+  - Government:
+      UniqueId: "gov_democratic_default"
+      Name: "Democracy"
+      authority: "auth_democratic"
+      civics: []
+      weight: 1.0
+      display_name: "Democracy"
+      ruler_title: "President"
+      heir_title: "Successor"
+  - Government:
+      UniqueId: "gov_default"
+      Name: "Default"
+      authority: null
+      civics: []
+      weight: 0.5
+      display_name: "Government"
+      ruler_title: "Ruler"
+      heir_title: "Heir"

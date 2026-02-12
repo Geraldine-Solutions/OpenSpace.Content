@@ -1,0 +1,78 @@
+Resources:
+  - UniqueId: "res_building_materials"
+    Name: "Building Materials"
+    Description: "Materials used for construction of buildings and infrastructure"
+    Category: "Basic"
+    Icon: "building_materials"
+    Color: "#8B4513"
+    Visible: true
+    CanStore: true
+    CanTrade: true
+    StorageCapacity: 0
+    DecayRate: 0
+    Tags: ["construction", "basic"]
+
+  - UniqueId: "res_food"
+    Name: "Food"
+    Description: "Nutritional resources required for population sustenance"
+    Category: "Basic"
+    Icon: "food"
+    Color: "#FFA500"
+    Visible: true
+    CanStore: true
+    CanTrade: true
+    StorageCapacity: 1000
+    DecayRate: 0.1
+    Tags: ["sustenance", "basic", "perishable"]
+
+  - UniqueId: "res_minerals"
+    Name: "Minerals"
+    Description: "Raw mineral resources for industrial production"
+    Category: "Strategic"
+    Icon: "minerals"
+    Color: "#708090"
+    Visible: true
+    CanStore: true
+    CanTrade: true
+    StorageCapacity: 0
+    DecayRate: 0
+    Tags: ["industrial", "strategic"]
+
+  - UniqueId: "res_energy"
+    Name: "Energy"
+    Description: "Energy resources for powering civilization"
+    Category: "Energy"
+    Icon: "energy"
+    Color: "#FFD700"
+    Visible: true
+    CanStore: true
+    CanTrade: true
+    StorageCapacity: 0
+    DecayRate: 0
+    Tags: ["energy", "power"]
+
+  - UniqueId: "res_rare_metals"
+    Name: "Rare Metals"
+    Description: "Precious and rare metallic elements"
+    Category: "Strategic"
+    Icon: "rare_metals"
+    Color: "#C0C0C0"
+    Visible: true
+    CanStore: true
+    CanTrade: true
+    StorageCapacity: 0
+    DecayRate: 0
+    Tags: ["rare", "strategic", "valuable"]
+
+  - UniqueId: "res_luxury_goods"
+    Name: "Luxury Goods"
+    Description: "High-value luxury items for trade and happiness"
+    Category: "Luxury"
+    Icon: "luxury_goods"
+    Color: "#FF69B4"
+    Visible: true
+    CanStore: true
+    CanTrade: true
+    StorageCapacity: 0
+    DecayRate: 0
+    Tags: ["luxury", "trade", "happiness"]

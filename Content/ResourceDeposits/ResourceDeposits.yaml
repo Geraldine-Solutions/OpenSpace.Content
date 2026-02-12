@@ -1,0 +1,86 @@
+ResourceDeposits:
+  - UniqueId: "deposit_forest"
+    ResourceId: "res_building_materials"
+    BaseYield: 150
+    Flags: ["renewable", "biological"]
+    Usage: "primary"
+    UsageOdds:
+      - HasFlag: "Temperate"
+        Factor: 2.0
+      - HasFlag: "Tropical"
+        Factor: 1.5
+    MaxInstances: 5
+    SpawnChance: 75
+    ScaledSpawnChance: 80
+
+  - UniqueId: "deposit_mineral_deposit"
+    ResourceId: "res_minerals"
+    BaseYield: 200
+    Flags: ["non-renewable", "strategic"]
+    Usage: "primary"
+    UsageOdds:
+      - HasFlag: "Mountain"
+        Factor: 3.0
+      - HasFlag: "Hills"
+        Factor: 2.0
+    MaxInstances: 3
+    SpawnChance: 60
+    ScaledSpawnChance: 70
+
+  - UniqueId: "deposit_energy_crystal"
+    ResourceId: "res_energy"
+    BaseYield: 100
+    Flags: ["renewable", "rare"]
+    Usage: "primary"
+    UsageOdds:
+      - HasFlag: "Volcanic"
+        Factor: 4.0
+      - HasFlag: "Mountain"
+        Factor: 2.0
+    MaxInstances: 2
+    SpawnChance: 40
+    ScaledSpawnChance: 50
+
+  - UniqueId: "deposit_farm"
+    ResourceId: "res_food"
+    BaseYield: 300
+    Flags: ["renewable", "agricultural"]
+    Usage: "primary"
+    UsageOdds:
+      - HasFlag: "Temperate"
+        Factor: 3.0
+      - HasFlag: "Tropical"
+        Factor: 2.0
+      - HasFlag: "Arid"
+        Factor: 1.2
+    MaxInstances: 8
+    SpawnChance: 85
+    ScaledSpawnChance: 90
+
+  - UniqueId: "deposit_rare_metal_vein"
+    ResourceId: "res_rare_metals"
+    BaseYield: 50
+    Flags: ["non-renewable", "rare", "valuable"]
+    Usage: "primary"
+    UsageOdds:
+      - HasFlag: "Mountain"
+        Factor: 5.0
+      - HasFlag: "Volcanic"
+        Factor: 3.0
+    MaxInstances: 1
+    SpawnChance: 25
+    ScaledSpawnChance: 30
+
+  - UniqueId: "deposit_luxury_estate"
+    ResourceId: "res_luxury_goods"
+    BaseYield: 75
+    Flags: ["renewable", "luxury"]
+    Usage: "primary"
+    UsageOdds:
+      - HasFlag: "Temperate"
+        Factor: 2.5
+      - HasFlag: "Tropical"
+        Factor: 2.0
+    MaxInstances: 2
+    SpawnChance: 30
+    ScaledSpawnChance: 40

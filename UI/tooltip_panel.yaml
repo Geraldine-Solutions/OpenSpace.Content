@@ -1,0 +1,36 @@
+gui:
+  UniqueId: tooltip_panel
+  Components:
+      RectTransform:
+        anchorMin: [0, 0]
+        anchorMax: [0, 0]
+        pivot: [0, 1]
+        sizeDelta: [200, 100]
+      CanvasGroup:
+        alpha: 1
+        interactable: false
+        blocksRaycasts: false
+      Image:
+        color: "#000000FF"
+      VerticalLayoutGroup:
+        spacing: 5
+        childAlignment: UpperLeft
+        childControlWidth: true
+        childControlHeight: true
+        childForceExpandWidth: false
+        childForceExpandHeight: false
+  Children:
+    - Name: tooltip_text
+      Components:
+        RectTransform:
+          anchorMin: [0, 0]
+          anchorMax: [1, 1]
+          sizeDelta: [0, 0]
+          pivot: [0.5, 0.5]
+        TextMeshProUGUI:
+          text: "{Scope.Text}"
+          fontSize: 14
+          color: "#FFFFFF"
+          alignment: Left
+          enableWordWrapping: true
+          overflowMode: Overflow

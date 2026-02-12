@@ -1,0 +1,16 @@
+# Scripted conditions used by crisis event pool eligibility (e.g. Fear of the Dark).
+# Referenced by event Conditions so eligibility is defined in YAML and built from scope/flag evaluation.
+
+ScriptedConditions:
+  - UniqueId: "celestial_has_moon"
+    Description: "True if the celestial (current scope) has at least one moon (has_moon flag set by generation)."
+    Conditions:
+      has_planet_flag: "has_moon"
+
+  - UniqueId: "system_has_colonizable_planet_excluding_current_and_moons"
+    Description: "True if the system (root scope) has at least one colonizable planet that is not the current celestial and not a moon of the current celestial."
+    Conditions:
+      system_has_child_matching:
+        condition:
+          colonizable_planet: true
+        exclude_current_and_moons: true

@@ -1,0 +1,300 @@
+Textures:
+#Earth
+  - UniqueId: "tex_earth_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Earth Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Earth Alpine
+  - UniqueId: "tex_earth_alpine_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Earth Alpine Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Earth Arctic
+  - UniqueId: "tex_earth_arctic_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Earth Arctic Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Earth Arid
+  - UniqueId: "tex_earth_arid_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Earth Arid Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Earth Desert
+  - UniqueId: "tex_earth_desert_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Earth Desert Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Earth Gaia
+  - UniqueId: "tex_earth_gaia_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Earth Gaia Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Earth Land
+  - UniqueId: "tex_earth_land_albedo"
+    Kind: "Single Channel"
+    TextureShape: "2D"
+    Channel: "Alpha"
+    AlphaSource: "From Gray Scale"
+    Path: "Planets/Sol/Earth Land.png"
+    MipMaps: false          # Match manual (Generate Mipmap off)
+    SRGB: false             # Linear for height/land data
+    FilterMode: "Bilinear"
+    WrapMode: "Repeat"       # Per-axis (U:Repeat, V:Clamp) not supported
+    AnisoLevel: 8
+#Earth Night
+  - UniqueId: "tex_earth_night_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Earth Night Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Earth Normal
+  - UniqueId: "tex_earth_normal_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Earth Normal Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Earth Nuked
+  - UniqueId: "tex_earth_nuked_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Earth Nuked Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Earth Ocean
+  - UniqueId: "tex_earth_ocean_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Earth Ocean Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Earth Relic
+  - UniqueId: "tex_earth_relic_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Earth Relic Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Earth Savannah
+  - UniqueId: "tex_earth_savannah_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Earth Savannah Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Earth Specular
+  - UniqueId: "tex_earth_specular_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Earth Specular Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Earth Tropical
+  - UniqueId: "tex_earth_tropical_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Earth Tropical Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Earth Tundra
+  - UniqueId: "tex_earth_tundra_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Earth Tundra Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Mars
+  - UniqueId: "tex_mars_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Mars Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Mars Cold
+  - UniqueId: "tex_mars_cold_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Mars Cold Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Mars Dry
+  - UniqueId: "tex_mars_dry_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Mars Dry Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Mars Gaia
+  - UniqueId: "tex_mars_gaia_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Mars Gaia Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Mars Wet
+  - UniqueId: "tex_mars_wet_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Mars Wet Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Mercury
+  - UniqueId: "tex_mercury_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Mercury Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Moon
+  - UniqueId: "tex_moon_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Moon Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Neptune
+  - UniqueId: "tex_neptune_albedo"
+    Kind: "Cubemap"
+    Path: "Planets/Marble_Flow.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Saturn
+  - UniqueId: "tex_saturn_albedo"
+    Kind: "Cubemap"
+    Path: "Planets/Marble_Flow.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Uranus
+  - UniqueId: "tex_uranus_albedo"
+    Kind: "Cubemap"
+    Path: "Planets/Marble_Flow.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Venus
+  - UniqueId: "tex_venus_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Sol/Venus Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Venus Cold
+  - UniqueId: "tex_venus_cold_albedo"
+    Kind: "Cubemap"
+    Path: "Planets/Sol/Venus Cold Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Venus Dry
+  - UniqueId: "tex_venus_dry_albedo"
+    Kind: "Cubemap"
+    Path: "Planets/Sol/Venus Dry Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Venus Gaia
+  - UniqueId: "tex_venus_gaia_albedo"
+    Kind: "Cubemap"
+    Path: "Planets/Sol/Venus Gaia Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Venus Shroud
+  - UniqueId: "tex_venus_shroud_albedo"
+    Kind: "Cubemap"
+    Path: "Planets/Sol/Venus Shroud Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+#Venus Wet
+  - UniqueId: "tex_venus_wet_albedo"
+    Kind: "Cubemap"
+    Path: "Planets/Sol/Venus Wet Albedo.png"
+    Layout: "Equirect"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
