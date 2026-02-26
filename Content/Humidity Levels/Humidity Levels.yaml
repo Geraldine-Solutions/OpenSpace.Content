@@ -1,10 +1,16 @@
-﻿Humidity Levels:
+Humidity Levels:
   - Humidity:
       UniqueId: hum_Dry
       Name: "Text_Dry"
+      MinValue: 0
+      MaxValue: 0.33
   - Humidity:
       UniqueId: hum_Mild
       Name: "Text_Mild"
+      MinValue: 0.33
+      MaxValue: 0.66
   - Humidity:
       UniqueId: hum_Wet
       Name: "Text_Wet"
+      MinValue: 0.66
+      MaxValue: 1

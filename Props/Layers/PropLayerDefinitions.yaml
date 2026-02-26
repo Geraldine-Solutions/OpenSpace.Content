@@ -1,0 +1,165 @@
+Props/Layers:
+  # =====================
+  # TREES
+  # =====================
+  - PropLayerDefinition:
+      LayerId: "layer_trees"
+      AppliesTo: "RegionPatch"
+      Bucket: "Trees"
+      Gates:
+        AND:
+          - gte:
+              field: "vegPotential"
+              value: 0.35
+      Density:
+        BasePerKm2: 1200
+        ScoreTerms:
+          - Kind: "Peak"
+            Field: "vegPotential"
+            Center: 0.75
+            Radius: 0.35
+            Weight: 1.0
+          - Kind: "Peak"
+            Field: "moisture"
+            Center: 0.65
+            Radius: 0.35
+            Weight: 0.7
+          - Kind: "PenaltyAbove"
+            Field: "slope"
+            Threshold: 0.45
+            Weight: 2.0
+      Placement:
+        MinHeightAboveSeaMeters: 2.0
+        MaxSlope: 0.5
+      Exclusion:
+        RoadsRadiusMeters: 6.0
+        RiversRadiusMeters: 10.0
+        StructuresRadiusMeters: 12.0
+        CitiesRadiusMeters: 18.0
+
+  # =====================
+  # SHRUBS
+  # =====================
+  - PropLayerDefinition:
+      LayerId: "layer_shrubs"
+      AppliesTo: "RegionPatch"
+      Bucket: "Shrubs"
+      Gates:
+        AND:
+          - gte:
+              field: "vegPotential"
+              value: 0.2
+      Density:
+        BasePerKm2: 2200
+        ScoreTerms:
+          - Kind: "Linear"
+            Field: "vegPotential"
+            Direction: "High"
+            Weight: 1.0
+          - Kind: "PenaltyAbove"
+            Field: "slope"
+            Threshold: 0.6
+            Weight: 1.0
+      Placement:
+        MinHeightAboveSeaMeters: 1.0
+        MaxSlope: 0.7
+      Exclusion:
+        RoadsRadiusMeters: 4.0
+        RiversRadiusMeters: 8.0
+        StructuresRadiusMeters: 10.0
+        CitiesRadiusMeters: 14.0
+
+  # =====================
+  # ROCKS
+  # =====================
+  - PropLayerDefinition:
+      LayerId: "layer_rocks"
+      AppliesTo: "RegionPatch"
+      Bucket: "Rocks"
+      Gates:
+        OR:
+          - gte:
+              field: "slope"
+              value: 0.55
+          - gte:
+              field: "curvature"
+              value: 0.6
+      Density:
+        BasePerKm2: 120
+        ScoreTerms:
+          - Kind: "Linear"
+            Field: "slope"
+            Direction: "High"
+            Weight: 1.0
+          - Kind: "PenaltyAbove"
+            Field: "vegPotential"
+            Threshold: 0.4
+            Weight: 1.0
+      Placement:
+        MinHeightAboveSeaMeters: 1.0
+        MaxSlope: 0.95
+      Exclusion:
+        RoadsRadiusMeters: 3.0
+        RiversRadiusMeters: 5.0
+        StructuresRadiusMeters: 10.0
+        CitiesRadiusMeters: 12.0
+
+  # =====================
+  # GROUND COVER
+  # =====================
+  - PropLayerDefinition:
+      LayerId: "layer_groundcover"
+      AppliesTo: "RegionPatch"
+      Bucket: "GroundCover"
+      Gates:
+        AND:
+          - gte:
+              field: "vegPotential"
+              value: 0.15
+      Density:
+        BasePerKm2: 6000
+        ScoreTerms:
+          - Kind: "Linear"
+            Field: "vegPotential"
+            Direction: "High"
+            Weight: 1.0
+          - Kind: "Peak"
+            Field: "moisture"
+            Center: 0.6
+            Radius: 0.4
+            Weight: 0.6
+      Placement:
+        MinHeightAboveSeaMeters: 0.5
+        MaxSlope: 0.8
+      Exclusion:
+        RoadsRadiusMeters: 2.0
+        RiversRadiusMeters: 4.0
+        StructuresRadiusMeters: 8.0
+        CitiesRadiusMeters: 10.0
+
+  # =====================
+  # LANDMARKS
+  # =====================
+  - PropLayerDefinition:
+      LayerId: "layer_landmarks"
+      AppliesTo: "RegionPatch"
+      Bucket: "Landmarks"
+      Density:
+        BasePerKm2: 0.25
+        ScoreTerms:
+          - Kind: "PenaltyBelow"
+            Field: "vegPotential"
+            Threshold: 0.25
+            Weight: 0.2
+          - Kind: "PenaltyAbove"
+            Field: "seaFractionLocal"
+            Threshold: 0.2
+            Weight: 2.0
+      Placement:
+        MinHeightAboveSeaMeters: 5.0
+        MaxSlope: 0.35
+      Exclusion:
+        RoadsRadiusMeters: 15.0
+        RiversRadiusMeters: 20.0
+        StructuresRadiusMeters: 25.0
+        CitiesRadiusMeters: 30.0

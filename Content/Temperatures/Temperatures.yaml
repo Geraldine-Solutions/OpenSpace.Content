@@ -1,10 +1,16 @@
-﻿Temperatures:
+Temperatures:
   - Temperature:
       UniqueId: temp_cold
       Name: "Text_Cold"
+      MinValue: 0
+      MaxValue: 0.35
   - Temperature:
       UniqueId: temp_temperate
       Name: "Text_Temperate"
+      MinValue: 0.35
+      MaxValue: 0.65
   - Temperature:
       UniqueId: temp_hot
       Name: "Text_Hot"
+      MinValue: 0.65
+      MaxValue: 1

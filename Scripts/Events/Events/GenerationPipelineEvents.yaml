@@ -93,3 +93,78 @@ Events:
     PreTriggers:
       - "generate_starting_assets"
 
+  # Generic node post-generation hooks
+  - UniqueId: "generation.on_generation_node_generated.system"
+    Name: "Generation - Node Generated (System)"
+    Title: "Generation Hook"
+    Description: "Hook: a star system node finished generation."
+    Type: "generation_event"
+    Scope: "star_system"
+    IsTriggeredOnly: true
+    ShowModal: false
+    PreTriggers:
+      - "on_generation_node_generated"
+
+  - UniqueId: "generation.on_generation_node_generated.celestial"
+    Name: "Generation - Node Generated (Celestial)"
+    Title: "Generation Hook"
+    Description: "Hook: a celestial body node finished generation."
+    Type: "generation_event"
+    Scope: "celestial_body"
+    IsTriggeredOnly: true
+    ShowModal: false
+    PreTriggers:
+      - "on_generation_node_generated"
+
+  - UniqueId: "generation.on_generation_node_generated.region"
+    Name: "Generation - Node Generated (Region)"
+    Title: "Generation Hook"
+    Description: "Hook: a region node finished generation."
+    Type: "generation_event"
+    Scope: "region"
+    IsTriggeredOnly: true
+    ShowModal: false
+    PreTriggers:
+      - "on_generation_node_generated"
+
+  - UniqueId: "generation.spawn_city_site_on_region_generated"
+    Name: "Generation - Spawn City Site On Region Generated"
+    Title: "Generation Hook"
+    Description: "Places one city-site anchor on a random non-ocean hex in each region that does not already contain one."
+    Type: "generation_event"
+    Scope: "region"
+    IsTriggeredOnly: true
+    ShowModal: false
+    PreTriggers:
+      - "on_generation_node_generated"
+    ImmediateEffects:
+      - type: "if"
+        payload:
+          condition:
+            NOT:
+              does_node_have_child_where:
+                OR:
+                  - has_flag: "city_site"
+                  - has_component: "HexCityComponent"
+                child_scope: "hex"
+          effects:
+            - type: "spawn_unit_or_structure_at_node"
+              payload:
+                selection: "random"
+                where:
+                  child_scope: "hex"
+                  require_non_ocean_hex: true
+                set_hex_city_id: "city_site_default"
+                add_flags: ["city_site", "can_colonize"]
+
+  - UniqueId: "generation.on_generation_node_generated.hex"
+    Name: "Generation - Node Generated (Hex)"
+    Title: "Generation Hook"
+    Description: "Hook: a hex node finished generation."
+    Type: "generation_event"
+    Scope: "hex"
+    IsTriggeredOnly: true
+    ShowModal: false
+    PreTriggers:
+      - "on_generation_node_generated"
+

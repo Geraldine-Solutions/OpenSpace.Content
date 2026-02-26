@@ -1,105 +1,159 @@
+# Region biomes for breathable atmosphere. Gates use canonical climate fields:
+# temp, moisture, vegPotential, cloudCover, storminess, wind, seaFraction, coastness,
+# elevationMean, slopeMean, atmo.pressure, atmo.breathable, etc.
 ####### Matrix #####
 #####  |Hot |Temperate |Cold |
 # Dry  | X  |    X     |  X  |
 # Mild | X  |    X     |  X  |
 # Wet  | X  |    X     |  X  |
+# temp: 0-0.35 Cold, 0.35-0.65 Temperate, 0.65-1 Hot
+# moisture: 0-0.33 Dry, 0.33-0.66 Mild, 0.66-1 Wet
 Initializers:
 #Desert
   - Region:
       UniqueId: region_oxygenated_atmo_01
       Name: "Text_Desert"
       RenderEntity: "UI_Region_Render_Entity"
-      AllowedTemperatures:
-        - temp_Hot
-      AllowedHumidityLevels:
-        - hum_Dry
-      AllowedAtmospheres:
-        - atmo_Oxygenated
+      BiomeId: biome_desert
+      Gates:
+        AND:
+          - between: { field: temp, min: 0.65, max: 1 }
+          - between: { field: moisture, min: 0, max: 0.33 }
+          - gte: { field: atmo.breathable, value: 0.5 }
+      Score:
+        Terms:
+          - Range: { field: temp, min: 0.65, max: 1 }
+          - Range: { field: moisture, min: 0, max: 0.33 }
 #Savannah
   - Region:
       UniqueId: region_oxygenated_atmo_02
       Name: "Text_Savannah"
       RenderEntity: "UI_Region_Render_Entity"
-      AllowedTemperatures:
-        - temp_Hot
-      AllowedHumidityLevels:
-        - hum_Mild
-      AllowedAtmospheres:
-        - atmo_Oxygenated
+      BiomeId: biome_savannah
+      Gates:
+        AND:
+          - between: { field: temp, min: 0.65, max: 1 }
+          - between: { field: moisture, min: 0.33, max: 0.66 }
+          - gte: { field: atmo.breathable, value: 0.5 }
+      Score:
+        Terms:
+          - Range: { field: temp, min: 0.65, max: 1 }
+          - Range: { field: moisture, min: 0.33, max: 0.66 }
 #Rainforest
   - Region:
       UniqueId: region_oxygenated_atmo_03
       Name: "Text_Rainforest"
       RenderEntity: "UI_Region_Render_Entity"
-      AllowedTemperatures:
-        - temp_Hot
-      AllowedHumidityLevels:
-        - hum_Wet
-      AllowedAtmospheres:
-        - atmo_Oxygenated
+      BiomeId: biome_rainforest
+      Gates:
+        AND:
+          - between: { field: temp, min: 0.65, max: 1 }
+          - between: { field: moisture, min: 0.66, max: 1 }
+          - gte: { field: atmo.breathable, value: 0.5 }
+      Score:
+        Terms:
+          - Range: { field: temp, min: 0.65, max: 1 }
+          - Range: { field: moisture, min: 0.66, max: 1 }
 #Arid
   - Region:
       UniqueId: region_oxygenated_atmo_04
       Name: "Text_Arid"
       RenderEntity: "UI_Region_Render_Entity"
-      AllowedTemperatures:
-        - temp_Temperate
-      AllowedHumidityLevels:
-        - hum_Dry
-      AllowedAtmospheres:
-        - atmo_Oxygenated
+      BiomeId: biome_arid
+      Gates:
+        AND:
+          - between: { field: temp, min: 0.35, max: 0.65 }
+          - between: { field: moisture, min: 0, max: 0.33 }
+          - gte: { field: atmo.breathable, value: 0.5 }
+      Score:
+        Terms:
+          - Range: { field: temp, min: 0.35, max: 0.65 }
+          - Range: { field: moisture, min: 0, max: 0.33 }
 #Plains
   - Region:
       UniqueId: region_oxygenated_atmo_05
       Name: "Text_Plains"
       RenderEntity: "UI_Region_Render_Entity"
-      AllowedTemperatures:
-        - temp_Temperate
-      AllowedHumidityLevels:
-        - hum_Mild
-      AllowedAtmospheres:
-        - atmo_Oxygenated
+      BiomeId: biome_plains
+      Gates:
+        AND:
+          - between: { field: temp, min: 0.35, max: 0.65 }
+          - between: { field: moisture, min: 0.33, max: 0.66 }
+          - gte: { field: atmo.breathable, value: 0.5 }
+      Score:
+        Terms:
+          - Range: { field: temp, min: 0.35, max: 0.65 }
+          - Range: { field: moisture, min: 0.33, max: 0.66 }
 #Wetlands
   - Region:
       UniqueId: region_oxygenated_atmo_06
       Name: "Text_Wetlands"
       RenderEntity: "UI_Region_Render_Entity"
-      AllowedTemperatures:
-        - temp_Temperate
-      AllowedHumidityLevels:
-        - hum_Wet
-      AllowedAtmospheres:
-        - atmo_Oxygenated
+      BiomeId: biome_wetlands
+      Gates:
+        AND:
+          - between: { field: temp, min: 0.35, max: 0.65 }
+          - between: { field: moisture, min: 0.66, max: 1 }
+          - gte: { field: atmo.breathable, value: 0.5 }
+      Score:
+        Terms:
+          - Range: { field: temp, min: 0.35, max: 0.65 }
+          - Range: { field: moisture, min: 0.66, max: 1 }
 #Tundra
   - Region:
       UniqueId: region_oxygenated_atmo_07
       Name: "Text_Tundra"
       RenderEntity: "UI_Region_Render_Entity"
-      AllowedTemperatures:
-        - temp_Cold
-      AllowedHumidityLevels:
-        - hum_Dry
-      AllowedAtmospheres:
-        - atmo_Oxygenated
+      BiomeId: biome_tundra
+      Gates:
+        AND:
+          - between: { field: temp, min: 0, max: 0.35 }
+          - between: { field: moisture, min: 0, max: 0.33 }
+          - gte: { field: atmo.breathable, value: 0.5 }
+      Score:
+        Terms:
+          - Range: { field: temp, min: 0, max: 0.35 }
+          - Range: { field: moisture, min: 0, max: 0.33 }
 #Boreal
   - Region:
       UniqueId: region_oxygenated_atmo_08
       Name: "Text_Boreal"
       RenderEntity: "UI_Region_Render_Entity"
-      AllowedTemperatures:
-        - temp_Cold
-      AllowedHumidityLevels:
-        - hum_Mild
-      AllowedAtmospheres:
-        - atmo_Oxygenated
+      BiomeId: biome_boreal
+      Gates:
+        AND:
+          - between: { field: temp, min: 0, max: 0.35 }
+          - between: { field: moisture, min: 0.33, max: 0.66 }
+          - gte: { field: atmo.breathable, value: 0.5 }
+      Score:
+        Terms:
+          - Range: { field: temp, min: 0, max: 0.35 }
+          - Range: { field: moisture, min: 0.33, max: 0.66 }
 #Snow
   - Region:
       UniqueId: region_oxygenated_atmo_09
       Name: "Text_Snow"
       RenderEntity: "UI_Region_Render_Entity"
-      AllowedTemperatures:
-        - temp_Cold
-      AllowedHumidityLevels:
-        - hum_Wet
-      AllowedAtmospheres:
-        - atmo_Oxygenated
+      BiomeId: biome_snow
+      Gates:
+        AND:
+          - between: { field: temp, min: 0, max: 0.35 }
+          - between: { field: moisture, min: 0.66, max: 1 }
+          - gte: { field: atmo.breathable, value: 0.5 }
+      Score:
+        Terms:
+          - Range: { field: temp, min: 0, max: 0.35 }
+          - Range: { field: moisture, min: 0.66, max: 1 }
+#Unknown (fallback when no other biome matches)
+  - Region:
+      UniqueId: region_unknown
+      Name: "Text_Unknown"
+      RenderEntity: "UI_Region_Render_Entity"
+      BiomeId: biome_unknown
+      Priority: -1
+      Gates:
+        AND:
+          - gte: { field: temp, value: 0 }
+      Score:
+        Terms:
+          - Peak: { field: temp, center: 0.5, radius: 0.001 }

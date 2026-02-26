@@ -1,0 +1,502 @@
+Props/Catalog:
+  # =====================
+  # TREES
+  # =====================
+  - PropCatalogEntry:
+      PropId: "tree_temperate_oak_a"
+      Kind: "Tree"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Trees/Oak_A"
+      Material: "Props/Trees/Mat_Tree_Oak_A"
+      Tags: ["Temperate", "Broadleaf"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.85
+      ScaleMax: 1.25
+
+  - PropCatalogEntry:
+      PropId: "tree_temperate_pine_a"
+      Kind: "Tree"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Trees/Pine_A"
+      Material: "Props/Trees/Mat_Tree_Pine_A"
+      Tags: ["Temperate", "Conifer"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.9
+      ScaleMax: 1.3
+
+  - PropCatalogEntry:
+      PropId: "tree_alpine_conifer_a"
+      Kind: "Tree"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Trees/AlpineConifer_A"
+      Material: "Props/Trees/Mat_Tree_AlpineConifer_A"
+      Tags: ["Alpine", "Conifer"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.7
+      ScaleMax: 1.1
+
+  - PropCatalogEntry:
+      PropId: "tree_alpine_conifer_dead_a"
+      Kind: "Tree"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Trees/AlpineConifer_Dead_A"
+      Material: "Props/Trees/Mat_Tree_AlpineConifer_Dead_A"
+      Tags: ["Alpine", "Conifer", "Deadwood"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.6
+      ScaleMax: 1.0
+
+  - PropCatalogEntry:
+      PropId: "tree_tropical_palm_a"
+      Kind: "Tree"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Trees/Palm_A"
+      Material: "Props/Trees/Mat_Tree_Palm_A"
+      Tags: ["Tropical", "Palm"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.9
+      ScaleMax: 1.4
+
+  - PropCatalogEntry:
+      PropId: "tree_tropical_broadleaf_a"
+      Kind: "Tree"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Trees/TropicalBroadleaf_A"
+      Material: "Props/Trees/Mat_Tree_TropicalBroadleaf_A"
+      Tags: ["Tropical", "Broadleaf"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.85
+      ScaleMax: 1.35
+
+  - PropCatalogEntry:
+      PropId: "tree_savannah_acacia_a"
+      Kind: "Tree"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Trees/Acacia_A"
+      Material: "Props/Trees/Mat_Tree_Acacia_A"
+      Tags: ["Savannah", "Broadleaf"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.8
+      ScaleMax: 1.3
+
+  - PropCatalogEntry:
+      PropId: "tree_boreal_spruce_a"
+      Kind: "Tree"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Trees/Spruce_A"
+      Material: "Props/Trees/Mat_Tree_Spruce_A"
+      Tags: ["Boreal", "Conifer"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.75
+      ScaleMax: 1.2
+
+  - PropCatalogEntry:
+      PropId: "tree_boreal_birch_a"
+      Kind: "Tree"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Trees/Birch_A"
+      Material: "Props/Trees/Mat_Tree_Birch_A"
+      Tags: ["Boreal", "Broadleaf", "Deadwood"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.7
+      ScaleMax: 1.1
+
+  - PropCatalogEntry:
+      PropId: "tree_wetland_willow_a"
+      Kind: "Tree"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Trees/Willow_A"
+      Material: "Props/Trees/Mat_Tree_Willow_A"
+      Tags: ["Wetland", "Broadleaf"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.8
+      ScaleMax: 1.25
+
+  - PropCatalogEntry:
+      PropId: "tree_plains_elm_a"
+      Kind: "Tree"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Trees/Elm_A"
+      Material: "Props/Trees/Mat_Tree_Elm_A"
+      Tags: ["Plains", "Broadleaf"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.85
+      ScaleMax: 1.3
+
+  # =====================
+  # SHRUBS
+  # =====================
+  - PropCatalogEntry:
+      PropId: "shrub_temperate_fern_a"
+      Kind: "Shrub"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Shrubs/Fern_A"
+      Material: "Props/Shrubs/Mat_Shrub_Fern_A"
+      Tags: ["Temperate", "Fern"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.8
+      ScaleMax: 1.4
+
+  - PropCatalogEntry:
+      PropId: "shrub_temperate_bush_a"
+      Kind: "Shrub"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Shrubs/Bush_A"
+      Material: "Props/Shrubs/Mat_Shrub_Bush_A"
+      Tags: ["Temperate", "Bush"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.7
+      ScaleMax: 1.3
+
+  - PropCatalogEntry:
+      PropId: "shrub_alpine_a"
+      Kind: "Shrub"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Shrubs/Alpine_A"
+      Material: "Props/Shrubs/Mat_Shrub_Alpine_A"
+      Tags: ["Alpine", "Hardy"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.6
+      ScaleMax: 1.0
+
+  - PropCatalogEntry:
+      PropId: "shrub_desert_scrub_a"
+      Kind: "Shrub"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Shrubs/DesertScrub_A"
+      Material: "Props/Shrubs/Mat_Shrub_DesertScrub_A"
+      Tags: ["Desert", "Scrub"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.5
+      ScaleMax: 0.9
+
+  - PropCatalogEntry:
+      PropId: "shrub_cactus_a"
+      Kind: "Shrub"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Shrubs/Cactus_A"
+      Material: "Props/Shrubs/Mat_Shrub_Cactus_A"
+      Tags: ["Desert", "Cactus"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.7
+      ScaleMax: 1.3
+
+  - PropCatalogEntry:
+      PropId: "shrub_savannah_grass_a"
+      Kind: "Shrub"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Shrubs/SavannahGrass_A"
+      Material: "Props/Shrubs/Mat_Shrub_SavannahGrass_A"
+      Tags: ["Savannah", "Grass"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.6
+      ScaleMax: 1.2
+
+  - PropCatalogEntry:
+      PropId: "shrub_tropical_fern_a"
+      Kind: "Shrub"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Shrubs/TropicalFern_A"
+      Material: "Props/Shrubs/Mat_Shrub_TropicalFern_A"
+      Tags: ["Tropical", "Fern"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.8
+      ScaleMax: 1.5
+
+  - PropCatalogEntry:
+      PropId: "shrub_tundra_lichen_a"
+      Kind: "Shrub"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Shrubs/TundraLichen_A"
+      Material: "Props/Shrubs/Mat_Shrub_TundraLichen_A"
+      Tags: ["Tundra", "Lichen"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.4
+      ScaleMax: 0.8
+
+  - PropCatalogEntry:
+      PropId: "shrub_boreal_bush_a"
+      Kind: "Shrub"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Shrubs/BorealBush_A"
+      Material: "Props/Shrubs/Mat_Shrub_BorealBush_A"
+      Tags: ["Boreal", "Bush"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.6
+      ScaleMax: 1.1
+
+  - PropCatalogEntry:
+      PropId: "shrub_wetland_reed_a"
+      Kind: "Shrub"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Shrubs/WetlandReed_A"
+      Material: "Props/Shrubs/Mat_Shrub_WetlandReed_A"
+      Tags: ["Wetland", "Reed"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.7
+      ScaleMax: 1.3
+
+  - PropCatalogEntry:
+      PropId: "shrub_arid_sage_a"
+      Kind: "Shrub"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Shrubs/AridSage_A"
+      Material: "Props/Shrubs/Mat_Shrub_AridSage_A"
+      Tags: ["Arid", "Sage"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.5
+      ScaleMax: 1.0
+
+  - PropCatalogEntry:
+      PropId: "shrub_snow_dwarf_a"
+      Kind: "Shrub"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Shrubs/SnowDwarf_A"
+      Material: "Props/Shrubs/Mat_Shrub_SnowDwarf_A"
+      Tags: ["Snow", "Hardy"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.3
+      ScaleMax: 0.7
+
+  # =====================
+  # ROCKS
+  # =====================
+  - PropCatalogEntry:
+      PropId: "rock_granite_small_a"
+      Kind: "Rock"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Rocks/Granite_Small_A"
+      Material: "Props/Rocks/Mat_Rock_Granite_A"
+      Tags: ["Rock", "Granite"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.6
+      ScaleMax: 1.4
+
+  - PropCatalogEntry:
+      PropId: "rock_granite_medium_a"
+      Kind: "Rock"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Rocks/Granite_Medium_A"
+      Material: "Props/Rocks/Mat_Rock_Granite_A"
+      Tags: ["Rock", "Granite"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.8
+      ScaleMax: 1.6
+
+  - PropCatalogEntry:
+      PropId: "rock_scree_cluster_a"
+      Kind: "Rock"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Rocks/Scree_Cluster_A"
+      Material: "Props/Rocks/Mat_Rock_Scree_A"
+      Tags: ["Rock", "Scree"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.5
+      ScaleMax: 1.2
+
+  - PropCatalogEntry:
+      PropId: "rock_sandstone_a"
+      Kind: "Rock"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Rocks/Sandstone_A"
+      Material: "Props/Rocks/Mat_Rock_Sandstone_A"
+      Tags: ["Rock", "Sandstone"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.7
+      ScaleMax: 1.5
+
+  - PropCatalogEntry:
+      PropId: "rock_frozen_boulder_a"
+      Kind: "Rock"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Rocks/FrozenBoulder_A"
+      Material: "Props/Rocks/Mat_Rock_Frozen_A"
+      Tags: ["Rock", "Ice"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.6
+      ScaleMax: 1.4
+
+  - PropCatalogEntry:
+      PropId: "rock_mossy_a"
+      Kind: "Rock"
+      RenderMode: "GPUInstance"
+      Mesh: "Props/Rocks/Mossy_A"
+      Material: "Props/Rocks/Mat_Rock_Mossy_A"
+      Tags: ["Rock", "Mossy"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.5
+      ScaleMax: 1.3
+
+  # =====================
+  # GROUND COVER (decals / texture scatter)
+  # =====================
+  - PropCatalogEntry:
+      PropId: "ground_grass_lush_decal_a"
+      Kind: "GroundCover"
+      RenderMode: "Decal"
+      Mesh: "Props/GroundCover/Quad"
+      Material: "Props/GroundCover/Mat_Grass_Lush_Decal_A"
+      Tags: ["GroundCover", "Grass", "Lush"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.8
+      ScaleMax: 1.6
+
+  - PropCatalogEntry:
+      PropId: "ground_leaf_litter_decal_a"
+      Kind: "GroundCover"
+      RenderMode: "Decal"
+      Mesh: "Props/GroundCover/Quad"
+      Material: "Props/GroundCover/Mat_LeafLitter_Decal_A"
+      Tags: ["GroundCover", "LeafLitter"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.7
+      ScaleMax: 1.5
+
+  - PropCatalogEntry:
+      PropId: "ground_grass_sparse_decal_a"
+      Kind: "GroundCover"
+      RenderMode: "Decal"
+      Mesh: "Props/GroundCover/Quad"
+      Material: "Props/GroundCover/Mat_Grass_Sparse_Decal_A"
+      Tags: ["GroundCover", "Grass", "Sparse"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.6
+      ScaleMax: 1.4
+
+  - PropCatalogEntry:
+      PropId: "ground_sand_decal_a"
+      Kind: "GroundCover"
+      RenderMode: "Decal"
+      Mesh: "Props/GroundCover/Quad"
+      Material: "Props/GroundCover/Mat_Sand_Decal_A"
+      Tags: ["GroundCover", "Sand"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.8
+      ScaleMax: 1.8
+
+  - PropCatalogEntry:
+      PropId: "ground_snow_decal_a"
+      Kind: "GroundCover"
+      RenderMode: "Decal"
+      Mesh: "Props/GroundCover/Quad"
+      Material: "Props/GroundCover/Mat_Snow_Decal_A"
+      Tags: ["GroundCover", "Snow"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.8
+      ScaleMax: 1.6
+
+  - PropCatalogEntry:
+      PropId: "ground_moss_decal_a"
+      Kind: "GroundCover"
+      RenderMode: "Decal"
+      Mesh: "Props/GroundCover/Quad"
+      Material: "Props/GroundCover/Mat_Moss_Decal_A"
+      Tags: ["GroundCover", "Moss"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.6
+      ScaleMax: 1.4
+
+  - PropCatalogEntry:
+      PropId: "ground_dried_grass_decal_a"
+      Kind: "GroundCover"
+      RenderMode: "Decal"
+      Mesh: "Props/GroundCover/Quad"
+      Material: "Props/GroundCover/Mat_DriedGrass_Decal_A"
+      Tags: ["GroundCover", "Grass", "Dry"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.7
+      ScaleMax: 1.5
+
+  # =====================
+  # LANDMARKS
+  # =====================
+  - PropCatalogEntry:
+      PropId: "landmark_ancient_obelisk_a"
+      Kind: "Landmark"
+      RenderMode: "GameObject"
+      Prefab: "Props/Landmarks/AncientObelisk_A"
+      Tags: ["Landmark", "Ruins"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.9
+      ScaleMax: 1.1
+
+  - PropCatalogEntry:
+      PropId: "landmark_alpine_cairn_a"
+      Kind: "Landmark"
+      RenderMode: "GameObject"
+      Prefab: "Props/Landmarks/AlpineCairn_A"
+      Tags: ["Landmark", "Natural"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.85
+      ScaleMax: 1.15
+
+  - PropCatalogEntry:
+      PropId: "landmark_desert_monolith_a"
+      Kind: "Landmark"
+      RenderMode: "GameObject"
+      Prefab: "Props/Landmarks/DesertMonolith_A"
+      Tags: ["Landmark", "Natural"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.9
+      ScaleMax: 1.2
+
+  - PropCatalogEntry:
+      PropId: "landmark_frozen_spire_a"
+      Kind: "Landmark"
+      RenderMode: "GameObject"
+      Prefab: "Props/Landmarks/FrozenSpire_A"
+      Tags: ["Landmark", "Ice"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 0.8
+      ScaleMax: 1.15
+
+  - PropCatalogEntry:
+      PropId: "landmark_city_site_placeholder"
+      Kind: "Landmark"
+      RenderMode: "GameObject"
+      Prefab: "Props/Landmarks/CitySite_Placeholder"
+      Tags: ["Landmark", "CitySite"]
+      AlignToNormal: true
+      RandomYaw: true
+      ScaleMin: 1.0
+      ScaleMax: 1.0

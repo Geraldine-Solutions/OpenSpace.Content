@@ -1,0 +1,10 @@
+Props/Bindings:
+  - PropImprovementBinding:
+      BindingId: "binding_city_site_default"
+      GameplayKind: "City"
+      GameplayId: "city_site_default"
+      PropId: "landmark_city_site_placeholder"
+      Overrides:
+        ScaleMul: 1.0
+        YawMode: "Random"
+        HeightOffsetMeters: 0.0

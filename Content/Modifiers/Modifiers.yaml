@@ -10,10 +10,13 @@ Modifiers:
       IsMultiplicative: false
       SpawnChance: 20
       ScaledSpawnChance: 40
+      # UsageOdds: Gates + Factor (consolidated) or legacy HasFlag/Factor. Use has_tag for TagList/flags.
       UsageOdds:
-        - HasFlag: "Fertile"
+        - Gates:
+            has_tag: "Fertile"
           Factor: 2.0
-        - HasFlag: "Plains"
+        - Gates:
+            has_tag: "Plains"
           Factor: 1.5
 
   - Modifier:
@@ -138,3 +141,35 @@ Modifiers:
           Factor: 2.5
         - HasFlag: "Seasonal"
           Factor: 2.0
+
+  # Climate-derived modifiers (Gates evaluated against RegionClimate + tags)
+  # Canonical climate fields: temp, moisture, vegPotential, cloudCover, storminess, wind,
+  #   seaFraction, coastness, elevationMean, slopeMean, atmo.*
+  - Modifier:
+      UniqueId: mod_acid_rain
+      Name: "Text_AcidRain"
+      Id: "mod_acid_rain"
+      Target: "Self"
+      AppliesTo: Region
+      Gates:
+        AND:
+          - gte: { field: atmo.corrosiveness, value: 0.2 }
+          - gte: { field: moisture, value: 0.3 }
+          - gte: { field: cloudCover, value: 0.25 }
+      Effects:
+        - { Stat: "AgricultureOutputMultiplier", Op: Mul, Value: 0.8 }
+      Priority: 0
+
+  - Modifier:
+      UniqueId: mod_high_solar_efficiency
+      Name: "Text_HighSolarEfficiency"
+      Id: "mod_high_solar_efficiency"
+      Target: "Self"
+      AppliesTo: Region
+      Gates:
+        lte: { field: atmo.haziness, value: 0.2 }
+      Effects:
+        - { Stat: "SolarEnergyOutputMultiplier", Op: Mul, Value: 1.2 }
+      Priority: 0
+  # ScriptedConditions for Gates: is_airless, is_breathable, is_toxic, is_arid, is_humid,
+  #   is_frozen, is_storm_belt, is_coastal, is_cloudy, is_windy (AtmosphereConditions.yaml)

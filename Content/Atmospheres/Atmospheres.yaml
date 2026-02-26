@@ -1,31 +1,83 @@
-﻿Atmospheres:
+# Canonical atmosphere fields (0..1): Pressure, Greenhouse, MoistureCapacity, Haziness,
+# Breathable (0 or 1), Corrosiveness, ToxicityIndex. Maps to RegionClimate.atmo for Gates.
+Atmospheres:
   - Atmosphere:
       UniqueId: atmo_None
       Name: "Text_None"
       HorizonColor: "#FFFFFF00"
       InnerColor: "#FFFFFF00"
       OuterColor: "#FFFFFF00"
+      Pressure: 0
+      Greenhouse: 0
+      MoistureCapacity: 0
+      Haziness: 0
+      Breathable: 0
+      Corrosiveness: 0
+      ToxicityIndex: 0
+      CloudCoverBase: 0
+      CloudTex: ""
+      CloudBrightness: 0
   - Atmosphere:
       UniqueId: atmo_CO2
       Name: "Text_CO2"
       HorizonColor: "#AAE1FF"
       InnerColor: "#E8F7FF"
       OuterColor: "#1A63F3"
+      Pressure: 0.6
+      Greenhouse: 0.35
+      MoistureCapacity: 0.4
+      Haziness: 0.25
+      Breathable: 0
+      Corrosiveness: 0
+      ToxicityIndex: 0
+      CloudCoverBase: 0.5
+      CloudTex: "tex_dense_clouds"
+      CloudBrightness: 0.8
   - Atmosphere:
       UniqueId: atmo_Methane
       Name: "Text_Methane"
       HorizonColor: "#70c496"
       InnerColor: "#204d96"
       OuterColor: "#e0195f"
+      Pressure: 0.5
+      Greenhouse: 0.4
+      MoistureCapacity: 0.3
+      Haziness: 0.3
+      Breathable: 0
+      Corrosiveness: 0
+      ToxicityIndex: 0
+      CloudCoverBase: 0.6
+      CloudTex: "tex_dense_clouds"
+      CloudBrightness: 0.7
   - Atmosphere:
       UniqueId: atmo_Ammonia
       Name: "Text_Ammonia"
       HorizonColor: "#CBE085"
       InnerColor: "#7A8f33"
       OuterColor: "#D1FF36"
+      Pressure: 0.7
+      Greenhouse: 0.2
+      MoistureCapacity: 0.5
+      Haziness: 0.5
+      Breathable: 0
+      Corrosiveness: 0.3
+      ToxicityIndex: 0.6
+      CloudCoverBase: 0.7
+      CloudTex: "tex_dense_clouds"
+      CloudBrightness: 0.75
   - Atmosphere:
       UniqueId: atmo_Oxygenated
       Name: "Text_Oxygenated"
       HorizonColor: "#CED7FF"
       InnerColor: "#6BA6DA"
       OuterColor: "#4ABAFF"
+      Pressure: 1.0
+      Greenhouse: 0.08
+      MoistureCapacity: 0.95
+      Haziness: 0.1
+      Breathable: 1.0
+      Corrosiveness: 0
+      ToxicityIndex: 0
+      CloudCoverBase: 0.65
+      CloudTex: "tex_dense_clouds"
+      CloudBrightness: 1.0

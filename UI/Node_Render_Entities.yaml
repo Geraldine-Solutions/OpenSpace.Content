@@ -34,11 +34,9 @@ UI:
         Components:
           FastBillboard:
             AvoidClipping: true
+          SpriteRenderer:
+            sprite: "{Scope.Icon}"
         Children:
-          - Name: "Icon"
-            Components:
-              SpriteRenderer:
-                Sprite: "{Scope.Icon}"
           - Name: "Nameplate"
             Components:
               RectTransform:
@@ -292,7 +290,7 @@ UI:
       - Name: "Atmosphere"
         Components:
           Transform:
-            localScale: ["{Scope.Body.OuterRadiusMeters}","{Scope.Body.OuterRadiusMeters}","{Scope.Body.OuterRadiusMeters}"]
+            localScale: ["{Scope.Body.AtmosphereOuterRadiusMeters}","{Scope.Body.AtmosphereOuterRadiusMeters}","{Scope.Body.AtmosphereOuterRadiusMeters}"]
           SharedMaterial: {}
           Atmosphere:
             SourceMaterial: "mat_Atmosphere_Lighting_Scattering"
@@ -302,7 +300,7 @@ UI:
             OuterMesh: "Meshes/Geosphere"
             OuterMeshRadius: 1.05
             OuterSoftness: 0
-            Height: .05
+            Height: .1
             InnerFog: 0
             OuterFog: 0
             Sky: 1
@@ -337,13 +335,13 @@ UI:
       - Name: "Cloudsphere"
         Components:
           Transform:
-            localScale: ["{Scope.Body.OuterRadiusMeters}","{Scope.Body.OuterRadiusMeters}","{Scope.Body.OuterRadiusMeters}"]
+            localScale: ["{Scope.Body.AtmosphereOuterRadiusMeters}","{Scope.Body.AtmosphereOuterRadiusMeters}","{Scope.Body.AtmosphereOuterRadiusMeters}"]
           Cloudsphere:
             SourceMaterial: "mat_Cloudsphere_Lighting_Detail"
             Color: "#FFFFFF"
-            Brightness: 1
-            MainTex: "tex_dense_clouds"
-            Radius: 0.96
+            Brightness: "{Scope.Atmosphere.CloudBrightness}"
+            MainTex: "{Scope.Atmosphere.CloudTex}"
+            Radius: 1
             CameraOffset: 0.001
             Softness: 0
             Mesh: "Meshes/Geosphere"
@@ -558,7 +556,7 @@ UI:
 
       # Render scale system: focus-based stylized scaling
       RenderScaler:
-        AuthoringRadiusMeters: "{Scope.Body.RadiusMeters}"
+        AuthoringRadiusMeters: "1"
         DepthModifiers: [3000]
         MaxExaggeration: 150000
         SubtreeViewDistanceScaleFactor: 3
@@ -783,13 +781,6 @@ UI:
         Material: "mat_hyper_line"
         Thickness: "{Scope.VisualWidth}"
 
-
-
-
-
-
-
-
   ### Planet LOD Prefabs ###
   - UniqueId: UI_Planet_Render_Entity_Far
     Name: "PlanetFar"
@@ -818,17 +809,32 @@ UI:
     Components:
       Transform:
         localScale: [1,1,1]
+      PlanetOverlayBuildController: {}
     Children:
+      - Name: "LowDetailFallback"
+        Components:
+          Planet:
+            Mesh: "Meshes/Geosphere"
+            Radius: "{Scope.Body.RadiusMeters}"
+            Material: "mat_Planet_Far"
+            Displace: false
+            Displacement: 0
+            CastShadows: true
+            ReceiveShadows: true
+            MainTex: "{Scope.Body.MainTex}"
+            HeightTex: "{Scope.Body.HeightTex}"
+            NightTex: "{Scope.Body.NightTex}"
       - Name: "Terrain"
         Components:
+          TerrainFirstRenderNotifier: {}
           TerrainPlanet:
             Radius: "{Scope.Body.RadiusMeters}"
             SmallestTriangleSize: 0.25
-            Resolution: 128
+            Resolution: 256
             Detail: 1
-            BakedDetailTiningA: 16
-            BakedDetailTiningB: 1000
-            BakedDetailTiningC: 100000
+            BakedDetailTilingA: 16
+            BakedDetailTilingB: 1000
+            BakedDetailTilingC: 100000
           TerrainPlanetMaterial:
             Material: "mat_Planet"
             MainTex: "{Scope.Body.MainTex}"
@@ -837,8 +843,33 @@ UI:
             NormallFadeRange: 100
           TerrainHeightmap:
             HeightMap: "{Scope.Body.HeightTex}"
-            Channel: "Alpha"
-            Displacement: 40
+            Channel: "Luminosity"
+            Displacement: "{Scope.Body.DisplacementMeters}"
+          TerrainEnvironment:
+            EnvironmentMap: "{Scope.Body.EnvTex}"
           PlanetHexOverlayRenderer: {}
-          TerrainHexVertexBake: {}
-
+      - Name: "Ocean"
+        Visible: "{Scope.Body.HasOcean}"
+        Components:
+          TerrainOcean:
+            Radius: "{Scope.Body.SeaLevelRadiusMeters}"
+            SmallestTriangleSize: 0.25
+            Resolution: 256
+            Detail: 1
+            Ground: "{Sibling.Terrain}"
+            Invert: false
+            BakedDetailTilingA: 32
+            BakedDetailTilingB: 1000
+            BakedDetailTilingC: 100000
+          TerrainOceanMaterial:
+            Material: "mat_Ocean"
+            CastShadows: true
+            ReceiveShadows: true
+            NormalFadeRange: 0
+            Animate: true
+            BaseTexture: "tex_planetdetail15"
+            Strength: 1
+            Speed: 5
+            DetailA: true
+            DetailB: true
+            DetailC: true

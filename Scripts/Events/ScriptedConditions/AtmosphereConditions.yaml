@@ -1,0 +1,64 @@
+# Scope conditions for Gates. Numeric fields resolved via IClimateValueResolver
+# from RegionClimate (region scope) or BindingScope (celestial body, region, hex).
+# Canonical paths: temp, moisture, vegPotential, cloudCover, storminess, wind,
+#   seaFraction, coastness, elevationMean, slopeMean,
+#   atmo.pressure, atmo.greenhouse, atmo.moistureCapacity, atmo.haziness,
+#   atmo.breathable, atmo.corrosiveness, atmo.toxicityIndex
+# Direct scope keys: Climate.Temp, Body.CloudCover, Atmosphere.Pressure, etc.
+# ScriptedConditions: is_airless, is_breathable, is_toxic, is_arid, is_humid, is_frozen,
+#   is_storm_belt, is_coastal, is_cloudy, is_windy
+
+ScriptedConditions:
+  - UniqueId: "is_airless"
+    Description: "True if atmospheric pressure <= 0.05"
+    Conditions:
+      lte: { field: atmo.pressure, value: 0.05 }
+
+  - UniqueId: "is_breathable"
+    Description: "True if atmosphere breathability >= 0.9"
+    Conditions:
+      gte: { field: atmo.breathable, value: 0.9 }
+
+  - UniqueId: "is_toxic"
+    Description: "True if atmosphere toxicity index >= 0.3"
+    Conditions:
+      gte: { field: atmo.toxicityIndex, value: 0.3 }
+
+  - UniqueId: "is_arid"
+    Description: "True if moisture < 0.33"
+    Conditions:
+      lt: { field: moisture, value: 0.33 }
+
+  - UniqueId: "is_humid"
+    Description: "True if moisture > 0.66"
+    Conditions:
+      gt: { field: moisture, value: 0.66 }
+
+  - UniqueId: "is_frozen"
+    Description: "True if temp < 0.35"
+    Conditions:
+      lt: { field: temp, value: 0.35 }
+
+  - UniqueId: "is_storm_belt"
+    Description: "True if storminess > 0.5"
+    Conditions:
+      gt: { field: storminess, value: 0.5 }
+
+  - UniqueId: "is_coastal"
+    Description: "True if coastness > 0.3 or seaFraction between 0.01 and 0.99"
+    Conditions:
+      OR:
+        - gt: { field: coastness, value: 0.3 }
+        - AND:
+          - gte: { field: seaFraction, value: 0.01 }
+          - lte: { field: seaFraction, value: 0.99 }
+
+  - UniqueId: "is_cloudy"
+    Description: "True if cloudCover > 0.5"
+    Conditions:
+      gt: { field: cloudCover, value: 0.5 }
+
+  - UniqueId: "is_windy"
+    Description: "True if wind > 0.5"
+    Conditions:
+      gt: { field: wind, value: 0.5 }

@@ -1,4 +1,4 @@
-﻿Localization:
+Localization:
 ### Sol System
   - LocalizableText:
       UniqueId: TEXT_Sol
@@ -240,6 +240,68 @@
         de: "Varuna"
         ru: "Варуна"
         zh-Hans: "冥王星"
+### Alpha Centauri System
+  - LocalizableText:
+      UniqueId: TEXT_Alpha_Centauri
+      Name: "Alpha Centauri"
+      Translations:
+        en-US: "Alpha Centauri"
+        fr: "Alpha Centauri"
+        es: "Alpha Centauri"
+        de: "Alpha Centauri"
+        ru: "Альфа Центавра"
+        zh-Hans: "天狼星"
+  - LocalizableText:
+      UniqueId: TEXT_Alpha_CentauriA
+      Name: "Alpha Centauri A"
+      Translations:
+        en-US: "Alpha Centauri A"
+        fr: "Alpha Centauri A"
+        es: "Alpha Centauri A"
+        de: "Alpha Centauri A"
+        ru: "Альфа Центавра A"
+        zh-Hans: "天狼星 A"
+  - LocalizableText:
+      UniqueId: TEXT_Alpha_CentauriB
+      Name: "Alpha Centauri B"
+      Translations:
+        en-US: "Alpha Centauri B"
+        fr: "Alpha Centauri B"
+        es: "Alpha Centauri B"
+        de: "Alpha Centauri B"
+        ru: "Альфа Центавра B"
+        zh-Hans: "天狼星 B"
+  - LocalizableText:
+      UniqueId: TEXT_Proxima_Centauri
+      Name: "Proxima Centauri"
+      Translations:
+        en-US: "Proxima Centauri"
+        fr: "Proxima Centauri"
+        es: "Proxima Centauri"
+        de: "Proxima Centauri"
+        ru: "Проксима Центавра"
+        zh-Hans: "比邻星"
+  - LocalizableText:
+      UniqueId: TEXT_Proxima_Centauri_b
+      Name: "Proxima Centauri b"
+      Translations:
+        en-US: "Proxima Centauri b"
+        fr: "Proxima Centauri b"
+        es: "Proxima Centauri b"
+        de: "Proxima Centauri b"
+        ru: "Проксима Центавра b"
+        zh-Hans: "比邻星 b"
+  - LocalizableText:
+      UniqueId: TEXT_Proxima_Centauri_c
+      Name: "Proxima Centauri c"
+      Translations:
+        en-US: "Proxima Centauri c"
+        fr: "Proxima Centauri c"
+        es: "Proxima Centauri c"
+        de: "Proxima Centauri c"
+        ru: "Проксима Центавра c"
+        zh-Hans: "比邻星 c"
+
 ### Kerbol System
   - LocalizableText:
       UniqueId: TEXT_Kerbol

@@ -53,12 +53,9 @@ Textures:
     FilterMode: "Trilinear"
     WrapMode: "Repeat"
     AnisoLevel: 4
-#Earth Land
+#Earth Land (Sol heightmap; load as Texture2D so TerrainHeightmap can use Luminosity)
   - UniqueId: "tex_earth_land_albedo"
-    Kind: "Single Channel"
-    TextureShape: "2D"
-    Channel: "Alpha"
-    AlphaSource: "From Gray Scale"
+    Kind: "Texture2D"
     Path: "Planets/Sol/Earth Land.png"
     MipMaps: false          # Match manual (Generate Mipmap off)
     SRGB: false             # Linear for height/land data

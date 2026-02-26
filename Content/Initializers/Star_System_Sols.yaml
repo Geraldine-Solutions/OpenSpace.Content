@@ -33,7 +33,9 @@ Initializers:
           Name: "TEXT_Earth"
           MainTex: "tex_earth_albedo"
           HeightTex: "tex_earth_land_albedo"
-          Size: 6371 # KM
+          Size: 6367.312 # KM (sea-level radius minus mean ocean depth)
+          SeaLevelRadiusMeters: 6399785
+          MaxElevationMeters: 88480.86
           Density: 5514 # kg/m³ (Earth's average density)
           Flags: ["era_celestial_start_node","home_planet"]
           Orbit:
@@ -123,7 +125,7 @@ Initializers:
               Orbit:
                 SemiMajorAxis: 0.00716 # AU (Ganymede)
             - Name: "TEXT_Callisto"
-              UniqueId: "rl_asteroids"
+              UniqueId: "barren_planet_init"
               Size: 2410.3 # KM
               Density: 1834 # kg/m³ (icy)
               Orbit:
@@ -206,13 +208,105 @@ Initializers:
         - Distance: 1
           Initializer: "alpha_centauri_init"
 
-# Alpha Centauri – guaranteed neighbor of Sol (nearest stellar system)
+# Alpha Centauri – guaranteed neighbor of Sol (trinary, matches Stellaris sol_neighbor_t1_first_colony)
   - StarSystem:
       UniqueId: "alpha_centauri_init"
       RenderEntity: "UI_StarSystem_Render_Entity"
-      Name: "Text_Alpha_Centauri"
+      Name: "TEXT_Alpha_Centauri"
       Usage: "neighbor_system"
-      Flags: []
+      Flags: ["neighbor_t1_first_colony"]
+      InitEffect:
+        - type: "every_neighbor_system"
+          payload:
+            effects:
+              - type: "set_flag"
+                payload:
+                  flag: "empire_cluster"
+                  scope: "star_system"
       Children:
-        - UniqueId: "rl_standard_stars"
-          Size: 834900 # KM (Alpha Centauri A, G-type)
+        # Alpha Centauri A (G-type primary)
+        - UniqueId: "star_init_g"
+          Name: "TEXT_Alpha_CentauriA"
+          Icon: "GFX_map_a_trinary_star"
+          Size: 834900 # KM (G-type, ~1.1 R_sun)
+          Orbit:
+            SemiMajorAxis: 0.15 # AU (binary inner)
+
+        # Alpha Centauri B (K-type secondary)
+        - UniqueId: "star_init_k"
+          Name: "TEXT_Alpha_CentauriB"
+          Size: 599000 # KM (K-type, ~0.86 R_sun)
+          Orbit:
+            SemiMajorAxis: 0.35 # AU (binary outer)
+
+        # Proxima Centauri (M-dwarf, distant tertiary) with planets
+        - UniqueId: "star_init_m"
+          Name: "TEXT_Proxima_Centauri"
+          Size: 107000 # KM (M-dwarf, ~0.15 R_sun)
+          Orbit:
+            SemiMajorAxis: 1.5 # AU (wide orbit around A–B)
+          Neighbors:
+            # Proxima Centauri b (barren cold, tidal-locked)
+            - Name: "TEXT_Proxima_Centauri_b"
+              UniqueId: "frozen_planet_init"
+              Size: 7100 # KM (super-Earth)
+              Density: 3933 # kg/m³
+              Orbit:
+                SemiMajorAxis: 0.0485 # AU (~0.05 AU)
+              InitEffect:
+                - type: "set_flag"
+                  payload:
+                    flag: "tidal_locked"
+                    scope: "planet"
+                - type: "add_modifier"
+                  payload:
+                    modifier: "tidal_locked"
+                    days: -1
+            # Proxima Centauri c (gas giant)
+            - Name: "TEXT_Proxima_Centauri_c"
+              UniqueId: "gas_giant_init"
+              Size: 45000 # KM
+              Density: 1326 # kg/m³
+              Orbit:
+                SemiMajorAxis: 0.034 # AU (inner of Proxima’s two)
+
+        # Outer system: 2 planets with optional moons (Stellaris orbit_distance 25 after change_orbit)
+        - Count: 2
+          UniqueId: "barren_planet_init"
+          Orbit:
+            SemiMajorAxis: 0.5 # AU
+          Neighbors:
+            - Count: [0, 1]
+              UniqueId: "barren_planet_init"
+              Size: 2000 # KM
+              Orbit:
+                SemiMajorAxis: 0.002 # AU
+
+        # Prescripted ideal / first colony candidate (Stellaris orbit_distance 30)
+        - UniqueId: "temperate_planet_init"
+          Size: 6371 # KM (Earth-like)
+          Density: 5514 # kg/m³
+          Orbit:
+            SemiMajorAxis: 0.6 # AU
+          Flags: ["prescripted_ideal"]
+          InitEffect:
+            - type: "set_flag"
+              payload:
+                flag: "prescripted_ideal"
+                scope: "planet"
+
+        # Outer system: 2 more planets with optional moons
+        - Count: 2
+          UniqueId: "barren_planet_init"
+          Orbit:
+            SemiMajorAxis: 0.5 # AU
+          Neighbors:
+            - Count: [0, 1]
+              UniqueId: "barren_planet_init"
+              Size: 2000 # KM
+              Orbit:
+                SemiMajorAxis: 0.002 # AU
+
+      Neighbors:
+        - Distance: 1
+          Initializer: "sol_neighbor_t2"

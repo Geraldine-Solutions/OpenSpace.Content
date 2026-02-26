@@ -1,4 +1,4 @@
-﻿Textures:
+Textures:
 #Orbit Ring
   - UniqueId: "tex_orbit_ring"
     Kind: "Texture2D"
@@ -1667,6 +1667,24 @@
     FilterMode: "Trilinear"
     WrapMode: "Repeat"
     AnisoLevel: 8
+
+#Terrain / Ocean (shore and waves for planet terrain and ocean)
+  - UniqueId: "tex_shore_albedo"
+    Kind: "Texture2D"
+    Path: "Planets/Shore_Albedo.png"
+    MipMaps: true
+    SRGB: true
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
+  - UniqueId: "tex_ocean_waves"
+    Kind: "Texture2D"
+    Path: "Planets/Waves.png"
+    MipMaps: true
+    SRGB: false
+    FilterMode: "Trilinear"
+    WrapMode: "Repeat"
+    AnisoLevel: 4
 
 ---
 ###############

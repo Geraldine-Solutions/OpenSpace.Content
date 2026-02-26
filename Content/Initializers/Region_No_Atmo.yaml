@@ -1,47 +1,50 @@
+# Region biomes for airless bodies. Gates use canonical climate fields: temp,
+# moisture, cloudCover, storminess, wind, seaFraction, coastness, atmo.pressure, etc.
 ####### Matrix #####
 #####  |Hot |Temperate |Cold |
 # Dry  | X  |    X     | X   |
 # Mild | X  |    X     | X   |
 # Wet  | X  |    X     | X   |
+# Airless: atmo.pressure < 0.05
 Initializers:
-#Vacuum Ranges
+#Vacuum Ranges (fallback for temperate/no-atmo)
   - Region:
       UniqueId: region_no_atmo_01
       Name: "Text_Vacuum_Ranges"
       RenderEntity: "UI_Region_Render_Entity"
-      AllowedTemperatures:
-        - temp_Cold
-        - temp_Temperate
-        - temp_Hot
-      AllowedHumidityLevels:
-        - hum_Dry
-        - hum_Mild
-        - hum_Wet
-      AllowedAtmospheres:
-        - atmo_None
+      BiomeId: biome_vacuum_ranges
+      Priority: 0
+      Gates:
+        AND:
+          - lte: { field: atmo.pressure, value: 0.05 }
+      Score:
+        Terms:
+          - Peak: { field: temp, center: 0.5, radius: 0.5 }
 #Scorched Wastes
   - Region:
       UniqueId: region_no_atmo_02
       Name: "Text_Scorched_Wastes"
       RenderEntity: "UI_Region_Render_Entity"
-      AllowedTemperatures:
-        - temp_Hot
-      AllowedHumidityLevels:
-        - hum_Dry
-        - hum_Mild
-        - hum_Wet
-      AllowedAtmospheres:
-        - atmo_None
+      BiomeId: biome_scorched_wastes
+      Priority: 1
+      Gates:
+        AND:
+          - lte: { field: atmo.pressure, value: 0.05 }
+          - gte: { field: temp, value: 0.65 }
+      Score:
+        Terms:
+          - Peak: { field: temp, center: 0.85, radius: 0.2 }
 #Frozen Wastes
   - Region:
       UniqueId: region_no_atmo_03
       Name: "Text_Frozen_Wastes"
       RenderEntity: "UI_Region_Render_Entity"
-      AllowedTemperatures:
-        - temp_Cold
-      AllowedHumidityLevels:
-        - hum_Dry
-        - hum_Mild
-        - hum_Wet
-      AllowedAtmospheres:
-        - atmo_None
+      BiomeId: biome_frozen_wastes
+      Priority: 1
+      Gates:
+        AND:
+          - lte: { field: atmo.pressure, value: 0.05 }
+          - lte: { field: temp, value: 0.35 }
+      Score:
+        Terms:
+          - Peak: { field: temp, center: 0.15, radius: 0.2 }
